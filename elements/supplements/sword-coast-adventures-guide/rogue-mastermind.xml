@@ -74,7 +74,7 @@
     <rules />
   </element>
 
-  <element name="MISDIRECTION" type="Archetype Feature" source="Sword Coast Adventure’s Guide" id="ID_WOTC_SCAG_ARCHETYPEFEATURE_MISDIRECTION">
+  <element name="Misdirection" type="Archetype Feature" source="Sword Coast Adventure’s Guide" id="ID_WOTC_SCAG_ARCHETYPEFEATURE_MISDIRECTION">
     <description>
       <p>Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you.</p>
     </description>
@@ -84,7 +84,7 @@
     <rules />
   </element>
 
-  <element name="SOUL OF DECEIT" type="Archetype Feature" source="Sword Coast Adventure’s Guide" id="ID_WOTC_SCAG_ARCHETYPEFEATURE_SOUL_OF_DECEIT">
+  <element name="Soul of Deceit" type="Archetype Feature" source="Sword Coast Adventure’s Guide" id="ID_WOTC_SCAG_ARCHETYPEFEATURE_SOUL_OF_DECEIT">
     <description>
       <p>Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.</p>
       <p>Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.</p>
