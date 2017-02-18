@@ -9,6 +9,7 @@
 		</update>
 	</info>
 	<files>
-		<file name="sword-coast-adventures-guide.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventures-guide.index" />
+		<obsolete name="sword-coast-adventures-guide.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventures-guide.index" />
+		<file name="sword-coast-adventurers-guide.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide.index" />
 	</files>
 </index>
