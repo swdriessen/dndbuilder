@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>  
+  <element name="Aasimar" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_AASIMAR">
+    <description>
+        <p>Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters>
+      <set name="Male Names">Adrik, Alberich, Baern, Barendd, Brottor, Bruenor, Dain, Darrak, Delg, Eberk, Einkil, Fargrim, Flint, Gardain, Harbek, Kildrak, Morgran, Orsik, Oskar, Rangrim, Rurik, Taklinn, Thoradin, Thorin, Tordek, Traubon, Travok, Ulfgar, Veit, Vondal</set>
+      <set name="Female Names">Amber, Artin, Audhild, Bardryn, Dagnal, Diesa, Eldeth, Falkrunn, Finellen, Gunnloda, Gurdis, Helja, Hlin, Kathra, Kristryd, Ilde, Liftrasa, Mardred, Riswynn, Sannl, Torbera, Torgga, Vistra</set>
+
+      <!--<set name="names" type="male"></set>-->
+      <!--<set name="names" type="female"></set>      -->
+    </setters>
+    <rules>
+      <stat name="Charisma" value="+2" />
+      <stat name="Speed" value="+30" />
+      <grant type="Size" name="ID_SIZE_MEDIUM" />
+      <grant type="Vision" name="ID_VISION_DARKVISION" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_CELESTIAL" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_Celestial_Resistance" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_Healing_Hands" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_Light_Bearer" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_Aasimar_SUBRACE" />
+
+    </rules>
+  </element>
+
+  <element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters"  id="ID_WOTC_VGTM_RACIAL_TRAIT_Celestial_Resistance">
+    <supports />
+    <description>
+      <p>You have resistance to necrotic damage and radiant damage.</p>
+    </description>
+    <sheet>
+      <description>You have resistance to necrotic damage and radiant damage.</description>
+    </sheet>
+    <rules />
+  </element>
+  
+  <element name="Healing Hands" type="Racial Trait" source="Volo’s Guide to Monsters"  id="ID_WOTC_VGTM_RACIAL_TRAIT_Healing_Hands">
+    <supports />
+    <description>
+      <p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</description>
+    </sheet>
+    <rules />
+  </element>
+  
+  <element name="Light Bearer" type="Racial Trait" source="Volo’s Guide to Monsters"  id="ID_WOTC_VGTM_RACIAL_TRAIT_Light_Bearer">
+    <supports />
+    <description>
+      <p>You know the light cantrip. Charisma is your spellcasting ability for it.</p>
+    </description>
+    <sheet>
+      <description>You know the light cantrip. Charisma is your spellcasting ability for it.</description>
+    </sheet>
+    <rules />
+  </element>
+  
+  <element name="Aasimar Subrace" type="Racial Trait" source="Volo’s Guide to Monsters"  id="ID_WOTC_VGTM_RACIAL_TRAIT_Aasimar_SUBRACE">
+    <supports></supports>
+    <requirements />
+    <description>
+      <p>Three subraces of aasimar exist: protector aasimar, scourge aasimar, and fallen aasimar. Choose one of them for your character.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Aasimar Subrace" supports="Aasimar" />
+    </rules>
+  </element>
+
+  
+  <element name="Protector Aasimar" type="Sub Race" source="System Reference Document"  id="ID_WOTC_VGTM_SUB_RACE_Protector_Aasimar">
+    <supports>Aasimar</supports>
+    <requirements />
+    <description>
+      <p>Protector aasimar are charged by the powers of good to guard the weak, to strike at evil wher,ever it arises, and to stand vigilant against the darkness. From a young age, a protector aasimar receives advice and directives that urge to stand against evil.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="Wisdom" value="+1" />
+      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_Radiant_Soul" />
+    </rules>
+  </element>
+
+  <element name="Radiant Soul" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_Radiant_Soul">
+    <supports />
+    <description>
+      <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back.</p>
+      <p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.</p>
+      <p>Once you use this trait, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+    <rules />
+  </element>
+
+
+
+
+
+</elements>
