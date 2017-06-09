@@ -93,7 +93,7 @@
       <description>You know the light cantrip. Charisma is your spellcasting ability for it.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_SPELL_LIGHT">
+      <grant type="Spell" name="ID_SPELL_LIGHT" />
     </rules>
   </element>
   <element name="Aasimar Subrace" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_SUBRACE">
