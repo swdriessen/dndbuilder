@@ -4,10 +4,11 @@
 		<name>Aasimar</name>
 		<description></description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.0.2" revised="2017/06/07">
+		<update version="0.0.4" revised="2017/06/07">
 			<file name="aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/aasimar.xml" />
 		</update>
 	</info>
+
   <element name="Aasimar" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_AASIMAR">
     <description>
         <p>Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.</p>
@@ -80,7 +81,7 @@
       <description>As an action, you can touch a creature and cause it to regain %healing-hands% hit points. (once / long rest)</description>
     </sheet>
     <rules>
-      <stat name="healing hands" value="+level" bonus="healing hands">
+      <stat name="healing hands" value="+level" bonus="healing hands" />
     </rules>
   </element>
   <element name="Light Bearer" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_LIGHT_BEARER">
