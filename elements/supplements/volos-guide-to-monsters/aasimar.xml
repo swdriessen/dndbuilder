@@ -4,7 +4,7 @@
 		<name>Aasimar</name>
 		<description></description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.0.4" revised="2017/06/07">
+		<update version="0.0.5" revised="2017/06/07">
 			<file name="aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/aasimar.xml" />
 		</update>
 	</info>
@@ -133,7 +133,7 @@
     </sheet>
     <rules />
   </element>
-
+  
   <element name="Scourge Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_Scourge_AASIMAR">
     <supports>Aasimar</supports>
     <description>
@@ -161,12 +161,33 @@
     </sheet>
     <rules />
   </element>
-
-
-
-
-
-
-
-
+  
+  <element name="Fallen Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_FALLEN_AASIMAR">
+    <supports>Aasimar</supports>
+    <description>
+      <p></p>
+      <p>     
+        <span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+        <span class="feature">Necrotic Shroud.</span>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+      </p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="Strength" value="+1" />
+      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_NECROTIC_SHROUD" />
+    </rules>
+  </element>
+  <element name="Necrotic Shroud" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_NECROTIC_SHROUD">
+    <supports />
+    <description>
+      <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn.</p>
+      <p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.</p>
+      <p>Once you use this trait, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>You can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.</description>
+    </sheet>
+    <rules />
+  </element>
+  
 </elements>
