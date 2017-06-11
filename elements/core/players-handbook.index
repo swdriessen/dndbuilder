@@ -4,7 +4,7 @@
 		<name>Player’s Handbook</name>
 		<description>The Player’s Handbook is the essential reference for every Dungeons &amp; Dragons roleplayer. It contains rules for character creation and advancement, backgrounds and skills, exploration and combat, equipment, spells, and much more. Use this book to create exciting characters from among the most iconic D&amp;D races and classes.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.2.0" revised="2017/06/07">
+		<update version="0.0.2.1" revised="2017/06/07">
 			<file name="players-handbook.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook.index" />
 		</update>
 	</info>

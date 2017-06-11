@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name>Elf</name>
+		<description></description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1.0" revised="2017/06/07">
+			<file name="elf.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/elf.xml" />
+		</update>
+	</info>
+
+
   <element name="Elf" type="Race" source="Player’s Handbook" id="ID_RACE_ELF">
     <supports />
     <description>
@@ -135,7 +145,7 @@
     </rules>
   </element>
   <element name="Wood Elf" type="Sub Race" source="Player’s Handbook"  id="ID_SUB_RACE_WOOD_ELF">
-    <supports>Elven Subrace</supports>
+    <supports>Elf</supports>
     <requirements />
     <description>
       <p>As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. This category includes the wild elves (grugach) of Greyhawk and the Kagonesti of Dragonlance, as well as the races called wood elves in Greyhawk and the Forgotten Realms. In Faerun, wood elves (also called wild elves, green elves, or forest elves) are reclusive and distrusting of non-elves. Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel.</p>
@@ -155,7 +165,7 @@
     </rules>
   </element>
   <element name="Dark Elf" type="Sub Race" source="Player’s Handbook"  id="ID_SUB_RACE_DARK_ELF">
-    <supports>Elven Subrace</supports>
+    <supports>Elf</supports>
     <requirements />
     <description>
       <p>Descended from an earlier subrace of dark-skinned elves, the drow w ere banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have built their own civilization in the depths of the Underdark, patterned after the Way of Lolth. Also called dark elves, the drow have black skin that resembles polished obsidian and stark white or pale yellow hair. They commonly have very pale eyes (so pale as to be mistaken for white) in shades of lilac, silver, pink, red, and blue. They tend to be smaller and thinner than most elves.</p>
@@ -179,7 +189,7 @@
     </rules>
   </element>
   <element name="Eladrin" type="Sub Race" source="Dungeon Master’s Guide" id="ID_SUB_RACE_ELADRIN">
-    <supports></supports>
+    <supports>Elf</supports>
     <requirements />
     <description>
       <p>Creatures of magic with strong ties to nature, eladrin live in the twilight realm of the Feywild. Their cities sometimes cross over to the Material Plane, appearing briefly in mountain valleys or deep forest glades before fading back into the Feywild.</p>
