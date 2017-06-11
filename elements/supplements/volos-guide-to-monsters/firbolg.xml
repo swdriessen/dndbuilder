@@ -8,40 +8,31 @@
 			<file name="firbolg.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/firbolg.xml" />
 		</update>
 	</info>
-  
   <element name="Firbolg" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_FIRBOLG">
     <description>
-      <p>Firbolg tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.</p>
-
+      <p class="flavor">Firbolg tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.</p>
       <h4>HUMBLE GUARDIANS</h4>
       <p>Firbolgs love nothing more than a peaceful day spent among the trees of an old forest. They see forests as sacred places, representing the heart of the world and monuments to the durability of life.</p>
       <p>In their role as caretakers, firbolgs live off the land while striving to remain in balance with nature. Their methods reflect common sense and remarkable resourcefulness. During a bountiful summer, they store away excess nuts, fruit, and berries. When winter arrives, they scatter everything they can spare to ensure the animals of the wood survive until springtime.</p>
       <p>In a firbolg's eyes, there is no greater fault than greed. The firbolgs believe that the world remains healthiest when each creature takes only what it needs. Material goods, especially precious gems and gold, have little appeal to them. What use are such things when winter lingers and food runs short?</p>
-
       <h4>NATURAL DRUIDS</h4>
       <p>Firbolgs have a talent for druidic magic. Their cultural reverence for nature, combined with their strong and insightful minds, makes learning such magic an instinctive part of their development. Almost every firbolg learns a few spells, typically those used to mask their presence, and many go on to master nature magic.</p>
       <p>Firbolgs who become druids serve as stronghold leaders. With every action the tribe takes, the druids weigh not only the group's needs, but the effect each action will have on the forest and the rest of the natural world. Firbolg tribes would rather go hungry than strain the land during a famine.</p>
-
       <h4>HIDDEN SHEPHERDS</h4>
       <p>As caretakers of the land, firbolgs prefer to remain out of sight and out of mind. They don't try to dominate nature, but rather seek to ensure that it prospers and survives according to its own laws.</p>
       <p>Firbolgs use their magic to keep their presence in a forest secret. This approach allows them to avoid the politics and struggles of elves, humans, and ores. Such events concern the firbolgs only when the events affect the forest.</p>
       <p>Even in the face of an intrusion, firbolgs prefer a subtle, gentle approach to prevent damage to their territory. They employ their magic to make the forest an unappealing place to explore by temporarily diverting springs, driving away game, stealing critical tools, and altering trails to leave hunting or lumber parties hopelessly lost. The firbolgs' presence is marked by an absence of animals and a strange quiet, as if the forest wishes to avoid attracting attention to itself. The faster travelers decide to move on, the better.</p>
       <p>If these tactics fail, the firbolgs take more direct action. Their observations of a settlement determine what happens next. If the outsiders seem peaceful, the firbolgs approach and gently ask them to leave, even offering food and other supplies to aid their departure. If those who insist on remaining respect nature, take only what they need, and live in harmony with the wood, firbolgs explore the possibility of friendship with them, as long as the outsiders vow to safeguard the forest. If the settlers clearly display evil intentions, however, the firbolgs martial their strength and magic for a single overwhelming attack.</p>
-
       <h4>OUTCAST ADVENTURERS</h4>
       <p>As guardians of the wood, few firbolgs would dream of leaving their homes or attempting to fit into human society. An exiled firbolg, or one whose clan has been destroyed, might not have a choice in the matter. Most adventuring firbolgs fall into this latter category.</p>
       <p>Outcast firbolgs can never return home. They committed some unforgivable deed, usually something that put their homeland at risk, such as starting a forest fire or killing a rare or beautiful wild creature. These firbolgs are loners who wander the world in hope of finding a new place to call home.</p>
       <p>Orphaned firbolgs are those whose clans or homelands have been destroyed. They become crusaders for nature, seeking to avenge their loss and prevent the further destruction of the natural world.</p>
       <p>A few rare firbolgs are entrusted l;>y their clan with an important mission that takes them beyond their homes. These firbolgs feel like pilgrims in a strange land, and usually they wish only to complete their quests and return home as quickly as possible.</p>
       <p>The Firbolg Adventurers table can serve as inspiration for determining why a firbolg character leaves home.</p>
-
       <h4>FIRBOLG NAMES</h4>
       <p>Firbolg adopt elven names when they must deal with outsiders, although the concept of names strikes them as strange. They know the animals and plants of the forest without formal names, and instead identify the forest's children by their deeds, habits, and other actions.</p>
       <p>By the same token, their tribe names merely refer to their homes. When dealing with other races, firbolgs refer to their lands by whatever name the surrounding folk use, as a matter of tact and hospitality, but among their own kind they simply call it "home."</p>
       <p>Sometimes firbolgs adopt the nicknames or titles outsiders give them under the assumption that those who need names can call them whatever they wish.</p>
-
-
-
       <h4>FIRBOLG TRAITS</h4>
       <p>Your firbolg character has the following racial traits.</p>
       <p>
@@ -68,19 +59,16 @@
       <stat name="Strength" value="+1" />
       <stat name="Speed" value="+30" />
       <grant type="Size" name="ID_SIZE_MEDIUM" />
-      <!--<grant type="Vision" name="ID_VISION_DARKVISION" />-->
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_ELVISH" />
       <grant type="Language" name="ID_LANGUAGE_GIANT" />
-
       <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_FIRBOLG_MAGIC" />
       <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_Hidden_Step" />
       <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_Powerful_Build" />
       <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_Speech_of_Beast_and_Leaf" />
-
     </rules>
   </element>
-
+  
   <element name="Firbolg Magic" type="Racial Trait" source="Volo’s Guide to Monsters"  id="ID_WOTC_VGTM_RACIAL_TRAIT_FIRBOLG_MAGIC">
     <supports />
     <description>
@@ -98,7 +86,7 @@
       <p>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
     </description>
     <sheet>
-      <description>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest.</description>
+      <description>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. (once per short/long rest)</description>
     </sheet>
     <rules />
   </element>
@@ -120,7 +108,7 @@
       <p>You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them.</p>
     </description>
     <sheet>
-      <description>You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them.</description>
+      <description>Communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them.</description>
     </sheet>
     <rules />
   </element>

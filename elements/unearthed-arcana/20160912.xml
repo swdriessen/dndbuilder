@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Unearthed Arcana: The Ranger, Revised</name>
+    <description>Over the past year, you’ve seen us try a number of new approaches to the ranger, all aimed at addressing the class’s high levels of player dissatisfaction and its ranking as D&amp;D’s weakest class by a significant margin. Those two factors combined to put us on the path to this revision. Though the revised ranger retains many of the elements of the existing class, a lot has changed, so it’s best to simply dig into the new material to get a sense of how it feels. But at the same time, the release of this revision gives us a chance to talk about how a revised class can best be implemented as part of the D&amp;D game—and how the game will evolve in the future.</description>
+    <author url="http://dnd.wizards.com/articles/features/unearthed-arcana-ranger-revised">Wizards of the Coast</author>
+    <update version="0.1.0.0" revised="2016/09/12">
+      <file name="20160912.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20160912.xml" />
+    </update>
+  </info>
+  
+  <!-- Ranger, Revised -->
+  <element name="Ranger" type="Class" source="Unearthed Arcana: The Ranger, Revised" id="ID_WOTC_UA_CLASS_RANGER">
+    <supports />
+    <requirements />
+    <description>
+      <p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>
+      <h4>CREATING A RANGER</h4>
+      <p>As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger’s ways? Did you leave your apprenticeship, or was your mentor slain— perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.</p>
+      <p>What’s the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?</p>
+      <h5>QUICK BUILD</h5>
+      <p>You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the outlander background.</p>
+      <h3>CLASS FEATURES</h3>
+      <p>As a ranger, you gain the following class features.</p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="feature">Hit Dice:</span>1d10 per ranger level<br />
+        <span class="feature">Hit Points at 1st Level:</span>10 + your Constitution modefier<br />
+        <span class="feature">Hit Points at Higher Levels:</span>1d10 (or 6) + your Constitution modifier per ranger level after 1st<br />
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="feature">Armor:</span>Light armor, medium armor, shields<br />
+        <span class="feature">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="feature">Tools:</span>None<br />
+      </p>
+      <p>
+        <span class="feature">Saving Throws:</span>Strength, Dexterity<br />
+        <span class="feature">Skills:</span>Choose three skills from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival<br />
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) scale mail or (b) leather armor</li>
+        <li>(a) two shortswords or (b) two simple melee weapons</li>
+        <li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+        <li>A longbow and a quiver of 20 arrows</li>
+      </ul>
+      <div element="ID_CLASSFEATURE_FAVORED_ENEMY" />
+      <div element="ID_CLASSFEATURE_NATURAL_EXPLORER" />
+      <div element="ID_CLASSFEATURE_FIGHTINGSTYLE_RANGER" />
+      <div element="ID_CLASSFEATURE_SPELLCASTING_RANGER" />
+      <div element="ID_CLASSFEATURE_PRIMEVAL_AWARENESS" />
+      <div element="ID_CLASSFEATURE_RANGER_CONCLAVE" />
+      <div element="ID_CLASSFEATURE_ABILITY_SCORE_IMPROVEMENT_RANGER" />
+      <div element="ID_CLASSFEATURE_GREATER_FAVORED_ENEMY" />
+      <div element="ID_CLASSFEATURE_FLEET_OF_FOOT" />
+      <div element="ID_CLASSFEATURE_HIDE_IN_PLAIN_SIGHT" />
+      <div element="ID_CLASSFEATURE_VANISH" />
+      <div element="ID_CLASSFEATURE_FERAL_SENSES" />
+      <div element="ID_CLASSFEATURE_FOE_SLAYER" />
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="hd">d10</set>
+    </setters>
+    <rules>
+      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+
+      <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill&amp;&amp;ID_CLASS_RANGER" number="3"/>
+
+      <grant type="Class Feature" name="ID_CLASSFEATURE_FAVORED_ENEMY" level="1"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_NATURAL_EXPLORER" level="1"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_FIGHTINGSTYLE_RANGER" level="2"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_SPELLCASTING_RANGER" level="2"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_PRIMEVAL_AWARENESS" level="3"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_RANGER_CONCLAVE" level="3"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_ABILITY_SCORE_IMPROVEMENT_RANGER" level="4"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_GREATER_FAVORED_ENEMY" level="6"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_FLEET_OF_FOOT" level="8"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_HIDE_IN_PLAIN_SIGHT" level="10"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_VANISH" level="14"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_FERAL_SENSES" level="18"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_FOE_SLAYER" level="20"/>
+    </rules>
+  </element>
+
+  <element name="Favored Enemy" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY">
+    <description>
+      <p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.</p>
+      <p>Choose a type of favored enemy: beasts, fey, humanoids, monstrosities, or undead. You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</p>
+      <p>When you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are free to pick any language you wish to learn.</p>
+    </description>
+    <sheet>
+      <description>You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</description>
+    </sheet>
+    <rules>
+      <stat name="Favored Enemy:attack" value="+2" />
+      <select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" />
+      <select type="Language" name="Language (Favored Enemy)" />
+    </rules>
+  </element>
+  <element name="Natural Explorer" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_NATURAL_EXPLORER">
+    <description>
+      <p>You are a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:</p>
+      <ul>
+        <li>You ignore difficult terrain.</li>
+        <li>You have advantage on initiative rolls.</li>
+        <li>On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.</li>
+      </ul>
+      <p>In addition, you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:</p>
+      <ul>
+        <li>Difficult terrain doesn’t slow your group’s travel.</li>
+        <li>Your group can’t become lost except by magical means.</li>
+        <li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
+        <li>If you are traveling alone, you can move stealthily at a normal pace.</li>
+        <li>When you forage, you find twice as much food as you normally would.</li>
+        <li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>You ignore difficult terrain. You have advantage on initiative rolls. On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.</description>
+    </sheet>
+  </element>
+  <element name="Fighting Style" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FIGHTINGSTYLE_RANGER">
+    <supports>2</supports>
+    <description>
+      <p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+      <h5>ARCHERY</h5>
+      <p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+      <h5>DEFENSE</h5>
+      <p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+      <h5>DUELING</h5>
+      <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+      <h5>TWO-WEAPON FIGHTING</h5>
+      <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Class Feature" name="Fighting Style" supports="ID_CLASSFEATURE_FIGHTINGSTYLE_ARCHERY|ID_CLASSFEATURE_FIGHTINGSTYLE_DEFENSE|ID_CLASSFEATURE_FIGHTINGSTYLE_DUELING|ID_CLASSFEATURE_FIGHTINGSTYLE_TWO-WEAPON_FIGHTING" level="2"/>
+    </rules>
+  </element>
+  <element name="Spellcasting" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_SPELLCASTING_RANGER">
+    <description>
+      <p>By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.</p>
+      <h5>SPELL SLOTS</h5>
+      <p>The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+      <p>For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2ndlevel spell slot available, you can cast animal friendship using either slot.</p>
+      <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+      <p>You know two 1st-level spells of your choice from the ranger spell list.</p>
+      <p>The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+      <p>Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.</p>
+      <h5>SPELLCASTING ABILITY</h5>
+      <p>Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.</p>
+      <p>
+        <b>Spell save DC</b> = 8 + your proficiency bonus + your Wisdom modifier
+      </p>
+      <p>
+        <b>Spell attack modifier</b> = your proficiency bonus + your Wisdom modifier
+      </p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="spellcastingClass">Ranger</set>
+      <set name="spellcastingAbility">Wisdom</set>
+    </setters>
+    <rules>
+      <stat name="spell:keyability" value="Wisdom" />
+      <stat name="spell:attack" value="+Proficiency" />
+      <stat name="spell:attack" value="+Wisdom Modifier" />
+      <stat name="spell:dc" value="+8" />
+      <stat name="spell:dc" value="+Proficiency" />
+      <stat name="spell:dc" value="+Wisdom Modifier" />
+
+      <stat name="spells:known" value="+2" level="2" />
+      <stat name="spells:known" value="+1" level="3" />
+      <stat name="spells:known" value="+1" level="5" />
+
+      <stat name="spell:slots:1" value="2" level="2" />
+      <stat name="spell:slots:1" value="1" level="3" />
+      <stat name="spell:slots:1" value="1" level="5" />
+      <stat name="spell:slots:2" value="2" level="5" />
+
+
+
+      <select type="Spell" name="Spell (Ranger)" supports="(1)&amp;&amp;Ranger" level="2" number="2" />
+      <select type="Spell" name="Spell (Ranger)" supports="(1)&amp;&amp;Ranger" level="3" number="1" />
+      <select type="Spell" name="Spell (Ranger)" supports="(1||2)&amp;&amp;Ranger" level="5" />
+    </rules>
+  </element>
+  <element name="Primeval Awareness" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_PRIMEVAL_AWARENESS">
+    <description>
+      <p>Beginning at 3rd level, your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.</p>
+      <p>You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its emotional state, whether it is affected by magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.</p>
+      <p>You cannot use this ability against a creature that you have attacked within the past 10 minutes.</p>
+      <p>Additionally, you can attune your senses to determine if any of your favored enemies lurk nearby. By spending 1 uninterrupted minute in concentration (as if you were concentrating on a spell), you can sense whether any of your favored enemies are present within 5 miles of you. This feature reveals which of your favored enemies are present, their numbers, and the creatures’ general direction and distance (in miles) from you.</p>
+      <p>If there are multiple groups of your favored enemies within range, you learn this information for each group.</p>
+    </description>
+    <sheet target="additional-features">
+      <description>Your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.</description>
+    </sheet>
+  </element>
+  <element name="Ranger Conclave" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_RANGER_CONCLAVE">
+    <description>
+      <p>At 3rd level, you choose to emulate the ideals and training of a ranger conclave: the Beast Conclave, the Hunter Conclave, or the Stalker Conclave, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 5th, 7th, 11th, and 15th level.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Archetype" name="Ranger Conclave" supports="Ranger Conclave" level="3" />
+    </rules>
+  </element>
+  <element name="Ability Score Improvement (Ranger)" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_ABILITY_SCORE_IMPROVEMENT_RANGER">
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
+      <select type="Class Feature" name="Improvement Option (8)" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
+      <select type="Class Feature" name="Improvement Option (12)" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
+      <select type="Class Feature" name="Improvement Option (16)" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
+      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+    </rules>
+  </element>
+  <element name="Greater Favored Enemy" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_GREATER_FAVORED_ENEMY">
+    <description>
+      <p>At 6th level, you are ready to hunt even deadlier game. Choose a type of greater favored enemy: aberrations, celestials, constructs, dragons, elementals, fiends, or giants. You gain all the benefits against this chosen enemy that you normally gain against your favored enemy, including an additional language. Your bonus to damage rolls against all your favored enemies increases to +4.</p>
+      <p>Additionally, you have advantage on saving throws against the spells and abilities used by a greater favored enemy.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against the spells and abilities used by a greater favored enemy.</description>
+    </sheet>
+    <rules>
+      <stat name="Favored Enemy:attack" value="+2" />
+      <select type="Class Feature" name="Greater Favored Enemy" supports="Greater Favored Enemy" />
+      <select type="Language" name="Language (Greater Favored Enemy)" supports="!ID_INTERNAL_LANGUAGE_SPECIAL" />
+    </rules>
+  </element>
+  <element name="Fleet of Foot" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FLEET_OF_FOOT">
+    <description>
+      <p>Beginning at 8th level, you can use the Dash action as a bonus action on your turn.</p>
+    </description>
+    <sheet>
+      <description>You can use the Dash action as a bonus action on your turn.</description>
+    </sheet>
+  </element>
+  <element name="Hide in Plain Sight" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_HIDE_IN_PLAIN_SIGHT">
+    <description>
+      <p>Starting at 10th level, you can remain perfectly still for long periods of time to set up ambushes.</p>
+      <p>When you attempt to hide on your turn, you can opt to not move on that turn. If you avoid moving, creatures that attempt to detect you take a −10 penalty to their Wisdom (Perception) checks until the start of your next turn. You lose this benefit if you move or fall prone, either voluntarily or because of some external effect. You are still automatically detected if any effect or action causes you to no longer be hidden.</p>
+      <p>If you are still hidden on your next turn, you can continue to remain motionless and gain this benefit until you are detected.</p>
+    </description>
+    <sheet>
+      <description>You can remain perfectly still for long periods of time to set up ambushes.</description>
+    </sheet>
+  </element>
+  <element name="Vanish" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_VANISH">
+    <description>
+      <p>Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless you choose to leave a trail.</p>
+    </description>
+    <sheet>
+      <description>You can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless you choose to leave a trail.</description>
+    </sheet>
+  </element>
+  <element name="Feral Senses" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FERAL_SENSES">
+    <description>
+      <p>At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it.</p>
+      <p>You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.</p>
+    </description>
+    <sheet>
+      <description>When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it.</description>
+    </sheet>
+  </element>
+  <element name="Foe Slayer" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FOE_SLAYER">
+    <description>
+      <p>At 20th level, you become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</p>
+    </description>
+    <sheet>
+      <description>Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make.</description>
+    </sheet>
+  </element>
+
+
+  <!-- Favored Enemies-->
+  <element name="Beasts" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_BEAST">
+    <supports>Favored Enemy</supports>
+    <description>
+      <p>Beasts are nonhumanoid creatures that are a natural part of the fantasy ecology. Some of them have magical powers, but most are unintelligent and lack any society or language. Beasts include all varieties of ordinary animals, dinosaurs, and giant versions of animals.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Fey" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_FEY">
+    <supports>Favored Enemy</supports>
+    <description>
+      <p>Fey are magical creatures closely tied to the forces of nature. They dwell in twilight groves and misty forests. In some worlds, they are closely tied to the Feywild, also called the Plane of Faerie. Some are also found in the Outer Planes, particularly the planes of Arborea and the Beastlands. Fey include dryads, pixies, and satyrs.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Humanoids" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_HUMANOIDS">
+    <supports>Favored Enemy</supports>
+    <description>
+      <p>Humanoids are the main peoples of the D&amp;D world, both civilized and savage, including humans and a tremendous variety of other species. They have language and culture, few if any innate magical abilities (though most humanoids can learn spellcasting), and a bipedal form. The most common humanoid races are the ones most suitable as player characters: humans, dwarves, elves, and halflings. Almost as numerous but far more savage and brutal, and almost uniformly evil, are the races of goblinoids (golblins, hobgoblins, and bugbears), orcs, gnolls, lizardfolk, and kobolds. A variety of humanoids appear throughout this book, but the races detailed in the Player's Handbook- with the exception of drow-are dealt with in appendix B. That appendix gives you a number of stat blocks that you·can use to make various members of those races.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Monstrosities" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_BEAST_MONSTROSITIES">
+    <supports>Favored Enemy</supports>
+    <description>
+      <p>Monstrosities are monsters in the strictest sensefrightening creatures that are not ordinary, not truly natural, and almost never benign. Some are the results of magical experimentation gone awry (such as owl bears), and others ,are the product-of terrible curses (including minotaurs and yuan-ti). They defy categorization, and in some sense serve as a catch-all category for creatures that don't fit into any other type.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Undead" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_UNDEAD">
+    <supports>Favored Enemy</supports>
+    <description>
+      <p>Undead are once-living creatures brought to a horrifying state of undeath through the practice of necromantic magic or some unholy curse. Undead include walking corpses, such as vampires and zombies, as well as bodiless spirits, such as ghosts and specters.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+
+  <!-- Greater Favored Enemies-->
+  <element name="Aberrations" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_ABERRATIONS">
+    <supports>Greater Favored Enemy</supports>
+    <description>
+      <p>Aberrations are utterly alien beings. Many of them have innate magical abilities drawn from the creature's alien mind rather than the mystical forces of the world. The quintessential aberrations are aboleths, beholders, mind fiayers, and slaadi.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Celestials" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_CELESTIALS">
+    <supports>Greater Favored Enemy</supports>
+    <description>
+      <p>Celestials are creatures native to the Upper Planes. Many of them are the servants of deities, employed as messengers or agents in the mortal realm and throughout the planes. Celestials are good by nature, so the exceptional celestial who strays from a good alignment is a horrifying rarity. Celestials include angels, couatls, and pegasi.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Constructs" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_CONSTRUCTS">
+    <supports>Greater Favored Enemy</supports>
+    <description>
+      <p>Constructs are made, not born. Some are programmed by their creators to'follow a simple set of instructions, while others are imbued with sentience and capable of independent thought. Golems are the iconic constructs. Many creatures native to the outer plane of Mechanus, such as modrons, are constructs shaped from the raw material of the plane by the will of more powerful creatures.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Dragons" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_DRAGONS">
+    <supports>Greater Favored Enemy</supports>
+    <description>
+      <p>Dragons are large reptilian creatures of ancient origin and tremendous power. True dragons, including the good metallic dragons and the evil chromatic dragons, are highly intelligent and have innate magic. Also in this category are creatures distantly related to true dragons, but less powerful, less intelligent, and less magical, such as wyverns and pseudodragons.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Elementals" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_ELEMENTALS">
+    <supports>Greater Favored Favored Enemy</supports>
+    <description>
+      <p>Elementals are creatures native to the elemental planes. Some creatures of this type are little more than animate masses of their respective elements, including the creatures simply called elementals. Others have biological forms infused with elemental energy. The races of genies, including djinn and efreet, form the most important civilizations on the elemental planes. Other elemental creatures include azers, invisible stalkers, and water weirds.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Fiends" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_FIENDS">
+    <supports>Greater Favored Enemy</supports>
+    <description>
+      <p>Fiends are creatures of wickedness that are native to the Lower Planes. A few are the servants of deities, but many more labor under the leadership of archdevils and demon princes. Evil priests and mages sometimes summon fiends to tne' material world to do their bidding. If an evil celestial is a rarity, a good fiend is almost inconceivable. Fiends include demons, devils, hell hounds, rakshasas, and yugoloths.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Giants" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_GIANTS">
+    <supports>Greater Favored Enemy</supports>
+    <description>
+      <p>Giants tower over humans and their kind. They are humanlike in shape, though some have multiple heads (ettins) or deformities (fomorians). The six varieties of true giant are hill giants, stone giants, frost giants, fire giants, cloud giants, and storm giants. Besides these, creatures such as ogres and trolls are giants.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+
+  <!-- Unused -->
+  <element name="Oozes" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_OOZES">
+    <supports />
+    <description>
+      <p>Oozes are gelatinous creatures that rarely have a fixed shape. They are mostly subterranean, dwelling in caves and dungeons and feeding on refuse, carrion, or creatures unlucky enough to get in their way. Black puddings and gelatinous cubes are among the most recognizable oozes.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+  <element name="Plants" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_FAVORED_ENEMY_PLANTS">
+    <supports />
+    <description>
+      <p>Plants in this context are vegetable creatures, not ordinary flora. Most of them are ambulatory, and some are carnivorous. The quintessential plants are the shambling mound and the treant. Fungal creatures such as the gas spore and the myconid also fall into this category.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+  </element>
+
+
+  <!-- Ranger Conclaves -->
+  <element name="Beast Conclave" type="Archetype" source="Unearthed Arcana: The Ranger, Revised" id="ID_ARCHETYPE_BEAST_CONCLAVE">
+    <supports>Ranger Conclave</supports>
+    <description>
+      <p>Many rangers are more at home in the wilds than in civilization, to the point where animals consider them kin. Rangers of the Beast Conclave develop a close bond with a beast, then further strengthen that bond through the use of magic.</p>
+      <div element="ID_ARCHETYPEFEATURE_ANIMAL_COMPANION" />
+      <div element="ID_ARCHETYPEFEATURE_COMPANIONS_BOND" />
+      <div element="ID_ARCHETYPEFEATURE_COORDINATED_ATTACK" />
+      <div element="ID_ARCHETYPEFEATURE_BEASTS_DEFENSE" />
+      <div element="ID_ARCHETYPEFEATURE_STORM_OF_CLAWS_AND_FANGS" />
+      <div element="ID_ARCHETYPEFEATURE_SUPERIOR_BEASTS_DEFENSE" />
+    </description>
+    <sheet>
+      <description>Rangers of the Beast Conclave develop a close bond with a beast, then further strengthen that bond through the use of magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_ANIMAL_COMPANION" level="3"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_COMPANIONS_BOND" level="3"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_COORDINATED_ATTACK" level="5"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_BEASTS_DEFENSE" level="7"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_STORM_OF_CLAWS_AND_FANGS" level="11"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_SUPERIOR_BEASTS_DEFENSE" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Animal Companion" type="Archetype Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_ARCHETYPEFEATURE_ANIMAL_COMPANION">
+    <description>
+      <p>At 3rd level, you learn to use your magic to create a powerful bond with a creature of the natural world.</p>
+      <p>With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You normally select you companion from among the following animals: an ape, a black bear, a boar, a giant badger, a giant weasel, a mule, a panther, or a wolf. However, your DM might pick one of these animals for you, based on the surrounding terrain and on what types of creatures would logically be present in the area.</p>
+      <p>At the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have only one animal companion at a time.</p>
+      <p>If your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of 25 gp worth of rare herbs and fine food, you call forth your companion’s spirit and use your magic to create a new body for it. You can return an animal companion to life in this manner even if you do not possess any part of its body.</p>
+      <p>If you use this ability to return a former animal companion to life while you have a current animal companion, your current companion leaves you and is replaced by the restored companion.</p>
+    </description>
+    <sheet>
+      <description>Create a powerful bond with a creature of the natural world.</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Animal Companion" supports="ID_UA_SUPPORT_ANIMAL_COMPANION" level="3" />
+    </rules>
+  </element>
+  <element name="Companion’s Bond" type="Archetype Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_ARCHETYPEFEATURE_COMPANIONS_BOND">
+    <description>
+      <p>Your animal companion gains a variety of benefits while it is linked to you.</p>
+      <p>The animal companion loses its Multiattack action, if it has one.</p>
+      <p>The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are incapacitated or absent, your companion acts on its own.</p>
+      <p>When using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.</p>
+      <p>Your animal companion has abilities and game statistics determined in part by your level. Your companion uses your proficiency bonus rather than its own. In addition to the areas where it normally uses its proficiency bonus, an animal companion also adds its proficiency bonus to its AC and to its damage rolls.</p>
+      <p>Your animal companion gains proficiency in two skills of your choice. It also becomes proficient with all saving throws.</p>
+      <p>For each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.</p>
+      <p>Whenever you gain the Ability Score Improvement class feature, your companion’s abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can’t increase an ability score above 20 using this feature unless its description specifies otherwise.</p>
+      <p>Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, “The ranger who travels with me is a beloved companion for whom I would gladly give my life.”</p>
+      <p>Your animal companion gains the benefits of your Favored Enemy feature, and of your Greater Favored Enemy feature when you gain that feature at 6th level. It uses the favored enemies you selected for those features.</p>
+    </description>
+    <sheet>
+      <description>Your animal companion gains a variety of benefits while it is linked to you.</description>
+    </sheet>
+    <rules>
+      <stat name="companion:proficiency" value="Proficiency" bonus="base" />
+      <stat name="companion:ac" value="companion:proficiency" bonus="proficiency" />
+      <stat name="companion:damage" value="companion:proficiency" bonus="proficiency" />
+
+      <stat name="companion:str:st:proficiency" value="companion:proficiency" bonus="proficiency" />
+      <stat name="companion:dex:st:proficiency" value="companion:proficiency" bonus="proficiency" />
+      <stat name="companion:con:st:proficiency" value="companion:proficiency" bonus="proficiency" />
+      <stat name="companion:int:st:proficiency" value="companion:proficiency" bonus="proficiency" />
+      <stat name="companion:wis:st:proficiency" value="companion:proficiency" bonus="proficiency" />
+      <stat name="companion:cha:st:proficiency" value="companion:proficiency" bonus="proficiency" />
+
+      <select type="Proficiency" name="Animal Companion Proficiency" supports="ID_UA_SUPPORT_ANIMAL_COMPANION" level="3" />
+      <grant target="companion" type="" name="" />
+
+    </rules>
+  </element>
+  <element name="Coordinated Attack" type="Archetype Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_ARCHETYPEFEATURE_COORDINATED_ATTACK">
+    <description>
+      <p>Beginning at 5th level, you and your animal companion form a more potent fighting team. When you use the Attack action on your turn, if your companion can see you, it can use its reaction to make a melee attack.</p>
+    </description>
+    <sheet>
+      <description>When you use the Attack action on your turn, if your companion can see you, it can use its reaction to make a melee attack.</description>
+    </sheet>
+  </element>
+  <element name="Beast’s Defense" type="Archetype Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_ARCHETYPEFEATURE_BEASTS_DEFENSE">
+    <description>
+      <p>At 7th level, while your companion can see you, it has advantage on all saving throws.</p>
+    </description>
+    <sheet>
+      <description>While your companion can see you, it has advantage on all saving throws.</description>
+    </sheet>
+  </element>
+  <element name="Storm of Claws and Fangs" type="Archetype Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_ARCHETYPEFEATURE_STORM_OF_CLAWS_AND_FANGS">
+    <description>
+      <p>At 11th level, your companion can use its action to make a melee attack against each creature of its choice within 5 feet of it, with a separate attack roll for each target.</p>
+    </description>
+    <sheet>
+      <description>Your companion can use its action to make a melee attack against each creature of its choice within 5 feet of it, with a separate attack roll for each target.</description>
+    </sheet>
+  </element>
+  <element name="Superior Beast’s Defense" type="Archetype Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_ARCHETYPEFEATURE_SUPERIOR_BEASTS_DEFENSE">
+    <description>
+      <p>At 15th level, whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack’s damage against it.</p>
+    </description>
+    <sheet>
+      <description>Whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack’s damage against it.</description>
+    </sheet>
+  </element>
+
+
+  <element name="Animal Companion" type="Support" source="Unearthed Arcana: The Ranger, Revised" id="ID_UA_SUPPORT_ANIMAL_COMPANION" />
+
+  <addition id="ID_SRD_MONSTER_APE">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </addition>
+
+
+
+  <!-- Animal Companions -->
+  <element name="Ape" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_APE">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </element>
+  <element name="Black Bear" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_BLACK_BEAR">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </element>
+  <element name="Boar" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_BOAR">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </element>
+  <element name="Giant Badger" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_GIANT_BADGER">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </element>
+  <element name="Giant Weasel" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_GIANT_WEASEL">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </element>
+  <element name="Mule" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_MULE">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </element>
+  <element name="Panther" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_PANTHER">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+  </element>
+  <element name="Wolf" type="Archetype Feature" source="Monster Manual" id="ID_MONSTER_WOLF">
+    <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
+    <description>
+      <p class="flavor">Medium beast, unaligned</p>
+      <hr />
+      <p>
+        <span class="feature">Armor class</span>13 (natural armor)<br />
+        <span class="feature">Hit points</span>11 (2d8+4)<br />
+        <span class="feature">Speed</span>40 ft.<br />
+      </p>
+    </description>
+    <sheet>
+      <description>Medium beast, unaligned</description>
+    </sheet>
+    <rules>
+      <stat name="companion:ac" value="13" />
+      <stat name="companion:hp" value="11" />
+      <stat name="companion:speed" value="40" />
+    </rules>
+  </element>
+
+
+<element name="Sentinel" type="Feat" source="Player’s Handbook" id="ID_FEAT_SENTINEL">
+    <supports />
+    <requirements />
+    <description>
+      <p>You have mastered techniques to take advantage of every drop in any enemy’s guard, gaining the following benefits:</p>
+      <ul>
+        <li>When you hit a creature with an opportunity attack, the creature’s speed becomes 0 for the rest of the turn.</li>
+        <li>Creatures within 5 feet of you provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.</li>
+        <li>When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn’t have this feat), you can use your reaction to make a melee weapon attack against the attacking creature.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>You have mastered techniques to take advantage of every drop in any enemy’s guard</description>
+    </sheet>
+    <rules />
+  </element>
+</elements>
