@@ -9,8 +9,10 @@
 		</update>
 	</info>
 	<files>
-		<file name="feats.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/feats.xml" />
-		<file name="elf.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/elf.xml" />		
+		<obsolete name="elf.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/elf.xml" />
+		
+		<file name="race-elf.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/race-elf.xml" />
 		<file name="background-outlander.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/background-outlander.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/feats.xml" />
 	</files>
 </index>
