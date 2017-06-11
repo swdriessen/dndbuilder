@@ -479,6 +479,7 @@
       <description>Your animal companion gains a variety of benefits while it is linked to you.</description>
     </sheet>
     <rules>
+    <!--not implemented things-->
       <stat name="companion:proficiency" value="Proficiency" bonus="base" />
       <stat name="companion:ac" value="companion:proficiency" bonus="proficiency" />
       <stat name="companion:damage" value="companion:proficiency" bonus="proficiency" />
@@ -528,12 +529,12 @@
     </sheet>
   </element>
 
-
+<!--test -->
   <element name="Animal Companion" type="Support" source="Unearthed Arcana: The Ranger, Revised" id="ID_UA_SUPPORT_ANIMAL_COMPANION" />
-
+<!--
   <addition id="ID_SRD_MONSTER_APE">
     <supports>ID_UA_SUPPORT_ANIMAL_COMPANION</supports>
-  </addition>
+  </addition>-->
 
 
 
@@ -580,21 +581,4 @@
     </rules>
   </element>
 
-
-<element name="Sentinel" type="Feat" source="Player’s Handbook" id="ID_FEAT_SENTINEL">
-    <supports />
-    <requirements />
-    <description>
-      <p>You have mastered techniques to take advantage of every drop in any enemy’s guard, gaining the following benefits:</p>
-      <ul>
-        <li>When you hit a creature with an opportunity attack, the creature’s speed becomes 0 for the rest of the turn.</li>
-        <li>Creatures within 5 feet of you provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.</li>
-        <li>When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn’t have this feat), you can use your reaction to make a melee weapon attack against the attacking creature.</li>
-      </ul>
-    </description>
-    <sheet>
-      <description>You have mastered techniques to take advantage of every drop in any enemy’s guard</description>
-    </sheet>
-    <rules />
-  </element>
 </elements>
