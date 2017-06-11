@@ -4,7 +4,7 @@
     <name>Unearthed Arcana: The Ranger, Revised</name>
     <description>Over the past year, you’ve seen us try a number of new approaches to the ranger, all aimed at addressing the class’s high levels of player dissatisfaction and its ranking as D&amp;D’s weakest class by a significant margin. Those two factors combined to put us on the path to this revision. Though the revised ranger retains many of the elements of the existing class, a lot has changed, so it’s best to simply dig into the new material to get a sense of how it feels. But at the same time, the release of this revision gives us a chance to talk about how a revised class can best be implemented as part of the D&amp;D game—and how the game will evolve in the future.</description>
     <author url="http://dnd.wizards.com/articles/features/unearthed-arcana-ranger-revised">Wizards of the Coast</author>
-    <update version="0.1.0.0" revised="2016/09/12">
+    <update version="0.1.1.0" revised="2016/09/12">
       <file name="20160912.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20160912.xml" />
     </update>
   </info>
