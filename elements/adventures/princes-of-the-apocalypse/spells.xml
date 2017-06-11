@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>Spells</name>
+    <description>The spells from the Princes of the Apocalypse.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/princes-apocalypse">Wizards of the Coast</author>
+    <update version="0.1.0" revised="2017/01/01">
+      <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/adventures/princes-of-the-apocalypse/spells.xml" />
+    </update>
+  </info>
+
   <element name="Abi-Dalzim’s Horrid Wilting" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_ABIDALZIMSHORRIDWILTING">
     <supports>Sorcerer, Wizard</supports>
     <description>
