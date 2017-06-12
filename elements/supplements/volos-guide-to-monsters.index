@@ -4,18 +4,21 @@
 		<name url="http://dnd.wizards.com/products/tabletop-games/rpg-products/volos-guide-to-monsters">Volo’s Guide to Monsters</name>
 		<description>The esteemed loremaster Volothamp Geddarm is back and he’s written a fantastical dissertation, covering some of the most iconic monsters in the Forgotten Realms. Unfortunately, the Sage of Shadowdale himself, Elminster, doesn’t believe Volo gets some of the important details quite right. Don’t miss out as Volo and Elminster square off (academically speaking of course) to illuminate the uninitiated on creatures both common and obscure. Uncover the machinations of the mysterious Kraken Society, what is the origin of the bizarre froghemoth, or how to avoid participating in the ghastly reproductive cycle of the grotesque vargouille.</description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.0.4" revised="2017/06/07">
+		<update version="0.0.5" revised="2017/06/07">
 			<file name="volos-guide-to-monsters.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters.index" />
 		</update>
 	</info>
 	<files>
-		<file name="aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/aasimar.xml" />
-		<file name="firbolg.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/firbolg.xml" />
+		<obsolete name="aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/aasimar.xml" />
+		<obsolete name="firbolg.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/firbolg.xml" />
+
+		<file name="race-aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-aasimar.xml" />
+		<file name="race-firbolg.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-firbolg.xml" />
 		<file name="race-goliath.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-goliath.xml" />
-		<!--<file name="kenku.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/kenku.xml" />-->
-		<!--<file name="lizardfolk.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/lizardfolk.xml" />-->
-		<!--<file name="tabaxi.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/tabaxi.xml" />-->
-		<!--<file name="triton.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/triton.xml" />-->		
+		<file name="race-kenku.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-kenku.xml" />
+		<file name="race-lizardfolk.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-lizardfolk.xml" />
+		<file name="race-tabaxi.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-tabaxi.xml" />
+		<file name="race-triton.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-triton.xml" />		
 		<!--<file name="monstrous-adventurers.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/monstrous-adventurers.xml" />-->
 		<!--<file name="monsters.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/monsters.xml" />-->
 	</files>

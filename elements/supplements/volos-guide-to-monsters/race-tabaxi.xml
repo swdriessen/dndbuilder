@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tabaxi</name>
+		<description></description>
+		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/06/07">
+			<file name="race-tabaxi.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-tabaxi.xml" />
+		</update>
+	</info>
+
+  <element name="Tabaxi" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Tabaxi">
+    <description>
+      <p class="flavor">Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters>
+      <set name="names" type="male"></set>
+      <set name="names" type="female"></set>      
+    </setters>
+    <rules>
+
+    </rules>
+  </element>
+</elements>

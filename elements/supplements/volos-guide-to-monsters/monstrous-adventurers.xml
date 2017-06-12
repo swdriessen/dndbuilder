@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Monstrous Adventurers</name>
+    <description>The monstrous-adventurers from Volo’s Guide to Monsters.</description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/volos-guide-to-monsters">Wizards of the Coast</author>
+    <update version="0.0.2" revised="2017/06/01">
+      <file name="monstrous-adventurers.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/monstrous-adventurers.xml" />
+    </update>
+  </info>
+
+  <element name="Bugbear" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Bugbear">
+    <description>
+        <p>Your bugbear character has the following racial traits.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters />
+    <rules />
+  </element>
+
+  <element name="Goblin" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Goblin">
+    <description>
+        <p>Your goblin character has the following racial traits.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters />
+    <rules />
+  </element>  
+  
+  <element name="Hobgoblin" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Hobgoblin">
+    <description>
+        <p>Your hobgoblin character has the following racial traits.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters />
+    <rules />
+  </element>
+  
+  <element name="Kobold" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Kobold">
+    <description>
+        <p>Your kobold character has the following racial traits.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters />
+    <rules />
+  </element>  
+  
+  <element name="Orc" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Orc">
+    <description>
+        <p>Your orc character has the following racial traits.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters />
+    <rules />
+  </element>
+    
+  <element name="Yuan-Ti Pureblood" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_YuanTi_Pureblood">
+    <description>
+        <p>Your yuan-ti pureblood character—called a pureblood for short-has the following racial traits.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters />
+    <rules />
+  </element>
+  
+</elements>

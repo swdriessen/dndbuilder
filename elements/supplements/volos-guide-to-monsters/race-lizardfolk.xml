@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lizardfolk</name>
+		<description></description>
+		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/06/07">
+			<file name="race-lizardfolk.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-lizardfolk.xml" />
+		</update>
+	</info>
+
+  <element name="Lizardfolk" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_lizardfolk">
+    <description>
+      <p class="flavor">Only a fool looks at the lizardfolk and sees nothing more than scaly humanoids. Their physical shape notwithstanding, lizardfolk have more in common with iguanas or dragons than they do with humans, dwarves, or elves. Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures. Their dismal swamp homes might lie hundreds of miles from the nearest human settlement, but the gap between their way of thinking and that of the smooth-skins is far greater.</p>
+      <p class="flavor">Despite their alien outlook, some lizardfolk make an effort to understand and, in their own manner, befriend people of other races. Such lizardfolk make faithful and skilled allies.</p>
+    </description>
+    <sheet display="false"/>
+    <supports />
+    <setters>
+      <set name="names" type="male"></set>
+      <set name="names" type="female"></set>      
+    </setters>
+    <rules>
+
+    </rules>
+  </element>
+</elements>
