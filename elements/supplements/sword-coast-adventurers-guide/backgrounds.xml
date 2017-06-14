@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Backgrounds</name>
+    <description>The backgrounds from the Sword Coast Adventurer’s Guide.</description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/06/07">
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds.xml" />
+		</update>
+	</info>
+
+    <element name="City Watch" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_BACKGROUND_CITY_WATCH">
+        <description>
+            <p>You have served the community where you grew up, standing as its first line of defense against crime. You aren't a soldier, directing your gaze outward at possible enemies. Instead, your service to your hometown was to help police its populace, protecting the citizenry from lawbreakers and malefactors of every stripe.</p>
+            <p class="indent">You might have been part of the City Watch of Waterdeep, the baton-wielding police force of the City of Splendors, protecting the common folk from thieves and rowdy nobility alike. Or you might have been one of the valiant defenders of Silverymoon, a member of the Silverwatch or even one of the magic-wielding Spellguard.</p>
+            <p class="indent">Perhaps you hail from Neverwinter and have served as one of its Winters hield watchmen, the newly founded branch of guards who vow to keep safe the City of Skilled Hands.</p>
+            <p class="indent">Even if you're not city-born or city-bred, this background can describe your early years as a member of law enforcement. Most settlements of any size have their own constables and police forces, and even smaller communities have sheriffs and bailiffs who stand ready to protect their community.</p>
+        </description>
+        <rules />
+    </element>
+
+
+  <element name="Clan Crafter" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_CLAN_CRAFTER">
+    <description>
+      <p>The Stout Folk are well known for their artisanship and the worth of their handiworks, and you have been trained in that ancient tradition. For years you labored under a dwarf master of the craft, enduring long hours. and dismissive, sour-tempered treatment in order to gain the fine skills you possess today.</p>
+      <p>You are most likely a dwarf, but not necessarily- particularly in the North, the shield dwarf clans learned long ago that only proud fools who are more concerned for their egos than their craft turn away promising apprentices, even those of other races. If you aren't a dwarf, however, you have taken a solemn oath never to take on an apprentice in the craft: it is not for nondwarves to pass on the s kills of Moradin’s favored children. You would have no difficulty, however, finding a dwarf master who was willing to receive potential apprentices who came with your recommendation.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Cloistered Scholar" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_CLOISTERED_SCHOLAR">
+    <description>
+      <p>As a child, you were inquisitive when your playmates were possessive or raucous. In your formative years, you found your way to one of Faerûn’s great institutes of learning , where you were apprenticed and taught that knowledge is a more valuable treasure than gold or gems. Now you are ready to leave your home- not to abandon it, but to quest for new lore to add to its storehouse of knowledge.</p>
+      <p>The most well known of Faerfin’s fonts of knowledge is Candlekeep. The great library is always in need of workers and attendants, some of whom rise through the ranks to assume roles of greater responsibility and prominence. You might be one of Candlekeep’s own, dedicated to the curatorship of what is likely the most complete body of lore and history in all the world.</p>
+      <p>Perhaps instead you were taken in by the scholars of the Vault of the Sages or the Map House in Silverymoon, and now you have struck out to increase your knowledge and to make yourself available to help those in other places who seek your expertise. You might be one of the few who aid Herald’s Holdfast, helping to catalogue and maintain records of the information that arrives daily from across Faerfin.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Courtier" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_COURTIER">
+    <description>
+      <p>In your earlier days, you were a personage of some significance in a noble court or a bureaucratic organization. You might or might not come from an upper-class family; your talents, rather than the circumstances of your birth, could have secured you this position.</p>
+      <p>You might have been one of the many functionaries, attendants, and other hangers-on in the Court of Silverymoon, or perhaps you traveled in Waterdeep’s baroque and sometimes cutthroat conglomeration of guilds, nobles, adventurers, and secret societies. You might have been one of the behind-the-scenes law-keepers or functionaries in Baldur’s Gate or Neverwinter, or you might have grown up in and around the castle of Daggerford.</p>
+      <p>You might have been one of the many functionaries, attendants, and other hangers-on in the Court of Silverymoon, or perhaps you traveled in Waterdeep’s baroque and sometimes cutthroat conglomeration of guilds, nobles, adventurers, and secret societies. You might have been one of the behind-the-scenes law-keepers or functionaries in Baldur’s Gate or Neverwinter, or you might have grown up in and around the castle of Daggerford serving as a courtier will stand you in good stead as an adventurer.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Faction Agent" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_FACTION_AGENT">
+    <description>
+      <p>Many organizations active in the North and across the face of Faerun aren't bound by strictures of geography. These factions pursue their agendas without regard for political boundaries, and their members operate anywhere the organization deems necessary. These groups employ listeners, rumormongers, smugglers, sellswords, cache-holders (people who guard caches of wealth or magic for use by the faction’s operatives), haven keepers, and message drop minders, to name a few. At the core of every faction are those who don't merely fulfill a small function for that organization, but who serve as its hands, head, and heart.</p>
+      <p>As a prelude to your adventuring career (and in preparation for it), you served as an agent of a particular faction in Faerun. You might have operated openly or secretly, depending on the faction and its goals, as well as how those goals mesh with your own. Becoming an adventurer doesn't necessarily require you to relinquish membership in your faction (though you can choose to do so), and it might enhance your status in the faction.</p>
+    </description>
+    <rules />
+  </element>
+
+ <element name="Far Traveler" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_FAR_TRAVELER">
+    <description>
+      <p>Almost all of the common people and other folk that one might encounter along the Sword Coast or in the North have one thing in common: they live out their lives without ever traveling more than a few miles from where they were born.</p>
+      <p>You aren't one of those folk.</p>
+      <p>You are from a distant place, one so remote that few of the common folk in the North realize that it exists, and chances are good that even if some people you meet have heard of your homeland, they know merely the name and perhaps a few outrageous stories. You have come to this part of Faerun for your own reasons, which you might or might not choose to share.</p>
+      <p>Although you will undoubtedly find some of this land’s ways to be strange and discomfiting, you can also be sure that some things its people take for granted will be to you new wonders that you've never laid eyes on before. By the same token, you're a person of interest, for good or ill, to those around you almost anywhere you go.</p>
+      <p>
+        <span class="feature">Skill Proficiencies:</span>Insight, Perception<br />
+        <span class="feature">Tool Proficiencies:</span>Any one musical instrument or gaming set of your choice, likely something native to your homeland<br />
+        <span class="feature">Languages:</span>Any one of your choice<br />
+        <span class="feature">Equipment:</span>One set of traveler's clothes, any one musical instrument or gaming set you are proficient with, poorly wrought maps from your homeland that depict where you are in Faerun, a small piece of jewelry worth 10 gp in the style of your homeland's craftsmanship, and a pouch containing 5 gp<br />
+      </p>
+      <h5>WHY ARE YOU HERE?</h5>
+      <p>A far traveler might have set out on a journey for one of a number of reasons, and the departure from his or her homeland could have been voluntary or involuntary. To determine why you are so far from home, roll on the table below or choose from the options provided. The following section, discussing possible homelands, includes some suggested reasons that are appropriate for each location.</p>
+      <table>
+        <thead>
+          <tr>
+            <td>d6</td>
+            <td>Reason</td>
+            <td>d6</td>
+            <td>Reason</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>Emissary</td>
+          <td>4</td>
+          <td>Pilgrim</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Exile</td>
+          <td>5</td>
+          <td>Sightseer</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Fugitive</td>
+          <td>6</td>
+          <td>Wanderer</td>
+        </tr>
+      </table>
+
+      <h5>WHERE ARE YOU FROM?</h5>
+      <p>The most important decision in creating a far traveler background is determining your homeland. The places discussed here are all sufficiently distant from the North and the Sword Coast to justify the use of this background.</p>
+      
+    </description>
+    <rules>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_INSIGHT" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_PERCEPTION" />
+      <select type="Proficiency" name="Mustical Instrument (Far Traveler)" supports="Musical Instrument" />
+      <select type="Language" name="Language (Far Traveler)" />
+      <select type="List" name="Why are you here?">
+        <item id="1">Emissary</item>
+        <item id="2">Exile</item>
+        <item id="3">Fugitive</item>
+        <item id="4">Pilgrim</item>
+        <item id="5">Sightseer</item>
+        <item id="6">Wanderer</item>
+      </select>
+      
+      
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I have different assumptions from those around me concerning personal space, blithely invading others' space in innocence, or reacting to ignorant invasion of my own.</item>
+        <item id="2">I have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting.</item>
+        <item id="3">I have a strong code of honor or sense of propriety that others don't comprehend.</item>
+        <item id="4">I express affection or contempt in ways that are unfamiliar to others.</item>
+        <item id="5">I honor my deities through practices that are foreign to this land.</item>
+        <item id="6">I begin or end my day with small traditional rituals that are unfamiliar to those around me.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Open. I have much to learn from the kind ly folk I meet along my way. (Good)</item>
+        <item id="2">Reserved. As someone new to these strange lands, I am cautious and respectful in my dealings. (Lawful)</item>
+        <item id="3">Adventure. I'm far from home, and eve rything is strange and wonderful! (Chaotic)</item>
+        <item id="4">Cunning. Th ough I may not know their ways, neither do they know mine, which can be to my advantage. (Evil)</item>
+        <item id="5">Inquisitive. Everything is new, but I have a thirst to learn. (Neutral)</item>
+        <item id="6">Suspicious. I must be careful, for I have no way of telling friend from foe here. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">So long as I have this token from my homeland, I can face any adversity in this strange land.</item>
+        <item id="2">The gods of my people are a comfort to me so far from home.</item>
+        <item id="3">I hold no greater cause than my service to my people.</item>
+        <item id="4">My freedom is my most precious possession. I' ll never let anyone take it from me again.</item>
+        <item id="5">I'm fascinated by the beauty and wonder of this new land.</item>
+        <item id="6">Though I had no choice, I lament having to leave my loved one(s) behind. I hope to see them again one day.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I am secretly (or not so secretly) convinced of the superiority of my own culture over that of this foreign land.</item>
+        <item id="2">I pretend not to understand the local language in order to avoid interactions I would rather not have.</item>
+        <item id="3">I have a weakness for the new intoxicants and other pleasures of this land.</item>
+        <item id="4">I don't take kindly to some of the actions and motivations of the people of this land, because these folk are different from me.</item>
+        <item id="5">I consider the adherents of other gods to be deluded innocents at best, or ignorant fools at worst.</item>
+        <item id="6">I have a weakness for the exotic beauty of the people of these lands.</item>
+      </select>
+      
+      
+      
+      
+      
+    
+    </rules>
+  </element>
+
+
+
+
+ <element name="Inheritor" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_INHERITOR">
+    <description>
+      <p>You are the heir to something of great value- not mere coin or wealth, but an object that has been entrusted to you and you alone. Your inheritance might have come directly to you from a member of your family, by right of birth, or it could have been left to you by a friend, a mentor, a teacher, or someone else important in your life. The revelation of your inheritance changed your life, and might have set you on the path to adventure, but it could also come with many dangers, including those who covet your gift and want to take it from you- by force, if need be.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Knight of the Order" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_KNIGHT_OF_THE_ORDER">
+    <description>
+      <p>You belong to an order of knights who have sworn oaths to achieve a certain goal. The nature of this goal depends on the order you serve, but in your eyes it is without question a vital and honorable endeavor. Faerûn has a wide variety of knightly orders, all of which have a similar outlook concerning their actions and responsibilities.</p>
+      <p>Though the term "knight" conjures ideas of mounted, heavily armored warriors of noble blood, most knightly orders in Faerûn don't restrict their membership to such individuals. The goals and philosophies of the order are more important than the gear and fighting style of its members, and so most of these orders aren't limited to fighting types, but are open to all sorts of folk who are willing to battle and die for the order’s cause.</p>
+      <p>The "Knightly Orders of Faerûn" sidebar details several of the orders that are active at present and is designed to help inform your decision about which group you owe allegiance to.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Mercenary Veteran" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_MERCENARY_VETERAN">
+    <description>
+      <p>As a sell-sword who fought battles for coin, you're well acquainted with risking life and limb for a chance at a share of treasure. Now, you look forward to fighting foes and reaping even greater rewards as an adventurer. Your experience makes you familiar with the ins and outs of mercenary life, and you likely have harrowing stories of events on the battlefield. You might have served with a large outfit such as the Zhentarim or the soldiers of Mintarn, or a smaller band of sell-swords, maybe even more than one. (See the "Mercenaries of the North" sidebar for a collection of possibilities.)</p>
+      <p>Now you're looking for something else, perhaps greater reward for the risks you take, or the freedom to choose your own activities. For whatever reason, you're leaving behind the life of a soldier for hire, but your skills are undeniably suited for battle, so now you fight on in a different way.</p>
+      
+    </description>
+
+    <rules>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_PERSUASION" />
+      <select type="Proficiency" supports="Gaming Set" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(VEHICLES(LAND))" />
+      <!--<grant type="Background Feature" name="ID_BACKGROUND_FEATURE_MERCENARY_LIFE"  />-->
+
+
+      <select name="Personality Trait" type="List" number="2">
+        <item id="1">I’m always polite and respectful.</item>
+        <item id="2">I’m haunted by memories of war. I can’t get the images of violence out of my mind.</item>
+        <item id="3">I’ve lost too many friends, and I’m slow to make new ones.</item>
+        <item id="4">I’m full of inspiring and cautionary tales from my military experience relevant to almost every combat situation</item>
+        <item id="5">I can stare down a hell hound without flinching.</item>
+        <item id="6">I enjoy being strong and like breaking things.</item>
+        <item id="7">I have a crude sense of humor.</item>
+        <item id="8">I face problems head-on. A simple, direct solution is the best path to success.</item>
+      </select>
+      <select name="Ideal" type="List">
+        <item id="1">Greater Good. Our lot is to lay down our lives in defense of others. (Good)</item>
+        <item id="2">Responsibility. I do what I must and obey just authority. (Lawful)</item>
+        <item id="3">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</item>
+        <item id="4">Might. In life as in war, the stronger force wins. (Evil)</item>
+        <item id="5">Live and Let Live. Ideals aren’t worth killing over or going to war for. (Neutral)</item>
+        <item id="6">Nation. My city, nation, or people are all that matter. (Any)</item>
+      </select>
+      <select name="Bond" type="List">
+        <item id="1">I would still lay down my life for the people I served with.</item>
+        <item id="2">Someone saved my life on the battlefield. To this day, I will never leave a friend behind.</item>
+        <item id="3">My honor is my life.</item>
+        <item id="4">I’ll never forget the crushing defeat my company suffered or the enemies who dealt it.</item>
+        <item id="5">Those who fight beside me are those worth dying for.</item>
+        <item id="6">I fight for those who cannot fight for themselves.</item>
+      </select>
+      <select name="Flaw" type="List">
+        <item id="1">The monstrous enemy we faced in battle still leaves me quivering with fear.</item>
+        <item id="2">I have little respect for anyone who is not a proven warrior.</item>
+        <item id="3">I made a terrible mistake in battle cost many lives— and I would do anything to keep that mistake secret.</item>
+        <item id="4">My hatred of my enemies is blind and unreasoning.</item>
+        <item id="5">I obey the law, even if the law causes misery.</item>
+        <item id="6">I’d rather eat my armor than admit when I’m wrong.</item>
+      </select>
+    </rules>
+  </element>
+
+
+
+
+
+
+
+  <element name="Urban Bounty Hunter" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_URBAN BOUNTY HUNTER">
+    <description>
+      <p>Before you became an adventurer, your life was already full of conflict and excitement, because you made a living tracking down people for pay. Unlike some people who collect bounties, though, you aren't a savage who follows quarry into or through the wilderness. You're involved in a lucrative trade, in the place where you live, that routinely tests your skills and survival instincts. What’s more, you aren't alone, as a bounty hunter in the wild would be: you routinely interact with both the criminal subculture and other bounty hunters, maintaining contacts in both areas to help you succeed.</p>
+      <p>You might be a cunning thief-catcher, prowling the rooftops to catch one of the myriad burglars of the city. Perhaps you are someone who has your ear to the street, aware of the doings of thieves' gui lds and street gangs. You might be a "velvet mask" bounty hunter, one who blends in with high society and noble circles in order to catch the criminals that prey on the rich, whether pickpockets or con artists. The community where you plied your trade might have been one of Faen1n’s great metropolises, such as Waterdeep or Baldur’s Gate, or a less populous location, perhaps Luskan or Yartar-any place that’s large enough to have a steady supply of potential quarries.</p>
+      <p>As a member of an adventuring party, you might find it more difficult to pursue a personal agenda that doesn't fit with the group’s objectives- but on the other hand, you can take down much more formidable targets with the help of your companions.</p>
+      <p>
+        <span class="feature">Skill Proficiencies:</span>Choose two from among Deception, Insight, Persuasion, and Stealth<br/>
+        <span class="feature">Tool Proficiencies:</span>Choose two from among one type of gaming set, one musical instrument, and thieves' tools<br/>
+        <span class="feature">Equipment:</span>A set of clothes appropriate to your duties and a pouch containing 20 gp<br/>
+      </p>
+      <div element="ID_BACKGROUND_FEATURE_EARTOTHEGROUND" />
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Urban Bounty Hunter)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH" number="2" />
+      <select type="Proficiency" name="Tool Proficiency (Urban Bounty Hunter)" supports="Musical Instrument" /> 
+      <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_EARTOTHEGROUND" />
+
+      <!-- create grants for CHARACTERISTICS this is from criminal -->
+      <!-- <grant type="Grant" id="ID_GRANT_CHARACTERISTICS_CRIMINAL" /> -->
+      
+      
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I always have a plan for what to do when things go wrong.</item>
+        <item id="2">I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</item>
+        <item id="3">The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden.</item>
+        <item id="4">I would rather make a new friend than a new enemy.</item>
+        <item id="5">I am incredibly slow to trust. Those who seem the fairest often have the most to hide.</item>
+        <item id="6">I don’t pay attention to the risks in a situation. Never tell me the odds.</item>
+        <item id="7">The best way to get me to do something is to tell me I can’t do it.</item>
+        <item id="8">I blow up at the slightest insult.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Honor. I don’t steal from others in the trade. (Lawful)</item>
+        <item id="2">Freedom. Chains are meant to be broken, as are those who would forge them. (Chaotic)</item>
+        <item id="3">Charity. I steal from the wealthy so that I can help people in need. (Good)</item>
+        <item id="4">Greed. I will do whatever it takes to become wealthy. (Evil)</item>
+        <item id="5">People. I’m loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</item>
+        <item id="6">Redemption. There’s a spark of good in everyone. (Good)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">I’m trying to pay off an old debt I owe to a generous benefactor.</item>
+        <item id="2">My ill-gotten gains go to support my family.</item>
+        <item id="3">Something important was taken from me, and I aim to steal it back.</item>
+        <item id="4">I will become the greatest thief that ever lived.</item>
+        <item id="5">I’m guilty of a terrible crime. I hope I can redeem myself for it.</item>
+        <item id="6">Someone I loved died because of I mistake I made. That will never happen again.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">When I see something valuable, I can’t think about anything but how to steal it.</item>
+        <item id="2">When faced with a choice between money and my friends, I usually choose the money.</item>
+        <item id="3">If there’s a plan, I’ll forget it. If I don’t forget it, I’ll ignore it.</item>
+        <item id="4">I have a “tell” that reveals when I’m lying.</item>
+        <item id="5">I turn tail and run when things look bad.</item>
+        <item id="6">An innocent person is in prison for a crime that I committed. I’m okay with that.</item>
+      </select>
+    </rules>
+  </element>
+
+  <element name="Ear to the Ground" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_EARTOTHEGROUND">
+    <description>
+      <p>You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area.</p>
+    </description>
+  </element>
+  
+  
+
+  <!--<element name="Waterdhavian Noble" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_WATERDHAVIAN_NOBLE">
+    <description>
+      <p>You are a scion of one of the great noble families of Waterdeep. Human families who jealously guard their privilege and place in the City of Splendors, Waterdhavian nobles have a reputation across Faerûn for being eccentric, spoiled, venal, and, above all else, rich.</p>
+      <p>Whether you are a shining example of the reason for this reputation or one who proves the rule by being an exception, people expect things of you when they know your surname and what it means. Your reasons for taking up adventuring likely involve your family in some way: Are you the family rebel, who prefers delving in filthy dungeons to sipping zzar at a ball? Or have you taken up sword or spell on your family’s behalf, ensuring that they have someone of renown to see to their legacy?</p>
+      <p>Work with your DM to come up with the family you are part of - there are around seventy-five lineages in Waterdeep, each with its own financial interests, specialties, and schemes. You might be part of the main line of your family, possibly in line to become its leader one day. Or you might be one of any number of cousins, with less prestige but also less responsibility.</p>
+    </description>
+    <rules />
+  </element>-->
+
+
+
+ <element name="Uthgardt Tribe Member" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_UTHGARDT_TRIBE_MEMBER">
+    <supports />
+    <description>
+      <p>Though you might have only recently arrived in civilized lands, you are no stranger to the values of cooperation and group effort when striving for supremacy. You learned these principles, and much more, as a member of an Uthgardt tribe.</p>
+      <p>Your people have always tried to hold to the old ways. Tradition and taboo have kept the Uthgardt strong while the kingdoms of others have collapsed into chaos and ruin. But for the last few generations, some bands among the tribes were tempted to settle, make peace, trade, and even to build towns. Perhaps this is why Uthgar chose to raise up the totems among the people as living embodiments of his power. Perhaps they needed a reminder of who they were and from whence they came. The Chosen of Uthgar led bands back to the old ways, and most of your people abandoned the soft ways of civilization.</p>
+      <p>You might have grown up in one of the tribes that had decided to settle down, and now that they have abandoned that path, you find yourself adrift. Or you might come from a segment of the Uthgardt that adheres to tradition, but you seek to bring glory to your tribe by achieving great things as a formidable adventurer.</p>
+      <p>See the "Uthgardt Lands" section of chapter 2 for details on each tribe's territory and its activities that will help you choose your affiliation.</p>
+      <p>
+        <span class="feature">Skill Proficiencies:</span>Athletics, Survival<br/>
+        <span class="feature">Tool Proficiencies:</span>One type of musical instrument or artisan's tools<br/>
+        <span class="feature">Languages:</span>One of your choice<br/>
+        <span class="feature">Equipment:</span>A hunting trap, a totemic token or set of tattoos marking your loyalty to Uthgar and your tribal totem, a set of traveler's clothes, and a pouch containing 10 gp<br/>
+      </p>
+      <div element="ID_BACKGROUND_FEATURE_UTHGARDT_HERITAGE" />
+      <h5>SUGGESTED CHARACTERISTICS</h5>
+      <p>Use the tables for the outlander background in the Player’s Handbook as the basis for your traits and motivations, modifying the entries when appropriate to suit your identity as a member of an Uthgardt tribe.</p>
+      <p>Even if you have left your tribe behind (at least for now), you hold to the traditions of your people. You will never cut down a still-living tree, and you may not countenance such an act being done in your presence. The Uthgardt ancestral mounds- great hills where the totem spirits were defeated by Uthgar and where the heroes of the tribes are interred- are sacred to you.</p>
+      <p>Your bond is undoubtedly associated with your tribe or some aspect of Uthgardt philosophy or culture (perhaps even Uthgar himself). Your ideal is a personal choice that probably hews closely to the ethos of your people and certainly doesn't contradict or compromise what being an Uthgardt stands for.</p>
+    </description>
+    <setters />
+    <rules>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_SURVIVAL" />
+      <select type="Proficiency" supports="ID_PROFICIENCY_MUSICAL_INSTRUMENT|ID_PROFICIENCY_ARTISANS_TOOLS"/>
+      <select type="Language" name="Language (Uthgardt Tribe Member)" />
+      <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_UTHGARDT_HERITAGE" />
+      <grant type="Background Characteristics" name="ID_WOTC_BACKGROUND_CHARACTERISTICS_UTHGARDT_TRIBE_MEMBER" />
+    </rules>
+  </element>
+
+  <element name="Feature: Uthgardt Heritage" type="Background Feature" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_FEATURE_UTHGARDT_HERITAGE">
+    <description>
+      <p>You have an excellent knowledge of not only your tribe's territory, but also the terrain and natural resources of the rest of the North. You are familiar enough with any wilderness area that you find twice as much food and water as you normally would when you forage there.</p>
+      <p>Additionally, you can call upon the hospitality of your people, and those folk allied with your tribe, often including members of druid circles, tribes of nomadic elves, the Harpers, and the priesthoods devoted to the gods of the First Circle.</p>
+    </description>
+    <sheet name="Uthgardt Heritage">
+      <description>You are familiar enough with any wilderness area that you find twice as much food and water as you normally would when you forage there.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <element name="Uthgardt Tribe Member Characteristics" type="Background Characteristics" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_BACKGROUND_CHARACTERISTICS_UTHGARDT_TRIBE_MEMBER">
+    <rules>
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I’m driven by a wanderlust that led me away from home.</item>
+        <item id="2">I watch over my friends as if they were a litter of newborn pups.</item>
+        <item id="3">I once ran twenty-five miles without stopping to warn to my clan of an approaching orc horde. I’d do it again if I had to.</item>
+        <item id="4">I have a lesson for every situation, drawn from observing nature.</item>
+        <item id="5">I place no stock in wealthy or well-mannered folk. Money and manners won’t save you from a hungry owlbear.</item>
+        <item id="6">I’m always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</item>
+        <item id="7">I feel far more comfortable around animals than people.</item>
+        <item id="8">I was, in fact, raised by wolves.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Change. Life is like the seasons, in constant change, and we must change with it. (Chaotic)</item>
+        <item id="2">Greater Good. It is each person’s responsibility to make the most happiness for the whole tribe. (Good)</item>
+        <item id="3">Honor. If I dishonor myself, I dishonor my whole clan. (Lawful)</item>
+        <item id="4">Might. The strongest are meant to rule. (Evil)</item>
+        <item id="5">Nature. The natural world is more important than all the constructs of civilization. (Neutral)</item>
+        <item id="6">Glory. I must earn glory in battle, for myself and my clan. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">My family, clan, or tribe is the most important thing in my life, even when they are far from me.</item>
+        <item id="2">An injury to the unspoiled wilderness of my home is an injury to me.</item>
+        <item id="3">I will bring terrible wrath down on the evildoers who destroyed my homeland.</item>
+        <item id="4">I am the last of my tribe, and it is up to me to ensure their names enter legend.</item>
+        <item id="5">I suffer awful visions of a coming disaster and will do anything to prevent it.</item>
+        <item id="6">It is my duty to provide children to sustain my tribe.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I am too enamored of ale, wine, and other intoxicants.</item>
+        <item id="2">There’s no room for caution in a life lived to the fullest.</item>
+        <item id="3">I remember every insult I’ve received and nurse a silent resentment toward anyone who’s ever wronged me.</item>
+        <item id="4">I am slow to trust members of other races, tribes, and societies.</item>
+        <item id="5">Violence is my answer to almost any challenge.</item>
+        <item id="6">Don’t expect me to save those who can’t save themselves. It is nature’s way that the strong thrive and the weak perish.</item>
+      </select>
+    </rules>
+  </element>
+
+
+
+
+
+
+
+
+
+
+</elements>
