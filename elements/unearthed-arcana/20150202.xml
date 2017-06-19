@@ -4,7 +4,7 @@
         <name>Unearthed Arcana: Eberron</name>
         <description>The Eberron campaign setting was created by Keith Baker and first published for D&amp;D in 2004. It combines pulp adventure and intrigue in a world where magic-driven technology has produced airships, trains, and similar advancements comparable to early 20th-century Europe. The continent of Khorvaire, the center of Eberron’s focus, has recently emerged from the Last War, a terrible conflict that saw the kingdom of Cyre transformed into a lifeless gray wasteland called the Mournland. That catastrophe shocked the remaining kingdoms into an uneasy peace that has held so far.</description>
         <author url="http://dnd.wizards.com/articles/unearthed-arcana/unearthed-arcana-eberron">Wizards of the Coast</author>
-        <update version="0.1.1" revised="2016/09/12">
+        <update version="0.1.2" revised="2016/09/12">
             <file name="20150202.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20150202.xml" />
         </update>
     </info>
@@ -35,7 +35,7 @@
             <grant type="Racial Trait" value="ID_WOTC_UA_RACIAL_TRAIT_DUPLICITY" />
             <grant type="Racial Trait" value="ID_WOTC_UA_RACIAL_TRAIT_SHAPECHANGER" />
             <grant type="Language" value="ID_LANGUAGE_COMMON" />
-            <select type="Language" name="Language (Changeling)" count="2" />
+            <select type="Language" name="Language (Changeling)" number="2" />
         </rules>
     </element>
     <element name="Duplicity" type="Racial Trait" source="Unearthed Arcana: Eberron" id="ID_WOTC_UA_RACIAL_TRAIT_DUPLICITY">
@@ -74,7 +74,12 @@
                 <span class="feature">Languages.</span>You can speak, read, and write Common and Sylvan.<br/>
                 <span class="feature">Subrace.</span>Several subraces of shifter exist, each with its own animalistic features. Choose one of the options below.<br/>
             </p>
-            <div element="ID_WOTC_UA_SUBRACE_BEASTHIDE">
+            <div element="ID_WOTC_UA_SUBRACE_BEASTHIDE" />
+            <div element="ID_WOTC_UA_SUBRACE_Cliffwalk" />
+            <div element="ID_WOTC_UA_SUBRACE_Longstride" />
+            <div element="ID_WOTC_UA_SUBRACE_Longtooth" />
+            <div element="ID_WOTC_UA_SUBRACE_Razorclaw" />
+            <div element="ID_WOTC_UA_SUBRACE_Wildhunt" />
         </description>
         <sheet display="false" />
         <rules>            
