@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Aurora</name>
+		<description>The index files for all personal custom elements.</description>
+		<author url="http://www.dndbuilder.net">Bas Driessen</author>
+		<update version="0.0.1" revised="2017/06/15">
+			<file name="aurora.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/aurora.index" />
+		</update>
+	</info>
+	<files>
+		<file name="items.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/aurora/items.xml" />		
+	</files>
+</index>
