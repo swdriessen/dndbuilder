@@ -119,6 +119,10 @@
     </information>-->
     <description>
       <p>An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells.</p>
+
+
+
+      
     </description>
     <sheet display="false">
       <description>You have the ability to cast spells.</description>
@@ -551,10 +555,11 @@
     <supports>Metamagic</supports>
     <requirements />
     <description>
-      <p>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.","You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+      <p>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p>
+      <p class="indent">You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
     </description>
     <sheet>
-      <description>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.","You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+      <description>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls. You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
     </sheet>
     <rules />
   </element>

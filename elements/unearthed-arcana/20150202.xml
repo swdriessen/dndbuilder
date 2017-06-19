@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Unearthed Arcana: Eberron</name>
+    <description>The Eberron campaign setting was created by Keith Baker and first published for D&amp;D in 2004. It combines pulp adventure and intrigue in a world where magic-driven technology has produced airships, trains, and similar advancements comparable to early 20th-century Europe. The continent of Khorvaire, the center of Eberron’s focus, has recently emerged from the Last War, a terrible conflict that saw the kingdom of Cyre transformed into a lifeless gray wasteland called the Mournland. That catastrophe shocked the remaining kingdoms into an uneasy peace that has held so far.</description>
+    <author url="http://dnd.wizards.com/articles/unearthed-arcana/unearthed-arcana-eberron">Wizards of the Coast</author>
+    <update version="0.0.1" revised="2016/09/12">
+      <file name="20150202.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20150202.xml" />
+    </update>
+  </info>
+  
+  <!-- Race: Changeling -->
+
+  <!-- Race: Shifter -->  
+  <!-- Sub Race: Beasthide  -->
+  <!-- Sub Race: Cliffwalk  -->
+  <!-- Sub Race: Longstride  -->
+  <!-- Sub Race: Longtooth  -->
+  <!-- Sub Race: Razorclaw  -->
+  <!-- Sub Race: Wildhunt  -->
+
+  <!-- Race: Warforged -->
+
+  <!-- Tradition: Artificer -->
+  
+  <!-- Feat: Dragonmark -->
+
+  <!-- Dragonmarks -->
+  
+</elements>
