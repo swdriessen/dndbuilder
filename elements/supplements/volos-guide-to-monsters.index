@@ -9,9 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<obsolete name="aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/aasimar.xml" />
-		<obsolete name="firbolg.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/firbolg.xml" />
-
 		<file name="race-aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-aasimar.xml" />
 		<file name="race-firbolg.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-firbolg.xml" />
 		<file name="race-goliath.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-goliath.xml" />
