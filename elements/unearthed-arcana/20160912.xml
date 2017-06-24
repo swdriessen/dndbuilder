@@ -4,7 +4,7 @@
     <name>Unearthed Arcana: The Ranger, Revised</name>
     <description>Over the past year, you’ve seen us try a number of new approaches to the ranger, all aimed at addressing the class’s high levels of player dissatisfaction and its ranking as D&amp;D’s weakest class by a significant margin. Those two factors combined to put us on the path to this revision. Though the revised ranger retains many of the elements of the existing class, a lot has changed, so it’s best to simply dig into the new material to get a sense of how it feels. But at the same time, the release of this revision gives us a chance to talk about how a revised class can best be implemented as part of the D&amp;D game—and how the game will evolve in the future.</description>
     <author url="http://dnd.wizards.com/articles/features/unearthed-arcana-ranger-revised">Wizards of the Coast</author>
-    <update version="0.1.3" revised="2016/09/12">
+    <update version="0.1.4" revised="2016/09/12">
       <file name="20160912.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20160912.xml" />
     </update>
   </info>
@@ -24,26 +24,26 @@
       <p>As a ranger, you gain the following class features.</p>
       <h5>HIT POINTS</h5>
       <p>
-        <span class="feature">Hit Dice:</span>1d10 per ranger level<br />
-        <span class="feature">Hit Points at 1st Level:</span>10 + your Constitution modefier<br />
-        <span class="feature">Hit Points at Higher Levels:</span>1d10 (or 6) + your Constitution modifier per ranger level after 1st<br />
+        <span class="emphasis">Hit Dice:</span>1d10 per ranger level<br />
+        <span class="emphasis">Hit Points at 1st Level:</span>10 + your Constitution modefier<br />
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d10 (or 6) + your Constitution modifier per ranger level after 1st<br />
       </p>
       <h5>PROFICIENCIES</h5>
       <p>
-        <span class="feature">Armor:</span>Light armor, medium armor, shields<br />
-        <span class="feature">Weapons:</span>Simple weapons, martial weapons<br />
-        <span class="feature">Tools:</span>None<br />
+        <span class="emphasis">Armor:</span>Light armor, medium armor, shields<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="emphasis">Tools:</span>None<br />
       </p>
       <p>
-        <span class="feature">Saving Throws:</span>Strength, Dexterity<br />
-        <span class="feature">Skills:</span>Choose three skills from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival<br />
+        <span class="emphasis">Saving Throws:</span>Strength, Dexterity<br />
+        <span class="emphasis">Skills:</span>Choose three skills from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival<br />
       </p>
       <h5>EQUIPMENT</h5>
       <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
       <ul>
-        <li>(a) scale mail or (b) leather armor</li>
-        <li>(a) two shortswords or (b) two simple melee weapons</li>
-        <li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+        <li><i>(a)</i> scale mail or <i>(b)</i> leather armor</li>
+        <li><i>(a)</i> two shortswords or <i>(b)</i> two simple melee weapons</li>
+        <li><i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
         <li>A longbow and a quiver of 20 arrows</li>
       </ul>
       <div element="ID_CLASSFEATURE_FAVORED_ENEMY" />
@@ -566,9 +566,9 @@
       <p class="flavor">Medium beast, unaligned</p>
       <hr />
       <p>
-        <span class="feature">Armor class</span>13 (natural armor)<br />
-        <span class="feature">Hit points</span>11 (2d8+4)<br />
-        <span class="feature">Speed</span>40 ft.<br />
+        <span class="emphasis">Armor class</span>13 (natural armor)<br />
+        <span class="emphasis">Hit points</span>11 (2d8+4)<br />
+        <span class="emphasis">Speed</span>40 ft.<br />
       </p>
     </description>
     <sheet>
