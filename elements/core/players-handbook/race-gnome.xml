@@ -95,7 +95,7 @@
 
 
   <element name="Forest Gnome" type="Sub Race" source="Player’s Handbook" id="ID_SUB_RACE_FOREST_GNOME">
-    <supports></supports>
+    <supports>Gnome</supports>
     <requirements />
     <description>
       <p>As a forest gnome, you have a natural knack for illusion and inherent quickness and stealth. In the worlds of D&amp;D, forest gnomes are rare and secretive. They gather in hidden communities in sylvan forests, using illusions and trickery to conceal themselves from threats or to mask their escape should they be detected. Forest gnomes tend to be friendly with other good-spirited woodland folk, and they regard elves and good fey as their most important allies. These gnomes also befriend small forest animals and rely on them for information about threats that might prowl their lands.</p>
@@ -195,7 +195,7 @@
 
 
   <element name="Svirfneblin" type="Sub Race" source="Sword Coast Adventurer’s Guide" id="ID_SUB_RACE_DEEP_GNOME">
-    <supports></supports>
+    <supports>Gnome</supports>
     <requirements />
     <description>
       <p>Also known as svirfneblin, the deep gnomes of the Underdark are a stark contrast to their surface kin, dour and serious compared to the cheerful and generally optimistic rock gnomes and forest gnomes. They share their cousins' obsession with privacy, and their homes below the surface of FaerOn are well guarded and deeply hidden.</p>

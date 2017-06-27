@@ -107,9 +107,7 @@
   </element>
   <element name="Defensive Duelist" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DEFENSIVE_DUELIST">
     <supports />
-    <requirements>
-      <requirement type="stat" name="Dexterity">13</requirement>
-    </requirements>
+    <requirements>[dex:13]</requirements>
     <description>
       <p class="flavor">Prerequisite: Dexterity 13 or higher</p>
       <p>When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</p>
@@ -262,7 +260,7 @@
   
   <element name="Grappler" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_GRAPPLER">
     <supports />
-    <requirements />
+    <requirements>[str:13]</requirements>
     <description>
       <p class="flavor">Prerequisite: Strength 13 or higher</p>
       <p>You’ve developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:</p>
@@ -309,7 +307,7 @@
   </element>
   <element name="Heavily Armored" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_HEAVILYARMORED">
     <supports />
-    <requirements />
+    <requirements></requirements>
     <description>
       <p class="flavor">Prerequisite: Proficiency with medium armor</p>
       <p>You have trained to master the use of heavy armor, gaining the following benefits:</p>
@@ -346,7 +344,7 @@
   </element>
   <element name="Inspiring Leader" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_INSPIRINGLEADER">
     <supports />
-    <requirements />
+    <requirements>[cha:13]</requirements>
     <description>
       <p class="flavor">Prerequisite: Charisma 13 or higher</p>
       <p>You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can’t gain temporary hit points from this feat again until it has finished a short or long rest.</p>
@@ -706,7 +704,7 @@
 
   <element name="Ritual Caster" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RITUALCASTER">
     <supports />
-    <requirements />
+    <requirements>[int:13]||[wis:13]</requirements>
     <description>
       <p class="flavor">Prerequisite: Intelligence or Wisdom 13 or higher</p>
       <p>You have learned a number of spells that you can cast as rituals. These spells are written in a ritual book, which you must have in hand while casting one of them.</p>
@@ -792,7 +790,7 @@
   </element>
   <element name="Skulker" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_SKULKER">
     <supports />
-    <requirements />
+    <requirements>[dex:13]</requirements>
     <description>
       <p class="flavor">Prerequisite: Dexterity 13 or higher</p>
       <p>You are expert at slinking through shadows. You gain the following benefits:</p>
