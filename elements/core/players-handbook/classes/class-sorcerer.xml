@@ -4,7 +4,7 @@
     <name>Sorcerer</name>
     <description>Sorcerer from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.2.1" revised="2017/06/19">
+    <update version="0.0.3" revised="2017/06/19">
       <file name="class-sorcerer.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-sorcerer.xml" />
     </update>
   </info>
@@ -54,24 +54,24 @@
       <p>As a sorcerer, you gain the following class features.</p>
       <h5>HIT POINTS</h5>
       <p>
-        <span class="feature">Hit Dice:</span>1d6 per sorcerer level<br/>
-        <span class="feature">Hit Points at 1st Level:</span>6 + your Constitution modifier<br/>
-        <span class="feature">Hit Points at Higher Levels:</span>1d6 (or 4) + your Constitution modifier per sorcerer level after 1st<br/>
+        <span class="emphasis">Hit Dice:</span>1d6 per sorcerer level<br/>
+        <span class="emphasis">Hit Points at 1st Level:</span>6 + your Constitution modifier<br/>
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d6 (or 4) + your Constitution modifier per sorcerer level after 1st<br/>
       </p>
       <h5>PROFICIENCIES</h5>
       <p>
-        <span class="feature">Armor:</span>None<br/>
-        <span class="feature">Weapons:</span>Daggers, darts, slings, quarterstaffs, light crossbows<br/>
-        <span class="feature">Tools:</span>None<br/>
-        <span class="feature">Saving Throws:</span>Constitution, Charisma<br/>
-        <span class="feature">Skills:</span>Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion<br/>
+        <b>Armor: </b>None<br/>
+        <b>Weapons:<b>Daggers, darts, slings, quarterstaffs, light crossbows<br/>
+        <b>Tools:<b>None<br/>
+        <b>Saving Throws:<b>Constitution, Charisma<br/>
+        <b>Skills:<b>Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion<br/>
       </p>
       <h5>EQUIPMENT</h5>
       <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
       <ul>
-        <li>(a) a light c rossbow and 20 bolts or (b) any simple weapon</li>
-        <li>(a) a component pouch or (b) an arcane focus</li>
-        <li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+        <li><i>(a)</i> a light c rossbow and 20 bolts or <i>(b)</i> any simple weapon</li>
+        <li><i>(a)</i> a component pouch or <i>(b)</i> an arcane focus</li>
+        <li><i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
         <li>Two daggers</li>
       </ul>
       <div element="ID_CLASS_FEATURE_SPELLCASTING_SORCERER" />
