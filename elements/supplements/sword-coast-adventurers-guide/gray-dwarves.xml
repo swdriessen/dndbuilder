@@ -9,7 +9,7 @@
     </update>
   </info>
 
-  <element name="Gray Dwarf (Duergar)" type="Sub Race" source="Sword Coast Adventurer’s Guide"  id="ID_SCAG_SUBRACE_GRAY_DWARF">
+  <element name="Duergar" type="Sub Race" source="Sword Coast Adventurer’s Guide"  id="ID_SCAG_SUBRACE_GRAY_DWARF">
     <supports>Dwarf</supports>
     <requirements />
     <description>
@@ -55,10 +55,11 @@
     <supports />
     <requirements>[level:3]</requirements>
     <description>
-      <p>When you reach 3rd level, you can cast the enlarge/reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the invisibility spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, a lthough sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
+      <p>When you reach 3rd level, you can cast the enlarge/reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the invisibility spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
     </description>
     <sheet>
-      <description></description>
+      <description>1/ long rest: Enlarge/Reduce</description>
+      <description level="5">1/ long rest: Enlarge/Reduce, invisibility</description>
     </sheet>
     <rules>
         <stat name="duergar magic:spellcasting:ability" value="Intelligence" />
