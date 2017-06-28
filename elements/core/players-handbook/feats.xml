@@ -4,7 +4,7 @@
     <name>Feats</name>
     <description>Feats from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.2.1" revised="2016/09/12">
+    <update version="0.0.2.2" revised="2016/09/12">
       <file name="feats.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/feats.xml" />
     </update>
   </info>
@@ -27,9 +27,6 @@
       <stat name="Charisma" value="+1" />
     </rules>
   </element>
-
-
-  
   <element name="Alert" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ALERT">
     <supports />
     <requirements />
@@ -42,13 +39,10 @@
       </ul>
     </description>
     <sheet>
-      <description>+5 initiative. You can’t be surprised while you are conscious. Other creatures don’t gain advantage on attack rolls against you as a result of being hidden from you.</description>
+      <description>You can’t be surprised while you are conscious. Other creatures don’t gain advantage on attack rolls against you as a result of being hidden from you.</description>
     </sheet>
-    <setters>
-      <!--<set name=""></set>-->
-    </setters>
     <rules>
-      <stat name="Initiative" value="+5" bonus="feat" />
+      <stat name="Initiative" value="+5" />
     </rules>
   </element>
   <element name="Athlete" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ATHLETE">
@@ -64,9 +58,7 @@
       </ul>
     </description>
     <sheet>
-      <description>
-        When you are prone, standing up uses only 5 feet of your movement. <br/>Climbing doesn’t halve your speed. <br/>You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.
-      </description>
+      <description>When you are prone, standing up uses only 5 feet of your movement. Climbing doesn’t halve your speed. You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</description>
     </sheet>
     <rules>
       <!--<select type="Ability Score Improvement" name="Ability Score Increase (Athlete)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />-->
@@ -96,7 +88,7 @@
         <ul>
           <li>You ignore the loading quality of crossbows with which you are proficient.</li>
           <li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</li>
-          <li>When you use the Attack action and attack with a onehanded weapon, you can use a bonus action to attack with a loaded hand crossbow you are holding.</li>
+          <li>When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a loaded hand crossbow you are holding.</li>
         </ul>
       </p>
     </description>
@@ -109,7 +101,7 @@
     <supports />
     <requirements>[dex:13]</requirements>
     <description>
-      <p class="flavor">Prerequisite: Dexterity 13 or higher</p>
+      <p><b><i>Prerequisite: </i></b>Dexterity 13 or higher</p>
       <p>When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</p>
     </description>
     <sheet>
@@ -117,6 +109,11 @@
     </sheet>
     <rules />
   </element>
+
+
+
+
+
   <element name="Dual Wielder" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DUALWIELDER">
     <supports />
     <requirements />
@@ -163,10 +160,17 @@
       </ul>
     </description>
     <sheet>
-      <description>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).</description>
+      <description>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals %durable:hd:bonus%.</description>
     </sheet>
     <rules>
       <stat name="Constitution" value="+1" />
+
+
+      <stat name="durable:conmod" value="Constitution Modifier" />
+      <stat name="durable:conmod" value="Constitution Modifier" />
+
+      <stat name="durable:hd:bonus" value="2" bonus="feat:durable"/>
+      <stat name="durable:hd:bonus" value="durable:conmod" bonus="feat:durable"/>
     </rules>
   </element>
 
@@ -175,7 +179,7 @@
     <supports />
     <requirements />
     <description>
-      <p>Prerequisite: The ability to cast at least one spell</p>
+      <p><b><i>Prerequisite: </i></b>The ability to cast at least one spell</p>
       <p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p>
       <p>Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
       <p>You can select this feat multiple times. Each time you do so, you must choose a different damage type.</p>

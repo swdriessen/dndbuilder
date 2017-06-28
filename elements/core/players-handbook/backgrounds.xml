@@ -4,7 +4,7 @@
 		<name>Backgrounds</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.2.1" revised="2017/06/07">
+		<update version="0.0.3" revised="2017/06/07">
 			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/backgrounds.xml" />
 		</update>
 	</info>
@@ -229,7 +229,7 @@
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_DECEPTION" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_STEALTH" />
-      <select type="Proficiency" supports="Gaming Set" />
+      <select type="Proficiency" name="Gaming Set (Criminal)" supports="Gaming Set" />
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_CRIMINAL_CONTACT" />
       <select type="List" name="Criminal Specialty">
@@ -337,7 +337,7 @@
       <grant name="ID_PROFICIENCY_SKILL_ACROBATICS" type="Proficiency"  />
       <grant name="ID_PROFICIENCY_SKILL_PERFORMANCE" type="Proficiency"  />
       <grant name="ID_PROFICIENCY_TOOL_PROFICIENCY_(DISGUISE_KIT)" type="Proficiency"  />
-      <select type="Proficiency" supports="Musical Instrument" />
+      <select type="Proficiency" name="Musical Intrument" supports="Musical Instrument" />
 
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" />
 
@@ -484,7 +484,7 @@
 
       <grant name="ID_PROFICIENCY_SKILL_ANIMALHANDLING" type="Proficiency"  />
       <grant name="ID_PROFICIENCY_SKILL_SURVIVAL" type="Proficiency"  />
-      <select type="Proficiency" supports="Artisan’s tools" />
+      <select type="Proficiency" name="Artisan's Tool" supports="Artisan’s tools" />
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(VEHICLES(LAND))" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_RUSTIC_HOSPITALITY" />
 
@@ -710,7 +710,7 @@
     <rules>
       <!-- Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional language. 
 			And instead of artisan’s tools, you can start with a mule and a cart. -->
-      <select name="Guild Merchant Option" type="Background Feature" supports="Guild Merchant Option" />
+      <select type="Background Feature" name="Guild Merchant Option" type="Background Feature" supports="Guild Merchant Option" />
     </rules>
   </element>
 
@@ -896,7 +896,7 @@
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_PERSUASION" />
-      <select type="Proficiency" supports="Gaming Set" />
+      <select type="Proficiency" name="Gaming Set (Noble)" supports="Gaming Set" />
       <select type="Language" name="Language (Noble)" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_POSITIONOFPRIVILEGE" />
       <select name="Personality Trait" type="List" number="2">
@@ -1327,7 +1327,7 @@ No matter where you go, people are afraid of you due to your reputation. When yo
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-      <select type="Proficiency" supports="Gaming Set" />
+      <select type="Proficiency" name="Gaming Set" supports="Gaming Set" />
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(VEHICLES(LAND))" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_MILITARY_RANK" />
       <select name="Specialty" type="List">
@@ -1455,18 +1455,6 @@ No matter where you go, people are afraid of you due to your reputation. When yo
       <p>You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow.</p>
     </description>
   </element>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
