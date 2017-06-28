@@ -4,7 +4,7 @@
     <name>Spells</name>
     <description>Spells from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.1" revised="2016/09/12">
+    <update version="0.0.2" revised="2016/09/12">
       <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -2649,7 +2649,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Enlarge/Reduce" type="Spell" source="Player’s Handbook" id="ID_SPELL_ENLARGE/REDUCE">
+  <element name="Enlarge/Reduce" type="Spell" source="Player’s Handbook" id="ID_SPELL_ENLARGE_REDUCE">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. </p>
