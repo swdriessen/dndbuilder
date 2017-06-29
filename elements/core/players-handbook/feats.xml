@@ -4,7 +4,7 @@
     <name>Feats</name>
     <description>Feats from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.3" revised="2016/09/12">
+    <update version="0.0.4" revised="2016/09/12">
       <file name="feats.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/feats.xml" />
     </update>
   </info>
@@ -820,7 +820,7 @@
     </rules>
   </element>
 
-  <element name="Bard" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_BARD">
+  <element name="Bard" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_Ritual_Caster_BARD">
     <supports>Ritual Caster</supports>
     <requirements />
     <description>
@@ -834,7 +834,7 @@
       <select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual&amp;&amp;1&amp;&amp;Bard" number="2" />
     </rules>
   </element>
-  <element name="Cleric" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_CLERIC">
+  <element name="Cleric" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_Ritual_Caster_CLERIC">
     <supports>Ritual Caster</supports>
     <requirements />
     <description>
@@ -848,7 +848,7 @@
       <select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual&amp;&amp;1&amp;&amp;Cleric" number="2" />
     </rules>
   </element>
-  <element name="Druid" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_DRUID">
+  <element name="Druid" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_Ritual_Caster_DRUID">
     <supports>Ritual Caster</supports>
     <requirements />
     <description>
@@ -862,7 +862,7 @@
       <select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual&amp;&amp;1&amp;&amp;Druid" number="2" />
     </rules>
   </element>
-  <element name="Sorcerer" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_SORCERER">
+  <element name="Sorcerer" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_Ritual_Caster_SORCERER">
     <supports>Ritual Caster</supports>
     <requirements />
     <description>
@@ -876,7 +876,7 @@
       <select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual&amp;&amp;1&amp;&amp;Sorcerer" number="2" />
     </rules>
   </element>
-  <element name="Warlock" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_WARLOCK">
+  <element name="Warlock" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_Ritual_Caster_WARLOCK">
     <supports>Ritual Caster</supports>
     <requirements />
     <description>
@@ -890,7 +890,7 @@
       <select type="Spell" name="1st-level Spell (Ritual Caster)" supports="Ritual&amp;&amp;1&amp;&amp;Warlock" number="2" />
     </rules>
   </element>
-  <element name="Wizard" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_MAGIC_INITIATE_WIZARD">
+  <element name="Wizard" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_Ritual_Caster_WIZARD">
     <supports>Ritual Caster</supports>
     <requirements />
     <description>
