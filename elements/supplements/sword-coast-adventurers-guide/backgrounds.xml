@@ -186,7 +186,7 @@
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_PERSUASION" />
-      <select type="Proficiency" supports="Gaming Set" />
+      <select type="Proficiency" name="Gaming Set (Mercenary Veteran)" supports="Gaming Set" />
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(VEHICLES(LAND))" />
       <!--<grant type="Background Feature" name="ID_BACKGROUND_FEATURE_MERCENARY_LIFE"  />-->
 

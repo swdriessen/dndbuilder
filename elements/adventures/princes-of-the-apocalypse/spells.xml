@@ -4,12 +4,12 @@
     <name>Spells</name>
     <description>The spells from the Princes of the Apocalypse.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/princes-apocalypse">Wizards of the Coast</author>
-    <update version="0.1.0" revised="2017/01/01">
+    <update version="0.1.1" revised="2017/01/01">
       <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/adventures/princes-of-the-apocalypse/spells.xml" />
     </update>
   </info>
 
-  <element name="Abi-Dalzim’s Horrid Wilting" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_ABIDALZIMSHORRIDWILTING">
+  <element name="Abi-Dalzim’s Horrid Wilting" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_ABIDALZIMSHORRIDWILTING">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren’t affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.</p>
@@ -29,7 +29,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Absorb Elements" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_ABSORBELEMENTS">
+  <element name="Absorb Elements" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_ABSORBELEMENTS">
     <supports>Druid, Ranger, Wizard</supports>
     <description>
       <p>The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.</p>
@@ -52,7 +52,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Aganazzar’s Scorcher" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_AGANAZZARSSCORCHER">
+  <element name="Aganazzar’s Scorcher" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_AGANAZZARSSCORCHER">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one.</p>
@@ -75,7 +75,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Beast Bond" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_BEASTBOND">
+  <element name="Beast Bond" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_BEASTBOND">
     <supports>Druid, Ranger</supports>
     <description>
       <p>You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast’s Intelligence is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see.</p>
@@ -95,7 +95,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Bones of the Earth" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_BONESOFTHEEARTH">
+  <element name="Bones of the Earth" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_BONESOFTHEEARTH">
     <supports>Druid</supports>
     <description>
       <p>You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of difficult terrain with a 10-foot radius. The rubble lasts until cleared.</p>
@@ -120,7 +120,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Catapult" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_CATAPULT">
+  <element name="Catapult" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_CATAPULT">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>Choose one object weighing 1 to 5 pounds within range that isn’t being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. In either case, both the object and the creature or solid surface take 3d8 bludgeoning damage.</p>
@@ -145,7 +145,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Create Bonfire" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_CREATEBONFIRE">
+  <element name="Create Bonfire" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_CREATEBONFIRE">
     <supports>Druid, Sorcerer, Warlock, Wizard</supports>
     <description>
       <p>You create a bonfire on ground that you can see within range. Until the spells ends, the bonfire fills a 5-foot cube. Any creature in the bonfire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire’s space for the first time on a turn or ends its turn there.</p>
@@ -166,7 +166,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Control Flames" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_CONTROLFLAMES">
+  <element name="Control Flames" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_CONTROLFLAMES">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:</p>
@@ -191,7 +191,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Control Winds" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_CONTROLWINDS">
+  <element name="Control Winds" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_CONTROLWINDS">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell’s duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you’ve halted.</p>
@@ -214,7 +214,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Dust Devil" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_DUSTDEVIL">
+  <element name="Dust Devil" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_DUSTDEVIL">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell’s duration.</p>
@@ -241,7 +241,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Earthbind" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_EARTHBIND">
+  <element name="Earthbind" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_EARTHBIND">
     <supports>Druid, Sorcerer, Warlock, Wizard</supports>
     <description>
       <p>Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spell’s duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends.</p>
@@ -261,7 +261,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Earth Tremor" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_EARTHTREMOR">
+  <element name="Earth Tremor" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_EARTHTREMOR">
     <supports>Bard, Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You cause a tremor in the ground in a 10-foot radius. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes 1d6 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared.</p>
@@ -286,7 +286,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Elemental Bane" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_ELEMENTALBANE">
+  <element name="Elemental Bane" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_ELEMENTALBANE">
     <supports>Druid, Warlock, Wizard</supports>
     <description>
       <p>Choose one creature you can see within range, and choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target must succeed on a Constitution saving throw or be affected by the spell for its duration. The first time each turn the affected target takes damage of the chosen type, the target takes an extra 2d6 damage of that type. Moreover, the target loses any resistance to that damage type until the spell ends.</p>
@@ -311,7 +311,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Erupting Earth" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_ERUPTINGEARTH">
+  <element name="Erupting Earth" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_ERUPTINGEARTH">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes 3d12 bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared away. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</p>
@@ -336,7 +336,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Flame Arrows" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_FLAMEARROWS">
+  <element name="Flame Arrows" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_FLAMEARROWS">
     <supports>Druid, Ranger, Sorcerer, Wizard</supports>
     <description>
       <p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell’s magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.</p>
@@ -361,7 +361,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Frostbite" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_FROSTBITE">
+  <element name="Frostbite" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_FROSTBITE">
     <supports>Druid, Sorcerer, Warlock, Wizard</supports>
     <description>
       <p>You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.</p>
@@ -382,7 +382,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Gust" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_GUST">
+  <element name="Gust" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_GUST">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You seize the air and compel it to create one of the following effects at a point you can see within range:</p>
@@ -405,7 +405,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Ice Knife" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_ICEKNIFE">
+  <element name="Ice Knife" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_ICEKNIFE">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>
@@ -430,7 +430,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Immolation" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_IMMOLATION">
+  <element name="Immolation" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_IMMOLATION">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell’s duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can’t be extinguished through nonmagical means.</p>
@@ -451,7 +451,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Investiture of Flame" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_INVESTITUREOFFLAME">
+  <element name="Investiture of Flame" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_INVESTITUREOFFLAME">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for the spell’s duration. The flames don’t harm you. Until the spell ends, you gain the following benefits:</p>
@@ -474,7 +474,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Investiture of Ice" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_INVESTITUREOFICE">
+  <element name="Investiture of Ice" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_INVESTITUREOFICE">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>Until the spell ends, ice rimes your body, and you gain the following benefits:</p>
@@ -498,7 +498,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Investiture of Stone" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_INVESTITUREOFSTONE">
+  <element name="Investiture of Stone" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_INVESTITUREOFSTONE">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>Until the spell ends, bits of rock spread across your body, and you gain the following benefits:</p>
@@ -521,7 +521,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Investiture of Wind" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_INVESTITUREOFWIND">
+  <element name="Investiture of Wind" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_INVESTITUREOFWIND">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>Until the spell ends, wind whirls around you, and you gain the following benefits:</p>
@@ -544,7 +544,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Maelstrom" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_MAELSTROM">
+  <element name="Maelstrom" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_MAELSTROM">
     <supports>Druid</supports>
     <description>
       <p>A mass of 5-foot-deep water appears and swirls in a 30-foot radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 10 feet toward the center.</p>
@@ -564,7 +564,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Magic Stone" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_MAGICSTONE">
+  <element name="Magic Stone" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_MAGICSTONE">
     <supports>Druid, Warlock</supports>
     <description>
       <p>You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker’s, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.</p>
@@ -585,7 +585,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Maximilian’s Earthen Grasp" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_MAXIMILIAN’SEARTHENGRASP">
+  <element name="Maximilian’s Earthen Grasp" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_MAXIMILIAN’SEARTHENGRASP">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is restrained for the spell’s duration.</p>
@@ -608,7 +608,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Melf’s Minute Meteors" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_MELF’SMINUTEMETEORS">
+  <element name="Melf’s Minute Meteors" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_MELF’SMINUTEMETEORS">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You create six tiny meteors in your space. They float in the air and orbit you for the spell’s duration. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity saving throw. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.</p>
@@ -633,7 +633,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Mold Earth" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_MOLDEARTH">
+  <element name="Mold Earth" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_MOLDEARTH">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:</p>
@@ -657,7 +657,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Primordial Ward" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_PRIMORDIALWARD">
+  <element name="Primordial Ward" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_PRIMORDIALWARD">
     <supports>Druid</supports>
     <description>
       <p>You have resistance to acid, cold, fire, lightning, and thunder damage for the spell’s duration.</p>
@@ -678,7 +678,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Pyrotechnics" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_PYROTECHNICS">
+  <element name="Pyrotechnics" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_PYROTECHNICS">
     <supports>Bard, Sorcerer, Wizard</supports>
     <description>
       <p>Choose an area of flame that you can see and that can fit within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke.</p>
@@ -700,7 +700,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Shape Water" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_SHAPEWATER">
+  <element name="Shape Water" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_SHAPEWATER">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:</p>
@@ -725,7 +725,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Skywrite" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_SKYWRITE">
+  <element name="Skywrite" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_SKYWRITE">
     <supports>Bard, Druid, Wizard</supports>
     <description>
       <p>You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell’s duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.</p>
@@ -745,7 +745,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Snilloc’s Snowball Swarm" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_SNILLOC’SSNOWBALLSWARM">
+  <element name="Snilloc’s Snowball Swarm" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_SNILLOC’SSNOWBALLSWARM">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one.</p>
@@ -770,7 +770,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Storm Sphere" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_STORMSPHERE">
+  <element name="Storm Sphere" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_STORMSPHERE">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain.</p>
@@ -797,7 +797,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Thunderclap" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_THUNDERCLAP">
+  <element name="Thunderclap" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_THUNDERCLAP">
     <supports>Bard, Druid, Sorcerer, Warlock, Wizard</supports>
     <description>
       <p>You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.</p>
@@ -818,7 +818,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Tidal Wave" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_TIDALWAVE">
+  <element name="Tidal Wave" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_TIDALWAVE">
     <supports>Druid, Wizard</supports>
     <description>
       <p>You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failure, a creature takes 4d8 bludgeoning damage and is knocked prone. On a success, a creature takes half as much damage and isn’t knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it.</p>
@@ -838,7 +838,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Transmute Rock" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_TRANSMUTEROCK">
+  <element name="Transmute Rock" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_TRANSMUTEROCK">
     <supports>Druid, Wizard</supports>
     <description>
       <p>You choose an area of stone or mud that you can see that fits within a 40-foot cube and that is within range, and choose one of the following effects.</p>
@@ -862,7 +862,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Vitriolic Sphere" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_VITRIOLICSPHERE">
+  <element name="Vitriolic Sphere" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_VITRIOLICSPHERE">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You point at a place within range, and a glowing 1-foot ball of emerald acid streaks there and explodes in a 20-foot radius. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 acid damage and 5d4 acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn.</p>
@@ -887,7 +887,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Wall of Sand" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_WALLOFSAND">
+  <element name="Wall of Sand" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_WALLOFSAND">
     <supports>Wizard</supports>
     <description>
       <p>You conjure up a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is blinded while in the wall’s space and must spend 3 feet of movement for every 1 foot it moves there.</p>
@@ -907,7 +907,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Wall of Water" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_WALLOFWATER">
+  <element name="Wall of Water" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_WALLOFWATER">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You conjure up a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall’s space is difficult terrain.</p>
@@ -928,7 +928,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Warding Wind" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_WARDINGWIND">
+  <element name="Warding Wind" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_WARDINGWIND">
     <supports>Bard, Druid, Sorcerer, Warlock</supports>
     <description>
       <p>A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration.</p>
@@ -954,7 +954,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Watery Sphere" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_WATERYSPHERE">
+  <element name="Watery Sphere" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_WATERYSPHERE">
     <supports>Druid, Sorcerer, Wizard</supports>
     <description>
       <p>You conjure up a sphere of water with a 10-foot radius on a point you can see within range. The sphere can hover in the air, but no more than 10 feet off the ground. The sphere remains for the spell’s duration.</p>
@@ -978,7 +978,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Whirlwind" type="Spell" source="Princes of the Apocalypse" id="ID_SPELL_WHIRLWIND">
+  <element name="Whirlwind" type="Spell" source="Princes of the Apocalypse" id="ID_POTA_SPELL_WHIRLWIND">
     <supports>Druid, Wizard</supports>
     <description>
       <p>A whirlwind howls down to a point on the ground you specify.</p>
