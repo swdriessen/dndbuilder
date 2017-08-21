@@ -9,7 +9,6 @@
 		</update>
 	</info>
 
-
   <element name="Acolyte" type="Background" source="Player’s Handbook" id="ID_BACKGROUND_ACOLYTE">
     <supports />
     <description>
@@ -29,6 +28,7 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_RELIGION"  />
       <select type="Language" name="Language (Acolyte)" number="2" supports="Starting" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" />
+
 
       <select type="List" name="Personality Trait" number="2">
         <item id="1">I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.</item>
