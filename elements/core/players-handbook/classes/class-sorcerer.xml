@@ -4,11 +4,10 @@
     <name>Sorcerer</name>
     <description>Sorcerer from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.4" revised="2017/06/19">
+    <update version="0.0.5" revised="2017/06/19">
       <file name="class-sorcerer.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-sorcerer.xml" />
     </update>
   </info>
-
 
   <!-- Sorcerer Class -->
   <element name="Sorcerer" type="Class" source="Player’s Handbook" id="ID_CLASS_SORCERER">
@@ -16,35 +15,6 @@
     <requirements />
     <description>
       <p class="flavor">A spellcaster who draws on inherent magic from a gift or bloodline.</p>
-      <!--<table>
-        <thead>
-          <tr>
-            <td class="">Level</td>
-            <td class="">Sorcery Points</td>
-            <td class="">Features</td>
-          </tr>  
-        </thead>
-        <tr><td>1st</td><td>—</td><td>Spellcasting, Sorcererous Origin</td></tr>
-        <tr><td>2nd</td><td>2</td><td>Font of Magic</td></tr>
-        <tr><td>3rd</td><td>3</td><td>Metamagic</td></tr>
-        <tr><td>4th</td><td>4</td><td>Ability Score Improvement</td></tr>
-        <tr><td>5th</td><td>5</td><td>—</td></tr>
-        <tr><td>6th</td><td>6</td><td>Sorcerous Origin Feature</td></tr>
-        <tr><td>7th</td><td>7</td><td>—</td></tr>
-        <tr><td>8th</td><td>8</td><td>Ability Score Improvement</td></tr>
-        <tr><td>9th</td><td>9</td><td>—</td></tr>
-        <tr><td>10th</td><td>10</td><td>Metamagic</td></tr>
-        <tr><td>11th</td><td>11</td><td>—</td></tr>
-        <tr><td>12th</td><td>12</td><td>Ability Score Improvement</td></tr>
-        <tr><td>13th</td><td>13</td><td>—</td></tr>
-        <tr><td>14th</td><td>14</td><td>Sorcerous Origin Feature</td></tr>
-        <tr><td>15th</td><td>15</td><td>—</td></tr>
-        <tr><td>16th</td><td>16</td><td>Ability Score Improvement</td></tr>
-        <tr><td>17th</td><td>17</td><td>Metamagic</td></tr>
-        <tr><td>18th</td><td>18</td><td>Sorcerous Origin Feature</td></tr>
-        <tr><td>19th</td><td>19</td><td>Ability Score Improvement</td></tr>
-        <tr><td>20th</td><td>20</td><td>Sorcerous Restoration</td></tr>
-      </table>-->
       <h4>CREATING A SORCERER</h4>
       <p>The most important question to consider when creating your sorcerer is the origin of your power. As a starting character, you'll choose an origin that ties to a draconic bloodline or the influence of wild magic, but the exact source of your power is up to you to decide. Is it a family curse, passed down to you from distant ancestors? Or did some extraordinary event leave you blessed with inherent magic but perhaps scarred as well?</p>
       <p class="indent">How do you feel about the magical power coursing through you? Do you embrace it, try to master it, or revel in its unpredictable nature? Is it a blessing or a curse? Did you seek it out, or did it find you? Did you have the option to refuse it, and do you wish you had? What do you intend to do with it? Perhaps you feel like you’ve been given this power for some lofty purpose. Or you might decide that the power gives you the right to do what you want, to take what you want from those who lack such power. Perhaps your power links you to a powerful individual in the world—the fey creature that blessed you at birth, the dragon who put a drop of its blood into your veins, the lich who created you as an experiment, or the deity who chose you to carry this power.</p>
