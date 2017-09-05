@@ -4,7 +4,7 @@
     <name>Bard</name>
     <description></description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.7" revised="2017/06/19">
+    <update version="0.0.8" revised="2017/06/19">
       <file name="class-bard.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-bard.xml" />
     </update>
   </info>
@@ -105,12 +105,10 @@
       <grant type="Class Feature" name="ID_CLASSFEATURE_BARD_COLLEGE" level="3"/>
       <grant type="Class Feature" name="ID_CLASSFEATURE_EXPERTISE_BARD" level="3"/>
       <grant type="Class Feature" name="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_BARD" level="4"/>
-
       <grant type="Class Feature" name="ID_CLASSFEATURE_FONT_OF_INSPIRATION" level="5"/>
       <grant type="Class Feature" name="ID_CLASSFEATURE_COUNTERCHARM" level="6"/>
       <grant type="Class Feature" name="ID_CLASSFEATURE_MAGICAL_SECRETS" level="10"/>
       <grant type="Class Feature" name="ID_CLASSFEATURE_SUPERIOR_INSPIRATION" level="20"/>
-
     </rules>
   </element>
 
@@ -141,6 +139,33 @@
     <sheet>
       <description>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music.</description>
     </sheet>
+    <rules>
+      <stat name="bard:spell:attack" value="+Proficiency" />
+      <stat name="bard:spell:attack" value="+Charisma Modifier" />
+      
+      <stat name="bard:spell:dc" value="+8" />
+      <stat name="bard:spell:dc" value="+Proficiency" />
+      <stat name="bard:spell:dc" value="+Charisma Modifier" />
+
+      <select type="Spell" name="Cantrip (Bard)" supports="Bard&amp;&amp;0" level="1" number="4" />
+      <select type="Spell" name="Cantrip (Bard)" supports="Bard&amp;&amp;0" level="4" />
+      <select type="Spell" name="Cantrip (Bard)" supports="Bard&amp;&amp;0" level="10" />
+      
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1)" level="1" number="2"/>
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1)" level="2" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2)" level="3" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2)" level="4" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3)" level="5" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3)" level="6" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4)" level="7" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4)" level="8" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5)" level="9" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5)" level="10" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6)" level="11" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6||7)" level="13" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6||7||8)" level="15" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6||7||8||9)" level="17" />
+    </rules>
   </element>
   <element name="Jack of All Trades" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_JACK_OF_ALL_TRADES">
     <description>
@@ -268,50 +293,49 @@
       <p class="indent">The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic.</p>
       <p class="indent">The college’s members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.</p>
 
-      <div element="ID_ARCHETYPE_FEATURE_BARD_BONUS_PROFICIENCIES" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_CUTTING_WORDS" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_ADDITIONAL_MAGICAL_SECRETS" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_PEERLESS_SKILL" />
+      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES" />
+      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" />
+      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS" />
+      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL" />
     </description>
     <sheet>
       <description>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales.</description>
     </sheet>
     <rules>
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_BONUS_PROFICIENCIES" level="3" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_CUTTING_WORDS" level="3" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_ADDITIONAL_MAGICAL_SECRETS" level="6" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_PEERLESS_SKILL" level="14" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES" level="3" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" level="3" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS" level="6" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL" level="14" />
     </rules>
   </element>
 
-  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_BONUS_PROFICIENCIES">
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES">
     <description>
       <p>When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice.</p>
     </description>
-    <sheet>
-      <description>You gain proficiency with three skills of your choice.</description>
-    </sheet>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Bonus Proficiencies (Bard)" supports="Skill&amp;&amp;ID_CLASS_BARD" number="3" />
     </rules>
   </element>
-  <element name="Cutting Words" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_CUTTING_WORDS">
+  <element name="Cutting Words" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS">
     <description>
       <p>Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can’t hear you or if it’s immune to being charmed.</p>
     </description>
     <sheet>
-      <description></description>
+      <description>When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can’t hear you or if it’s immune to being charmed.</description>
     </sheet>
   </element>
-  <element name="Additional Magical Secrets" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_ADDITIONAL_MAGICAL_SECRETS">
+  <element name="Additional Magical Secrets" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS">
     <description>
       <p>At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don’t count against the number of bard spells you know.</p>
     </description>
-    <sheet>
-      <description></description>
-    </sheet>
+    <sheet display="false" />
+    <rules>
+      <select type="Spell" name="Additional Magic Secrets" number="2" />
+    </rules>
   </element>
-  <element name="Peerless Skill" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_PEERLESS_SKILL">
+  <element name="Peerless Skill" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL">
     <description>
       <p>Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the GM tells you whether you succeed or fail.</p>
     </description>
@@ -334,7 +358,7 @@
       <div element="ID_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC" />
     </description>
     <sheet>
-      <description>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales.</description>
+      <description>Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes.</description>
     </sheet>
     <rules>
       <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_VALOR_BONUS_PROFICIENCIES" level="3" />
@@ -349,9 +373,12 @@
     <description>
       <p>When you join the College of Valor at 3rd level, you gain proficiency with medium armor, shields, and martial weapons.</p>
     </description>
-    <sheet>
-      <description></description>
-    </sheet>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+    </rules>
   </element>
 
 
@@ -360,7 +387,7 @@
       <p>Also at 3rd level, you learn to inspire others in battle. A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses.</p>
     </description>
     <sheet>
-      <description></description>
+      <description>A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses.</description>
     </sheet>
   </element>
 
