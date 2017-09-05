@@ -4,7 +4,7 @@
     <name>Gray Dwarves (Duergar)</name>
     <description>Subrace from the Sword Coast Adventurer’s Guide.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
-    <update version="0.0.4" revised="2017/06/28">
+    <update version="0.1" revised="2017/06/28">
       <file name="gray-dwarves.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/gray-dwarves.xml" />
     </update>
   </info>
@@ -63,8 +63,8 @@
     </sheet>
     <rules>
         <stat name="duergar magic:spellcasting:ability" value="Intelligence" />
-        <grant type="Spell" name="ID_SPELL_ENLARGE_REDUCE" level="3"/>
-        <grant type="Spell" name="ID_SPELL_INVISIBILITY" level="5"/>
+        <grant type="Spell" name="ID_PHB_SPELL_ENLARGE_REDUCE" level="3"/>
+        <grant type="Spell" name="ID_PHB_SPELL_INVISIBILITY" level="5"/>
     </rules>
   </element>
 
