@@ -4,15 +4,14 @@
     <name>Barbarian</name>
     <description>The Barbarian class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.2" revised="2017/01/01">
+    <update version="0.1" revised="2017/01/01">
       <file name="class-barbarian.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-barbarian.xml" />
     </update>
   </info>
 
-
   <element name="Barbarian" type="Class" source="Player’s Handbook" id="ID_CLASS_BARBARIAN">
     <supports />
-    <requirements />
+    <requirements />    
     <description>
       <!-- <p class="flavor">A fierce warrior of primitive background who can enter a battle rage.</p> -->
       <p>A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people’s elk herd.</p>
@@ -20,29 +19,42 @@
       <p class="indent">Frothing at the mouth, a dwarf slams his helmet into the face of his drow foe, then turns to drive his armored elbow into the gut of another.</p>
       <p class="indent">These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.</p>
       <p class="indent">For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.</p>
-
       <h4>PRIMAL INSTINCT</h4>
-      <p>People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one’s own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal naturekeen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.</p>
+      <p>People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one’s own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.</p>
       <p class="indent">Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise.</p>
-
       <h4>A LIFE OF DANGER</h4>
-      <p>Not every m ember of the tribes deemed “barbarians” by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the w orld is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don’t have to.</p>
+      <p>Not every member of the tribes deemed “barbarians” by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don’t have to.</p>
       <p class="indent">Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties.</p>
-
       <h4>CREATING A BARBARIAN</h4>
       <p>When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?</p>
-      <p class="indent">What led you to take up the adventuring life? W ere you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to “civilized” lands and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority.</p>
-
+      <p class="indent">What led you to take up the adventuring life? Were you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to “civilized” lands and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority.</p>
       <h5>QUICK BUILD</h5>
       <p>You can make a barbarian quickly by following these suggestions. First, put your highest ability score in Strength, followed by Constitution. Second, choose the outlander background.</p>
-
-
-
-
-
-
-
-
+      <h3>CLASS FEATURES</h3>
+      <p>As a barbarian, you gain the following class features.</p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="feature">Hit Dice:</span>1d12 per barbarian level<br />
+        <span class="feature">Hit Points at 1st Level:</span>12 + your Constitution modefier<br />
+        <span class="feature">Hit Points at Higher Levels:</span>1d12 (or 7) + your Constitution modifier per barbarian level after 1st<br />
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="feature">Armor:</span>Light armor, medium armor, shields<br />
+        <span class="feature">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="feature">Tools:</span>None<br />
+      </p>
+      <p>
+        <span class="feature">Saving Throws:</span>Strength, Constitution<br />
+        <span class="feature">Skills:</span>Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival<br />
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a greataxe or (b) any martial melee weapon</li>
+        <li>(a) two handaxes or (b) any simple weapon</li>
+        <li>An explorer’s pack and four javelins</li>
+      </ul>
 
 
       <div element="ID_CLASS_FEATURE_RAGE" />
@@ -73,7 +85,8 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-      <select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill&amp;&amp;ID_CLASS_BARBARIAN" /> 
+      <select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill&amp;&amp;ID_CLASS_BARBARIAN" />
+
       <grant type="Class Feature" name="ID_CLASS_FEATURE_RAGE" level="1" />
       <grant type="Class Feature" name="ID_CLASS_FEATURE_UNARMORED_DEFENCE" level="1" />
       <grant type="Class Feature" name="ID_CLASS_FEATURE_RECKLESS_ATTACK" level="2" />
@@ -114,20 +127,19 @@
       <stat name="rage:count" value="+1" level="12" />
       <stat name="rage:count" value="+1" level="17" />
       <stat name="rage:count" value="+93" level="20" />
-      
+
       <stat name="rage:damage" value="+2" level="1" />
       <stat name="rage:damage" value="+1" level="9" />
       <stat name="rage:damage" value="+1" level="16" />
 
-      <!-- todo melee:damage strength -->
-      <!-- <stat name="melee:damage, strength" value="+rage:damage" condition="while raging" /> -->
       <!-- 
+      <stat name="melee:damage, strength" value="+rage:damage" condition="while raging" />
       <stat name="advantage:Strength Check" condition="while raging" />
-		<stat name="advantage:Strength Saving Throws" condition="while raging" />     
-	    <stat name="resistance:bludgeoning" condition="while raging" />
-		<stat name="resistance:piercing" condition="while raging" />
-		<stat name="resistance:slashing" condition="while raging" />
-        -->
+      <stat name="advantage:Strength Saving Throws" condition="while raging" />     
+      <stat name="resistance:bludgeoning" condition="while raging" />
+      <stat name="resistance:piercing" condition="while raging" />
+      <stat name="resistance:slashing" condition="while raging" />
+      -->
     </rules>
   </element>
   <element name="Unarmored Defence" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_UNARMORED_DEFENCE">
@@ -228,9 +240,9 @@
       <description level="17">You can roll three additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
     </sheet>
     <rules>
-      <stat name="brutal-critical-dice" value="+1" />
-      <stat name="brutal-critical-dice" value="+1" level="13" />
-      <stat name="brutal-critical-dice" value="+1" level="17" />
+      <stat name="brutal-critical:dice" value="+1" />
+      <stat name="brutal-critical:dice" value="+1" level="13" />
+      <stat name="brutal-critical:dice" value="+1" level="17" />
     </rules>
   </element>
   <element name="Relentless Rage" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_RELENTLESS_RAGE">
@@ -368,18 +380,11 @@
       <p>Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the beast sense and speak with animals spells, but only as rituals.</p>
     </description>
     <sheet>
-      <description>Beast Sense and Speak With Animals as Rituals</description>
+      <description>Cast Beast Sense and Speak With Animals as Rituals</description>
     </sheet>
     <rules>
-      <!-- grant bease sense and speak with animals as rituals -->
-      <grant type="Spell" name="ID_SPELL_BEAST_SENSE" prepared="true" />
-      <!--<set type="Spell" name="ID_SPELL_BEAST_SENSE" setter="time" value="Ritual Only" />-->
-
-      <grant type="Spell" name="ID_SPELL_SPEAK_WITH_ANIMALS" prepared="true" />
-      <!--<set type="Spell" name="ID_SPELL_SPEAK_WITH_ANIMALS" setter="time" value="Ritual Only" />-->
-
-      <!-- don't create spell copies, changing typos in two places sucks -->
-
+      <grant type="Spell" name="ID_SPELL_BEAST_SENSE" />
+      <grant type="Spell" name="ID_SPELL_SPEAK_WITH_ANIMALS" />
     </rules>
   </element>
   <element name="Totem Spirit" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEM_SPIRIT">
@@ -413,9 +418,7 @@
       <description>You can cast the commune with nature spell, but only as a ritual. A spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_SPELL_COMMUNE_WITH_NATURE" prepared="true" />
-      <!--<set type="Spell" name="ID_SPELL_COMMUNE_WITH_NATURE" setter="time" value="Ritual Only" />-->
-
+      <grant type="Spell" name="ID_SPELL_COMMUNE_WITH_NATURE" />
     </rules>
   </element>
   <element name="Totemic Attunement" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEMIC_ATTUNEMENT">
