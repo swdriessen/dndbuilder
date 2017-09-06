@@ -4,9 +4,491 @@
     <name>Druid</name>
     <description>The Druid class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.1" revised="2017/01/01">
+    <update version="0.0.2" revised="2017/01/01">
       <file name="class-druid.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-druid.xml" />
     </update>
   </info>
 
+ <!-- Druid Class -->
+  <element name="Druid" type="Class" source="Player’s Handbook" id="ID_CLASS_DRUID">
+    <description>
+      <p class="flavor">A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms.</p>
+      <h4>POWER OF NATURE</h4>
+      <p>Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.</p>
+      <p>Druid spells are oriented toward nature and animals— the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even to the point where they prefer animal form to their natural form.</p>
+
+
+      
+      <div element="ID_CLASSFEATURE_DRUIDIC" />
+      <div element="ID_CLASSFEATURE_SPELLCASTING_DRUID" />
+      <div element="ID_CLASSFEATURE_WILDSHAPE" />
+      <div element="ID_CLASSFEATURE_DRUID_CIRCLE" />
+      <div element="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_DRUID" />
+      <div element="ID_CLASSFEATURE_TIMELESS_BODY" />
+      <div element="ID_CLASSFEATURE_BEAST_SPELLS" />
+      <div element="ID_CLASSFEATURE_ARCHDRUID" />
+    </description>
+    <sheet display="false">
+      <description>A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms.</description>
+    </sheet>
+    <setters>
+      <set name="hd">d8</set>
+      <set name="spellcaster">true</set>
+      <set name="spellcastingAbility">Wisdom</set>
+    </setters>
+    <rules>
+      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D8" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+      
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+      <select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill&amp;&amp;ID_CLASS_DRUID" number="2"/>
+
+
+      <grant type="Class Feature" name="ID_CLASSFEATURE_DRUIDIC" level="1"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_SPELLCASTING_DRUID" level="1"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_WILDSHAPE" level="2"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_DRUID_CIRCLE" level="2"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_DRUID" level="4"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_TIMELESS_BODY" level="18"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_BEAST_SPELLS" level="18"/>
+      <grant type="Class Feature" name="ID_CLASSFEATURE_ARCHDRUID" level="20"/>
+    </rules>
+  </element>
+
+  <element name="Druidic" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_DRUIDIC">
+    <description>
+      <p>You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</p>
+    </description>
+    <sheet>
+      <description>You know Druidic, the secret language of druids.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" name="ID_LANGUAGE_DRUIDIC" />
+    </rules>
+  </element>
+  <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_SPELLCASTING_DRUID">
+    <description>
+      <p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>
+    </description>
+    <sheet>
+      <description>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</description>
+    </sheet>
+    <setters>
+      <set name="spellcaster">true</set>
+      <set name="spellcastingAbility">Wisdom</set>
+    </setters>
+    <rules />
+  </element>
+  <element name="Wildshape" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_WILDSHAPE">
+    <description>
+      <p>Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+      <p>Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn’t have a flying or swimming speed.</p>
+      <p>You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</p>
+      <p>While you are transformed, the following rules apply:</p>
+      <!--<p>• Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</p>
+      <p>• When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</p>
+      <p>• You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.</p>
+      <p>• You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</p>
+      <p>• You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t w ear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</p>-->
+
+      <ul>
+        <li>Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</li>
+        <li>When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li>
+        <li>You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.</li>
+        <li>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
+        <li>You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t w ear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
+      </ul>
+      
+    </description>
+    <sheet>
+      <description level="2">You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Druid Circle" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_DRUID_CIRCLE">
+    <description>
+      <p>At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
+    </description>
+    <sheet>
+      <description>You choose to identify with a circle of druids.</description>
+    </sheet>
+    <rules>
+      <select type="Archetype" name="Druid Circle" supports="Druid Circle" level="2"/>
+    </rules>
+  </element>
+  <element name="Ability Score Improvement (Druid)" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_DRUID">
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
+      <select type="Class Feature" name="Improvement Option (8)" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
+      <select type="Class Feature" name="Improvement Option (12)" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
+      <select type="Class Feature" name="Improvement Option (16)" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
+      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+    </rules>
+  </element>
+  <element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_TIMELESS_BODY">
+    <description>
+      <p>Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</p>
+    </description>
+    <sheet>
+      <description>The primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Beast Spells" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_BEAST_SPELLS">
+    <description>
+      <p>Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.</p>
+    </description>
+    <sheet>
+      <description>You can cast many of your druid spells in any shape you assume using Wild Shape.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Archdruid" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_ARCHDRUID">
+    <description>
+      <p>At 20th level, you can use your Wild Shape an unlimited number of times.</p>
+    </description>
+    <sheet>
+      <description>You can use your Wild Shape an unlimited number of times.</description>
+    </sheet>
+    <rules />
+  </element>
+
+  <!-- Circle of the Land Archetype-->
+  <element name="Circle of the Land" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CIRCLEOFTHELAND">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle’s w isest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle’s mysterious rites.</p>
+      <div element="ID_ARCHETYPE_FEATURE_BONUS_CANTRIP" />
+      <div element="ID_ARCHETYPE_FEATURE_NATURAL_RECOVERY" />
+      <div element="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS" />
+      <div element="ID_ARCHETYPE_FEATURE_LANDS_STRIDE" />
+      <div element="ID_ARCHETYPE_FEATURE_NATURES_WARD" />
+      <div element="ID_ARCHETYPE_FEATURE_NATURES_SANCTUARY" />
+    </description>
+    <sheet>
+      <description>The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BONUS_CANTRIP" level="2" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_NATURAL_RECOVERY" level="2" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS" level="3" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_LANDS_STRIDE" level="6" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_NATURES_WARD" level="10" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_NATURES_SANCTUARY" level="14" />
+    </rules>
+  </element>
+
+  <element name="Bonus Cantrip" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BONUS_CANTRIP">
+    <description>
+      <p>When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Spell" name="Bonus Cantrip (Druid)" supports="0&amp;&amp;Druid" />
+    </rules>
+  </element>
+  <element name="Natural Recovery" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_NATURAL_RECOVERY">
+    <description>
+      <p>Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a long rest.</p>
+      <p>For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots.</p>
+    </description>
+    <sheet>
+      <description>During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a long rest</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Circle Spells" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS">
+    <description>
+      <p>Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land—arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark—and consult the associated list of spells.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Archetype Feature" name="Circle Spells" supports="Circle Spells" level="3"/>
+    </rules>
+  </element>
+  <element name="Land’s Stride" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_LANDS_STRIDE">
+    <description>
+      <p>Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.</p>
+      <p>In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</p>
+    </description>
+    <sheet>
+      <description>Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Nature’s Ward" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_NATURES_WARD">
+    <description>
+      <p>When you reach 10th level, you can’t be charmed or frightened by elementals or fey, and you are immune to poison and disease.</p>
+    </description>
+    <sheet>
+      <description>You can’t be charmed or frightened by elementals or fey, and you are immune to poison and disease.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Nature’s Sanctuary" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_NATURES_SANCTUARY">
+    <description>
+      <p>When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.</p>
+      <p>The creature is aware of this effect before it makes its attack against you.</p>
+    </description>
+    <sheet>
+      <descr>Creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours. The creature is aware of this effect before it makes its attack against you.</descr>
+    </sheet>
+    <rules />
+  </element>
+
+  <!-- Circle Spells -->
+  <element name="Arctic" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_ARCTIC">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_HOLD_PERSON" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_SPIKE_GROWTH" level="3" prepared="true" />
+      
+      <grant type="Spell" name="ID_SPELL_SLEET_STORM" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_SLOW" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_ICE_STORM" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_COMMUNE_WITH_NATURE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_CONE_OF_COLD" level="9" prepared="true" />
+    </rules>
+  </element>
+  <element name="Coast" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_COAST">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_MIRROR_IMAGE" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_MISTY_STEP" level="3" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_WATER_BREATHING" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_WATER_WALK" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_CONTROL_WATER" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_CONJURE_ELEMENTAL" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_SCRYING" level="9" prepared="true" />
+    </rules>
+  </element>
+  <element name="Desert" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_DESERT">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_BLUR" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_SILENCE" level="3" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_CREATE_FOOD_AND_WATER" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_PROTECTION_FROM_ENERGY" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_BLIGHT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_HALLUCINATORY_TERRAIN" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_WALL_OF_STONE" level="9" prepared="true" />
+    </rules>
+  </element>
+  <element name="Forest" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_FOREST">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_BARKSKIN" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_CALL_LIGHTNING" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_PLANT_GROWTH" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_DIVINATION" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_COMMUNE_WITH_NATURE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_TREE_STRIDE" level="9" prepared="true" />
+    </rules>
+  </element>
+  <element name="Grassland" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_GRASSLAND">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_INVISIBILITY" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_PASS_WITHOUT_TRACE" level="3" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_DAYLIGHT" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_HASTE" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_DIVINATION" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_DREAM" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+    </rules>
+  </element>
+  <element name="Mountain" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_MOUNTAIN">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_SPIKE_GROWTH" level="3" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_LIGHTNING_BOLT" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_MELD_INTO_STONE" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_STONE_SHAPE" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_STONESKIN" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_PASSWALL" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_WALL_OF_STONE" level="9" prepared="true" />
+    </rules>
+  </element>
+  <element name="Swamp" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_SWAMP">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_ACID_ARROW" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_DARKNESS" level="3" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_WATER_WALK" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_STINKING_CLOUD" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_LOCATE_CREATURE" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_SCRYING" level="9" prepared="true" />
+    </rules>
+  </element>
+  <element name="Underdark" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_UNDERDARK">
+    <supports>Circle Spells</supports>
+    <description>
+      <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
+      <p>Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+    </description>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_WEB" level="3" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_GASEOUS_FORM" level="5" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_STINKING_CLOUD" level="5" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_GREATER_INVISIBILITY" level="7" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_STONE_SHAPE" level="7" prepared="true" />
+
+      <grant type="Spell" name="ID_SPELL_CLOUDKILL" level="9" prepared="true" />
+      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+    </rules>
+  </element>
+
+
+  <!-- Circle of the Moon Archetype-->
+  <element name="Circle of the Moon" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CIRCLEOFTHEMOON">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Druids of the Circle of the Moon are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might gofor weeks on end before crossing paths with another humanoid creature, let alone another druid.</p>
+      <p>Changeable as the moon, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid's blood.</p>
+      <div element="ID_ARCHETYPE_FEATURE_COMBAT_WILD_SHAPE" />
+      <div element="ID_ARCHETYPE_FEATURE_CIRCLE_FORMS" />
+      <div element="ID_ARCHETYPE_FEATURE_PRIMAL_STRIKE" />
+      <div element="ID_ARCHETYPE_FEATURE_ELEMENTAL_WILD_SHAPE" />
+      <div element="ID_ARCHETYPE_FEATURE_THOUSAND_FORMS" />
+    </description>
+    <sheet>
+      <description>Druids of the Circle of the Moon are fierce guardians of the wilds.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_COMBAT_WILD_SHAPE" level="2" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_CIRCLE_FORMS" level="2" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_PRIMAL_STRIKE" level="6" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_ELEMENTAL_WILD_SHAPE" level="10" />
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_THOUSAND_FORMS" level="14" />
+    </rules>
+  </element>
+
+  <element name="Combat Wild Shape" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_COMBAT_WILD_SHAPE">
+    <description>
+      <p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
+      <p>Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
+    </description>
+    <sheet>
+      <description>You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Circle Forms" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_FORMS">
+    <description>
+      <p>The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a beast with a challenge rating as high as 1 (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).</p>
+      <p>Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.</p>
+    </description>
+    <sheet>
+      <description level="2">You can use your Wild Shape to transform into a beast with a challenge rating as high as 1</description>
+      <description level="6">You can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Primal Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_PRIMAL_STRIKE">
+    <description>
+      <p>Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+    </description>
+    <sheet>
+      <description level="6">Your attacks in beast form count as magical.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Elemental Wild Shape" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ELEMENTAL_WILD_SHAPE">
+    <description>
+      <p>At 10th level, you can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental.</p>
+    </description>
+    <sheet>
+      <description>You can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Thousand Forms" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_THOUSAND_FORMS">
+    <description>
+      <p>By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the alter self spell at will.</p>
+    </description>
+    <sheet>
+      <description>You can cast the alter self spell at will.</description>
+    </sheet>
+    <rules />
+  </element>
 </elements>
