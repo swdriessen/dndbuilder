@@ -11,7 +11,7 @@
 
  <element name="Monk" type="Class" source="Player’s Handbook" id="ID_CLASS_MONK">
     <description>
-      <p>A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</p>
+      <p class="flavor">A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</p>
 
       <div element="ID_CLASSFEATURE_UNARMORED_DEFENSE" />
       <div element="ID_CLASSFEATURE_MARTIAL_ARTS" />

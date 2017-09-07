@@ -4,7 +4,7 @@
     <name>Cleric</name>
     <description>The Cleric class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.2" revised="2017/01/01">
+    <update version="0.0.3" revised="2017/01/01">
       <file name="class-cleric.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-cleric.xml" />
     </update>
   </info>
@@ -405,25 +405,121 @@
 
 
   
-
-
-
-
-
-
-
   <element name="Knowledge Domain" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CLERIC_KNOWLEDGE_DOMAIN">
     <supports>Divine Domain</supports>
     <description>
-      <p></p>
+      <p>The gods of knowledge—including Oghma, Boccob, Gilean, Aureon, and Thoth—value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like Gond, Reorx, Onatar, Moradin, Hephaestus, and Goibhniu.</p>      
+      <h5>Knowledge Domain Spells</h5>
+      <table>
+        <thead>
+          <tr>
+            <td>Cleric Level</td>
+            <td>Spells</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1st</td>
+          <td>
+            <em>command, identify</em>
+          </td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>
+            <em>augury, suggestion</em>
+          </td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>
+            <em>nondetection, speak with dead</em>
+          </td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>
+            <em>arcane eye, confusion</em>
+          </td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>
+            <em>legend lore, scrying</em>
+          </td>
+        </tr>
+      </table>
+
     </description>
     <sheet>
-      <description></description>
+      <description>The gods of knowledge value learning and understanding above all.</description>
     </sheet>
     <rules>
-      
+      <grant type="Spell" name="ID_PHB_SPELL_COMMAND" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_IDENTIFY" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_AUGURY" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_SUGGESTION" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_NONDETECTION" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_ARCANE_EYE" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_CONFUSION" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_LEGEND_LORE" level="9" />
+      <grant type="Spell" name="ID_PHB_SPELL_SCRYING" level="9" />
+
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE" level="1"/>
+      <!-- <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES" level="2"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS" level="6"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING" level="8"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST" level="17"/> -->
     </rules>
   </element>
+
+  <!-- adding supports for the blessings of knowledge to the existing skill proficiencies -->
+  <element-extend type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA">
+    <supports>Blessings of Knowledge</supports>
+  </element-extend>
+  <element-extend type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY">
+    <supports>Blessings of Knowledge</supports>
+  </element-extend>
+  <element-extend type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE">
+    <supports>Blessings of Knowledge</supports>
+  </element-extend>
+  <element-extend type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION">
+    <supports>Blessings of Knowledge</supports>
+  </element-extend>
+
+
+
+
+
+  <element name="Blessings of Knowledge" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE">
+    <description>
+      <p>At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: Arcana, History, Nature, or Religion.</p>
+      <p class="indent">Your proficiency bonus is doubled for any ability check you make that uses either of those skills.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Language" name="Blessings of Knowledge" number="2"/>
+      <select type="Proficiency" name="Blessings of Knowledge" supports="Blessings of Knowledge" number="2"/>
+    </rules>
+  </element>
+
+  <element name="Blessings of Knowledge (Arcana)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_ARCANA">
+    <supports>Blessings of Knowledge</supports>
+    <description>
+      <p>Your proficiency bonus is doubled for any ability check you make that uses Arcana.</p>
+      <div element="ID_PROFICIENCY_SKILL_ARCANA" />
+    </description>
+    <sheet display="false" />
+    <rules>      
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ARCANA" />
+      <stat name="Arcana Proficiency" value="Proficiency" bonus="Proficiency Double"/>
+    </rules>
+  </element>
+
+
+
+  <!--
+
   <element name="Light Domain" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CLERIC_Light_DOMAIN">
     <supports>Divine Domain</supports>
     <description>
@@ -484,21 +580,5 @@
       
     </rules>
   </element>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   -->
 </elements>
