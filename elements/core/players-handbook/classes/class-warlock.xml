@@ -4,9 +4,415 @@
     <name>Warlock</name>
     <description>The Warlock class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.1" revised="2017/01/01">
+    <update version="0.0.2" revised="2017/01/01">
       <file name="class-warlock.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-warlock.xml" />
     </update>
   </info>
+
+
+  <!-- Warlock Class -->
+  <element name="Warlock" type="Class" source="Player’s Handbook" id="ID_CLASS_WARLOCK">
+    <supports />
+    <description>
+      <p class="flavor">A wielder of magic that is derived from a bargain with an extraplanar entity.</p>
+      <div element="ID_CLASS_FEATURE_OTHERWORLDLY_PATRON" />
+      <div element="ID_CLASS_FEATURE_SPELLCASTING_WARLOCK_PACT_MAGIC" />
+      <div element="ID_CLASS_FEATURE_ELDRITCH_INVOCATIONS" />
+      <div element="ID_CLASS_FEATURE_PACT_BOON" />
+      <div element="ID_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_WARLOCK" />
+      <div element="ID_CLASS_FEATURE_MYSTIC_ARCANUM" />
+      <div element="ID_CLASS_FEATURE_ELDRITCH_MASTER" />
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="hd">d8</set>
+      <set name="spellcaster">true</set>
+      <set name="spellcastingAbility">Charisma</set>
+    </setters>
+    <rules>
+      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D8" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+      <select type="Proficiency" name="Skill Proficiency (Warlock)" supports="ID_PROFICIENCY_SKILL&amp;&amp;ID_CLASS_WARLOCK" number="2" />
+
+      <grant type="Class Feature" name="ID_CLASS_FEATURE_OTHERWORLDLY_PATRON" level="1"/>
+      <grant type="Class Feature" name="ID_CLASS_FEATURE_SPELLCASTING_WARLOCK_PACT_MAGIC" level="1" />
+      <grant type="Class Feature" name="ID_CLASS_FEATURE_ELDRITCH_INVOCATIONS" level="2" />
+      <grant type="Class Feature" name="ID_CLASS_FEATURE_PACT_BOON" level="3" />
+      <grant type="Class Feature" name="ID_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_WARLOCK" level="4" />
+      <grant type="Class Feature" name="ID_CLASS_FEATURE_MYSTIC_ARCANUM" level="11" />
+      <grant type="Class Feature" name="ID_CLASS_FEATURE_ELDRITCH_MASTER" level="20" />
+    </rules>
+  </element>
+
+  <!-- Warlock Class Features -->
+  <element name="Otherworldly Patron" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_OTHERWORLDLY_PATRON">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>At 1st level, you have struck a bargain with an otherworldly being of your choice.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Archetype" name="Otherworldly Patron" supports="Otherworldly Patron" />
+    </rules>
+  </element>
+  <element name="Pact Magic" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_SPELLCASTING_WARLOCK_PACT_MAGIC">
+    <supports>ID_INTERNAL_SUPPORT_SPELLCASTING,Warlock</supports>
+    <requirements />
+    <description>
+      <p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>
+    </description>
+    <sheet display="false">
+      <description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</description>
+    </sheet>
+    <setters>
+      <set name="spellcastingClass">Warlock</set>
+      <set name="spellcastingAbility">Charisma</set>
+    </setters>
+    <rules>
+      <stat name="spell:attack" value="+Proficiency" />
+      <stat name="spell:attack" value="+Charisma Modifier" />
+
+      <stat name="spell:dc" value="+8" />
+      <stat name="spell:dc" value="+Proficiency" />
+      <stat name="spell:dc" value="+Charisma Modifier" />
+
+      <!--<stat name="spells:known" value="+2" level="1" />
+      <stat name="spells:known" value="+1" level="2" />
+      <stat name="spells:known" value="+1" level="3" />
+      <stat name="spells:known" value="+1" level="4" />
+      <stat name="spells:known" value="+1" level="5" />
+      <stat name="spells:known" value="+1" level="6" />
+      <stat name="spells:known" value="+1" level="7" />
+      <stat name="spells:known" value="+1" level="8" />
+      <stat name="spells:known" value="+1" level="9" />
+      <stat name="spells:known" value="+1" level="10" />
+      <stat name="spells:known" value="+1" level="11" />
+      <stat name="spells:known" value="+1" level="13" />
+      <stat name="spells:known" value="+1" level="15" />
+      <stat name="spells:known" value="+1" level="17" />
+
+      <stat name="spells:slot1" value="+2" level="1" />
+      <stat name="spells:slot1" value="+1" level="2" />
+      <stat name="spells:slot1" value="+1" level="3" />
+      <stat name="spells:slot2" value="+2" level="3" />
+      <stat name="spells:slot2" value="+1" level="4" />
+      <stat name="spells:slot3" value="+2" level="5" />
+      <stat name="spells:slot3" value="+1" level="6" />
+      <stat name="spells:slot4" value="+1" level="7" />
+      <stat name="spells:slot4" value="+1" level="8" />
+      <stat name="spells:slot4" value="+1" level="9" />
+      <stat name="spells:slot5" value="+1" level="9" />
+      <stat name="spells:slot5" value="+1" level="10" />
+      <stat name="spells:slot5" value="+1" level="18" />
+      <stat name="spells:slot6" value="+1" level="11" />
+      <stat name="spells:slot6" value="+1" level="19" />
+      <stat name="spells:slot7" value="+1" level="13" />
+      <stat name="spells:slot7" value="+1" level="20" />
+      <stat name="spells:slot8" value="+1" level="15" />
+      <stat name="spells:slot9" value="+1" level="17" />-->
+
+
+
+      <!--<select type="Spell" name="Cantrip (Sorcerer)" supports="0&amp;&amp;Sorcerer" level="1" number="4" />
+      <select type="Spell" name="Cantrip (Sorcerer)" supports="0&amp;&amp;Sorcerer" level="4" />
+      <select type="Spell" name="Cantrip (Sorcerer)" supports="0&amp;&amp;Sorcerer" level="10" />
+      
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1)&amp;&amp;Sorcerer" level="1" number="2"/>
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1)&amp;&amp;Sorcerer" level="2" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2)&amp;&amp;Sorcerer" level="3" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2)&amp;&amp;Sorcerer" level="4" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3)&amp;&amp;Sorcerer" level="5" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3)&amp;&amp;Sorcerer" level="6" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4)&amp;&amp;Sorcerer" level="7" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4)&amp;&amp;Sorcerer" level="8" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5)&amp;&amp;Sorcerer" level="9" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5)&amp;&amp;Sorcerer" level="10" />-->
+      <!--<select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6)&amp;&amp;Sorcerer" level="11" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7)&amp;&amp;Sorcerer" level="13" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7||8)&amp;&amp;Sorcerer" level="15" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7||8||9)&amp;&amp;Sorcerer" level="17" />-->
+
+    </rules>
+  </element>
+  <element name="Eldritch Invocations" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_ELDRITCH_INVOCATIONS">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p>
+      <p>At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p>
+      <p>Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Class Feature" name="Eldritch Invocation (2)" supports="Eldritch Invocations" level="2" number="2" />
+      <select type="Class Feature" name="Eldritch Invocation (5)" supports="Eldritch Invocations" level="5" />
+      <select type="Class Feature" name="Eldritch Invocation (7)" supports="Eldritch Invocations" level="7" />
+      <select type="Class Feature" name="Eldritch Invocation (9)" supports="Eldritch Invocations" level="9" />
+      <select type="Class Feature" name="Eldritch Invocation (12)" supports="Eldritch Invocations" level="12" />
+      <select type="Class Feature" name="Eldritch Invocation (15)" supports="Eldritch Invocations" level="15" />
+      <select type="Class Feature" name="Eldritch Invocation (18)" supports="Eldritch Invocations" level="18" />
+    </rules>
+  </element>
+  <element name="Pact Boon" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_PACT_BOON">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Class Feature" name="Pact Boon" supports="Pact Boon" />
+    </rules>
+  </element>
+  <element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_WARLOCK">
+    <supports />
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Improvement Option (4)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
+      <select name="Improvement Option (8)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
+      <select name="Improvement Option (12)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
+      <select name="Improvement Option (16)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
+      <select name="Improvement Option (19)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+    </rules>
+  </element>
+  <element name="Mystic Arcanum" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_MYSTIC_ARCANUM">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p></p>
+    </description>
+    <sheet />
+    <rules>
+
+    </rules>
+  </element>
+  <element name="Eldritch Master" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_ELDRITCH_MASTER">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p></p>
+    </description>
+    <sheet />
+    <rules>
+
+    </rules>
+  </element>
+
+
+  <!-- Eldritch Invocations -->
+  <element name="Armor of Shadows" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_ARMOR_OF_SHADOWS">
+    <supports>Eldritch Invocations</supports>
+    <requirements />
+    <description>
+      <p>You can cast mage armor on yourself at will, without expending a spell slot or material components.</p>
+    </description>
+    <sheet>
+      <description>You can cast mage armor on yourself at will, without expending a spell slot or material components.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_MAGE_ARMOR" />
+    </rules>
+  </element>
+  <element name="Eldritch Sight" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_ELDRITCH_SIGHT">
+    <supports>Eldritch Invocations</supports>
+    <requirements />
+    <description>
+      <p>You can cast detect magic at will, without expending a spell slot.</p>
+    </description>
+    <sheet>
+      <description>You can cast detect magic at will, without expending a spell slot.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_DETECT_MAGIC" />
+    </rules>
+  </element>
+  <element name="Fiendish Vigor" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_FIENDISH_VIGOR">
+    <supports>Eldritch Invocations</supports>
+    <requirements />
+    <description>
+      <p>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</p>
+    </description>
+    <sheet>
+      <description>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_FALSE_LIFE" />
+    </rules>
+  </element>
+  <element name="One With Shadows" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_ONE_WITH_SHADOWS">
+    <supports>Eldritch Invocations</supports>
+    <requirements>ID_LEVEL_5</requirements>
+    <description>
+      <p class="flavor">Prerequisite: 5th level</p>
+      <p>When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.</p>
+    </description>
+    <sheet>
+      <description>When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Ascendant Step" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_ASCENDANT_STEP">
+    <supports>Eldritch Invocations</supports>
+    <requirements>ID_LEVEL_9</requirements>
+    <description>
+      <p class="flavor">Prerequisite: 9th level</p>
+      <p>You can cast levitate on yourself at will, without expending a spell slot or material components.</p>
+    </description>
+    <sheet>
+      <description>You can cast levitate on yourself at will, without expending a spell slot or material components.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_LEVITATE" />
+    </rules>
+  </element>
+
+
+  <element name="Agonizing Blast" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_AGONIZING BLAST">
+    <supports>Eldritch Invocations</supports>
+    <requirements>ID_SPELL_ELDRITCH_BLAST</requirements>
+    <description>
+      <p class="flavor">Prerequisite: eldritch blast cantrip</p>
+      <p>When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.</p>
+    </description>
+    <sheet>
+      <description>When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.</description>
+    </sheet>
+    <rules />
+  </element>
+
+
+  <!--
+  <element name="xxxxxxxxxxxx" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_xxxxxxxxxxxx">
+    <supports>Eldritch Invocations</supports>
+    <requirements />
+    <description>
+      <p></p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+    <rules />
+  </element>
+  -->
+
+
+  <!-- Pact Boons -->
+  <element name="Pact of the Chain" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_PACT_BOON_PACT_OF_THE_CHAIN">
+    <supports>Pact Boon</supports>
+    <requirements />
+    <description>
+      <p>You learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.</p>
+      <p>When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</p>
+      <p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.</p>
+    </description>
+    <sheet>
+      <description></description>
+    </sheet>
+    <rules>
+      <grant type="Spell" name="ID_SPELL_FIND_FAMILIAR" />
+    </rules>
+  </element>
+  <element name="Pact of the Tome" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_PACT_BOON_PACT_OF_THE_TOME">
+    <supports>Pact Boon</supports>
+    <requirements />
+    <description>
+      <p></p>
+      <p>Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list. While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known.</p>
+      <p>If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</p>
+    </description>
+    <sheet />
+    <rules>
+      <!--<grant type="Spell" name="ID_SPELL_FIND_FAMILIAR" />-->
+    </rules>
+  </element>
+
+
+  <!-- Otherworldly Patrons -->
+  <element name="The Fiend" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_OTHERWORLDLY_PATRON_FIEND">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz’Urb-luu, and Baphomet; archdevils such as A smodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.</p>
+      <div element="ID_ARCHETYPE_FEATURE_FIEND_EXPANDED_SPELL_LIST"/>
+      <div element="ID_ARCHETYPE_FEATURE_FIEND_DARKONESBLESSING"/>
+      <div element="ID_ARCHETYPE_FEATURE_FIEND_DARKONESOWNLUCK"/>
+    </description>
+    <sheet>
+      <description>You have made a pact with a fiend from the lower planes of existence.</description>
+    </sheet>
+    <rules>
+      <grant name="ID_ARCHETYPE_FEATURE_FIEND_EXPANDED_SPELL_LIST" type="Archetype Feature" level="1" />
+      <grant name="ID_ARCHETYPE_FEATURE_FIEND_DARKONESBLESSING" type="Archetype Feature" level="1" />
+      <grant name="ID_ARCHETYPE_FEATURE_FIEND_DARKONESOWNLUCK" type="Archetype Feature" level="6" />
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_FIEND_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>FIEND EXPANDED SPELLS</h5>
+      <p>
+        Spell Level Spells
+        1st burning hands, command
+        2nd blindness/deafness, scorching ray
+        3rd fireball, stinking cloud
+        4th fire shield, wall of fire
+        5th flame strike, hallow
+      </p>
+    </description>
+    <sheet display="false">
+      <description>The Fiend lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <rules>
+      <!--<grant type="Spell" name="ID_SPELL_BURNING_HANDS" level="1"/>
+      <grant type="Spell" name="ID_SPELL_COMMAND" level="1"/>-->
+    </rules>
+  </element>
+  <element name="Dark One’s Blessing" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_FIEND_DARKONESBLESSING">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to %dark-ones-blessing:temp hp%.</description>
+    </sheet>
+    <rules>
+      <stat name="dark-ones-blessing:temp hp" value="+Charisma Modifier" />
+      <stat name="dark-ones-blessing:temp hp" value="+Level" />
+    </rules>
+  </element>
+  <element name="Dark One’s Own Luck" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_FIEND_DARKONESOWNLUCK">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll’s effects occur.</p>
+      <p>Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. (short rest)</description>
+    </sheet>
+    <rules />
+  </element>
+
+
+
+  
+  
+  
+  
+    
+    
+    
+      
+      
 
 </elements>
