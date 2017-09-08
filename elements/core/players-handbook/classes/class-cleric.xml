@@ -4,7 +4,7 @@
     <name>Cleric</name>
     <description>The Cleric class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.7" revised="2017/01/01">
+    <update version="0.0.8" revised="2017/01/01">
       <file name="class-cleric.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-cleric.xml" />
     </update>
   </info>
@@ -794,7 +794,7 @@
     </sheet>
     <rules>
       <grant type="Spell" name="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" level="1" />
-      <grant type="Spell" name="ID_PHB_SPELL_SPEAK_WITH_ANIMAL" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" />
       <grant type="Spell" name="ID_PHB_SPELL_BARKSKIN" level="3" />
       <grant type="Spell" name="ID_PHB_SPELL_SPIKE_GROWTH" level="3" />
       <grant type="Spell" name="ID_PHB_SPELL_PLANT_GROWTH" level="5" />
@@ -819,8 +819,8 @@
     </description>
     <sheet display="false"/>
     <rules>
-      <select type="Spell" name="Acolyte of Nature" supports="ID_CLASS_DRUID&amp;&amp;0" />
-      <select type="Proficiency" name="Acolyte of Nature" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+      <select type="Spell" name="Acolyte of Nature" supports="Druid&amp;&amp;0" />
+      <select type="Proficiency" name="Acolyte of Nature" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
     </rules>
   </element>
   <element name="Bonus Proficiency" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_NATURE_DOMAIN_BONUS_PROFICIENCY">
@@ -879,59 +879,431 @@
   </element> 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--
-
-  <element name="Tempest Domain" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CLERIC_Tempest_DOMAIN">
+  <!-- Tempest Domain -->
+  <element name="Tempest Domain" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CLERIC_TEMPEST_DOMAIN">
     <supports>Divine Domain</supports>
     <description>
-      <p></p>
+      <p>Gods whose portfolios include the Tempest domain - including Talos, Umberlee, Kord, Zeboim, the Devourer, Zeus, and Thor—govern storms, sea, and sky. They include gods of lightning and thunder, gods of earthquakes, some fire gods, and certain gods of violence, physical strength, and courage. In some pantheons, a god of this domain rules over other deities and is known for swift justice delivered by thunderbolts. In the pantheons of seafaring people, gods of this domain are ocean deities and the patrons of sailors. Tempest gods send their clerics to inspire fear in the common folk, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.</p>
+      <h5>Tempest Domain Spells</h5>
+      <table>
+        <thead>
+          <tr>
+            <td>Cleric Level</td>
+            <td>Spells</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1st</td>
+          <td>
+            <em>fog cloud, thunderwave</em>
+          </td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>
+            <em>gust of wind, shatter</em>
+          </td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>
+            <em>call lightning, sleet storm</em>
+          </td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>
+            <em>control water, ice storm</em>
+          </td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>
+            <em>destructive wave, insect plague</em>
+          </td>
+        </tr>
+      </table>
+      <div element="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_BONUS_PROFICIENCIES" />
+      <div element="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_WRATH_OF_THE_STORM" />
+      <div element="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_CD_DESTRUCTIVE_WRATH" />
+      <div element="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_THUNDERBOLT_STRIKE" />
+      <div element="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_DIVINE_STRIKE" />
+      <div element="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_STORMBORN" />
     </description>
     <sheet>
-      <description></description>
+      <description>Gods whose portfolios include the Tempest domain govern storms, sea, and sky.</description>
     </sheet>
     <rules>
-      
+      <grant type="Spell" name="ID_PHB_SPELL_FOG_CLOUD" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_THUNDERWAVE" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_GUST_OF_WIND" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_SHATTER" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_CALL_LIGHTNING" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_SLEET_STORM" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_CONTROL_WATER" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_ICE_STORM" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="9" />
+      <grant type="Spell" name="ID_PHB_SPELL_INSECT_PLAGUE" level="9" />
+
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_WRATH_OF_THE_STORM" level="1"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_CD_DESTRUCTIVE_WRATH" level="2"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_THUNDERBOLT_STRIKE" level="6"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_STORMBORN" level="17"/>
     </rules>
   </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_BONUS_PROFICIENCIES">
+    <description>
+      <p>At 1st level, you gain proficiency with martial weapons and heavy armor.</p>
+    </description>
+    <sheet>
+      <description>You gain proficiency with martial weapons and heavy armor.</description>
+    </sheet>
+    <rules>
+    	<grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+    	<grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
+  </element>
+  <element name="Wrath of the Storm" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_WRATH_OF_THE_STORM">
+    <description>
+      <p>Also at 1st level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes 2d8 lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.</p>
+      <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes 2d8 lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one. You can use this feature %wrath of the storm:count% times / long rest.</description>
+    </sheet>
+    <rules>
+    	<stat name="wrath of the storm:count" value="+1" bonus="wrath of the storm"/>
+    	<stat name="wrath of the storm:count" value="Wisdom Modifier" bonus="wrath of the storm"/>
+    </rules>
+  </element>
+  <element name="Channel Divinity: Destructive Wrath" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_CD_DESTRUCTIVE_WRATH">
+    <description>
+      <p>Starting at 2nd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity.</p>
+      <p class="indent">When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling.</p>
+    </description>
+    <sheet>
+      <description>When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Thunderbolt Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_THUNDERBOLT_STRIKE">
+    <description>
+      <p>At 6th level, when you deal lightning damage to a Large or smaller creature, you can also push it up to 10 feet away from you.</p>
+    </description>
+    <sheet>
+      <description>When you deal lightning damage to a Large or smaller creature, you can also push it up to 10 feet away from you.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_DIVINE_STRIKE">
+    <description>
+      <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+    </description>
+    <sheet>
+      <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target.</description>
+      <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 thunder damage to the target.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Stormborn" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_STORMBORN">
+    <description>
+      <p>At 17th level, you have a flying speed equal to your current walking speed whenever you are not underground or indoors.</p>
+    </description>
+    <sheet>
+      <description>You have a flying speed equal to your current walking speed whenever you are not underground or indoors.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+
+  <!-- Trickery Domain -->
   <element name="Trickery Domain" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CLERIC_Trickery_DOMAIN">
     <supports>Divine Domain</supports>
     <description>
-      <p></p>
+      <p>Gods of trickery—such as Tymora, Beshaba, Olidammara, the Traveler, Garl Glittergold, and Loki—are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They’re patrons of thieves, scoundrels, gamblers, rebels, and liberators. Their clerics are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.</p>
+      <h5>Trickery Domain Spells</h5>
+      <table>
+        <thead>
+          <tr>
+            <td>Cleric Level</td>
+            <td>Spells</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1st</td>
+          <td>
+            <em>charm person, disguise self</em>
+          </td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>
+            <em>mirror image, pass without trace</em>
+          </td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>
+            <em>blink, dispel magic</em>
+          </td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>
+            <em>dimension door, polymorph</em>
+          </td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>
+            <em>dominate person, modify memory</em>
+          </td>
+        </tr>
+      </table>
+      <div element="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_BLESSING_OF_THE_TRICKSTER" />
+      <div element="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CD_INVOKE_DUPLICITY" />
+      <div element="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CD_CLOAK_OF_SHADOWS" />
+      <div element="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_DIVINE_STRIKE" />
+      <div element="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_IMPROVED_DUPLICITY" />
     </description>
     <sheet>
       <description></description>
     </sheet>
     <rules>
-      
+      <grant type="Spell" name="ID_PHB_SPELL_CHARM_PERSON" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_DISGUISE_SELF" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_MIRROR_IMAGE" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_BLINK" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_DISPEL_MAGIC" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_DIMENSION_DOOR" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_POLYMORPH" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_DOMINATE_PERSON" level="9" />
+      <grant type="Spell" name="ID_PHB_SPELL_MODIFY_MEMORY" level="9" />
+
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_BLESSING_OF_THE_TRICKSTER" level="1"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CD_INVOKE_DUPLICITY" level="2"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CD_CLOAK_OF_SHADOWS" level="6"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_IMPROVED_DUPLICITY" level="17"/>
     </rules>
   </element>
+
+
+  <element name="Blessing of the Trickster" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_BLESSING_OF_THE_TRICKSTER">
+    <description>
+      <p>Starting when you choose this domain at 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again.</p>
+    </description>
+    <sheet>
+      <description>You can use your action to touch a willing creature other than yourself to give it advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Channel Divinity: Invoke Duplicity" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CD_INVOKE_DUPLICITY">
+    <description>
+      <p>Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself. As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell).</p>
+      <p class="indent">The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.</p>
+      <p class="indent">For the duration, you can cast spells as though you were in the illusion’s space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target.</p>
+    </description>
+    <sheet>
+      <description>As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Channel Divinity: Cloak of Shadows" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CD_CLOAK_OF_SHADOWS">
+    <description>
+      <p>Starting at 6th level, you can use your Channel Divinity to vanish.</p>
+      <p class="indent">As an action, you become invisible until the end of your next turn. You become visible if you attack or cast a spell.</p>
+    </description>
+    <sheet>
+      <description>As an action, you become invisible until the end of your next turn. You become visible if you attack or cast a spell.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_DIVINE_STRIKE">
+    <description>
+      <p>At 8th level, you gain the ability to infuse your weapon strikes with poison—a gift from your deity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+    </description>
+    <sheet>
+      <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target.</description>
+      <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 poison damage to the target.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Improved Duplicity" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_IMPROVED_DUPLICITY">
+    <description>
+      <p>At 17th level, you can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can move any number of them up to 30 feet, to a maximum range of 120 feet.</p>
+      <div element="ID_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CD_INVOKE_DUPLICITY" />
+    </description>
+    <sheet>
+      <description>AYou can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+
+  <!-- War Domain -->
   <element name="War Domain" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_CLERIC_War_DOMAIN">
     <supports>Divine Domain</supports>
     <description>
-      <p></p>
+      <p>War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry (such as Torm, Heironeous, and Kiri- Jolith) as well as gods of destruction and pillage (such as Erythnul, the Fury, Gruumsh, and Ares) and gods of conquest and domination (such as Bane, Hextor, and Maglubiyet). Other w ar gods (such as Tempus, Nike, and Nuada) take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.</p>
+      <h5>War Domain Spells</h5>
+      <table>
+        <thead>
+          <tr>
+            <td>Cleric Level</td>
+            <td>Spells</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1st</td>
+          <td>
+            <em>divine favor, shield of faith</em>
+          </td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>
+            <em>magic weapon, spiritual weapon</em>
+          </td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>
+            <em>crusader’s mantle, spirit guardians</em>
+          </td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>
+            <em>freedom of movement, stoneskin</em>
+          </td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>
+            <em>flame strike, hold monster</em>
+          </td>
+        </tr>
+      </table>
+      <div element="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_BONUS_PROFICIENCIES" />
+      <div element="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST" />
+      <div element="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_GUIDED_STRIKE" />
+      <div element="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_WAR_GODS_BLESSING" />
+      <div element="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE" />
+      <div element="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE" />
     </description>
     <sheet>
       <description></description>
     </sheet>
     <rules>
-      
+      <grant type="Spell" name="ID_PHB_SPELL_DIVINE_FAVOR" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_SHIELD_OF_FAITH" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_MAGIC_WEAPON" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_CRUSADERS_MANTLE" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_STONESKIN" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_FLAME_STRIKE" level="9" />
+      <grant type="Spell" name="ID_PHB_SPELL_HOLD_MONSTER" level="9" />
+
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST" level="1"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_GUIDED_STRIKE" level="2"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_WAR_GODS_BLESSING" level="6"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE" level="17"/>
     </rules>
   </element>
-   -->
+  
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_BONUS_PROFICIENCIES">
+    <description>
+      <p>At 1st level, you gain proficiency with martial weapons and heavy armor.</p>
+    </description>
+    <sheet>
+      <description>You gain proficiency with martial weapons and heavy armor.</description>
+    </sheet>
+    <rules>
+    	<grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+    	<grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
+  </element>
+  <element name="War Priest" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST">
+    <description>
+      <p>From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one weapon attack as a bonus action.</p>
+      <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>When you use the Attack action, you can make one weapon attack as a bonus action. You can use this feature %war priest:count% times / long rest.</description>
+    </sheet>
+    <rules>
+      <stat name="war priest:count" value="+1" bonus="war priest" />
+      <stat name="war priest:count" value="Wisdom Modifier" bonus="war priest" />
+    </rules>
+  </element>
+  <element name="Channel Divinity: Guided Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_GUIDED_STRIKE">
+    <description>
+      <p>Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
+    </description>
+    <sheet>
+      <description>When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Channel Divinity: War God’s Blessing" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_WAR_GODS_BLESSING">
+    <description>
+      <p>At 6th level, when a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
+    </description>
+    <sheet>
+      <description>When a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE">
+    <description>
+      <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+    </description>
+    <sheet>
+      <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target.</description>
+      <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
+  <element name="Avatar of Battle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE">
+    <description>
+      <p>At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</p>
+    </description>
+    <sheet>
+      <description>You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</description>
+    </sheet>
+    <rules>
+    
+    </rules>
+  </element>
 </elements>
