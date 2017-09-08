@@ -4,7 +4,7 @@
     <name>Druid</name>
     <description>The Druid class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.3" revised="2017/01/01">
+    <update version="0.0.4" revised="2017/01/01">
       <file name="class-druid.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-druid.xml" />
     </update>
   </info>
@@ -321,11 +321,35 @@
   </element>
 
   <!-- Circle Spells -->
-  <element name="Arctic" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_ARCTIC">
+  <element name="Arctic Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_ARCTIC">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>hold person, spike growth</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>sleet storm, slow</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>freedom of movement, ice storm</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>commune with nature, cone of cold</em></td>
+      </tr>
+      </table>
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_HOLD_PERSON" level="3" prepared="true" />
@@ -341,11 +365,35 @@
       <grant type="Spell" name="ID_SPELL_CONE_OF_COLD" level="9" prepared="true" />
     </rules>
   </element>
-  <element name="Coast" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_COAST">
+  <element name="Coast Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_COAST">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>mirror image, misty step</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>water breathing, water walk</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>control water, freedom of movement</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>conjure elemental, scrying</em></td>
+      </tr>
+      </table>      
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_MIRROR_IMAGE" level="3" prepared="true" />
@@ -361,11 +409,35 @@
       <grant type="Spell" name="ID_SPELL_SCRYING" level="9" prepared="true" />
     </rules>
   </element>
-  <element name="Desert" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_DESERT">
+  <element name="Desert Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_DESERT">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>blur, silence</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>create food and water, protection from energy</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>blight, hallucinatory terrain</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>insect plague, wall of stone</em></td>
+      </tr>
+      </table>      
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_BLUR" level="3" prepared="true" />
@@ -381,11 +453,35 @@
       <grant type="Spell" name="ID_SPELL_WALL_OF_STONE" level="9" prepared="true" />
     </rules>
   </element>
-  <element name="Forest" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_FOREST">
+  <element name="Forest Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_FOREST">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>barkskin, spider climb</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>call lightning, plant growth</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>divination, freedom of movement</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>commune with nature, tree stride</em></td>
+      </tr>
+      </table>      
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_BARKSKIN" level="3" prepared="true" />
@@ -401,11 +497,35 @@
       <grant type="Spell" name="ID_SPELL_TREE_STRIDE" level="9" prepared="true" />
     </rules>
   </element>
-  <element name="Grassland" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_GRASSLAND">
+  <element name="Grassland Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_GRASSLAND">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>invisibility, pass without trace</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>daylight, haste</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>divination, freedom of movement</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>dream, insect plague</em></td>
+      </tr>
+      </table>      
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_INVISIBILITY" level="3" prepared="true" />
@@ -421,11 +541,35 @@
       <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
     </rules>
   </element>
-  <element name="Mountain" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_MOUNTAIN">
+  <element name="Mountain Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_MOUNTAIN">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>spider climb, spike growth</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>lightning bolt, meld into stone</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>stone shape, stoneskin</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>passwall, wall of stone</em></td>
+      </tr>
+      </table>      
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
@@ -441,11 +585,35 @@
       <grant type="Spell" name="ID_SPELL_WALL_OF_STONE" level="9" prepared="true" />
     </rules>
   </element>
-  <element name="Swamp" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_SWAMP">
+  <element name="Swamp Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_SWAMP">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>acid arrow, darkness</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>water walk, stinking cloud</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>freedom of movement, locate creature</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>insect plague, scrying</em></td>
+      </tr>
+      </table>  
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_ACID_ARROW" level="3" prepared="true" />
@@ -461,11 +629,35 @@
       <grant type="Spell" name="ID_SPELL_SCRYING" level="9" prepared="true" />
     </rules>
   </element>
-  <element name="Underdark" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_UNDERDARK">
+  <element name="Underdark Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_UNDERDARK">
     <supports>Circle Spells</supports>
     <description>
       <p>At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.</p>
       <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+      <table>
+      <thead>
+        <tr>
+          <td>Druid Level</td>
+          <td>Spells</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>3rd</td>
+        <td><em>spider climb, web</em></td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td><em>gaseous form, stinking cloud</em></td>
+      </tr>
+      <tr>
+        <td>7th</td>
+        <td><em>greater invisibility, stone shape</em></td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td><em>cloudkill, insect plague</em></td>
+      </tr>
+      </table>      
     </description>
     <rules>
       <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
