@@ -4,7 +4,7 @@
     <name>Cleric</name>
     <description>The Cleric class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.6" revised="2017/01/01">
+    <update version="0.0.7" revised="2017/01/01">
       <file name="class-cleric.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-cleric.xml" />
     </update>
   </info>
@@ -787,7 +787,7 @@
       <div element="ID_ARCHETYPE_FEATURE_NATURE_DOMAIN_CD_CHARM_ANIMALS_AND_PLANTS" />
       <div element="ID_ARCHETYPE_FEATURE_NATURE_DOMAIN_DAMPEN_ELEMENTS" />
       <div element="ID_ARCHETYPE_FEATURE_NATURE_DOMAIN_DIVINE_STRIKE" />
-      <div element="ID_ARCHETYPE_FEATURE_NATURE_DOMAIN_MASTER_OF_NATURE" /
+      <div element="ID_ARCHETYPE_FEATURE_NATURE_DOMAIN_MASTER_OF_NATURE" />
     </description>
     <sheet>
       <description>Gods of nature are as varied as the natural w orld itself, from inscrutable gods of the deep forests to friendly deities associated with particular springs and groves.</description>
@@ -877,6 +877,22 @@
     <rules>
     </rules>
   </element> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!--
