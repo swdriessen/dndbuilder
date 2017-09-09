@@ -4,7 +4,7 @@
     <name>Druid</name>
     <description>The Druid class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.4" revised="2017/01/01">
+    <update version="0.0.5" revised="2017/01/01">
       <file name="class-druid.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-druid.xml" />
     </update>
   </info>
@@ -352,17 +352,17 @@
       </table>
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_HOLD_PERSON" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_SPIKE_GROWTH" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_HOLD_PERSON" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIKE_GROWTH" level="3" prepared="true" />
       
-      <grant type="Spell" name="ID_SPELL_SLEET_STORM" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_SLOW" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SLEET_STORM" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SLOW" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_ICE_STORM" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_ICE_STORM" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_COMMUNE_WITH_NATURE" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_CONE_OF_COLD" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_CONE_OF_COLD" level="9" prepared="true" />
     </rules>
   </element>
   <element name="Coast Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_COAST">
@@ -396,17 +396,17 @@
       </table>      
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_MIRROR_IMAGE" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_MISTY_STEP" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_MIRROR_IMAGE" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_MISTY_STEP" level="3" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_WATER_BREATHING" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_WATER_WALK" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_WATER_BREATHING" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_WATER_WALK" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_CONTROL_WATER" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_CONTROL_WATER" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_CONJURE_ELEMENTAL" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_SCRYING" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_CONJURE_ELEMENTAL" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SCRYING" level="9" prepared="true" />
     </rules>
   </element>
   <element name="Desert Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_DESERT">
@@ -440,17 +440,17 @@
       </table>      
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_BLUR" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_SILENCE" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_BLUR" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SILENCE" level="3" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_CREATE_FOOD_AND_WATER" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_PROTECTION_FROM_ENERGY" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_BLIGHT" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_HALLUCINATORY_TERRAIN" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_BLIGHT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_WALL_OF_STONE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_WALL_OF_STONE" level="9" prepared="true" />
     </rules>
   </element>
   <element name="Forest Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_FOREST">
@@ -484,17 +484,17 @@
       </table>      
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_BARKSKIN" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_BARKSKIN" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_CALL_LIGHTNING" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_PLANT_GROWTH" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_CALL_LIGHTNING" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_PLANT_GROWTH" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_DIVINATION" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_DIVINATION" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_COMMUNE_WITH_NATURE" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_TREE_STRIDE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_TREE_STRIDE" level="9" prepared="true" />
     </rules>
   </element>
   <element name="Grassland Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_GRASSLAND">
@@ -528,17 +528,17 @@
       </table>      
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_INVISIBILITY" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_PASS_WITHOUT_TRACE" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_INVISIBILITY" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_DAYLIGHT" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_HASTE" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_DAYLIGHT" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_HASTE" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_DIVINATION" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_DIVINATION" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_DREAM" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_DREAM" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
     </rules>
   </element>
   <element name="Mountain Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_MOUNTAIN">
@@ -572,17 +572,17 @@
       </table>      
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_SPIKE_GROWTH" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIKE_GROWTH" level="3" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_LIGHTNING_BOLT" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_MELD_INTO_STONE" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_MELD_INTO_STONE" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_STONE_SHAPE" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_STONESKIN" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_STONE_SHAPE" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_STONESKIN" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_PASSWALL" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_WALL_OF_STONE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_PASSWALL" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_WALL_OF_STONE" level="9" prepared="true" />
     </rules>
   </element>
   <element name="Swamp Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_SWAMP">
@@ -616,17 +616,17 @@
       </table>  
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_ACID_ARROW" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_DARKNESS" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_ACID_ARROW" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_DARKNESS" level="3" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_WATER_WALK" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_STINKING_CLOUD" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_WATER_WALK" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_STINKING_CLOUD" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_LOCATE_CREATURE" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_LOCATE_CREATURE" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_SCRYING" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SCRYING" level="9" prepared="true" />
     </rules>
   </element>
   <element name="Underdark Circle" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CIRCLE_SPELLS_UNDERDARK">
@@ -660,17 +660,17 @@
       </table>      
     </description>
     <rules>
-      <grant type="Spell" name="ID_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_WEB" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIDER_CLIMB" level="3" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_WEB" level="3" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_GASEOUS_FORM" level="5" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_STINKING_CLOUD" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_GASEOUS_FORM" level="5" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_STINKING_CLOUD" level="5" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_GREATER_INVISIBILITY" level="7" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_STONE_SHAPE" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_STONE_SHAPE" level="7" prepared="true" />
 
-      <grant type="Spell" name="ID_SPELL_CLOUDKILL" level="9" prepared="true" />
-      <grant type="Spell" name="ID_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_CLOUDKILL" level="9" prepared="true" />
+      <grant type="Spell" name="ID_PHB_SPELL_INSECT_PLAGUE" level="9" prepared="true" />
     </rules>
   </element>
 

@@ -4,12 +4,12 @@
     <name>Spells</name>
     <description>The spells from the Sword Coast Adventurer’s Guide.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
-    <update version="0.1.0" revised="2017/01/01">
+    <update version="0.1.1" revised="2017/01/01">
       <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/spells.xml" />
     </update>
   </info>
 
-  <element name="Booming Blade" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SPELL_SCOG_1">
+  <element name="Booming Blade" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_SPELL_BOOMING_BLADE">
     <supports>Sorcerer, Wizard, Warlock</supports>
     <description>
       <p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 thunder damage, and the spell ends.</p>
@@ -30,7 +30,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Green-Flame Blade" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SPELL_SCOG_2">
+  <element name="Green-Flame Blade" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_SPELL_GREEN_FLAME_BLADE">
     <supports>Sorcerer, Wizard, Warlock</supports>
     <description>
       <p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.</p>
@@ -51,7 +51,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Lightning Lure" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SPELL_SCOG_3">
+  <element name="Lightning Lure" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_SPELL_LIGHTNING_LURE">
     <supports>Sorcerer, Wizard, Warlock</supports>
     <description>
       <p>You create a lash of lightning energy that strikes at one creature of your choice that you can see within range. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.</p>
@@ -72,7 +72,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Sword Burst" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SPELL_SCOG_4">
+  <element name="Sword Burst" type="Spell" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_SPELL_SWORD_BURST">
     <supports>Sorcerer, Wizard, Warlock</supports>
     <description>
       <p>You create a momentary circle of spectral blades that sweep around you. Each creature within range, other than you, must succeed on a Dexterity saving throw or take 1d6 force damage.</p>

@@ -4,7 +4,7 @@
     <name>Cleric</name>
     <description>The Cleric class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.8" revised="2017/01/01">
+    <update version="0.0.9" revised="2017/01/01">
       <file name="class-cleric.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-cleric.xml" />
     </update>
   </info>
@@ -320,16 +320,16 @@
     </sheet>
     <rules>
       <!-- Spells put into a 'life domain spells' grant -->
-      <grant type="Spell" name="ID_SPELL_BLESS" level="1" />
-      <grant type="Spell" name="ID_SPELL_CURE_WOUNDS" level="1" />
-      <grant type="Spell" name="ID_SPELL_LESSER_RESTORATION" level="3" />
-      <grant type="Spell" name="ID_SPELL_SPIRITUAL_WEAPON" level="3" />
-      <grant type="Spell" name="ID_SPELL_BEACON_OF_HOPE" level="5" />
-      <grant type="Spell" name="ID_SPELL_REVIVIFY" level="5" />
-      <grant type="Spell" name="ID_SPELL_DEATH_WARD" level="7" />
-      <grant type="Spell" name="ID_SPELL_GUARDIAN_OF_FAITH" level="7" />
-      <grant type="Spell" name="ID_SPELL_MASS_CURE_WOUNDS" level="9" />
-      <grant type="Spell" name="ID_SPELL_RAISE_DEAD" level="9" />
+      <grant type="Spell" name="ID_PHB_SPELL_BLESS" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_CURE_WOUNDS" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_LESSER_RESTORATION" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_REVIVIFY" level="5" />
+      <grant type="Spell" name="ID_PHB_SPELL_DEATH_WARD" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" />
+      <grant type="Spell" name="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" />
+      <grant type="Spell" name="ID_PHB_SPELL_RAISE_DEAD" level="9" />
       
       
       <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_LIFE_DOMAIN_BONUSPROFICIENCY" level="1"/>

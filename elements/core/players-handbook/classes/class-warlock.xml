@@ -4,7 +4,7 @@
     <name>Warlock</name>
     <description>The Warlock class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.2" revised="2017/01/01">
+    <update version="0.0.3" revised="2017/01/01">
       <file name="class-warlock.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-warlock.xml" />
     </update>
   </info>
@@ -217,7 +217,7 @@
       <description>You can cast mage armor on yourself at will, without expending a spell slot or material components.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_SPELL_MAGE_ARMOR" />
+      <grant type="Spell" name="ID_PHB_SPELL_MAGE_ARMOR" />
     </rules>
   </element>
   <element name="Eldritch Sight" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_ELDRITCH_SIGHT">
@@ -230,7 +230,7 @@
       <description>You can cast detect magic at will, without expending a spell slot.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_SPELL_DETECT_MAGIC" />
+      <grant type="Spell" name="ID_PHB_SPELL_DETECT_MAGIC" />
     </rules>
   </element>
   <element name="Fiendish Vigor" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_FIENDISH_VIGOR">
@@ -243,7 +243,7 @@
       <description>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_SPELL_FALSE_LIFE" />
+      <grant type="Spell" name="ID_PHB_SPELL_FALSE_LIFE" />
     </rules>
   </element>
   <element name="One With Shadows" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_ONE_WITH_SHADOWS">
@@ -269,14 +269,14 @@
       <description>You can cast levitate on yourself at will, without expending a spell slot or material components.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_SPELL_LEVITATE" />
+      <grant type="Spell" name="ID_PHB_SPELL_LEVITATE" />
     </rules>
   </element>
 
 
   <element name="Agonizing Blast" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_INVOCATION_AGONIZING BLAST">
     <supports>Eldritch Invocations</supports>
-    <requirements>ID_SPELL_ELDRITCH_BLAST</requirements>
+    <requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
     <description>
       <p class="flavor">Prerequisite: eldritch blast cantrip</p>
       <p>When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.</p>
@@ -316,7 +316,7 @@
       <description></description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_SPELL_FIND_FAMILIAR" />
+      <grant type="Spell" name="ID_PHB_SPELL_FIND_FAMILIAR" />
     </rules>
   </element>
   <element name="Pact of the Tome" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_PACT_BOON_PACT_OF_THE_TOME">
@@ -329,7 +329,7 @@
     </description>
     <sheet />
     <rules>
-      <!--<grant type="Spell" name="ID_SPELL_FIND_FAMILIAR" />-->
+      <!--<grant type="Spell" name="ID_PHB_SPELL_FIND_FAMILIAR" />-->
     </rules>
   </element>
 
@@ -372,8 +372,8 @@
       <description>The Fiend lets you choose from an expanded list of spells when you learn a warlock spell.</description>
     </sheet>
     <rules>
-      <!--<grant type="Spell" name="ID_SPELL_BURNING_HANDS" level="1"/>
-      <grant type="Spell" name="ID_SPELL_COMMAND" level="1"/>-->
+      <!--<grant type="Spell" name="ID_PHB_SPELL_BURNING_HANDS" level="1"/>
+      <grant type="Spell" name="ID_PHB_SPELL_COMMAND" level="1"/>-->
     </rules>
   </element>
   <element name="Dark One’s Blessing" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_FIEND_DARKONESBLESSING">
