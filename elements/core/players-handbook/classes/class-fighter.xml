@@ -4,7 +4,7 @@
     <name>Fighter</name>
     <description>The fighter class and the champion archetype from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.1.4" revised="2017/01/01">
+    <update version="0.1.5" revised="2017/01/01">
       <file name="class-fighter.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-fighter.xml" />
     </update>
   </info>
@@ -392,9 +392,9 @@
       <stat name="superiority dice:dc" value="superiority dice:dc:ability" />
 
       <select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Maneuver&amp;&amp;Battle Master" number="3" />
-      <select type="Archetype Feature" name="Combat Superiority (Level 7)" supports="Maneuver&amp;&amp;Battle Master" number="3" level="7" />
-      <select type="Archetype Feature" name="Combat Superiority (Level 10)" supports="Maneuver&amp;&amp;Battle Master" number="3" level="10" />
-      <select type="Archetype Feature" name="Combat Superiority (Level 15)" supports="Maneuver&amp;&amp;Battle Master" number="3" level="15" />
+      <select type="Archetype Feature" name="Combat Superiority (Level 7)" supports="Maneuver&amp;&amp;Battle Master" number="2" level="7" />
+      <select type="Archetype Feature" name="Combat Superiority (Level 10)" supports="Maneuver&amp;&amp;Battle Master" number="2" level="10" />
+      <select type="Archetype Feature" name="Combat Superiority (Level 15)" supports="Maneuver&amp;&amp;Battle Master" number="2" level="15" />
     </rules>
   </element>
   <element name="Student of War" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR">
