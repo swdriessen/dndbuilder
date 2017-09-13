@@ -4,7 +4,7 @@
     <name>Sorcerer</name>
     <description>Sorcerer from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.5" revised="2017/06/19">
+    <update version="0.0.6" revised="2017/06/19">
       <file name="class-sorcerer.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-sorcerer.xml" />
     </update>
   </info>
@@ -499,7 +499,7 @@
 
 
   <!-- Metamagic Options -->
-  <element name="Careful Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(CAREFUL_SPELL)">
+  <element name="Careful Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_CAREFUL_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -510,7 +510,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Distant Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(DISTANT_SPELL)">
+  <element name="Distant Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_DISTANT_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -521,7 +521,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Empowered Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(EMPOWERED_SPELL)">
+  <element name="Empowered Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_EMPOWERED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -533,7 +533,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Extended Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(EXTENDED_SPELL)">
+  <element name="Extended Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_EXTENDED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -544,7 +544,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Heightened Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(HEIGHTENED_SPELL)">
+  <element name="Heightened Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_HEIGHTENED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -555,7 +555,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Quickend Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(QUICKEND_SPELL)">
+  <element name="Quickend Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_QUICKEND_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -566,7 +566,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Subtle Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(SUBTLE_SPELL)">
+  <element name="Subtle Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_SUBTLE_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -577,7 +577,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Twinned Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_(TWINNED_SPELL)">
+  <element name="Twinned Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_TWINNED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -590,7 +590,7 @@
   </element>
 
   <!-- Dragon Ancestor Options -->
-  <element name="Black (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(BLACK)">
+  <element name="Black (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BLACK">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -604,7 +604,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Acid" />
     </rules>
   </element>
-  <element name="Blue (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(BLUE)">
+  <element name="Blue (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BLUE">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -618,7 +618,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Lightning" />
     </rules>
   </element>
-  <element name="Brass (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(BRASS)">
+  <element name="Brass (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BRASS">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -632,7 +632,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Fire" />
     </rules>
   </element>
-  <element name="Bronze (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(BRONZE)">
+  <element name="Bronze (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BRONZE">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -646,7 +646,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Lightning" />
     </rules>
   </element>
-  <element name="Copper (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(COPPER)">
+  <element name="Copper (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_COPPER">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -660,7 +660,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Acid" />
     </rules>
   </element>
-  <element name="Gold (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(GOLD)">
+  <element name="Gold (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_GOLD">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -674,7 +674,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Fire" />
     </rules>
   </element>
-  <element name="Green (Poison)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(GREEN)">
+  <element name="Green (Poison)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_GREEN">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -688,7 +688,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Poison" />
     </rules>
   </element>
-  <element name="Red (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(RED)">
+  <element name="Red (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_RED">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -702,7 +702,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Fire" />
     </rules>
   </element>
-  <element name="Silver (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(SILVER)">
+  <element name="Silver (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SILVER">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -716,7 +716,7 @@
       <stat name="Dragon Ancestor Damage Type" value="Cold" />
     </rules>
   </element>
-  <element name="White (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR(WHITE)">
+  <element name="White (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_WHITE">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>

@@ -4,7 +4,7 @@
 		<name>Dragonborn</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.4" revised="2017/06/07">
+		<update version="0.0.5" revised="2017/06/07">
 			<file name="race-dragonborn.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-dragonborn.xml" />
 		</update>
 	</info>
@@ -52,7 +52,7 @@
       <set name="names" type="female">Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit</set>
       <set name="names" type="childhood">Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous</set>
       <set name="names" type="clan">Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit</set>
-      <set name="names-format">$(name) of clan $(clan)</set>
+      <set name="names-format">$(name) $(clan)</set>
 
       <set name="Male Names">Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn</set>
       <set name="Female Names">Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit</set>
@@ -177,7 +177,7 @@
   </element>
 
   
-  <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(BLACK)">
+  <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -192,7 +192,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Blue)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(BLUE)">
+  <element name="Draconic Ancestry (Blue)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -207,7 +207,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Brass)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(BRASS)">
+  <element name="Draconic Ancestry (Brass)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -222,7 +222,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Bronze)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(BRONZE)">
+  <element name="Draconic Ancestry (Bronze)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRONZE">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -237,7 +237,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Copper)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(COPPER)">
+  <element name="Draconic Ancestry (Copper)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_COPPER">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -252,7 +252,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Gold)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(GOLD)">
+  <element name="Draconic Ancestry (Gold)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -267,7 +267,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Green)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(GREEN)">
+  <element name="Draconic Ancestry (Green)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -282,7 +282,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Red)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(RED)">
+  <element name="Draconic Ancestry (Red)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -297,7 +297,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (Silver)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(SILVER)">
+  <element name="Draconic Ancestry (Silver)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_SILVER">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>
@@ -312,7 +312,7 @@
       <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
     </rules>
   </element>
-  <element name="Draconic Ancestry (White)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY(WHITE)">
+  <element name="Draconic Ancestry (White)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE">
     <supports>Draconic Ancestry</supports>
     <requirements />
     <description>

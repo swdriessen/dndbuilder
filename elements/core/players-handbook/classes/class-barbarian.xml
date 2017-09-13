@@ -4,7 +4,7 @@
     <name>Barbarian</name>
     <description>The Barbarian class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.1.1" revised="2017/01/01">
+    <update version="0.1.2" revised="2017/01/01">
       <file name="class-barbarian.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-barbarian.xml" />
     </update>
   </info>
@@ -434,7 +434,7 @@
   </element>
 
   <!-- Totem Spirit Choices-->
-  <element name="Totem Spirit (Bear)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEM_SPIRIT_(BEAR)">
+  <element name="Totem Spirit (Bear)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEM_SPIRIT_BEAR">
     <supports>Totem Spirit</supports>
     <description>
       <p>While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.</p>
@@ -444,7 +444,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Totem Spirit (Eagle)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEM_SPIRIT_(EAGLE)">
+  <element name="Totem Spirit (Eagle)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEM_SPIRIT_EAGLE">
     <supports>Totem Spirit</supports>
     <description>
       <p>While you're raging and aren't wearing any armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash Action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.</p>
@@ -454,7 +454,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Totem Spirit (Wolf)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEM_SPIRIT_(WOLF)">
+  <element name="Totem Spirit (Wolf)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEM_SPIRIT_WOLF">
     <supports>Totem Spirit</supports>
     <description>
       <p>While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wold makes you a leader of hunters.</p>
@@ -466,7 +466,7 @@
   </element>
 
   <!-- Aspect of the Beast Choices-->
-  <element name="Aspect of the Beast (Bear)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ASPECT_OF_THE_BEAST_(BEAR)">
+  <element name="Aspect of the Beast (Bear)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ASPECT_OF_THE_BEAST_BEAR">
     <supports>Aspect of the Beast</supports>
     <description>
       <p>You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.</p>
@@ -478,7 +478,7 @@
       <!--<stat name="carrying capacity" value="*2" />-->
     </rules>
   </element>
-  <element name="Aspect of the Beast (Eagle)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ASPECT_OF_THE_BEAST_(EAGLE)">
+  <element name="Aspect of the Beast (Eagle)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ASPECT_OF_THE_BEAST_EAGLE">
     <supports>Aspect of the Beast</supports>
     <description>
       <p>You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks.</p>
@@ -488,7 +488,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Aspect of the Beast (Wolf)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ASPECT_OF_THE_BEAST_(WOLF)">
+  <element name="Aspect of the Beast (Wolf)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ASPECT_OF_THE_BEAST_WOLF">
     <supports>Aspect of the Beast</supports>
     <description>
       <p>You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace (see chapter 8 for rules on travel pace).</p>
@@ -500,7 +500,7 @@
   </element>
 
   <!-- Totemic Attunement Choices-->
-  <element name="Totemic Attunement (Bear)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEMIC_ATTUNEMENT_(BEAR)">
+  <element name="Totemic Attunement (Bear)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEMIC_ATTUNEMENT_BEAR">
     <supports>Totemic Attunement</supports>
     <description>
       <p>While you’re raging, any creature within 5 feet of you that’s hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened.</p>
@@ -510,7 +510,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Totemic Attunement (Eagle)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEMIC_ATTUNEMENT_(EAGLE)">
+  <element name="Totemic Attunement (Eagle)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEMIC_ATTUNEMENT_EAGLE">
     <supports>Totemic Attunement</supports>
     <description>
       <p>While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.</p>
@@ -520,7 +520,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Totemic Attunement (Wolf)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEMIC_ATTUNEMENT_(WOLF)">
+  <element name="Totemic Attunement (Wolf)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TOTEMIC_ATTUNEMENT_WOLF">
     <supports>Totemic Attunement</supports>
     <description>
       <p>While you’re raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack.</p>
