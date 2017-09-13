@@ -4,7 +4,7 @@
     <name>Monk</name>
     <description>The Monk class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.4" revised="2017/01/01">
+    <update version="0.0.5" revised="2017/01/01">
       <file name="class-monk.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-monk.xml" />
     </update>
   </info>
@@ -28,7 +28,6 @@
       <p class="indent">As a result of the structured life of a m onastic community and the discipline required to harness ki, monks are almost always lawful in alignment.</p>
       <h5>QUICK BUILD</h5>
       <p>You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the hermit background.</p>
-
       <h3>CLASS FEATURES</h3>
       <p>As a monk, you gain the following class features.</p>
       <h5>HIT POINTS</h5>
@@ -55,24 +54,24 @@
         <li>10 darts</li>
       </ul>
       <div element="ID_CLASSFEATURE_MONK_UNARMORED_DEFENSE" />
-      <div element="ID_CLASSFEATURE_MARTIAL_ARTS" />
-      <div element="ID_CLASSFEATURE_KI" />
-      <div element="ID_CLASSFEATURE_UNARMORED_MOVEMENT" />
-      <div element="ID_CLASSFEATURE_MONASTIC_TRADITION" />
-      <div element="ID_CLASSFEATURE_DEFLECT_MISSILES" />
-      <div element="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_MONK" />
-      <div element="ID_CLASSFEATURE_SLOW_FALL" />
-      <div element="ID_CLASSFEATURE_EXTRA_ATTACK_MONK" />
-      <div element="ID_CLASSFEATURE_STUNNING_STRIKE" />
-      <div element="ID_CLASSFEATURE_KI-EMPOWERED_STRIKES" />
-      <div element="ID_CLASSFEATURE_EVASION_MONK" />
-      <div element="ID_CLASSFEATURE_STILLNESS_OF_MIND" />
-      <div element="ID_CLASSFEATURE_PURITY_OF_BODY" />
-      <div element="ID_CLASSFEATURE_TONGUE_OF_THE_SUN_AND_MOON" />
-      <div element="ID_CLASSFEATURE_DIAMOND_SOUL" />
-      <div element="ID_CLASSFEATURE_TIMELESS_BODY_MONK" />
-      <div element="ID_CLASSFEATURE_EMPTY_BODY" />
-      <div element="ID_CLASSFEATURE_PERFECT_SELF" />
+      <div element="ID_CLASSFEATURE_MONK_MARTIAL_ARTS" />
+      <div element="ID_CLASSFEATURE_MONK_KI" />
+      <div element="ID_CLASSFEATURE_MONK_UNARMORED_MOVEMENT" />
+      <div element="ID_CLASSFEATURE_MONK_MONASTIC_TRADITION" />
+      <div element="ID_CLASSFEATURE_MONK_DEFLECT_MISSILES" />
+      <div element="ID_CLASSFEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK" />
+      <div element="ID_CLASSFEATURE_MONK_SLOW_FALL" />
+      <div element="ID_CLASSFEATURE_MONK_EXTRA_ATTACK_MONK" />
+      <div element="ID_CLASSFEATURE_MONK_STUNNING_STRIKE" />
+      <div element="ID_CLASSFEATURE_MONK_KI-EMPOWERED_STRIKES" />
+      <div element="ID_CLASSFEATURE_MONK_EVASION_MONK" />
+      <div element="ID_CLASSFEATURE_MONK_STILLNESS_OF_MIND" />
+      <div element="ID_CLASSFEATURE_MONK_PURITY_OF_BODY" />
+      <div element="ID_CLASSFEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" />
+      <div element="ID_CLASSFEATURE_MONK_DIAMOND_SOUL" />
+      <div element="ID_CLASSFEATURE_MONK_TIMELESS_BODY_MONK" />
+      <div element="ID_CLASSFEATURE_MONK_EMPTY_BODY" />
+      <div element="ID_CLASSFEATURE_MONK_PERFECT_SELF" />
     </description>
     <sheet display="false">
       <description>A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</description>
@@ -94,24 +93,24 @@
       <select type="Proficiency" name="Skill Proficiency (Monk)" supports="ID_PROFICIENCY_SKILL&amp;&amp;ID_CLASS_MONK" number="2" />
 
       <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_UNARMORED_DEFENSE" level="1" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_MARTIAL_ARTS" level="1" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_KI" level="2" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_UNARMORED_MOVEMENT" level="2" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_MONASTIC_TRADITION" level="3" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_DEFLECT_MISSILES" level="3" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_MONK" level="4" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_SLOW_FALL" level="4" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_EXTRA_ATTACK_MONK" level="5" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_STUNNING_STRIKE" level="5" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_KI-EMPOWERED_STRIKES" level="6" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_EVASION_MONK" level="7" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_STILLNESS_OF_MIND" level="7" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_PURITY_OF_BODY" level="10" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_TONGUE_OF_THE_SUN_AND_MOON" level="13" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_DIAMOND_SOUL" level="14" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_TIMELESS_BODY_MONK" level="15" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_EMPTY_BODY" level="18" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_PERFECT_SELF" level="20" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_MARTIAL_ARTS" level="1" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_KI" level="2" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_UNARMORED_MOVEMENT" level="2" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_MONASTIC_TRADITION" level="3" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_DEFLECT_MISSILES" level="3" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK" level="4" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_SLOW_FALL" level="4" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_EXTRA_ATTACK_MONK" level="5" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_STUNNING_STRIKE" level="5" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_KI-EMPOWERED_STRIKES" level="6" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_EVASION_MONK" level="7" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_STILLNESS_OF_MIND" level="7" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_PURITY_OF_BODY" level="10" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" level="13" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_DIAMOND_SOUL" level="14" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_TIMELESS_BODY_MONK" level="15" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_EMPTY_BODY" level="18" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_PERFECT_SELF" level="20" />
     </rules>
   </element>
 
@@ -124,14 +123,14 @@
       <description>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</description>
     </sheet>
     <rules>
-      <stat name="Unarmored Defence" value="Wisdom Modifier" equipped="armor:none,shield:none" />
-      <stat name="AC" value="Unarmored Defence"  bonus="Unarmored Defence"/>
+      <stat name="monk:unarmored defence" value="Wisdom Modifier" equipped="[armor:none]&amp;&amp;[shield:none]" />
+      <stat name="AC" value="monk:unarmored defence" bonus="Unarmored Defence" />
     </rules>
   </element>
-  <element name="Martial Arts" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MARTIAL_ARTS">
+  <element name="Martial Arts" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_MARTIAL_ARTS">
     <description>
       <p>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property.</p>
-      <p>You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:</p>
+      <p class="indent">You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:</p>
       <ul>
         <li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</li>
         <li>You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</li>
@@ -140,7 +139,7 @@
       <p>Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.</p>
     </description>
     <sheet>
-      <description>Your unarmed strike does 1d%martialarts:dice% damage. You can use Strength or Dexterity for these attacks.</description>
+      <description>Your unarmed strike does 1d%martial arts:dice% damage. You can use Strength or Dexterity for these attacks.</description>
     </sheet>
 
     <!-- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons. -->
@@ -149,25 +148,25 @@
 
     <set name="unarmed:damage" field="dice" value="d4" level="1" />-->
 
-    <stat name="martialarts:attack" value="Strength Modifier" bonus="martial arts" />
-    <stat name="martialarts:attack" value="Dexterity Modifier" bonus="martial arts" />
+    <stat name="martial arts:attack" value="Strength Modifier" bonus="martial arts" />
+    <stat name="martial arts:attack" value="Dexterity Modifier" bonus="martial arts" />
 
-    <stat name="martialarts:damage" value="Strength Modifier" bonus="martial arts" />
-    <stat name="martialarts:damage" value="Dexterity Modifier" bonus="martial arts" />
+    <stat name="martial arts:damage" value="Strength Modifier" bonus="martial arts" />
+    <stat name="martial arts:damage" value="Dexterity Modifier" bonus="martial arts" />
 
-    <stat name="martialarts:dice" value="4" bonus="martial arts" />
-    <stat name="martialarts:dice" value="6" bonus="martial arts" level="5" />
-    <stat name="martialarts:dice" value="8" bonus="martial arts" level="11" />
-    <stat name="martialarts:dice" value="10" bonus="martial arts" level="17" />
+    <stat name="martial arts:dice" value="+4" bonus="martial arts" />
+    <stat name="martial arts:dice" value="+6" bonus="martial arts" level="5" />
+    <stat name="martial arts:dice" value="+8" bonus="martial arts" level="11" />
+    <stat name="martial arts:dice" value="+10" bonus="martial arts" level="17" />
   </element>
-  <element name="Ki" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_KI">
+  <element name="Ki" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_KI">
     <description>
       <p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.</p>
-      <p>You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p>
-      <p>When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
-      <p>Some of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:</p>
+      <p class="indent">You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p>
+      <p class="indent">When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
+      <p class="indent">Some of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:</p>
       <p>
-        <bold>Ki save DC</bold> = 8 + your proficiency bonus + your Wisdom modifier
+        <b>Ki save DC</b> = 8 + your proficiency bonus + your Wisdom modifier
       </p>
       <h6>FLURRY OF BLOWS</h6>
       <p>Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</p>
@@ -181,30 +180,30 @@
     </sheet>
     <rules>
       <stat name="ki:points" value="Level" />
-      <stat name="ki:dc" value="8" />
+      <stat name="ki:dc" value="+8" />
       <stat name="ki:dc" value="Proficiency" />
       <stat name="ki:dc" value="Wisdom Modifier" />
     </rules>
   </element>
-  <element name="Unarmored Movement" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_UNARMORED_MOVEMENT">
+  <element name="Unarmored Movement" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_UNARMORED_MOVEMENT">
     <description>
       <p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in the Monk table.</p>
-      <p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
+      <p class="indent">At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
     </description>
     <sheet>
       <description>Your speed increases by %Unarmored Movement% feet while you are not wearing armor or wielding a shield.</description>
       <description level="9">Your speed increases by %Unarmored Movement% feet while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</description>
     </sheet>
     <rules>
-      <stat name="Unarmored Movement" value="+10" bonus="Unarmored Movement" level="2" not-wearing="armor:&amp;shield:" />
-      <stat name="Unarmored Movement" value="+15" bonus="Unarmored Movement" level="6" not-wearing="armor:&amp;shield:" />
-      <stat name="Unarmored Movement" value="+20" bonus="Unarmored Movement" level="10" not-wearing="armor:&amp;shield:" />
-      <stat name="Unarmored Movement" value="+25" bonus="Unarmored Movement" level="14" not-wearing="armor:&amp;shield:" />
-      <stat name="Unarmored Movement" value="+30" bonus="Unarmored Movement" level="18" not-wearing="armor:&amp;shield:" />
-      <stat name="Speed" value="Unarmored Movement" />
+      <stat name="Unarmored Movement" value="+10" bonus="Unarmored Movement" level="2" equipped="[armor:none]&amp;&amp;[shield:none]" />
+      <stat name="Unarmored Movement" value="+15" bonus="Unarmored Movement" level="6" equipped="[armor:none]&amp;&amp;[shield:none]" />
+      <stat name="Unarmored Movement" value="+20" bonus="Unarmored Movement" level="10" equipped="[armor:none]&amp;&amp;[shield:none]" />
+      <stat name="Unarmored Movement" value="+25" bonus="Unarmored Movement" level="14" equipped="[armor:none]&amp;&amp;[shield:none]" />
+      <stat name="Unarmored Movement" value="+30" bonus="Unarmored Movement" level="18" equipped="[armor:none]&amp;&amp;[shield:none]" />
+      <stat name="Speed" value="Unarmored Movement" bonus="Unarmored Movement" />
     </rules>
   </element>
-  <element name="Monastic Tradition" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONASTIC_TRADITION">
+  <element name="Monastic Tradition" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_MONASTIC_TRADITION">
     <description>
       <p>When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>
     </description>
@@ -215,10 +214,10 @@
       <select type="Archetype" name="Monastic Tradition" supports="Monastic Tradition" />
     </rules>
   </element>
-  <element name="Deflect Missiles" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_DEFLECT_MISSILES">
+  <element name="Deflect Missiles" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_DEFLECT_MISSILES">
     <description>
       <p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level. </p>
-      <p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet.</p>
+      <p class="indent">If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet.</p>
     </description>
     <sheet>
       <description>You can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + %monk:deflect missiles bonus%.</description>
@@ -228,7 +227,7 @@
       <stat name="monk:deflect missiles bonus" value="Level" />
     </rules>
   </element>
-  <element name="Ability Score Improvement (Monk)" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_MONK">
+  <element name="Ability Score Improvement (Monk)" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK">
     <description>
       <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
     </description>
@@ -242,7 +241,7 @@
       <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
     </rules>
   </element>
-  <element name="Slow Fall" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_SLOW_FALL">
+  <element name="Slow Fall" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_SLOW_FALL">
     <description>
       <p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
     </description>
@@ -257,7 +256,7 @@
       <stat name="monk:slowfall" value="Level" />
     </rules>
   </element>
-  <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_EXTRA_ATTACK_MONK">
+  <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_EXTRA_ATTACK_MONK">
     <description>
       <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
     </description>
@@ -265,7 +264,7 @@
       <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
     </sheet>
   </element>
-  <element name="Stunning Strike" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_STUNNING_STRIKE">
+  <element name="Stunning Strike" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_STUNNING_STRIKE">
     <description>
       <p>Starting at 5th level, you can interfere with the flow of ki in an opponent’s body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
     </description>
@@ -273,7 +272,7 @@
       <description>When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</description>
     </sheet>
   </element>
-  <element name="Ki-Empowered Strikes" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_KI-EMPOWERED_STRIKES">
+  <element name="Ki-Empowered Strikes" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_KI-EMPOWERED_STRIKES">
     <description>
       <p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
     </description>
@@ -281,7 +280,7 @@
       <description>Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
     </sheet>
   </element>
-  <element name="Evasion" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_EVASION_MONK">
+  <element name="Evasion" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_EVASION_MONK">
     <description>
       <p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon’s lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
     </description>
@@ -289,7 +288,7 @@
       <description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
     </sheet>
   </element>
-  <element name="Stillness of Mind" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_STILLNESS_OF_MIND">
+  <element name="Stillness of Mind" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_STILLNESS_OF_MIND">
     <description>
       <p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>
     </description>
@@ -297,7 +296,7 @@
       <description>You can use your action to end one effect on yourself that is causing you to be charmed or frightened.</description>
     </sheet>
   </element>
-  <element name="Purity of Body" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_PURITY_OF_BODY">
+  <element name="Purity of Body" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_PURITY_OF_BODY">
     <description>
       <p>At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.</p>
     </description>
@@ -305,7 +304,7 @@
       <description>Your mastery of the ki flowing through you makes you immune to disease and poison.</description>
     </sheet>
   </element>
-  <element name="Tongue of the Sun and Moon" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_TONGUE_OF_THE_SUN_AND_MOON">
+  <element name="Tongue of the Sun and Moon" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON">
     <description>
       <p>Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</p>
     </description>
@@ -313,10 +312,10 @@
       <description>You learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</description>
     </sheet>
   </element>
-  <element name="Diamond Soul" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_DIAMOND_SOUL">
+  <element name="Diamond Soul" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_DIAMOND_SOUL">
     <description>
       <p>Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.</p>
-      <p>Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</p>
+      <p class="indent">Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</p>
     </description>
     <sheet>
       <description>Proficiency in all saving throws. Whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</description>
@@ -330,7 +329,7 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
     </rules>
   </element>
-  <element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_TIMELESS_BODY_MONK">
+  <element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_TIMELESS_BODY_MONK">
     <description>
       <p>At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, however. In addition, you no longer need food or water.</p>
     </description>
@@ -338,16 +337,16 @@
       <description>Your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically.</description>
     </sheet>
   </element>
-  <element name="Empty Body" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_EMPTY_BODY">
+  <element name="Empty Body" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_EMPTY_BODY">
     <description>
       <p>Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.</p>
-      <p>Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</p>
+      <p class="indent">Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</p>
     </description>
     <sheet>
       <description>You can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage. Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</description>
     </sheet>
   </element>
-  <element name="Perfect Self" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_PERFECT_SELF">
+  <element name="Perfect Self" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_PERFECT_SELF">
     <description>
       <p>At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.</p>
     </description>
@@ -361,18 +360,22 @@
     <supports>Monastic Tradition</supports>
     <description>
       <p>Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.</p>
+      <div element="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_OPEN_HAND_TECHNIQUE" />
+      <div element="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_WHOLENESS_OF_BODY" />
+      <div element="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_TRANQUILITY" />
+      <div element="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_QUIVERING_PALM" />
     </description>
     <sheet>
       <description>The ultimate masters of martial arts combat, whether armed or unarmed.</description>
     </sheet>
     <rules>
-      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_OPEN_HAND_TECHNIQUE" level="3"/>
-      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_WHOLENESS_OF_BODY" level="6"/>
-      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_TRANQUILITY" level="11"/>
-      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_QUIVERING_PALM" level="17"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_OPEN_HAND_TECHNIQUE" level="3"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_WHOLENESS_OF_BODY" level="6"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_TRANQUILITY" level="11"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_QUIVERING_PALM" level="17"/>
     </rules>
   </element>
-  <element name="Open Hand Technique" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_OPEN_HAND_TECHNIQUE">
+  <element name="Open Hand Technique" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_OPEN_HAND_TECHNIQUE">
     <description>
       <p>Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:</p>
       <ul>
@@ -385,7 +388,7 @@
       <description>Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target: knock prone Dex Save, Push 15 feet Str Save, It can’t take reactions until the end of your next turn.</description>
     </sheet>
   </element>
-  <element name="Wholeness of Body" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_WHOLENESS_OF_BODY">
+  <element name="Wholeness of Body" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_WHOLENESS_OF_BODY">
     <description>
       <p>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</p>
     </description>
@@ -398,7 +401,7 @@
       <stat name="monk:Wholeness of Body" value="Level" />
     </rules>
   </element>
-  <element name="Tranquility" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_TRANQUILITY">
+  <element name="Tranquility" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_TRANQUILITY">
     <description>
       <p>Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.</p>
     </description>
@@ -406,10 +409,10 @@
       <description>At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.</description>
     </sheet>
   </element>
-  <element name="Quivering Palm" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_QUIVERING_PALM">
+  <element name="Quivering Palm" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_QUIVERING_PALM">
     <description>
       <p>At 17th level, you gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.</p>
-      <p>You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</p>
+      <p class="indent">You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</p>
     </description>
     <sheet>
       <description>When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.</description>
