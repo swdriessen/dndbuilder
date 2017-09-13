@@ -4,7 +4,7 @@
     <name>Monk</name>
     <description>The Monk class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.3" revised="2017/01/01">
+    <update version="0.0.4" revised="2017/01/01">
       <file name="class-monk.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-monk.xml" />
     </update>
   </info>
@@ -54,7 +54,7 @@
         <li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
         <li>10 darts</li>
       </ul>
-      <div element="ID_CLASSFEATURE_UNARMORED_DEFENSE" />
+      <div element="ID_CLASSFEATURE_MONK_UNARMORED_DEFENSE" />
       <div element="ID_CLASSFEATURE_MARTIAL_ARTS" />
       <div element="ID_CLASSFEATURE_KI" />
       <div element="ID_CLASSFEATURE_UNARMORED_MOVEMENT" />
@@ -93,7 +93,7 @@
 
       <select type="Proficiency" name="Skill Proficiency (Monk)" supports="ID_PROFICIENCY_SKILL&amp;&amp;ID_CLASS_MONK" number="2" />
 
-      <grant type="Class Feature" name="ID_CLASSFEATURE_UNARMORED_DEFENSE" level="1" />
+      <grant type="Class Feature" name="ID_CLASSFEATURE_MONK_UNARMORED_DEFENSE" level="1" />
       <grant type="Class Feature" name="ID_CLASSFEATURE_MARTIAL_ARTS" level="1" />
       <grant type="Class Feature" name="ID_CLASSFEATURE_KI" level="2" />
       <grant type="Class Feature" name="ID_CLASSFEATURE_UNARMORED_MOVEMENT" level="2" />
@@ -115,7 +115,7 @@
     </rules>
   </element>
 
-  <element name="Unarmored Defense" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_UNARMORED_DEFENSE">
+  <element name="Unarmored Defense" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_UNARMORED_DEFENSE">
     <supports>Monk</supports>
     <description>
       <p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
@@ -124,7 +124,8 @@
       <description>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</description>
     </sheet>
     <rules>
-      <stat name="AC" value="Wisdom Modifier" bonus="unarmored" not-wearing="armor:,shield:"/>
+      <stat name="Unarmored Defence" value="Wisdom Modifier" equipped="armor:none,shield:none" />
+      <stat name="AC" value="Unarmored Defence"  bonus="Unarmored Defence"/>
     </rules>
   </element>
   <element name="Martial Arts" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MARTIAL_ARTS">

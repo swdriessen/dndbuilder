@@ -4,7 +4,7 @@
     <name>Spells</name>
     <description>Spells from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.2" revised="2016/09/12">
+    <update version="0.0.3" revised="2016/09/12">
       <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -995,7 +995,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Burning Hands (Sweeping Cinder Strike)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BURNING_HANDS_(SWEEPING_CINDER_STRIKE)">
+  <!--<element name="Burning Hands (Sweeping Cinder Strike)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BURNING_HANDS_SWEEPING_CINDER_STRIKE">
     <supports>1, Evocation, Monk</supports>
     <description>
       <p />
@@ -1446,7 +1446,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Cone of Cold (Breath of Winter)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONE_OF_COLD_(BREATH_OF_WINTER)">
+  <!--<element name="Cone of Cold (Breath of Winter)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CONE_OF_COLD_BREATH_OF_WINTER">
     <supports>5, Evocation, Monk</supports>
     <description>
       <p />
@@ -3150,7 +3150,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Fireball (Flames of the Phoenix)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FIREBALL_(FLAMES_OF_THE_PHOENIX)">
+  <element name="Fireball (Flames of the Phoenix)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FIREBALL_FLAMES_OF_THE_PHOENIX">
     <supports>3, Evocation, Monk</supports>
     <description>
       <p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
@@ -3286,7 +3286,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Fly (Ride the Wind)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FLY_(RIDE_THE_WIND)">
+  <element name="Fly (Ride the Wind)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FLY_RIDE_THE_WIND">
     <supports>3, Transmutation, Monk</supports>
     <description>
       <p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>
@@ -3452,7 +3452,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Gaseous Form (Mist Stance)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GASEOUS_FORM_(MIST_STANCE)">
+  <!--<element name="Gaseous Form (Mist Stance)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GASEOUS_FORM_MIST_STANCE">
     <supports>3, Transmutation, Monk</supports>
     <description>
       <p />
@@ -3847,7 +3847,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Gust of Wind (Rush of the Gale Spirits)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GUST_OF_WIND_(RUSH_OF_THE_GALE_SPIRITS)">
+  <!--<element name="Gust of Wind (Rush of the Gale Spirits)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_GUST_OF_WIND_RUSH_OF_THE_GALE_SPIRITS">
     <supports>2, Evocation, Monk</supports>
     <description>
       <p />
@@ -4174,7 +4174,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Hold Person (Clench of the North Wind)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HOLD_PERSON_(CLENCH_OF_THE_NORTH_WIND)">
+  <!--<element name="Hold Person (Clench of the North Wind)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HOLD_PERSON_CLENCH_OF_THE_NORTH_WIND">
     <supports>2, Enchantment, Monk</supports>
     <description>
       <p />
@@ -6510,7 +6510,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Shatter (Gong of the Summit)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SHATTER_(GONG_OF_THE_SUMMIT)">
+  <!--<element name="Shatter (Gong of the Summit)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SHATTER_GONG_OF_THE_SUMMIT">
     <supports>2, Evocation, Monk</supports>
     <description>
       <p />
@@ -6980,7 +6980,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Stoneskin (Eternal Mountain Defense)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_STONESKIN_(ETERNAL_MOUNTAIN_DEFENSE)">
+  <!--<element name="Stoneskin (Eternal Mountain Defense)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_STONESKIN_ETERNAL_MOUNTAIN_DEFENSE">
     <supports>4, Abjuration, Monk</supports>
     <description>
       <p />
@@ -7408,7 +7408,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Thunderwave (Fist of Four Thunders)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_THUNDERWAVE_(FIST_OF_FOUR_THUNDERS)">
+  <!--<element name="Thunderwave (Fist of Four Thunders)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_THUNDERWAVE_FIST_OF_FOUR_THUNDERS">
     <supports>1, Evocation, Monk</supports>
     <description>
       <p />
@@ -7694,7 +7694,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Wall of Fire (River of Hungry Flame)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WALL_OF_FIRE_(RIVER_OF_HUNGRY_FLAME)">
+  <!--<element name="Wall of Fire (River of Hungry Flame)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WALL_OF_FIRE_RIVER_OF_HUNGRY_FLAME">
     <supports>4, Evocation, Monk</supports>
     <description>
       <p />
@@ -7777,7 +7777,7 @@
     </setters>
     <rules />
   </element>
-  <!--<element name="Wall of Stone (Wave of Rolling Earth)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WALL_OF_STONE_(WAVE_OF_ROLLING_EARTH)">
+  <!--<element name="Wall of Stone (Wave of Rolling Earth)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WALL_OF_STONE_WAVE_OF_ROLLING_EARTH">
     <supports>5, Evocation, Monk</supports>
     <description>
       <p />
