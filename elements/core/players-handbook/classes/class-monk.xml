@@ -4,7 +4,7 @@
     <name>Monk</name>
     <description>The Monk class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.6" revised="2017/01/01">
+    <update version="0.0.7" revised="2017/01/01">
       <file name="class-monk.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-monk.xml" />
     </update>
   </info>
@@ -141,13 +141,6 @@
     <sheet>
       <description>Your unarmed strike does 1d%martial arts:dice% damage. You can use Strength or Dexterity for these attacks.</description>
     </sheet>
-
-    <!-- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons. -->
-
-    <!--<set name="melee:ability" value="Strength||Dexterity" />
-
-        <set name="unarmed:damage" field="dice" value="d4" level="1" />-->
-
     <rules>
         <stat name="martial arts:attack" value="Strength Modifier" bonus="martial arts" />
         <stat name="martial arts:attack" value="Dexterity Modifier" bonus="martial arts" />
@@ -155,10 +148,10 @@
         <stat name="martial arts:damage" value="Strength Modifier" bonus="martial arts" />
         <stat name="martial arts:damage" value="Dexterity Modifier" bonus="martial arts" />
 
-        <stat name="martial arts:dice" value="+4" bonus="martial arts" />
-        <stat name="martial arts:dice" value="+6" bonus="martial arts" level="5" />
-        <stat name="martial arts:dice" value="+8" bonus="martial arts" level="11" />
-        <stat name="martial arts:dice" value="+10" bonus="martial arts" level="17" />
+        <stat name="martial arts:dice" value="4" bonus="martial arts" />
+        <stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
+        <stat name="martial arts:dice" value="8" bonus="martial arts" level="11" />
+        <stat name="martial arts:dice" value="10" bonus="martial arts" level="17" />
     </rules>
   </element>
   <element name="Ki" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_KI">
@@ -202,6 +195,7 @@
       <stat name="Unarmored Movement" value="+20" bonus="Unarmored Movement" level="10" equipped="[armor:none]&amp;&amp;[shield:none]" />
       <stat name="Unarmored Movement" value="+25" bonus="Unarmored Movement" level="14" equipped="[armor:none]&amp;&amp;[shield:none]" />
       <stat name="Unarmored Movement" value="+30" bonus="Unarmored Movement" level="18" equipped="[armor:none]&amp;&amp;[shield:none]" />
+
       <stat name="Speed" value="Unarmored Movement" bonus="Unarmored Movement" />
     </rules>
   </element>
@@ -320,7 +314,7 @@
       <p class="indent">Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</p>
     </description>
     <sheet>
-      <description>Proficiency in all saving throws. Whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</description>
+      <description>Whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
@@ -347,6 +341,9 @@
     <sheet>
       <description>You can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage. Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</description>
     </sheet>
+    <rules>
+      <grant type="Spell" name="ID_PHB_SPELL_ASTRAL_PROJECTION" />
+    </rules>
   </element>
   <element name="Perfect Self" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MONK_PERFECT_SELF">
     <description>
@@ -357,7 +354,8 @@
     </sheet>
   </element>
 
- 
+
+  <!-- Way of the Open Hand -->
   <element name="Way of the Open Hand" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_WAY_OF_THE_OPEN_HAND">
     <supports>Monastic Tradition</supports>
     <description>
@@ -395,7 +393,7 @@
       <p>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</p>
     </description>
     <sheet>
-      <description>As an action, you can regain hit points equal to three times your monk level (%monk:Wholeness of Body%). You must finish a long rest before you can use this feature again.</description>
+      <description>As an action, you can regain %monk:Wholeness of Body% hit points. (1/long rest)</description>
     </sheet>
     <rules>
       <stat name="monk:Wholeness of Body" value="Level" />
@@ -408,8 +406,13 @@
       <p>Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.</p>
     </description>
     <sheet>
-      <description>At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.</description>
+      <description>At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals %Tranquility:DC%.</description>
     </sheet>
+    <rules>
+      <stat name="Tranquility:DC" value="8" />
+      <stat name="Tranquility:DC" value="Proficiency" />
+      <stat name="Tranquility:DC" value="Wisdom Modifier" />
+    </rules>
   </element>
   <element name="Quivering Palm" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPEFEATURE_WAYOFTHEOPENHAND_QUIVERING_PALM">
     <description>
@@ -420,5 +423,76 @@
       <description>When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.</description>
     </sheet>
   </element>
+
+
+  <!-- Way of Shadow -->
+
+  <element name="Way of Shadow" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_MONK_WAY_OF_SHADOW">
+    <supports>Monastic Tradition</supports>  
+    <description>
+      <p>Monks of the Way of Shadow follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins. Sometimes the members of a ninja monastery are family m embers, forming a clan sworn to secrecy about their arts and missions. Other monasteries are more like thieves’ guilds, hiring out their services to nobles, rich merchants, or anyone else who can pay their fees. Regardless of their methods, the heads of these monasteries expect the unquestioning obedience of their students.</p>
+      <div element="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_ARTS" />
+      <div element="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_STEP" />
+      <div element="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_CLOAK_OF_SHADOWS" />
+      <div element="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_OPPORTUNIST" />
+    </description>
+    <sheet>
+      <description>Monks of the Way of Shadow follow a tradition that values stealth and subterfuge.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_ARTS" level="3"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_STEP" level="6"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_CLOAK_OF_SHADOWS" level="11"/>
+      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_OPPORTUNIST" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Shadow Arts" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_ARTS">
+    <description>
+      <p>Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it.</description>
+    </sheet>
+    <rules>
+    	<grant type="Spell" name="ID_PHB_SPELL_MINOR_ILLUSION" />
+    </rules>
+  </element>
+  <element name="Shadow Step" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_STEP">
+    <description>
+      <p>At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
+    </description>
+    <sheet>
+      <description>When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Cloak of Shadows" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_CLOAK_OF_SHADOWS">
+    <description>
+      <p>By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.</p>
+    </description>
+    <sheet>
+      <description>When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Opportunist" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WAY_OF_SHADOW_OPPORTUNIST">
+    <description>
+      <p>At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature.</p>
+    </description>
+    <sheet>
+      <description>Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature.</description>
+    </sheet>
+    <rules />
+  </element>
+
+
+
+
+
+  <!-- Way of the Four Elements -->
+
+
+
 
 </elements>
