@@ -4,7 +4,7 @@
 		<name>Backgrounds</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.4" revised="2017/06/07">
+		<update version="0.0.5" revised="2017/06/07">
 			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/backgrounds.xml" />
 		</update>
 	</info>
@@ -128,8 +128,8 @@
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_DECEPTION" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(DISGUISE_KIT)" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(FORGERY_KIT)" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_FALSE_IDENTITY"  />
       
       <select name="Scam" type="List">
@@ -336,7 +336,7 @@
 
       <grant name="ID_PROFICIENCY_SKILL_ACROBATICS" type="Proficiency"  />
       <grant name="ID_PROFICIENCY_SKILL_PERFORMANCE" type="Proficiency"  />
-      <grant name="ID_PROFICIENCY_TOOL_PROFICIENCY_(DISGUISE_KIT)" type="Proficiency"  />
+      <grant name="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" type="Proficiency"  />
       <select type="Proficiency" name="Musical Intrument" supports="Musical Instrument" />
 
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" />
@@ -485,7 +485,7 @@
       <grant name="ID_PROFICIENCY_SKILL_ANIMALHANDLING" type="Proficiency"  />
       <grant name="ID_PROFICIENCY_SKILL_SURVIVAL" type="Proficiency"  />
       <select type="Proficiency" name="Artisan's Tool" supports="Artisan’s tools" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(VEHICLES(LAND))" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_RUSTIC_HOSPITALITY" />
 
       <select name="Defining Event" type="List">
@@ -720,7 +720,7 @@
       <p>Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional language.</p>
     </description>
     <rules>
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(NAVIGATORS_TOOLS)" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
     </rules>
   </element>
 
@@ -805,7 +805,7 @@
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_MEDICINE" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_RELIGION" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(HERBALISM_KIT)" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
       <select type="Language" name="Language (Hermit)" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_DISCOVERY" />
       <select name="Life of Seclusion" type="List">
@@ -1198,8 +1198,8 @@ If your character has a noble background, you may select this background feature
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS"  />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_PERCEPTION" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(NAVIGATORS_TOOLS)" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(VEHICLES(WATER))" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
       <grant name="ID_BACKGROUND_FEATURE_SHIPS_PASSAGE" type="Background Feature" />
       <select name="Personality Trait" type="List" number="2">
         <item id="1">My friends know they can rely on me, no matter what.</item>
@@ -1327,7 +1327,7 @@ No matter where you go, people are afraid of you due to your reputation. When yo
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_INTIMIDATION" />
       <select type="Proficiency" name="Gaming Set" supports="Gaming Set" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(VEHICLES(LAND))" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_MILITARY_RANK" />
       <select name="Specialty" type="List">
         <item id="1">Officer</item>
@@ -1409,7 +1409,7 @@ No matter where you go, people are afraid of you due to your reputation. When yo
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_STEALTH" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_(DISGUISE_KIT)" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_CITY_SECRETS"  />
       <select name="Personality Trait" type="List" number="2">
