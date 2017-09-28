@@ -29,8 +29,9 @@
     </description>
     <sheet display="false" />
     <setters>
-      <set name="Male Names">Alton, Ander, Cade, Corrin, Eldon, Errich, Finnan, Garret, Lindal, Lyle, Merric, Milo, Osborn, Perrin, Reed, Roscoe, Wellby</set>
-      <set name="Female Names">Andry, Bree, Callie, Cora, Euphemia, Jillian, Kithri, Lavinia, Lidda, Merla, Nedda, Paela, Portia, Seraphina, Shaena, Trym, Vani, Verna</set>
+      <set name="names" type="male">Alton, Ander, Cade, Corrin, Eldon, Errich, Finnan, Garret, Lindal, Lyle, Merric, Milo, Osborn, Perrin, Reed, Roscoe, Wellby</set>
+      <set name="names" type="female">Andry, Bree, Callie, Cora, Euphemia, Jillian, Kithri, Lavinia, Lidda, Merla, Nedda, Paela, Portia, Seraphina, Shaena, Trym, Vani, Verna</set>
+      <set name="names-format">$(name)</set>
     </setters>
     <rules>
       <stat name="Dexterity" value="+2"/>
