@@ -4,19 +4,28 @@
 		<name>Half-Elf</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.4" revised="2017/06/07">
+		<update version="0.1" revised="2017/09/25">
 			<file name="race-halfelf.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-halfelf.xml" />
 		</update>
 	</info>
 
   <!-- Half-Elf -->
-  <element name="Half-Elf" type="Race" source="Player’s Handbook" id="ID_RACE_HALF-ELF">
+  <element name="Half-Elf" type="Race" source="Player’s Handbook" id="ID_RACE_HALFELF">
     <supports />
     <requirements />
     <description>
       <p class="flavor">Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.</p>
-      <!--<h4>HALF-ELF NAMES</h4>
-      <p>Half-elves use either human or elven naming conventions. As if to emphasize that they don’t really fit in to either society, half-elves raised among humans are often given elven names, and those raised among elves often take human names.</p>-->
+
+      <h4>OF TWO WORLDS</h4>
+      <p>To humans, half-elves look like elves, and to elves, they look human. In height, they’re on par with both parents, though they’re neither as slender as elves nor as broad as humans. They range from under 5 feet to about 6 feet tall, and from 100 to 180 pounds, with men only slightly taller and heavier than women. Half-elf men do have facial hair, and sometimes grow beards to mask their elven ancestry. Half-elven coloration and features lie somewhere between their human and elf parents, and thus show a variety even more pronounced than that found among either race. They tend to have the eyes of their elven parents.</p> 
+
+      <h4>DIPLOMATS OR WANDERERS</h4>
+      <p>Half-elves have no lands of their own, though they are welcome in human cities and somewhat less w elcome in elven forests. In large cities in regions where elves and humans interact often, half-elves are sometimes numerous enough to form small communities of their own. They enjoy the company of other half-elves, the only people who truly understand what it is to live between these two worlds.</p>
+      <p class="indent">In most parts of the world, though, half-elves are uncommon enough that one might live for years without meeting another. Some half-elves prefer to avoid company altogether, wandering the w ilds as trappers, foresters, hunters, or adventurers and visiting civilization only rarely. Like elves, they are driven by the wanderlust that comes of their longevity. Others, in contrast, throw themselves into the thick of society, putting their charisma and social skills to great use in diplomatic roles or as swindlers.</p>
+ 
+      <h4>HALF-ELF NAMES</h4>
+      <p>Half-elves use either human or elven naming conventions. As if to emphasize that they don’t really fit in to either society, half-elves raised among humans are often given elven names, and those raised among elves often take human names.</p>
+
       <h4>HALF-ELF TRAITS</h4>
       <p>Your half-elf character has some qualities in common with elves and some that are unique to half-elves.</p>
       <p>
@@ -35,7 +44,8 @@
     <setters>
       <set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric , Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
       <set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
-      <set name="names-format">$(name)</set>
+      <set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver, Amakiir (Gemflower), Amastacia (Starflower), Galanodel (Moonwhisper), Holimion (Diamonddew), Ilphelkiir (Gemblossom), Liadon (Silverfrond), Meliamne (Oakenheel), Nai'lo (Nightbreeze), Siannodel (Moonbrook), Xiloscient (Goldpetal)</set>
+      <set name="names-format">$(name) $(surname)</set>
     </setters>
     <rules>
       <stat name="Charisma" value="+2"/>
@@ -46,22 +56,22 @@
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_ELVISH" />
       <select type="Language" name="Language (Half-Elf)" supports="Starting" />
-      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_FEY_ANCESTRY" />
+      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_HALFELF_FEY_ANCESTRY" />
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_SKILL_VERSATILITY" />
     </rules>
   </element>
 
-  <!--
-	<element name="Fey Ancestry" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_FEY_ANCESTRY">
-		<supports></supports>
-		<requirements />
-		<information>
-			<![CDATA[{"items":[{"element":"p","spans":"","content":[""]}]}]]>
-		</information>
-		<rules>
-
-		</rules>
-	</element> -->
+  <element name="Fey Ancestry" type="Racial Trait" source="Player’s Handbook"  id="ID_RACIAL_TRAIT_HALFELF_FEY_ANCESTRY">
+    <supports></supports>
+    <requirements />
+    <description>
+      <p>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</p>
+    </description>
+    <sheet>
+      <description>Advantage on saving throws against being charmed, and magic can’t put you to sleep.</description>
+    </sheet>
+    <rules />
+  </element>
   <element name="Skill Versatility" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_SKILL_VERSATILITY">
     <supports />
     <requirements />
@@ -77,7 +87,7 @@
 
 
 
-  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALF-ELF_STRENGTH">
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_STRENGTH">
     <supports>Half-Elf</supports>
     <requirements />
     <description>
@@ -88,7 +98,7 @@
     </rules>
   </element>
 
-  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALF-ELF_DEXTERITY">
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_DEXTERITY">
     <supports>Half-Elf</supports>
     <requirements />
     <description>
@@ -99,7 +109,7 @@
     </rules>
   </element>
 
-  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALF-ELF_CONSTITUTION">
+  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_CONSTITUTION">
     <supports>Half-Elf</supports>
     <requirements />
     <description>
@@ -110,7 +120,7 @@
     </rules>
   </element>
 
-  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALF-ELF_INTELLIGENCE">
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_INTELLIGENCE">
     <supports>Half-Elf</supports>
     <requirements />
     <description>
@@ -121,7 +131,7 @@
     </rules>
   </element>
 
-  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALF-ELF_WISDOM">
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_WISDOM">
     <supports>Half-Elf</supports>
     <requirements />
     <description>
@@ -131,13 +141,5 @@
       <stat name="Wisdom" value="+1"/>
     </rules>
   </element>
-  <!-- 
-	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALF-ELF_CHARISMA">
-		<supports>Half-Elf</supports>
-		<requirements />
-		<information><![CDATA[{"items":[{"element":"p","content":["Your Charisma increases by 1."]}]}]]></information>
-		<rules>
-			<stat name="Charisma" value="+1"/>
-		</rules>
-	</element>-->
+
 </elements>

@@ -4,7 +4,7 @@
 		<name>Elf</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.5" revised="2017/06/07">
+		<update version="0.1" revised="2017/09/25">
 			<file name="race-elf.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-elf.xml" />
 		</update>
 	</info>
@@ -56,17 +56,11 @@
     </description>
     <sheet display="false" />
     <setters>
-      <!--<set name="Male Names">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric , Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
-      <set name="Female Names">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>-->
-
-
       <set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric , Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
       <set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
       <set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
       <set name="names" type="family">Amakiir (Gemflower), Amastacia (Starflower), Galanodel (Moonwhisper), Holimion (Diamonddew), Ilphelkiir (Gemblossom), Liadon (Silverfrond), Meliamne (Oakenheel), Nai'lo (Nightbreeze), Siannodel (Moonbrook), Xiloscient (Goldpetal)</set>
       <set name="names-format">$(name) $(family)</set>
-
-
     </setters>
     <rules>
       <stat name="Dexterity" value="+2" />
@@ -113,7 +107,7 @@
       <p>Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</p>
     </description>
     <sheet>
-      <description>Meditate for 4 hours.</description>
+      <description>Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day.</description>
     </sheet>
     <rules />
   </element>
@@ -140,10 +134,6 @@
         <span class="feature">Cantrip.</span>You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.<br />
         <span class="feature">Extra Language.</span>You can speak, read, and write one extra language of your choice.<br />
       </p>
-
-      <!--<div feature="ID_RACIAL_TRAIT_ELF_WEAPON_TRAINING" />
-      <div feature="ID_RACIAL_TRAIT_CANTRIP" />
-      <div feature="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />-->
     </description>
     <sheet display="false" />
     <rules>
@@ -152,7 +142,7 @@
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_CANTRIP" />
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
     </rules>
-  </element>
+  </element>  
   <element name="Wood Elf" type="Sub Race" source="Player’s Handbook"  id="ID_SUB_RACE_WOOD_ELF">
     <supports>Elf</supports>
     <requirements />
@@ -191,7 +181,6 @@
     <rules>
       <stat name="Charisma" value="+1" />
       <grant name="ID_VISION_SUPERIORDARKVISION" type="Vision" />
-      <!-- drop darkvision from ID_RACE_ELF -->
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY" />
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_DROW_MAGIC" />
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_DROW_WEAPON_TRAINING" />
@@ -220,11 +209,11 @@
     <description>
       <p>You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.</p>
     </description>
-    <sheet>
+    <sheet display="false">
       <description>You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.</description>
     </sheet>
     <rules>
-      <select type="Spell" name="Wizard Cantrip (High Elf)" supports="0&amp;&amp;Wizard" /><!--prepared="true" spellcasting-ability="Intelligence" known-spells="true" />-->
+      <select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard&amp;&amp;0" />
     </rules>
   </element>
   <element name="Extra Language" type="Racial Trait" source="Player’s Handbook"  id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
@@ -257,7 +246,7 @@
       <p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
     </description>
     <sheet>
-      <description>Hide when lightly obscured.</description>
+      <description>You can attempt to hide even when you are only lightly obscured.</description>
     </sheet>
     <rules />
   </element>
@@ -268,7 +257,7 @@
       <p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
     </description>
     <sheet>
-      <description>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+      <description>You have disadvantage on attack rolls and on Perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
     </sheet>
     <rules />
   </element>
@@ -278,12 +267,14 @@
       <p>You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once per day. When you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells.</p>
     </description>
     <sheet>
-      <description>You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once per day. When you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells.</description>
+      <description>1/day Dancing Lights. Charisma is your spellcasting ability.</description>
+      <description level="3">1/day Dancing Lights and Faerie Fire. Charisma is your spellcasting ability for these spells.</description>
+      <description level="5">1/day Dancing Lights, Faerie Fire, and Darkness. Charisma is your spellcasting ability for these spells.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_PHB_SPELL_DANCING_LIGHTS" level="1"/>
-      <grant type="Spell" name="ID_PHB_SPELL_FAERIE_FIRE" level="3"/>
-      <grant type="Spell" name="ID_PHB_SPELL_DARKNESS" level="5"/>
+      <grant type="Spell" name="ID_PHB_SPELL_DANCING_LIGHTS" level="1" />
+      <grant type="Spell" name="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
+      <grant type="Spell" name="ID_PHB_SPELL_DARKNESS" level="5" />
     </rules>
   </element>
   <element name="Drow Weapon Training" type="Racial Trait" source="Player’s Handbook"  id="ID_RACIAL_TRAIT_DROW_WEAPON_TRAINING">

@@ -4,7 +4,7 @@
 		<name>Gnome</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.5" revised="2017/06/07">
+		<update version="0.1" revised="2017/09/25">
 			<file name="race-gnome.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-gnome.xml" />
 		</update>
 	</info>
@@ -124,7 +124,7 @@
       <description>You know the minor illusion cantrip. Intelligence is your spellcasting ability for it.</description>
     </sheet>
     <rules>
-      <grant type="Spell" name="ID_PHB_SPELL_MINOR_ILLUSION" spellcasting-ability="Intelligence" prepared="true"/>
+      <grant type="Spell" name="ID_PHB_SPELL_MINOR_ILLUSION" />
     </rules>
   </element>
   <element name="Speak with Small Beasts" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_SPEAK_WITH_SMALL_BEASTS">
@@ -171,7 +171,7 @@
       <p>Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</p>
     </description>
     <sheet>
-      <description>Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</description>
+      <description>Whenever you make a History check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</description>
     </sheet>
     <rules />
   </element>
@@ -188,61 +188,5 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
     </rules>
   </element>
-
-
-
-
-
-
-
-  <element name="Svirfneblin" type="Sub Race" source="Sword Coast Adventurer’s Guide" id="ID_SUB_RACE_DEEP_GNOME">
-    <supports>Gnome</supports>
-    <requirements />
-    <description>
-      <p>Also known as svirfneblin, the deep gnomes of the Underdark are a stark contrast to their surface kin, dour and serious compared to the cheerful and generally optimistic rock gnomes and forest gnomes. They share their cousins' obsession with privacy, and their homes below the surface of FaerOn are well guarded and deeply hidden.</p>
-      <p>Owing to the hostility of their Underdark neighbors, particularly the drow, the settlements and kingdoms of svirfneblin are in constant danger of being relocated, conquered, or destroyed. Such was the fate of Blingdenstone, one of the grandest deep gnome strongholds, which existed for more than two thousand years until it was overrun a little more than a century ago by the dark elves of Menzoberranzan. The deep gnomes recently reclaimed their old home, and now struggle to rid it of malign influences that have crept into the tunnels and warrens in their absence.</p>
-      <p>Deep gnomes are lean with dark, earthen skin tones of gray. Males are bald and beardless, while females have hair on their heads. Both sexes have little or no body hair and a stone-like look to their skin.</p>
-      <p>Deep gnome adventurers are just as curious and daring as those of other races. Some find their purpose living among other subterranean races, and a few make their way to the surface. Those who study the arcane arts of illusion in particular often range far from home, seeking knowledge unavailable in their own lands.</p>
-      <p>
-        <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 1.<br />
-        <span class="feature">Superior Darkvision.</span>Your darkvision has a radius of 120 feet.<br />
-        <span class="feature">Stone Camouflage.</span>You have advantage on Dexterity (Stealth) checks to hide in rocky terrain.<br />
-        <span class="feature">Extra Language.</span>You can speak, read, and write Undercommon.<br />
-      </p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="Dexterity" value="+1" />
-      <grant type="Vision" name="ID_VISION_SUPERIORDARKVISION" />
-      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_STONE_CAMOUFLAGE" />
-      <grant type="Language" name="ID_LANGUAGE_UNDERCOMMON" />
-    </rules>
-  </element>
-
-  <element name="Stone Camouflage" type="Racial Trait" source="Sword Coast Adventurer’s Guide" id="ID_RACIAL_TRAIT_STONE_CAMOUFLAGE">
-    <supports />
-    <requirements />
-    <description>
-      <p>You have advantage on Dexterity (Stealth) checks to hide in rocky terrain.</p>
-    </description>
-    <sheet>
-      <description>You have advantage on Dexterity (Stealth) checks to hide in rocky terrain.</description>
-    </sheet>
-    <rules />
-  </element>
-
-  <element name="Svirfneblin Magic" type="Feat" source="Sword Coast Adventurer’s Guide" id="ID_FEAT_SVIRFNEBLIN_MAGIC">
-    <supports />
-    <requirements>ID_SUB_RACE_DEEP_GNOME</requirements>
-    <description>
-      <p>Prerequisite: Gnome (deep gnome)</p>
-      <p>You have inherited the innate spellcasting ability of your ancestors. This ability allows you to cast nondetection on yourself at will, without needing a material component. You can also cast each of the following spells once with this ability: blindness/deafness, blur, and disguise self. You regain the ability to cast these spells when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
-    </description>
-    <sheet>
-      <description>You have inherited the innate spellcasting ability of your ancestors.</description>
-    </sheet>
-    <rules>
-
-    </rules>
-  </element>
+  
 </elements>
