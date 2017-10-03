@@ -4,7 +4,7 @@
     <name>Fighter</name>
     <description>The fighter class and the champion archetype from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.1.6" revised="2017/01/01">
+    <update version="0.1.7" revised="2017/01/01">
       <file name="class-fighter.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-fighter.xml" />
     </update>
   </info>
@@ -13,7 +13,6 @@
     <supports />
     <requirements />
     <description>
-      <!-- <p class="flavor">A master of martial combat, skilled with a variety of weapons and armor.</p> -->
       <p>A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.</p>
       <p class="indent">A dwarf in chain mail interposes his shield between the ogre’s club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.</p>
       <p class="indent">A gladiator fights for sport in an arena, a master with his trident and net, skilled at toppling foes and moving them around for the crowd’s delight—and his own tactical advantage. His opponent’s sword flares with blue light an instant before she sends lightning flashing forth to smite him.</p>
@@ -190,17 +189,19 @@
   
   <!-- Fighting Styles -->
   <element name="Archery" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FIGHTINGSTYLE_ARCHERY">
-    <supports>Fighting Style</supports>
+    <supports>Fighting Style, Fighter, Ranger</supports>
     <description>
       <p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
     </description>
     <sheet>
       <description>You gain a +2 bonus to attack rolls you make with ranged weapons.</description>
     </sheet>
-    <rules />
+    <rules>
+      <stat name="ranged:damage" value="+2" />
+    </rules>
   </element>
   <element name="Defense" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FIGHTINGSTYLE_DEFENSE">
-    <supports>Fighting Style</supports>
+    <supports>Fighting Style, Fighter, Paladin, Ranger</supports>
     <description>
       <p>While you are wearing armor, you gain a +1 bonus to AC.</p>
     </description>
@@ -208,11 +209,11 @@
       <description>While you are wearing armor, you gain a +1 bonus to AC.</description>
     </sheet>
     <rules>
-      <stat name="AC" value="+1" bonus="fighting style" equipped="armor:"/>
+      <stat name="AC" value="+1" bonus="fighting style" equipped="[armor:any]"/>
     </rules>
   </element>
   <element name="Dueling" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FIGHTINGSTYLE_DUELING">
-    <supports>Fighting Style</supports>
+    <supports>Fighting Style, Fighter, Paladin, Ranger</supports>
     <description>
       <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
     </description>
@@ -220,11 +221,11 @@
       <description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
     </sheet>
     <rules>
-      <!--<stat name="melee:damage" value="+2" equipped="weapon:main:,weapon:offhand:none"/>-->
+      <stat name="melee:damage" value="+2" equipped="[main:any]&amp;&amp;([off:none]||[shield:any])" />
     </rules>
   </element>
   <element name="Great Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
-    <supports>Fighting Style</supports>
+    <supports>Fighting Style, Fighter, Paladin</supports>
     <description>
       <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
     </description>
@@ -234,7 +235,7 @@
     <rules />
   </element>
   <element name="Protection" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FIGHTINGSTYLE_PROTECTION">
-    <supports>Fighting Style</supports>
+    <supports>Fighting Style, Fighter, Paladin</supports>
     <description>
       <p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
     </description>
@@ -243,8 +244,8 @@
     </sheet>
     <rules />
   </element>
-  <element name="Two-Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FIGHTINGSTYLE_TWO-WEAPON_FIGHTING">
-    <supports>Fighting Style</supports>
+  <element name="Two-Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+    <supports>Fighting Style, Fighter, Ranger</supports>
     <description>
       <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
     </description>
