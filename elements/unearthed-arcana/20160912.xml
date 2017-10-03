@@ -4,13 +4,13 @@
     <name>Unearthed Arcana: The Ranger, Revised</name>
     <description>Over the past year, you’ve seen us try a number of new approaches to the ranger, all aimed at addressing the class’s high levels of player dissatisfaction and its ranking as D&amp;D’s weakest class by a significant margin. Those two factors combined to put us on the path to this revision. Though the revised ranger retains many of the elements of the existing class, a lot has changed, so it’s best to simply dig into the new material to get a sense of how it feels. But at the same time, the release of this revision gives us a chance to talk about how a revised class can best be implemented as part of the D&amp;D game—and how the game will evolve in the future.</description>
     <author url="http://dnd.wizards.com/articles/features/unearthed-arcana-ranger-revised">Wizards of the Coast</author>
-    <update version="0.1.5" revised="2016/09/12">
+    <update version="0.1.6" revised="2016/09/12">
       <file name="20160912.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20160912.xml" />
     </update>
   </info>
   
   <!-- Ranger, Revised -->
-  <element name="Ranger" type="Class" source="Unearthed Arcana: The Ranger, Revised" id="ID_WOTC_UA_CLASS_RANGER">
+  <element name="Ranger" type="Class" source="Unearthed Arcana: The Ranger, Revised" id="ID_WOTC_UA_CLASS_RANGER1">
     <supports />
     <requirements />
     <description>
@@ -145,7 +145,7 @@
     </description>
     <sheet />
     <rules>
-      <select type="Class Feature" name="Fighting Style" supports="ID_CLASSFEATURE_FIGHTINGSTYLE_ARCHERY|ID_CLASSFEATURE_FIGHTINGSTYLE_DEFENSE|ID_CLASSFEATURE_FIGHTINGSTYLE_DUELING|ID_CLASSFEATURE_FIGHTINGSTYLE_TWO-WEAPON_FIGHTING" level="2"/>
+      <select type="Class Feature" name="Fighting Style" supports="Fighting Style&amp;&amp;Ranger" level="2"/>
     </rules>
   </element>
   <element name="Spellcasting" type="Class Feature" source="Unearthed Arcana: The Ranger, Revised" id="ID_CLASSFEATURE_SPELLCASTING_RANGER">
@@ -594,10 +594,7 @@
     <sheet>
       <description>Medium beast, unaligned</description>
     </sheet>
-    <rules>
-      <stat name="companion:ac" value="13" />
-      <stat name="companion:hp" value="11" />
-      <stat name="companion:speed" value="40" />
+    <rules>a
     </rules>
   </element>
 
