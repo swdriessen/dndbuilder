@@ -4,7 +4,7 @@
 		<name>Tiefling</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1.1" revised="2017/09/25">
+		<update version="0.1.2" revised="2017/09/25">
 			<file name="race-tiefling.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-tiefling.xml" />
 		</update>
 	</info>
@@ -94,7 +94,7 @@
 
 
   <!-- Variant SCAG -->
-
+<!-- 
   <element name="Tiefling Trait" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_TIEFLING">
     <supports>Tiefling</supports>
     <requirements />
@@ -129,7 +129,6 @@
     <rules>
       <stat name="Intelligence" value="+1"/>
       <stat name="Dexterity" value="+2"/>
-      <!-- optional list with appereance traits -->
       <select type="Racial Trait" name="Infernal Legacy Variant" supports="Infernal Legacy Variant" />
     </rules>
   </element>
@@ -148,8 +147,8 @@
       <grant name="ID_PHB_SPELL_ENTHRALL" type="Spell" spellcasting-ability="Charisma" known-spells="false" level="5"/>
     </rules>
   </element>
-
-  <element name="Hellfire" type="Racial Trait" source="Sword Coast Adventurer’s Guide" id="ID_RACE_VARIANT_TIEFLING_HELLFIRE">
+ -->
+<!--   <element name="Hellfire" type="Racial Trait" source="Sword Coast Adventurer’s Guide" id="ID_RACE_VARIANT_TIEFLING_HELLFIRE">
     <supports>Infernal Legacy Variant</supports>
     <description>
       <p>Once you reach 3rd level, you can cast the burning hands spell once per day as a 2nd-level spell. This trait replaces the hellish rebuke spell of the Infernal Legacy trait.</p>
@@ -158,8 +157,7 @@
       <description level="3">You can cast the burning hands spell once per day as a 2nd-level spell. This trait replaces the hellish rebuke spell of the Infernal Legacy trait.</description>
     </sheet>
     <rules>
-      <!--<remove rule="grant" id="ID_PHB_SPELL_HELLISH_REBUKE"  parent="ID_RACIAL_TRAIT_INFERNAL_LEGACY" />
-      <add></add>-->
+
       <grant type="Spell" name="ID_PHB_SPELL_THAUMATURGY" level="1" />
       <grant type="Spell" name="ID_PHB_SPELL_BURNING_HANDS" level="3" />
       <grant type="Spell" name="ID_PHB_SPELL_DARKNESS" level="5" />
@@ -177,7 +175,7 @@
     <rules>
       <stat name="speed:fly" value="30" bonus="base"/>
     </rules>
-  </element>
+  </element> -->
 
 
 

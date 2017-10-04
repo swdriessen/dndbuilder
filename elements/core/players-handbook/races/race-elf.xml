@@ -4,11 +4,10 @@
 		<name>Elf</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1" revised="2017/09/25">
+		<update version="0.1.1" revised="2017/09/25">
 			<file name="race-elf.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-elf.xml" />
 		</update>
 	</info>
-
 
   <element name="Elf" type="Race" source="Player’s Handbook" id="ID_RACE_ELF">
     <supports />
@@ -16,22 +15,22 @@
       <p class="flavor">Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.</p>
       <h4>SLENDER AND GRACEFUL</h4>
       <p>With their unearthly grace and fine features, elves appear hauntingly beautiful to humans and members of many other races. They are slightly shorter than humans on average, ranging from well under 5 feet tall to just over 6 feet. They are more slender than humans, weighing only 100 to 145 pounds. Males and females are about the same height, and males are only marginally heavier than females.</p>
-      <p>Elves’ coloration encompasses the normal human range and also includes skin in shades of copper, bronze, and almost bluish-white, hair of green or blue, and eyes like pools of liquid gold or silver. Elves have no facial and little body hair. They favor elegant clothing in bright colors, and they enjoy simple yet lovely jewelry.</p>
+      <p class="indent">Elves’ coloration encompasses the normal human range and also includes skin in shades of copper, bronze, and almost bluish-white, hair of green or blue, and eyes like pools of liquid gold or silver. Elves have no facial and little body hair. They favor elegant clothing in bright colors, and they enjoy simple yet lovely jewelry.</p>
 
       <h4>A TIMELESS PERSPECTIVE</h4>
       <p>Elves can live well over 700 years, giving them a broad perspective on events that might trouble the shorterlived races more deeply. They are more often amused than excited, and more likely to be curious than greedy. They tend to remain aloof and unfazed by petty happenstance. When pursuing a goal, however, whether adventuring on a mission or learning a new skill or art, elves can be focused and relentless. They are slow to make friends and enemies, and even slower to forget them. They reply to petty insults with disdain and to serious insults with vengeance.</p>
-      <p>Like the branches of a young tree, elves are flexible in the face of danger. They trust in diplomacy and compromise to resolve differences before they escalate to violence. They have been known to retreat from intrusions into their woodland homes, confident that they can simply wait the invaders out. But when the need arises, elves reveal a stern martial side, demonstrating skill with sword, bow, and strategy.</p>
+      <p class="indent">Like the branches of a young tree, elves are flexible in the face of danger. They trust in diplomacy and compromise to resolve differences before they escalate to violence. They have been known to retreat from intrusions into their woodland homes, confident that they can simply wait the invaders out. But when the need arises, elves reveal a stern martial side, demonstrating skill with sword, bow, and strategy.</p>
 
       <h4>HIDDEN WOODLAND REALMS</h4>
       <p>Most elves dwell in small forest villages hidden among the trees. Elves hunt game, gather food, and grow vegetables, and their skill and magic allow them to support themselves without the need for clearing and plowing land. They are talented artisans, crafting finely worked clothes and art objects. Their contact with outsiders is usually limited, though a few elves make a good living by trading crafted items for metals (which they have no interest in mining).</p>
-      <p>Elves encountered outside their own lands are commonly traveling minstrels, artists, or sages. Human nobles compete for the services of elf instructors to teach swordplay or magic to their children.</p>
+      <p class="indent">Elves encountered outside their own lands are commonly traveling minstrels, artists, or sages. Human nobles compete for the services of elf instructors to teach swordplay or magic to their children.</p>
 
       <h4>EXPLORATION AND ADVENTURE</h4>
       <p>Elves take up adventuring out of wanderlust. Since they are so long-lived, they can enjoy centuries of exploration and discovery. They dislike the pace of human society, which is regimented from day to day but constantly changing over decades, so they find careers that let them travel freely and set their own pace. Elves also enjoy exercising their martial prowess or gaining greater magical power, and adventuring allows them to do so. Some might join with rebels fighting against oppression, and others might become champions of moral causes.</p>
 
       <h4>ELF NAMES</h4>
       <p>Elves are considered children until they declare themselves adults, some time after the hundredth birthday, and before this period they are called by child names.</p>
-      <p>On declaring adulthood, an elf selects an adult name, although those who knew him or her as a youngster might continue to use the child name. Each elf’s adult name is a unique creation, though it might reflect the names of respected individuals or other family members. Little distinction exists between male names and female names; the groupings here reflect only general tendencies. In addition, every elf bears a family name, typically a combination of other Elvish words. Some elves traveling among humans translate their family names into Common, but others retain the Elvish version.</p>
+      <p class="indent">On declaring adulthood, an elf selects an adult name, although those who knew him or her as a youngster might continue to use the child name. Each elf’s adult name is a unique creation, though it might reflect the names of respected individuals or other family members. Little distinction exists between male names and female names; the groupings here reflect only general tendencies. In addition, every elf bears a family name, typically a combination of other Elvish words. Some elves traveling among humans translate their family names into Common, but others retain the Elvish version.</p>
       <p>
         <span class="feature">Child Names:</span>Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall<br />
         <span class="feature">Male Adult Names:</span>Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric , Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis<br />
@@ -168,7 +167,7 @@
     <requirements />
     <description>
       <p>Descended from an earlier subrace of dark-skinned elves, the drow were banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have built their own civilization in the depths of the Underdark, patterned after the Way of Lolth. Also called dark elves, the drow have black skin that resembles polished obsidian and stark white or pale yellow hair. They commonly have very pale eyes (so pale as to be mistaken for white) in shades of lilac, silver, pink, red, and blue. They tend to be smaller and thinner than most elves.</p>
-      <p>Drow adventurers are rare, and the race does not exist in all worlds. Check with your Dungeon Master to see if you can play a drow character.</p>
+      <p class="indent">Drow adventurers are rare, and the race does not exist in all worlds. Check with your Dungeon Master to see if you can play a drow character.</p>
       <p>
         <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 1.<br />
         <span class="feature">Superior Darkvision.</span>Your darkvision has a radius of 120 feet.<br />
