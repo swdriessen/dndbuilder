@@ -4,7 +4,7 @@
     <name>Barbarian</name>
     <description>The Barbarian class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.1.3" revised="2017/01/01">
+    <update version="0.1.4" revised="2017/01/01">
       <file name="class-barbarian.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-barbarian.xml" />
     </update>
   </info>
@@ -151,7 +151,8 @@
     </sheet>
     <rules>
       <!-- dex bonus is granted in the first level element or... hardcode in combination with armor maximums -->
-      <stat name="Unarmored Defence" value="Constitution Modifier" equipped="armor:none"/>
+      <stat name="Unarmored Defence" value="Constitution Modifier" equipped="[armor:none]"/>
+
       <stat name="AC" value="Unarmored Defence" bonus="Unarmored Defence" />
     </rules>
   </element>

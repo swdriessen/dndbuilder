@@ -4,7 +4,7 @@
     <name>Feats</name>
     <description>Feats from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.5" revised="2016/09/12">
+    <update version="0.0.6" revised="2016/09/12">
       <file name="feats.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/feats.xml" />
     </update>
   </info>
@@ -99,6 +99,7 @@
   </element>
   <element name="Defensive Duelist" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_DEFENSIVE_DUELIST">
     <supports />
+    <prerequisite>Dexterity 13 or higher</prerequisite>
     <requirements>[dex:13]</requirements>
     <description>
       <p><i>Prerequisite: Dexterity 13 or higher</i></p>
@@ -173,6 +174,7 @@
 
   <element name="Elemental Adept" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT">
     <supports />
+    <prerequisite>The ability to cast at least one spell</prerequisite>
     <requirements>[type:Spell]</requirements>
     <description>
       <p><i>Prerequisite: The ability to cast at least one spell</i></p>
@@ -244,6 +246,7 @@
 
   <element name="Grappler" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_GRAPPLER">
     <supports />
+    <prerequisite>Strength 13 or higher</prerequisite>
     <requirements>[str:13]</requirements>
     <description>
       <p class="flavor">Prerequisite: Strength 13 or higher</p>
@@ -291,6 +294,7 @@
   </element>
   <element name="Heavily Armored" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_HEAVILYARMORED">
     <supports />
+    <prerequisite>Proficiency with medium armor</prerequisite>
     <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
     <description>
       <p><i>Prerequisite: Proficiency with medium armor</i></p>
@@ -310,6 +314,7 @@
   </element>
   <element name="Heavy Armor Master" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_HEAVYARMORMASTER">
     <supports />
+    <prerequisite>Proficiency with heavy armor</prerequisite>
     <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
     <description>
       <p><i>Prerequisite: Proficiency with heavy armor</i></p>
@@ -328,6 +333,7 @@
   </element>
   <element name="Inspiring Leader" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_INSPIRINGLEADER">
     <supports />
+    <prerequisite>Charisma 13 or higher</prerequisite>
     <requirements>[cha:13]</requirements>
     <description>
       <p><i>Prerequisite: Charisma 13 or higher</i></p>
@@ -554,7 +560,7 @@
       </ul>
     </description>
     <sheet>
-      <description>1d6 superiority dice / short rest. DC %martial adept:dc%</description>
+      <description>%martial adept:dice:amount%d%martial adept:dice:size% superiority dice / short rest. DC %martial adept:dc%</description>
     </sheet>
     <rules>
       <stat name="martial adept:ability" value="Strength Modifier" bonus="martial adept:ability" />
@@ -564,38 +570,25 @@
       <stat name="martial adept:dc" value="proficiency" />
       <stat name="martial adept:dc" value="martial adept:ability" />
 
-      <stat name="martial adept:dice" value="1" />
-      <stat name="martial adept:dice:sides" value="d6" />
+      <stat name="martial adept:dice:amount" value="1" />
+      <stat name="martial adept:dice:size" value="6" />
       
-      <select type="Class Feature" name="Martial Adept" supports="Maneuver&amp;&amp;Battle Master" number="2" />
+      <select type="Archetype Feature" name="Martial Adept" supports="Maneuver&amp;&amp;Battle Master" number="2" />
+
+
+      <!-- battle master -->
+      <stat name="superiority dice:amount" value="+1" requirements="ID_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY" />
     </rules>
   </element>
 
-  <!-- test, todo move to fighter class file -->
-  <element name="Commander’s Strike" type="Class Feature" source="Player’s Handbook" id="ID_PHB_CLASS_FEATURE_MANEUVER_CommandersStrike">
-    <supports>Maneuver, Battle Master</supports>
-    <description>
-      <p></p>
-    </description>
-    <sheet>
-      <description></description>
-      </sheet>
-  </element>
 
-  <element name="Disarming Attack" type="Class Feature" source="Player’s Handbook" id="ID_PHB_CLASS_FEATURE_MANEUVER_DisarmingAttack">
-    <supports>Maneuver, Battle Master</supports>
-    <description>
-      <p></p>
-    </description>
-    <sheet>
-      <description></description>
-      </sheet>
-  </element>
-  
-  <!--  -->
+
+
+
 
   <element name="Medium Armor Master" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MEDIUMARMORMASTER">
     <supports />
+    <prerequisite>Proficiency with medium armor</prerequisite>
     <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
     <description>
       <p><i>Prerequisite: Proficiency with medium armor</i></p>
@@ -635,6 +628,7 @@
   </element>
   <element name="Moderately Armored" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_MODERATELYARMORED">
     <supports />
+    <prerequisite>Proficiency with light armor</prerequisite>
     <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
     <description>
       <p><i>Prerequisite: Proficiency with light armor</i></p>
@@ -804,6 +798,7 @@
 
   <element name="Ritual Caster" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_RITUALCASTER">
     <supports />
+    <prerequisite>Intelligence or Wisdom 13 or higher</prerequisite>
     <requirements>[int:13]||[wis:13]</requirements>
     <description>
       <p><i>Prerequisite: Intelligence or Wisdom 13 or higher</i></p>
@@ -977,11 +972,12 @@
     </sheet>
     <rules>
       <!--todo all tools too-->
-      <select type="Proficiency" supports="Skill" number="3"/>
+      <select type="Proficiency" name="Skill Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
     </rules>
   </element>
   <element name="Skulker" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_SKULKER">
     <supports />
+    <prerequisite>Dexterity 13 or higher</prerequisite>
     <requirements>[dex:13]</requirements>
     <description>
       <p class="flavor">Prerequisite: Dexterity 13 or higher</p>
@@ -999,6 +995,7 @@
   </element>
   <element name="Spell Sniper" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_SPELLSNIPER">
     <supports />
+    <prerequisite>The ability to cast at least one spell</prerequisite>
     <requirements>[type:Spell]</requirements>
     <description>
       <p><i>Prerequisite: The ability to cast at least one spell</i></p>
