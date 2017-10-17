@@ -2,110 +2,11 @@
 <elements>
     <info>
         <name>Planeshift: Amonkhet</name>
-        <description>Material from the Planeshift setting from magic the gathering.</description>
+        <description>This content has been moved out of Unearthed Arcana, fetch the planeshift index at https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/planeshift.index</description>
         <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-        <update version="0.0.3" revised="2017/09/11">
+        <update version="0.0.4" revised="2017/09/11">
             <file name="planeshift-amonkhet.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/planeshift-amonkhet.xml" />
         </update>
     </info>
-	
-    <element name="Initiate" type="Background" source="Planeshift: Amonkhet" id="ID_PSA_BACKGROUND_INITIATE">
-        <description>
-            <p>You are an initiate, on the path to completing the trials of the five gods in the hope of earning a glorified death in the final Trial of Zeal. Some combination of your natural aptitude, your crop’s needs, and your teachers’ assessment while you were an acolyte led you to focus your training in one particular area of specialization— hand-to-hand combat, long-range combat, or spellcasting. But only a well-rounded initiate can be called truly worthy of the afterlife.</p>
-            <p class="indent">If you are a hand-to-hand specialist, consider the barbarian, fighter, monk, paladin, or rogue classes. As a long-range combat specialist, you might be a fighter, a ranger, or a rogue. If you are a spellcasting specialist, you might be a bard, sorcerer, or wizard. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas.</p>
-        </description>
-    </element>
-
-    <element name="Minotaur" type="Race" source="Planeshift: Amonkhet" id="ID_PSA_RACE_MINOTAUR">
-		<description>
-			<p>Minotaurs are powerfully built, barrel-chested humanoids with heads resembling rams. Their horns curl tightly against the sides of their heads to encircle their ears, and manes of shaggy fur-shorter in females-fall over their broad shoulders. As their appearance suggests, they combine physical strength with stubbornness, bravado, and reckless bravery. They revel in combat, especially when the odds against them seem overwhelming.</p>
-			<p class="indent">Minotaurs are rowdy, boisterous, and direct to the point of rudeness. They have no qualms about declaring what they want and defying others to keep it from them. In combat, they bellow loud challenges in defiance of their foes, and roar with laughter as they triumph.</p>
-			<p class="indent">Minotaurs believe they hold a unique place among the races of Amonkhet. The khenra can look to Hazoret, the naga to Rhonas, and the aven to Kefnet to see themselves represented among the gods. Humans have no single god to look to, which explains why they demonstrate such variety. But only one god bears a pair of curving horns: the God-Pharaoh himself, who holds a special place for many of the minotaurs of Amonkhet.</p>
-			<h4>RUTHLESS AND RECKLESS</h4>
-			<p> Even those minotaurs who feel personal affinity for the horned God-Pharaoh align themselves most closely with Bontu and Hazoret in practice. Driven by a fierce and powerful desire to prove themselves, to earn glory in life, and to win a glorious death, they view every challenge or obstacle as a chance to demonstrate their prowess. With ruthless abandon, they slash, batter, and pummel their way through anyone or anything that stands in the way of their own advancement. With reckless fervor, they fight without heed for their own safety, shrugging off the blows of their enemies.</p>
- 			<h4>COMBAT CLASSES</h4>
-			<p>Their size and strength makes minotaurs ideally suited for hand-to-hand combat. They are most effective on the offensive, delivering an endless barrage of attacks that keep their foes off balance, shatter shields and weapons, and inevitably break their opponents. These minotaurs favor large, heavy weapons such as axes, mauls, and two-handed khopeshes (treat as a greatsword), but they are also fond of unarmed combat. Many love to throw their weapons aside in favor of pummeling opponents into submission with their horns and bare hands, believing that such a victory is more glorious—and more humiliating to the loser.</p>
-			<p class="indent">But though minotaurs are known for their physical size and strength, this hardly precludes the presence Neheb, the Worthy Chris Rahn of keen minds and powerful spellcasters among them. Though they are fewer in number than hand-to-hand specialists, minotaur mages draw on their natural ferocity to instill terror in the hearts of their opponents with a terrible roaring bellow. They manifest their fury as blasts of flame, or imbue their own horns and fists with searing heat to make their physical attacks more deadly.</p>
-			<p class="indent">The relatively few minotaurs who specialize in long-range combat enjoy one aspect of that style in particular— the opportunity to draw first blood, marking the moment when a battle has truly begun. Minotaurs use heavy bows and javelins, and take special delight in firing into the middle of enemy formations to sow as much chaos and confusion as possible.</p>
-			<h3>MINOTAUR TRAITS</h3>
-			<p>Minotaurs have many traits in common with the halforcs of other worlds.</p>
-			<p>
-				<span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, and your Constitution score increases by 1.<br/>
-				<span class="feature">Age.</span>Minotaurs develop more slowly than humans, reaching full maturity around the age of 20. They typically become acolytes at around 8 or 9 years old, making them among the older members of their crops. Once they reach maturity, though, minotaurs age quickly, rushing headlong through the trials (as they do all aspects of life) to complete them before they pass their peak. A minotaur allowed to die of old age would rarely live beyond 40.<br/>
-				<span class="feature">Alignment.</span>Most minotaurs lean toward chaotic alignments, and they have a slight inclination toward evil.<br/>
-				<span class="feature">Size.</span>Minotaurs average over 6 feet in height, and they have strong, stocky builds. Your size is Medium.<br/>
-				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
-				<span class="feature">Natural Weapon.</span>You can use your horns as a natural weapon to make unarmed strikes. If you hit with your horns, you deal bludgeoning damage equal to 1d6 + your Strength modifier.<br/>
-				<span class="feature">Menacing.</span>You gain proficiency in the Intimidation skill.<br/>
-				<span class="feature">Relentless Endurance.</span>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.<br/>
-				<span class="feature">Savage Attacks.</span>When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.<br/>
-				<span class="feature">Languages.</span>You can speak, read, and write Common and Minotaur.
-			</p>
-		</description>
-    	<sheet display="false" />
-		<rules>
-			<stat name="Strength" value="+2" />
-			<stat name="Constitution" value="+1" />
-			<grant type="Size" name="ID_SIZE_MEDIUM" />			
-			<stat name="Speed" value="+30" />
-			<grant type="Racial Trait" name="ID_RACIAL_TRAIT_MINOTAUR_NATURAL_WEAPON" />
-			<grant type="Racial Trait" name="ID_RACIAL_TRAIT_MINOTAUR_MENACING" />
-			<grant type="Racial Trait" name="ID_RACIAL_TRAIT_MINOTAUR_RELENTLESS_ENDURANCE" />
-			<grant type="Racial Trait" name="ID_RACIAL_TRAIT_MINOTAUR_SAVAGE_ATTACKS" />
-			<grant type="Language" name="ID_LANGUAGE_COMMON" />
-			<grant type="Language" name="ID_LANGUAGE_MINOTAUR" />
-		</rules>
-	</element>
-
-	<element name="Natural Weapon" type="Racial Trait" source="Planeshift: Amonkhet" id="ID_RACIAL_TRAIT_MINOTAUR_NATURAL_WEAPON">
-		<description>
-			<p>You can use your horns as a natural weapon to make unarmed strikes. If you hit with your horns, you deal bludgeoning damage equal to 1d6 + your Strength modifier.</p>
-		</description>
-		<sheet>
-			<description>You can use your horns as a natural weapon to make unarmed strikes. If you hit with your horns, you deal bludgeoning damage equal to 1d6 + %natural weapon:damage%.</description>
-		</sheet>
-		<rules>
-			<stat name="natural weapon:damage" value="Strength Modifier" />
-		</rules>
-	</element>
-	<element name="Menacing" type="Racial Trait" source="Planeshift: Amonkhet" id="ID_RACIAL_TRAIT_MINOTAUR_MENACING">
-		<description>
-			<p>You gain proficiency in the Intimidation skill.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Proficiency" name="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-		</rules>
-	</element>
-	<element name="Relentless Endurance" type="Racial Trait" source="Planeshift: Amonkhet" id="ID_RACIAL_TRAIT_MINOTAUR_RELENTLESS_ENDURANCE">
-		<description>
-			<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</p>
-		</description>
-		<sheet>
-			<description>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</description>
-		</sheet>
-		<rules />
-	</element>
-	<element name="Savage Attacks" type="Racial Trait" source="Planeshift: Amonkhet" id="ID_RACIAL_TRAIT_MINOTAUR_SAVAGE_ATTACKS">
-		<description>
-			<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</p>
-		</description>
-		<sheet>
-			<description>When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</description>
-		</sheet>
-		<rules />
-	</element>
-
-	<element name="Minotaur" type="Language" source="Planeshift: Amonkhet" id="ID_LANGUAGE_MINOTAUR">
-		<description>
-			<p>The language of the Minotaur race from Amonkhet.</p>
-		</description>
-	    <setters>
-	      <set name="Speakers">Minotaur</set>
-	      <set name="Script">Minotaur</set>
-	      <set name="Exotic">true</set>
-	    </setters>
-	</element>
-
-
+	<!-- content moved to https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/planeshift.index -->
 </elements>
