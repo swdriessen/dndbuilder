@@ -4,7 +4,7 @@
 		<name>Aasimar</name>
 		<description></description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.0.8" revised="2017/06/07">
+		<update version="0.0.9" revised="2017/06/07">
 			<file name="race-aasimar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-aasimar.xml" />
 		</update>
 	</info>
@@ -55,13 +55,13 @@
       <grant type="Vision" name="ID_VISION_DARKVISION" />
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_CELESTIAL" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_CELESTIAL_RESISTANCE" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_HEALING_HANDS" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_LIGHT_BEARER" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_SUBRACE" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE" />
     </rules>
   </element>
-  <element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_CELESTIAL_RESISTANCE">
+  <element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE">
     <description>
       <p>You have resistance to necrotic damage and radiant damage.</p>
     </description>
@@ -70,7 +70,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Healing Hands" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_HEALING_HANDS">
+  <element name="Healing Hands" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS">
     <supports />
     <description>
       <p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
@@ -82,7 +82,7 @@
       <stat name="trait:healing-hands" value="Level"  />
     </rules>
   </element>
-  <element name="Light Bearer" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_LIGHT_BEARER">
+  <element name="Light Bearer" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER">
     <supports />
     <description>
       <p>You know the light cantrip. Charisma is your spellcasting ability for it.</p>
@@ -94,7 +94,7 @@
       <grant type="Spell" name="ID_PHB_SPELL_LIGHT" />
     </rules>
   </element>
-  <element name="Aasimar Subrace" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_SUBRACE">
+  <element name="Aasimar Subrace" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE">
     <description>
       <p>Three subraces of aasimar exist: protector aasimar, scourge aasimar, and fallen aasimar. Choose one of them for your character.</p>
     </description>
@@ -116,10 +116,10 @@
     <sheet display="false"/>
     <rules>
       <stat name="Wisdom" value="+1" />
-      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_RADIANT_SOUL" />
+      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_AASIMAR_RADIANT_SOUL" />
     </rules>
   </element>
-  <element name="Radiant Soul" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_RADIANT_SOUL">
+  <element name="Radiant Soul" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_SOUL">
     <supports />
     <description>
       <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back.</p>
@@ -144,10 +144,10 @@
     <sheet display="false"/>
     <rules>
       <stat name="Constitution" value="+1" />
-      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_RADIANT_CONSUMPTION" />
+      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_AASIMAR_RADIANT_CONSUMPTION" />
     </rules>
   </element>
-  <element name="Radiant Consumption" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_RADIANT_CONSUMPTION">
+  <element name="Radiant Consumption" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_CONSUMPTION">
     <supports />
     <description>
       <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you.</p>
@@ -172,10 +172,10 @@
     <sheet display="false"/>
     <rules>
       <stat name="Strength" value="+1" />
-      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_NECROTIC_SHROUD" />
+      <grant type="Racial Trait" name="ID_RACIAL_TRAIT_AASIMAR_NECROTIC_SHROUD" />
     </rules>
   </element>
-  <element name="Necrotic Shroud" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_NECROTIC_SHROUD">
+  <element name="Necrotic Shroud" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_NECROTIC_SHROUD">
     <supports />
     <description>
       <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn.</p>
