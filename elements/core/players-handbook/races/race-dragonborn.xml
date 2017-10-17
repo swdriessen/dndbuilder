@@ -4,7 +4,7 @@
     <name>Dragonborn</name>
     <description></description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.7" revised="2017/09/25">
+    <update version="0.0.8" revised="2017/09/25">
       <file name="race-dragonborn.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-dragonborn.xml" />
     </update>
   </info>
@@ -23,13 +23,13 @@
       <h4>DRAGONBORN NAMES</h4>
       <p>Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. A childhood name or nickname is often used among clutchmates as a descriptive term or a term of endearment. The name might recall an event or center on a habit.</p>
       <p>
-        <span class="feature">Male Names:</span>Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn
+        <span><b>Male Names: </b>Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn
         <br/>
-        <span class="feature">Female Names:</span>Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit
+        <span><b>Female Names: </b>Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit
         <br/>
-        <span class="feature">Childhood Names:</span>Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous
+        <span><b>Childhood Names: </b>Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous
         <br/>
-        <span class="feature">Clan Names:</span>Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit
+        <span><b>Clan Names: </b>Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit
         <br/>
       </p>
       <h4>DRAGONBORN TRAITS</h4>
@@ -54,9 +54,6 @@
         <span class="feature">Languages.</span>You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.
         <br />
       </p>
-      <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-      <div element="ID_RACIAL_TRAIT_BREATH_WEAPON" />
-      <div element="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
     </description>
     <sheet display="false" />
     <setters>
