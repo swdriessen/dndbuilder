@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<info>
-		<name>Dragonborn</name>
-		<description></description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.6" revised="2017/09/25">
-			<file name="race-dragonborn.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-dragonborn.xml" />
-		</update>
-	</info>
-
+  <info>
+    <name>Dragonborn</name>
+    <description></description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+    <update version="0.0.7" revised="2017/09/25">
+      <file name="race-dragonborn.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-dragonborn.xml" />
+    </update>
+  </info>
   <element name="Dragonborn" type="Race" source="Player’s Handbook" id="ID_RACE_DRAGONBORN">
     <supports />
     <requirements />
@@ -24,23 +23,36 @@
       <h4>DRAGONBORN NAMES</h4>
       <p>Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. A childhood name or nickname is often used among clutchmates as a descriptive term or a term of endearment. The name might recall an event or center on a habit.</p>
       <p>
-        <span class="feature">Male Names:</span>Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn<br/>
-        <span class="feature">Female Names:</span>Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit<br/>
-        <span class="feature">Childhood Names:</span>Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous<br/>
-        <span class="feature">Clan Names:</span>Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit<br/>
+        <span class="feature">Male Names:</span>Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn
+        <br/>
+        <span class="feature">Female Names:</span>Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit
+        <br/>
+        <span class="feature">Childhood Names:</span>Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous
+        <br/>
+        <span class="feature">Clan Names:</span>Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit
+        <br/>
       </p>
       <h4>DRAGONBORN TRAITS</h4>
       <p>Your draconic heritage manifests in a variety of traits you share with other dragonborn.</p>
       <p>
-        <span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, and your Charisma score increases by 1.<br />
-        <span class="feature">Age.</span>Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.<br />
-        <span class="feature">Alignment.</span>Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains.<br />
-        <span class="feature">Size.</span>Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.<br />
-        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
-        <span class="feature">Draconic Ancestry.</span>You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.<br />
-        <span class="feature">Breath Weapon.</span>You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.<br />
-        <span class="feature">Damage Resistance.</span>You have resistance to the damage type associated with your draconic ancestry.<br />
-        <span class="feature">Languages.</span>You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.<br />
+        <span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, and your Charisma score increases by 1.
+        <br />
+        <span class="feature">Age.</span>Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.
+        <br />
+        <span class="feature">Alignment.</span>Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains.
+        <br />
+        <span class="feature">Size.</span>Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.
+        <br />
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+        <br />
+        <span class="feature">Draconic Ancestry.</span>You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.
+        <br />
+        <span class="feature">Breath Weapon.</span>You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.
+        <br />
+        <span class="feature">Damage Resistance.</span>You have resistance to the damage type associated with your draconic ancestry.
+        <br />
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.
+        <br />
       </p>
       <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
       <div element="ID_RACIAL_TRAIT_BREATH_WEAPON" />
@@ -53,9 +65,6 @@
       <set name="names" type="childhood">Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous</set>
       <set name="names" type="clan">Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit</set>
       <set name="names-format">$(name) $(clan)</set>
-
-      <set name="Male Names">Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn</set>
-      <set name="Female Names">Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit</set>
     </setters>
     <rules>
       <stat name="Strength" value="+2"/>
@@ -69,7 +78,6 @@
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
     </rules>
   </element>
-
   <element name="Draconic Ancestry" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY">
     <supports></supports>
     <requirements />
@@ -156,9 +164,7 @@
       <stat name="breath-weapon:dc" value="8" />
       <stat name="breath-weapon:dc" value="Constitution Modifier" />
       <stat name="breath-weapon:dc" value="Proficiency" />
-      
       <stat name="breath-weapon:dice size" value="6" bonus="dice" />
-      
       <stat name="breath-weapon:dice count" value="+2" level="1" />
       <stat name="breath-weapon:dice count" value="+1" level="6" />
       <stat name="breath-weapon:dice count" value="+1" level="11" />
@@ -172,11 +178,9 @@
       <p>You have resistance to the damage type associated with your draconic ancestry.</p>
     </description>
     <sheet>
-      <description>You have resistance to %draconic-ancestry:damage type% associated with your draconic ancestry.</description>
+      <description>You have resistance to %draconic-ancestry:damage type%.</description>
     </sheet>
   </element>
-
-  
   <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
     <supports>Draconic Ancestry</supports>
     <requirements />
@@ -327,5 +331,4 @@
       <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
     </rules>
   </element>
-
 </elements>
