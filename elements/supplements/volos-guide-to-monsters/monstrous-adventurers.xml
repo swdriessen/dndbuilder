@@ -4,69 +4,231 @@
     <name>Monstrous Adventurers</name>
     <description>The monstrous-adventurers from Volo’s Guide to Monsters.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/volos-guide-to-monsters">Wizards of the Coast</author>
-    <update version="0.0.2" revised="2017/06/01">
+    <update version="0.0.3" revised="2017/06/01">
       <file name="monstrous-adventurers.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/monstrous-adventurers.xml" />
     </update>
   </info>
 
-  <element name="Bugbear" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Bugbear">
+  <element name="Bugbear" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_BUGBEAR">
     <description>
+        <p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+        <h4>BUGBEAR TRAITS</h4>
         <p>Your bugbear character has the following racial traits.</p>
+        <p>
+          <span class="feature">Ability Score Increase.</span>Your Strength score increases by 2 and your Dexterity score increases by 1.<br/>
+          <span class="feature">Age.</span>Bugbears reach adulthood at age 16 and live up to 80 years.<br/>
+          <span class="feature">Alignment.</span>Bugbears endure a harsh existence that demands each of them to remain self-sufficient, even at the expense of their fellows. They tend to be chaotic evil.<br/>
+          <span class="feature">Size.</span>Bugbears are between 6 and 8 feet tall and weigh between 250 and 350 pounds. Your size is Medium.<br/>
+          <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+          <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+          <span class="feature">Long-Limbed.</span>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.<br/>
+          <span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
+          <span class="feature">Sneaky.</span>You are proficient in the Stealth skill.<br/>
+          <span class="feature">Surprise Attack.</span>If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat.<br/>
+          <span class="feature">Languages.</span>You can speak, read, and write Common and Goblin.<br/>
+        </p>
     </description>
     <sheet display="false"/>
-    <supports />
-    <setters />
-    <rules />
+    <setters>
+      <set name="names" type="custom">N/A</set>
+      <set name="names-format">$(custom)</set>
+    </setters>
+    <rules>
+      <stat name="Strength" value="+2" />
+      <stat name="Dexterity" value="+1" />
+      <stat name="Speed" value="+30" />
+      <grant type="Size" name="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_GOBLIN" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Long_Limbed" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Powerful_Build" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Sneaky" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Surprise_Attack" />
+    </rules>
   </element>
 
   <element name="Goblin" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Goblin">
     <description>
+        <p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+        <h4>GOBLIN TRAITS</h4>
         <p>Your goblin character has the following racial traits.</p>
+        <p>
+        <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2, and your Constitution score increases by 1.<br/>
+        <span class="feature">Age.</span>Goblins reach adulthood at age 8 and live up to 60 years.<br/>
+        <span class="feature">Alignment.</span>Goblins are typically neutral evil, as they care only for their own needs. A few goblins might tend toward good or neutrality, but only rarely.<br/>
+        <span class="feature">Size.</span>Goblins are between 3 and 4 feet tall and weigh between 40 and 80 pounds. Your size is Small.<br/>
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+        <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Fury of the Small.</span>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.<br/>
+        <span class="feature">Nimble Escape.</span>You can take the Disengage or Hide action as a bonus action on each of your turns.<br/>
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Goblin.<br/>
+        </p>
     </description>
     <sheet display="false"/>
-    <supports />
-    <setters />
-    <rules />
+    <setters>
+      <set name="names" type="custom">N/A</set>
+      <set name="names-format">$(custom)</set>
+    </setters>
+    <rules>
+      <stat name="Dexterity" value="+2" />
+      <stat name="Constitution" value="+1" />
+      <stat name="Speed" value="+30" />
+      <grant type="Size" name="ID_SIZE_SMALL" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_GOBLIN" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_Fury_of_the_Small" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_Nimble_Escape" />
+    </rules>
   </element>  
   
   <element name="Hobgoblin" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Hobgoblin">
     <description>
+        <p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+        <h4>HOBGOBLIN TRAITS</h4>
         <p>Your hobgoblin character has the following racial traits.</p>
+        <p>
+          <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2, and your Intelligence score increases by 1.<br/>
+          <span class="feature">Age.</span>Hobgoblins mature at the same rate as humans and have lifespans similar in length to theirs.<br/>
+          <span class="feature">Alignment.</span>Hobgoblin society is built on fidelity to a rigid, unforgiving code of conduct. As such, they tend toward lawful evil.<br/>
+          <span class="feature">Size.</span>Hobgoblins are between 5 and 6 feet tall and weigh between 150 and 200 pounds. Your size is Medium.<br/>
+          <span class="feature">Speed.</span>Your base walking speed is 30 feet. <br/>
+          <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+          <span class="feature">Martial Training.</span>You are proficient with two martial weapons of your choice and with light armor.<br/>
+          <span class="feature">Saving Face.</span>Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies  you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest. <br/>
+          <span class="feature">Languages.</span>You can speak, read, and write Common and Goblin.<br/>
+        </p>
     </description>
     <sheet display="false"/>
-    <supports />
-    <setters />
-    <rules />
+    <setters>
+      <set name="names" type="custom">N/A</set>
+      <set name="names-format">$(custom)</set>
+    </setters>
+    <rules>
+      <stat name="Constitution" value="+2" />
+      <stat name="Intelligence" value="+1" />
+      <stat name="Speed" value="+30" />
+      <grant type="Size" name="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_GOBLIN" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_Martial_Training" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_Saving_Face" />
+    </rules>
   </element>
   
   <element name="Kobold" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Kobold">
     <description>
+        <p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+        <h4>KOBOLD TRAITS</h4>
         <p>Your kobold character has the following racial traits.</p>
+        <p>
+        <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2, and your Strength score is reduced by 2.<br/>
+        <span class="feature">Age.</span>Kobolds reach adulthood at age 6 and can live up to 120 years but rarely do so.<br/>
+        <span class="feature">Alignment.</span>Kobolds are fundamentally selfish, making them evil, but their reliance on the strength of their group makes them trend toward law.<br/>
+        <span class="feature">Size.</span>Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small.<br/>
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+        <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Grovel, Cower, and Beg.</span>As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that can see you. Once you use this trait, you can't use it again until you finish a short or long rest.<br/>
+        <span class="feature">Pack Tactics.</span>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.<br/>
+        <span class="feature">Sunlight Sensitivity.</span>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.<br/>
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Draconic.<br/>
+        </p>
     </description>
     <sheet display="false"/>
-    <supports />
-    <setters />
-    <rules />
+    <setters>
+      <set name="names" type="custom">N/A</set>
+      <set name="names-format">$(custom)</set>
+    </setters>
+    <rules>
+      <stat name="Dexterity" value="+2" />
+      <stat name="Strength" value="-2" />
+      <stat name="Speed" value="+30" />
+      <grant type="Size" name="ID_SIZE_SMALL" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_DRACONIC" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_Grovel_Cower_and_Beg" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_Pac_Tactics" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_Sunlight_Sensitivity" />
+    </rules>
   </element>  
   
   <element name="Orc" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Orc">
     <description>
+        <p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+        <h4>ORC TRAITS</h4>
         <p>Your orc character has the following racial traits.</p>
+        <p>
+        <span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, your Constitution score increases by 1, and your Intelligence score is reduced by 2.<br/>
+        <span class="feature">Age.</span>Ores reach adulthood at age 12 and live up to 50 years. <br/>
+        <span class="feature">Alignment.</span>Ores are vicious raiders, who believe that the world should be theirs. They also respect strength above all else and believe the strong must bully the weak to ensure that weakness does not spread like a disease. They are usually chaotic evil.<br/>
+        <span class="feature">Size.</span>Ores are usually over 6 feet tall and weigh between 230 and 280 pounds. Your size is Medium.<br/>
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+        <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Aggressive.</span>As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started.<br/>
+        <span class="feature">Menacing.</span>You are trained in the Intimidation skill. <br/>
+        <span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Orc.<br/>
+        </p>
     </description>
     <sheet display="false"/>
-    <supports />
-    <setters />
-    <rules />
+    <setters>
+      <set name="names" type="custom">N/A</set>
+      <set name="names-format">$(custom)</set>
+    </setters>
+    <rules>
+      <stat name="Strength" value="+2" />
+      <stat name="Constitution" value="+1" />
+      <stat name="Intelligence" value="-2" />
+      <stat name="Speed" value="+30" />
+      <grant type="Size" name="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_ORC" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_Aggressive" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_Menacing" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_Powerful_Build" />
+    </rules>
   </element>
     
   <element name="Yuan-Ti Pureblood" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_YuanTi_Pureblood">
     <description>
-        <p>Your yuan-ti pureblood character—called a pureblood for short-has the following racial traits.</p>
+        <p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
+        <h4>YUAN-TI PUREBLOOD TRAITS</h4>
+        <p>Your yuan-ti pureblood character- called a pureblood for short-has the following racial traits.</p>
+        <p>
+        <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 2, and your Intelligence score increases by 1.<br/>
+        <span class="feature">Age.</span>Purebloods mature at the same rate as humans and have lifespans similar in length to theirs. <br/>
+        <span class="feature">Alignment.</span>Purebloods are devoid of emotion and see others as tools to manipulate. They care little for law or chaos and are typically neutral evil.<br/>
+        <span class="feature">Size.</span>Purebloods match humans in average size and weight. Your size is Medium.<br/>
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+        <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Innate Spellcasting.</span>You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells.<br/>
+        <span class="feature">Magic Resistance.</span>You have advantage on saving throws against spells and other magical effects.<br/>
+        <span class="feature">Poison Immunity.</span>You are immune to poison damage and the poisoned condition.<br/>
+        <span class="feature">Languages.</span>You can speak, read, and write Common, Abyssal, and Draconic.<br/>
+        </p>        
     </description>
     <sheet display="false"/>
-    <supports />
-    <setters />
-    <rules />
+    <setters>
+      <set name="names" type="custom">N/A</set>
+      <set name="names-format">$(custom)</set>
+    </setters>
+    <rules>
+      <stat name="Charisma" value="+2" />
+      <stat name="Intelligence" value="+1" />
+      <stat name="Speed" value="+30" />
+      <grant type="Size" name="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_ABYSSAL" />
+      <grant type="Language" name="ID_LANGUAGE_DRACONIC" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YuanTiPureblood_Innate_Spellcasting" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YuanTiPureblood_Magic_Resistance" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YuanTiPureblood_Poison_Immunity" />
+    </rules>
   </element>
   
 </elements>
