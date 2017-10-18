@@ -30,7 +30,8 @@
     </description>
     <sheet display="false"/>
     <setters>
-      <set name="names" type="custom">N/A</set>
+      <!-- names taken from online generator to have at least a few names in here -->
+      <set name="names" type="custom">n/a</set>
       <set name="names-format">$(custom)</set>
     </setters>
     <rules>
@@ -41,11 +42,50 @@
       <grant type="Vision" id="ID_VISION_DARKVISION" />
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_GOBLIN" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Long_Limbed" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Powerful_Build" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Sneaky" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_Surprise_Attack" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_LONG_LIMBED" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_POWERFUL_BUILD" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_SNEAKY" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_SURPRISE_ATTACK" />
     </rules>
+  </element>
+
+  <element name="Long-Limbed" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_LONG_LIMBED">
+    <description>
+      <p>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+    </description>
+    <sheet>
+      <description>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Powerful Build" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_POWERFUL_BUILD">
+    <description>
+      <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Sneaky" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_SNEAKY">
+    <description>
+      <p>You are proficient in the Stealth skill.</p>
+    </description>
+    <sheet display="false">
+      <description>You are proficient in the Stealth skill.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+    </rules>
+  </element>
+  <element name="Surprise Attack" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_BUGBEAR_SURPRISE_ATTACK">
+    <description>
+      <p>If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat.</p>
+    </description>
+    <sheet>
+      <description>If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat.</description>
+    </sheet>
+    <rules />
   </element>
 
   <element name="Goblin" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Goblin">
@@ -67,7 +107,8 @@
     </description>
     <sheet display="false"/>
     <setters>
-      <set name="names" type="custom">N/A</set>
+      <!-- names taken from online generator to have at least a few names in here -->
+      <set name="names" type="custom">n/a</set>
       <set name="names-format">$(custom)</set>
     </setters>
     <rules>
@@ -78,10 +119,28 @@
       <grant type="Vision" id="ID_VISION_DARKVISION" />
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_GOBLIN" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_Fury_of_the_Small" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_Nimble_Escape" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_FURY_OF_THE_SMALL" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_NIMBLE_ESCAPE" />
     </rules>
   </element>  
+  <element name="Fury of the Small" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_FURY_OF_THE_SMALL">
+    <description>
+      <p>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Nimble Escape" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_GOBLIN_NIMBLE_ESCAPE">
+    <description>
+      <p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+    </description>
+    <sheet>
+      <description>You can take the Disengage or Hide action as a bonus action on each of your turns.</description>
+    </sheet>
+    <rules />
+  </element>
   
   <element name="Hobgoblin" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Hobgoblin">
     <description>
@@ -96,13 +155,14 @@
           <span class="feature">Speed.</span>Your base walking speed is 30 feet. <br/>
           <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
           <span class="feature">Martial Training.</span>You are proficient with two martial weapons of your choice and with light armor.<br/>
-          <span class="feature">Saving Face.</span>Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies  you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest. <br/>
+          <span class="feature">Saving Face.</span>Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies  you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest.<br/>
           <span class="feature">Languages.</span>You can speak, read, and write Common and Goblin.<br/>
         </p>
     </description>
     <sheet display="false"/>
     <setters>
-      <set name="names" type="custom">N/A</set>
+      <!-- names taken from online generator to have at least a few names in here -->
+      <set name="names" type="custom">n/a</set>
       <set name="names-format">$(custom)</set>
     </setters>
     <rules>
@@ -113,9 +173,30 @@
       <grant type="Vision" id="ID_VISION_DARKVISION" />
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_GOBLIN" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_Martial_Training" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_Saving_Face" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_MARTIAL_TRAINING" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_SAVING_FACE" />
     </rules>
+  </element>
+  <element name="Martial Training" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_MARTIAL_TRAINING">
+    <description>
+      <p>You are proficient with two martial weapons of your choice and with light armor.</p>
+    </description>
+    <sheet display="false">
+      <description>You are proficient with two martial weapons of your choice and with light armor.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Martial Training" supports="Weapon&amp;&amp;Martial" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+    </rules>
+  </element>
+  <element name="Saving Face" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_HOBGOBLIN_SAVING_FACE">
+    <description>
+      <p>Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest.</description>
+    </sheet>
+    <rules />
   </element>
   
   <element name="Kobold" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Kobold">
@@ -138,7 +219,8 @@
     </description>
     <sheet display="false"/>
     <setters>
-      <set name="names" type="custom">N/A</set>
+      <!-- names taken from online generator to have at least a few names in here -->
+      <set name="names" type="custom">Ken, Tiv, Datt, Zeks, Kokri, Etla, Dudri, Ovno, Irpu, Dakbi, Sum, Kigs, Gir, Voss, Uble, Rurku, Zoglo, Agge, Snarpa, Miplu</set>
       <set name="names-format">$(custom)</set>
     </setters>
     <rules>
@@ -149,11 +231,38 @@
       <grant type="Vision" id="ID_VISION_DARKVISION" />
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_DRACONIC" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_Grovel_Cower_and_Beg" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_Pac_Tactics" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_Sunlight_Sensitivity" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_GROVEL_COWER_AND_BEG" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_PAC_TACTICS" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_SUNLIGHT_SENSITIVITY" />
     </rules>
   </element>  
+  <element name="Grovel, Cower, and Beg" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_GROVEL_COWER_AND_BEG">
+    <description>
+      <p>As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that can see you. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that can see you. Once you use this trait, you can't use it again until you finish a short or long rest.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Pack Tactics" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_PAC_TACTICS">
+    <description>
+      <p>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Sunlight Sensitivity" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_KOBOLD_SUNLIGHT_SENSITIVITY">
+    <description>
+      <p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+    </description>
+    <sheet>
+      <description>You have disadvantage on attack rolls and on Perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+    </sheet>
+    <rules />
+  </element>
   
   <element name="Orc" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_Orc">
     <description>
@@ -168,17 +277,18 @@
         <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
         <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
         <span class="feature">Aggressive.</span>As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started.<br/>
-        <span class="feature">Menacing.</span>You are trained in the Intimidation skill. <br/>
+        <span class="feature">Menacing.</span>You are trained in the Intimidation skill.<br/>
         <span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
         <span class="feature">Languages.</span>You can speak, read, and write Common and Orc.<br/>
         </p>
     </description>
     <sheet display="false"/>
     <setters>
-      <!-- half orc names -->
-      <set name="names" type="male">Dench, Feng, Gell, Henk, Holg, Imsh, Keth, Krusk, Mhurren, Ront, Shump, Thokk</set>
-      <set name="names" type="female">Baggi, Emen, Engong, Kansif, Myev, Neega, Ovak, Ownka, Shautha, Sutha, Vola, Volen, Yevelda</set>
-      <set name="names-format">$(name)</set>
+      <!-- names taken from online generator to have at least a few names in here -->
+      <set name="names" type="male">Zhok,Dhag,Dull,Nondakk,Grortud,Rhakrog,Lavran ,Loggug </set>
+      <set name="names" type="female">Huz ,Nim ,Div,Kuatam ,Idkiel ,Gaodki ,Saav </set>
+      <set name="names" type="title">The Silent, Doom Axe, Vermin Axe, The Cold, The Simple, The Brute, The Violent</set>
+      <set name="names-format">$(name) $(title)</set>
     </setters>
     <rules>
       <stat name="Strength" value="+2" />
@@ -189,13 +299,42 @@
       <grant type="Vision" id="ID_VISION_DARKVISION" />
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_ORC" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_Aggressive" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_Menacing" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_Powerful_Build" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_AGGRESSIVE" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_MENACING" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_POWERFUL_BUILD" />
     </rules>
   </element>
+  <element name="Aggressive" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_AGGRESSIVE">
+    <description>
+      <p>As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started.</p>
+    </description>
+    <sheet>
+      <description>As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Menacing" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_MENACING">
+    <description>
+      <p>You are trained in the Intimidation skill.</p>
+    </description>
+    <sheet display="false">
+      <description>You are trained in the Intimidation skill.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+    </rules>
+  </element>
+  <element name="Powerful Build" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_ORC_POWERFUL_BUILD">
+    <description>
+      <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+    </sheet>
+    <rules />
+  </element>
     
-  <element name="Yuan-Ti Pureblood" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_YuanTi_Pureblood">
+  <element name="Yuan-Ti Pureblood" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_YUANTI_PUREBLOOD">
     <description>
         <p class="flavor">In some campaigns, humanoids normally regarded as sinister threats can emerge to adventure alongside humans and the other standard races. This section is aimed at those who wish to expand the race selections for their campaigns beyond the typical folk of D&amp;D.</p>
         <h4>YUAN-TI PUREBLOOD TRAITS</h4>
@@ -215,7 +354,8 @@
     </description>
     <sheet display="false"/>
     <setters>
-      <set name="names" type="custom">N/A</set>
+      <!-- names taken from online generator to have at least a few names in here -->
+      <set name="names" type="custom">Mektla, Zsolshih, Netstlia, Simal, Zsazshi, Zsoamish, Zhaktlishu, Hozsehsass, Zukholli, Yilshashlu, Yala, Totsziss</set>
       <set name="names-format">$(custom)</set>
     </setters>
     <rules>
@@ -227,10 +367,42 @@
       <grant type="Language" name="ID_LANGUAGE_COMMON" />
       <grant type="Language" name="ID_LANGUAGE_ABYSSAL" />
       <grant type="Language" name="ID_LANGUAGE_DRACONIC" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YuanTiPureblood_Innate_Spellcasting" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YuanTiPureblood_Magic_Resistance" />
-      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YuanTiPureblood_Poison_Immunity" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_INNATE_SPELLCASTING" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_MAGIC_RESISTANCE" />
+      <grant type="Racial Trait" name="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_POISON_IMMUNITY" />
     </rules>
   </element>
-  
+   
+  <element name="Innate Spellcasting" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_INNATE_SPELLCASTING">
+    <description>
+      <p>You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+    </description>
+    <sheet>
+      <description>You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. (Charisma)</description>
+      <description level="3">You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. You can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. (Charisma)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
+      <grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+      <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" />
+    </rules>
+  </element>   
+  <element name="Magic Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_MAGIC_RESISTANCE">
+    <description>
+      <p>You have advantage on saving throws against spells and other magical effects.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against spells and other magical effects.</description>
+    </sheet>
+    <rules />
+  </element>   
+  <element name="Poison Immunity" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_YUANTIPUREBLOOD_POISON_IMMUNITY">
+    <description>
+      <p>You are immune to poison damage and the poisoned condition.</p>
+    </description>
+    <sheet>
+      <description>You are immune to poison damage and the poisoned condition.</description>
+    </sheet>
+    <rules />
+  </element>
 </elements>

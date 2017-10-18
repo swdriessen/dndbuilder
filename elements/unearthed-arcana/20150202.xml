@@ -4,7 +4,7 @@
         <name>Unearthed Arcana: Eberron</name>
         <description>The Eberron campaign setting was created by Keith Baker and first published for D&amp;D in 2004. It combines pulp adventure and intrigue in a world where magic-driven technology has produced airships, trains, and similar advancements comparable to early 20th-century Europe. The continent of Khorvaire, the center of Eberron’s focus, has recently emerged from the Last War, a terrible conflict that saw the kingdom of Cyre transformed into a lifeless gray wasteland called the Mournland. That catastrophe shocked the remaining kingdoms into an uneasy peace that has held so far.</description>
         <author url="http://dnd.wizards.com/articles/unearthed-arcana/unearthed-arcana-eberron">Wizards of the Coast</author>
-        <update version="0.1.6" revised="2016/09/12">
+        <update version="0.1.7" revised="2016/09/12">
             <file name="20150202.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20150202.xml" />
         </update>
     </info>
@@ -25,6 +25,7 @@
         </description>
         <sheet display="false" />
         <setters>
+            <!-- custom names from online generator -->
             <set name="names" type="male">Bin, Dox, Fie, Hars, Jin, Lam, Nit, Ot, Paik, Ruz, Sim, Toox, Yog</set>
             <set name="names" type="female">Bin, Dox, Fie, Hars, Jin, Lam, Nit, Ot, Paik, Ruz, Sim, Toox, Yog</set>
             <set name="names-format" type="male">$(name)</set>
@@ -86,8 +87,9 @@
         </description>
         <sheet display="false" />
         <setters>
-            <set name="names" type="male">no shifter names set</set>
-            <set name="names" type="female">no shifter names set</set>
+            <!-- custom names from online generator -->
+            <set name="names" type="male">Silver, Void, Vermin, Vapor, Marsh, Surge, Kindle, Badger, Void, Gust, Steam, Cliff, Magma, Magma, Frostbite, Fury, Bog, Spine, Thistle, Ash</set>
+            <set name="names" type="female">Coral, Marigold, Nutmeg, Floret, Evening, Saffron, Cloud, Fern, Twilight, Opal, Shade, Violet, Scarlet, Ember, Willow, Fern, Twig, Wind, Tiger, Stardust</set>
             <set name="names-format" type="male">$(name)</set>
         </setters>
         <rules>            
@@ -240,9 +242,9 @@
         </description>
         <sheet display="false" />
         <setters>
-            <set name="names" type="male">no warforged names set</set>
-            <set name="names" type="female">no warforged names set</set>
-            <set name="names-format" type="male">$(name)</set>
+            <!-- custom names from online generator -->
+            <set name="names" type="custom">Ogler, Warden, Masker, Sunderer, Director, Slasher, Familiar, Abider, Beauty, Cannon, Menace, Ravager, Destroyer, Walker, Tester, Shredder, Bender, Handler</set>
+            <set name="names-format" type="custom">$(name)</set>
         </setters>
         <rules>        
             <stat name="Strength" value="+1" />
