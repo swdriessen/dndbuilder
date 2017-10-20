@@ -4,7 +4,7 @@
     <name>Forge Domain</name>
     <description>The Forge Domain from Xanathar’s Guide to Everything</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-    <update version="0.1" revised="2017/10/20">
+    <update version="0.1.1" revised="2017/10/20">
       <file name="forgedomain.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/forgedomain.xml" />
     </update>
   </info>
@@ -48,6 +48,7 @@
         <tr><td>5th</td><td><em>elemental weapon, protection from energy</em></td></tr>
         <tr><td>7th</td><td><em>fabricate, wall of fire</em></td></tr> 
         <tr><td>9th</td><td><em>animate objects, creation</em></td></tr>
+      </table>
     </description>
     <sheet>
       <description></description>
