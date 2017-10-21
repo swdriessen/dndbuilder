@@ -4,7 +4,7 @@
     <name>Gray Dwarves (Duergar)</name>
     <description>Subrace from the Sword Coast Adventurer’s Guide.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
-    <update version="0.1" revised="2017/06/28">
+    <update version="0.1.1" revised="2017/06/28">
       <file name="gray-dwarves.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/gray-dwarves.xml" />
     </update>
   </info>
@@ -47,7 +47,6 @@
       <description>You have advantage on saving throws against illusions and against being charmed or paralyzed.</description>
     </sheet>
     <rules>
-    
     </rules>
   </element>
   
@@ -59,7 +58,7 @@
     </description>
     <sheet>
       <description>1/ long rest: Enlarge/Reduce</description>
-      <description level="5">1/ long rest: Enlarge/Reduce, invisibility</description>
+      <description level="5">1/ long rest: Enlarge/Reduce, Invisibility</description>
     </sheet>
     <rules>
         <stat name="duergar magic:spellcasting:ability" value="Intelligence" />
