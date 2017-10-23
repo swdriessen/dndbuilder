@@ -4,7 +4,7 @@
         <name>Homunculus</name>
         <description>5e homebrew</description>
         <author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
-        <update version="0.0.1" revised="2017/06/07">
+        <update version="0.0.2" revised="2017/06/07">
             <file name="race-homunculus.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/dnd-wiki/races/race-homunculus.xml" />
         </update>
     </info>
@@ -39,6 +39,7 @@
                 <span class="feature">Languages.</span>You can speak, read, and write Common and one extra language of your choice. Homunculi typically learn the languages of other peoples they deal with, including obscure dialects.<br/>
             </p>
         </description>
+        <sheet display="false" />
         <setters>
             <set name="names" type="male">Courage, Empathy, Justice, Piety, Gluttony, Greed, Wrath, Pride</set>
             <set name="names" type="female">Faith, Harmony, Hope, Joy, Charity, Envy, Lust, Sloth</set>
