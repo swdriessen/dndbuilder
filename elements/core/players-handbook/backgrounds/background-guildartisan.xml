@@ -4,7 +4,7 @@
 		<name>Guild Artisan</name>
 		<description>Guild Artisan Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1" revised="2017/06/07">
+		<update version="0.0.2" revised="2017/06/07">
 			<file name="background-guildartisan.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/backgrounds/background-guildartisan.xml" />
 		</update>
 	</info>
@@ -146,7 +146,7 @@
       <p>You are a member of an artisan’s guild, skilled in a particular field and closely associated with other artisans. You are a well-established part of the mercantile world, freed by talent and wealth from the constraints of a feudal social order. You learned your skills as an apprentice to a master artisan, under the sponsorship of your guild, until you became a master in your own right.</p>
     </description>
     <rules>
-      <select type="Proficiency" name="Tool Proficiency (Guild Artisan)" supports="Artisans tools"/>
+      <select type="Proficiency" name="Tool Proficiency (Guild Artisan)" supports="Artisan tools"/>
     </rules>
   </element>
 
