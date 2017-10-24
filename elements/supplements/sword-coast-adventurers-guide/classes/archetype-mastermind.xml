@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
-    <name>Mastermind</name>
+    <name>Mastermind (Roguish Archetype)</name>
     <description>The mastermind, a roguish archetype from the Sword Coast Adventurer’s Guide.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
-    <update version="0.1.1" revised="2017/01/01">
-      <file name="rogue-mastermind.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/rogue-mastermind.xml" />
+    <update version="0.1.2" revised="2017/01/01">
+      <file name="archetype-mastermind.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/classes/archetype-mastermind.xml" />
     </update>
   </info>
   
@@ -34,7 +34,7 @@
   <element name="Master of Intrigue" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPEFEATURE_MASTER_OF_INTRIGUE">
     <description>
       <p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.</p>
-      <p>Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language.</p>
+      <p class="indent">Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language.</p>
     </description>
     <sheet>
       <description>You can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language.</description>
@@ -43,7 +43,7 @@
     	<grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
     	<grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
     	<select type="Proficiency" name="Gaming Set (Master of Intrigue)" supports="Gaming Set" />
-		<select type="Language" name="Language (Master of Intrigue)" number="2" />
+		  <select type="Language" name="Language (Master of Intrigue)" number="2" />
     </rules>
   </element>
 
@@ -87,10 +87,10 @@
   <element name="Soul of Deceit" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPEFEATURE_SOUL_OF_DECEIT">
     <description>
       <p>Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.</p>
-      <p>Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.</p>
+      <p class="indent">Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.</p>
     </description>
     <sheet>
-      <description>Your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.</description>
+      <description>You can present false thoughts by making a Deception check contested by the mind reader's Insight check.</description>
     </sheet>
     <rules />
   </element>

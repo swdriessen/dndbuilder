@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Waterdhavian Noble</name>
+		<description>Waterdhavian Noble Background</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/06/07">
+			<file name="background-waterdhaviannoble.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-waterdhaviannoble.xml" />
+		</update>
+	</info>
+
+
+ <element name="Waterdhavian Noble" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_WATERDHAVIAN_NOBLE">
+    <description>
+      <p>You are a scion of one of the great noble families of Waterdeep. Human families who jealously guard their privilege and place in the City of Splendors, Waterdhavian nobles have a reputation across Faerûn for being eccentric, spoiled, venal, and, above all else, rich.</p>
+      <p class="indent">Whether you are a shining example of the reason for this reputation or one who proves the rule by being an exception, people expect things of you when they know your surname and what it means. Your reasons for taking up adventuring likely involve your family in some way: Are you the family rebel, who prefers delving in filthy dungeons to sipping zzar at a ball? Or have you taken up sword or spell on your family’s behalf, ensuring that they have someone of renown to see to their legacy?</p>
+      <p class="indent">Work with your DM to come up with the family you are part of - there are around seventy-five lineages in Waterdeep, each with its own financial interests, specialties, and schemes. You might be part of the main line of your family, possibly in line to become its leader one day. Or you might be one of any number of cousins, with less prestige but also less responsibility.</p>
+    </description>
+    <rules />
+  </element>
+
+
+
+
+</elements>

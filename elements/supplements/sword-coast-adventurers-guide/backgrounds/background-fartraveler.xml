@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Far Traveler</name>
+		<description>Far Traveler Background</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/06/07">
+			<file name="background-fartraveler.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-fartraveler.xml" />
+		</update>
+	</info>
+
+
+ <element name="Far Traveler" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_FAR_TRAVELER">
+    <description>
+      <p>Almost all of the common people and other folk that one might encounter along the Sword Coast or in the North have one thing in common: they live out their lives without ever traveling more than a few miles from where they were born.</p>
+      <p class="indent">You aren't one of those folk.</p>
+      <p class="indent">You are from a distant place, one so remote that few of the common folk in the North realize that it exists, and chances are good that even if some people you meet have heard of your homeland, they know merely the name and perhaps a few outrageous stories. You have come to this part of Faerun for your own reasons, which you might or might not choose to share.</p>
+      <p class="indent">Although you will undoubtedly find some of this land’s ways to be strange and discomfiting, you can also be sure that some things its people take for granted will be to you new wonders that you've never laid eyes on before. By the same token, you're a person of interest, for good or ill, to those around you almost anywhere you go.</p>
+      <p>
+        <span class="feature">Skill Proficiencies:</span>Insight, Perception<br />
+        <span class="feature">Tool Proficiencies:</span>Any one musical instrument or gaming set of your choice, likely something native to your homeland<br />
+        <span class="feature">Languages:</span>Any one of your choice<br />
+        <span class="feature">Equipment:</span>One set of traveler's clothes, any one musical instrument or gaming set you are proficient with, poorly wrought maps from your homeland that depict where you are in Faerun, a small piece of jewelry worth 10 gp in the style of your homeland's craftsmanship, and a pouch containing 5 gp<br />
+      </p>
+      <h5>WHY ARE YOU HERE?</h5>
+      <p>A far traveler might have set out on a journey for one of a number of reasons, and the departure from his or her homeland could have been voluntary or involuntary. To determine why you are so far from home, roll on the table below or choose from the options provided. The following section, discussing possible homelands, includes some suggested reasons that are appropriate for each location.</p>
+      <table>
+        <thead>
+          <tr>
+            <td>d6</td>
+            <td>Reason</td>
+            <td>d6</td>
+            <td>Reason</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>Emissary</td>
+          <td>4</td>
+          <td>Pilgrim</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Exile</td>
+          <td>5</td>
+          <td>Sightseer</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Fugitive</td>
+          <td>6</td>
+          <td>Wanderer</td>
+        </tr>
+      </table>
+
+      <h5>WHERE ARE YOU FROM?</h5>
+      <p>The most important decision in creating a far traveler background is determining your homeland. The places discussed here are all sufficiently distant from the North and the Sword Coast to justify the use of this background.</p>
+      
+    </description>
+    <rules>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_INSIGHT" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_PERCEPTION" />
+      <select type="Proficiency" name="Mustical Instrument (Far Traveler)" supports="Musical Instrument" />
+      <select type="Language" name="Language (Far Traveler)" />
+      <select type="List" name="Why are you here?">
+        <item id="1">Emissary</item>
+        <item id="2">Exile</item>
+        <item id="3">Fugitive</item>
+        <item id="4">Pilgrim</item>
+        <item id="5">Sightseer</item>
+        <item id="6">Wanderer</item>
+      </select>
+      
+      
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I have different assumptions from those around me concerning personal space, blithely invading others' space in innocence, or reacting to ignorant invasion of my own.</item>
+        <item id="2">I have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting.</item>
+        <item id="3">I have a strong code of honor or sense of propriety that others don't comprehend.</item>
+        <item id="4">I express affection or contempt in ways that are unfamiliar to others.</item>
+        <item id="5">I honor my deities through practices that are foreign to this land.</item>
+        <item id="6">I begin or end my day with small traditional rituals that are unfamiliar to those around me.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Open. I have much to learn from the kind ly folk I meet along my way. (Good)</item>
+        <item id="2">Reserved. As someone new to these strange lands, I am cautious and respectful in my dealings. (Lawful)</item>
+        <item id="3">Adventure. I'm far from home, and eve rything is strange and wonderful! (Chaotic)</item>
+        <item id="4">Cunning. Th ough I may not know their ways, neither do they know mine, which can be to my advantage. (Evil)</item>
+        <item id="5">Inquisitive. Everything is new, but I have a thirst to learn. (Neutral)</item>
+        <item id="6">Suspicious. I must be careful, for I have no way of telling friend from foe here. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">So long as I have this token from my homeland, I can face any adversity in this strange land.</item>
+        <item id="2">The gods of my people are a comfort to me so far from home.</item>
+        <item id="3">I hold no greater cause than my service to my people.</item>
+        <item id="4">My freedom is my most precious possession. I' ll never let anyone take it from me again.</item>
+        <item id="5">I'm fascinated by the beauty and wonder of this new land.</item>
+        <item id="6">Though I had no choice, I lament having to leave my loved one(s) behind. I hope to see them again one day.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I am secretly (or not so secretly) convinced of the superiority of my own culture over that of this foreign land.</item>
+        <item id="2">I pretend not to understand the local language in order to avoid interactions I would rather not have.</item>
+        <item id="3">I have a weakness for the new intoxicants and other pleasures of this land.</item>
+        <item id="4">I don't take kindly to some of the actions and motivations of the people of this land, because these folk are different from me.</item>
+        <item id="5">I consider the adherents of other gods to be deluded innocents at best, or ignorant fools at worst.</item>
+        <item id="6">I have a weakness for the exotic beauty of the people of these lands.</item>
+      </select>
+      
+      
+      
+      
+      
+    
+    </rules>
+  </element>
+
+</elements>

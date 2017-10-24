@@ -32,10 +32,8 @@
       <grant type="Language" name="ID_LANGUAGE_UNDERCOMMON" />
     </rules>
   </element>
-
+  
   <element name="Stone Camouflage" type="Racial Trait" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_RACIAL_TRAIT_SVIRFNEBLIN_STONE_CAMOUFLAGE">
-    <supports />
-    <requirements />
     <description>
       <p>You have advantage on Dexterity (Stealth) checks to hide in rocky terrain.</p>
     </description>
@@ -44,7 +42,7 @@
     </sheet>
     <rules />
   </element>
-
+  
   <element name="Svirfneblin Magic" type="Feat" source="Sword Coast Adventurer’s Guide" id="ID_FEAT_SVIRFNEBLIN_MAGIC">
     <supports />
     <prerequisite>Svirfneblin</prerequisite>
@@ -54,7 +52,7 @@
       <p>You have inherited the innate spellcasting ability of your ancestors. This ability allows you to cast nondetection on yourself at will, without needing a material component. You can also cast each of the following spells once with this ability: blindness/deafness, blur, and disguise self. You regain the ability to cast these spells when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
     </description>
     <sheet>
-      <description>You have inherited the innate spellcasting ability of your ancestors.</description>
+      <description>Cast nondetection on yourself at will. Cast each of the following spells once: blindness/deafness, blur, and disguise self. (1/LG) (Intelligence)</description>
     </sheet>
     <rules>
       <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" />

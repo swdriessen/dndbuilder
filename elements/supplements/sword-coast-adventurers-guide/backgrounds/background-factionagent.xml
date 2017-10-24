@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Faction Agent</name>
+		<description>Faction Agent Background</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/06/07">
+			<file name="background-factionagent.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-factionagent.xml" />
+		</update>
+	</info>
+
+  <element name="Faction Agent" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_FACTION_AGENT">
+    <description>
+      <p>Many organizations active in the North and across the face of Faerun aren't bound by strictures of geography. These factions pursue their agendas without regard for political boundaries, and their members operate anywhere the organization deems necessary. These groups employ listeners, rumormongers, smugglers, sellswords, cache-holders (people who guard caches of wealth or magic for use by the faction’s operatives), haven keepers, and message drop minders, to name a few. At the core of every faction are those who don't merely fulfill a small function for that organization, but who serve as its hands, head, and heart.</p>
+      <p class="indent">As a prelude to your adventuring career (and in preparation for it), you served as an agent of a particular faction in Faerun. You might have operated openly or secretly, depending on the faction and its goals, as well as how those goals mesh with your own. Becoming an adventurer doesn't necessarily require you to relinquish membership in your faction (though you can choose to do so), and it might enhance your status in the faction.</p>
+    </description>
+    <rules />
+  </element>
+
+</elements>

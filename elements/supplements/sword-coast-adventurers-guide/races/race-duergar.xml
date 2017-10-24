@@ -5,7 +5,7 @@
     <description>Subrace from the Sword Coast Adventurer’s Guide.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
     <update version="0.1.1" revised="2017/06/28">
-      <file name="gray-dwarves.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/gray-dwarves.xml" />
+      <file name="race-duergar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/races/race-duergar.xml" />
     </update>
   </info>
 
@@ -57,8 +57,8 @@
       <p>When you reach 3rd level, you can cast the enlarge/reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the invisibility spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
     </description>
     <sheet>
-      <description>1/ long rest: Enlarge/Reduce</description>
-      <description level="5">1/ long rest: Enlarge/Reduce, Invisibility</description>
+      <description>(1/LG) Enlarge/Reduce</description>
+      <description level="5">(1/LG) Enlarge/Reduce, Invisibility</description>
     </sheet>
     <rules>
         <stat name="duergar magic:spellcasting:ability" value="Intelligence" />

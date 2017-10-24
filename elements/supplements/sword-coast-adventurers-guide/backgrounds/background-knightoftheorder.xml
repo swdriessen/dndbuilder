@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Knight of the Order</name>
+		<description>Knight of the Order Background</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/06/07">
+			<file name="background-knightoftheorder.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-knightoftheorder.xml" />
+		</update>
+	</info>
+
+
+  <element name="Knight of the Order" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_KNIGHT_OF_THE_ORDER">
+    <description>
+      <p>You belong to an order of knights who have sworn oaths to achieve a certain goal. The nature of this goal depends on the order you serve, but in your eyes it is without question a vital and honorable endeavor. Faerûn has a wide variety of knightly orders, all of which have a similar outlook concerning their actions and responsibilities.</p>
+      <p class="indent">Though the term "knight" conjures ideas of mounted, heavily armored warriors of noble blood, most knightly orders in Faerûn don't restrict their membership to such individuals. The goals and philosophies of the order are more important than the gear and fighting style of its members, and so most of these orders aren't limited to fighting types, but are open to all sorts of folk who are willing to battle and die for the order’s cause.</p>
+      <p class="indent">The "Knightly Orders of Faerûn" sidebar details several of the orders that are active at present and is designed to help inform your decision about which group you owe allegiance to.</p>
+    </description>
+    <rules />
+  </element>
+
+</elements>
