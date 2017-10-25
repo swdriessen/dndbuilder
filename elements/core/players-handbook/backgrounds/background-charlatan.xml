@@ -4,7 +4,7 @@
 		<name>Charlatan</name>
 		<description>Charlatan Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1" revised="2017/06/07">
+		<update version="0.0.2" revised="2017/06/07">
 			<file name="background-charlatan.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/backgrounds/background-charlatan.xml" />
 		</update>
 	</info>
@@ -13,7 +13,7 @@
     <supports />
     <description>
       <p>You have always had a way with people. You know what makes them tick, you can tease out their hearts’ desires after a few minutes of conversation, and with a few leading questions you can read them like they were children’s books. It’s a useful talent, and one that you’re perfectly willing to use for your advantage.</p>
-      <p>You know what people want and you deliver, or rather, you promise to deliver. Common sense should steer people away from things that sound too good to be true, but common sense seems to be in short supply when you’re around. The bottle of pink-colored liquid will surely cure that unseemly rash, this ointment—nothing more than a bit of fat with a sprinkle of silver dust—can restore youth and vigor, and there’s a bridge in the city that just happens to be for sale. These marvels sound implausible, but you make them sound like the real deal.</p>
+      <p class="indent">You know what people want and you deliver, or rather, you promise to deliver. Common sense should steer people away from things that sound too good to be true, but common sense seems to be in short supply when you’re around. The bottle of pink-colored liquid will surely cure that unseemly rash, this ointment—nothing more than a bit of fat with a sprinkle of silver dust—can restore youth and vigor, and there’s a bridge in the city that just happens to be for sale. These marvels sound implausible, but you make them sound like the real deal.</p>
       <p>
         <span class="feature">Skill Proficiencies:</span>Deception, Sleight of Hand<br />
         <span class="feature">Tool Proficiencies:</span>Disguise kit, forgery kit<br />
@@ -65,7 +65,7 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_FALSE_IDENTITY"  />
       
-      <select name="Scam" type="List">
+      <select name="Scam" type="List" optional="true">
         <item id="1">I cheat at games of chance.</item>
         <item id="2">I shave coins or forge documents.</item>
         <item id="3">I insinuate myself into people’s lives to prey on their weakness and secure their fortunes.</item>

@@ -4,22 +4,18 @@
 		<name>Sailer</name>
 		<description>Sailer Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1" revised="2017/06/07">
+		<update version="0.0.2" revised="2017/06/07">
 			<file name="background-sailer.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/backgrounds/background-sailer.xml" />
 		</update>
 	</info>
-
-	
-
-
 
  <element name="Sailor" type="Background" source="Player’s Handbook" id="ID_BACKGROUND_SAILOR">
     <supports />
     <requirements />
     <description>
       <p>You sailed on a seagoing vessel for years. In that time, you faced down mighty storms, monsters of the deep, and those who wanted to sink your craft to the bottomless depths. Your first love is the distant line of the horizon, but the time has come to try your hand at something new.</p>
-      <p>Discuss the nature of the ship you previously sailed with your Dungeon Master. Was it a merchant ship, a naval vessel, a ship of discovery, or a pirate ship? How famous (or infamous) is it? Is it widely traveled? Is it still sailing, or is it missing and presumed lost with all hands?</p>
-      <p>What were your duties on board—boatswain, captain, navigator, cook, or some other position? Who were the captain and first mate? Did you leave your ship on good terms with your fellows, or on the run?</p>
+      <p class="indent">Discuss the nature of the ship you previously sailed with your Dungeon Master. Was it a merchant ship, a naval vessel, a ship of discovery, or a pirate ship? How famous (or infamous) is it? Is it widely traveled? Is it still sailing, or is it missing and presumed lost with all hands?</p>
+      <p class="indent">What were your duties on board—boatswain, captain, navigator, cook, or some other position? Who were the captain and first mate? Did you leave your ship on good terms with your fellows, or on the run?</p>
       <p>
         <span class="feature">Skill Proficiencies:</span>Athletics, Perception<br />
         <span class="feature">Tool Proficiencies:</span>Navigator’s tools, vehicles (water)<br />
@@ -30,10 +26,10 @@
       <p>Sailors can be a rough lot, but the responsibilities of life on a ship make them generally reliable as well. Life aboard a ship shapes their outlook and forms their most important attachments.</p>
       <h4>VARIANT SAILOR: PIRATE</h4>
       <p>You spent your youth under the sway of a dread pirate, a ruthless cutthroat who taught you how to survive in a world of sharks and savages. You’ve indulged in larceny on the high seas and sent more than one deserving soul to a briny grave. Fear and bloodshed are no strangers to you, and you’ve garnered a somewhat unsavory reputation in many a port town.</p>
-      <p>If you decide that your sailing career involved piracy, you can choose the Bad Reputation feature (see sidebar) instead of the Ship’s Passage feature.</p>
+      <p class="indent">If you decide that your sailing career involved piracy, you can choose the Bad Reputation feature (see sidebar) instead of the Ship’s Passage feature.</p>
       <h4>VARIANT FEATURE : BAD REPUTATION</h4>
       <p>If your character has a sailor background, you may select this background feature instead of Ship’s Passage.</p>
-      <p>No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report your activity to the authorities.</p>
+      <p class="indent">No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report your activity to the authorities.</p>
     </description>
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS"  />

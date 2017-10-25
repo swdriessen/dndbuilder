@@ -4,7 +4,7 @@
 		<name>Guild Artisan</name>
 		<description>Guild Artisan Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.2" revised="2017/06/07">
+		<update version="0.0.3" revised="2017/06/07">
 			<file name="background-guildartisan.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/backgrounds/background-guildartisan.xml" />
 		</update>
 	</info>
@@ -58,7 +58,7 @@
       <p>Guild artisans are among the most ordinary people in the world—until they set down their tools and take up an adventuring career. They understand the value of hard work and the importance of community, but they’re vulnerable to sins of greed and covetousness.</p>
       <h4>VARIANT GUILD ARTISAN : GUILD MERCHANT</h4>
       <p>Instead of an artisans’ guild, you might belong to a guild of traders, caravan masters, or shopkeepers. You don’t craft items yourself but earn a living by buying and selling the works of others (or the raw materials artisans need to practice their craft). Your guild might be a large merchant consortium (or family) with interests across the region. Perhaps you transported goods from one place to another, by ship, wagon, or caravan, or bought them from traveling traders and sold them in your own little shop. In some ways, the traveling merchant’s life lends itself to adventure far more than the life of an artisan.</p>
-      <p>Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional language. And instead of artisan’s tools, you can start with a mule and a cart.</p>
+      <p class="indent">Rather than proficiency with artisan’s tools, you might be proficient with navigator’s tools or an additional language. And instead of artisan’s tools, you can start with a mule and a cart.</p>
     </description>
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_INSIGHT" />
@@ -70,7 +70,7 @@
 
       <!-- Equipment: A set of artisan’s tools (one of your choice), a letter of introduction from your guild, a set of traveler’s clothes, and a belt pouch containing 15 gp -->
 
-      <select name="Guild Business" type="List">
+      <select name="Guild Business" type="List" optional="true">
         <item id="1">Alchemists and apothecaries</item>
         <item id="2">Armorers, locksmiths, and finesmiths</item>
         <item id="3">Brewers, distillers, and vintners</item>

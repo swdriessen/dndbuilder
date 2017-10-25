@@ -4,7 +4,7 @@
 		<name>Hermit</name>
 		<description>Hermit Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.1" revised="2017/06/07">
+		<update version="0.0.2" revised="2017/06/07">
 			<file name="background-hermit.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/backgrounds/background-hermit.xml" />
 		</update>
 	</info>
@@ -76,7 +76,7 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
       <select type="Language" name="Language (Hermit)" />
       <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_DISCOVERY" />
-      <select name="Life of Seclusion" type="List">
+      <select name="Life of Seclusion" type="List" optional="true">
         <item id="1">I was searching for spiritual enlightenment.</item>
         <item id="2">I was partaking of communal living in accordance with the dictates of a religious order.</item>
         <item id="3">I was exiled for a crime I didn’t commit.</item>
