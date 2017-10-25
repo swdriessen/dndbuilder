@@ -4,12 +4,12 @@
 		<name>Uthgardt Tribe Member</name>
     <description>The Uthgardt Tribe Member background from the Sword Coast Adventurer’s Guide.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
-		<update version="0.0.4" revised="2017/06/07">
+		<update version="0.1" revised="2017/06/07">
 			<file name="background-uthgardttribemember.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-uthgardttribemember.xml" />
 		</update>
 	</info>
     
-  <element name="Uthgardt Tribe Member" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_UTHGARDT_TRIBE_MEMBER">
+  <element name="Uthgardt Tribe Member" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_BACKGROUND_UTHGARDT_TRIBE_MEMBER">
     <supports />
     <description>
     <p>Though you might have only recently arrived in civilized lands, you are no stranger to the values of cooperation and group effort when striving for supremacy. You learned these principles, and much more, as a member of an Uthgardt tribe.</p>
@@ -22,7 +22,7 @@
         <span class="feature">Languages:</span>One of your choice<br/>
         <span class="feature">Equipment:</span>A hunting trap, a totemic token or set of tattoos marking your loyalty to Uthgar and your tribal totem, a set of traveler's clothes, and a pouch containing 10 gp<br/>
       </p>
-      <div element="ID_BACKGROUND_FEATURE_UTHGARDT_HERITAGE" />
+      <div element="ID_SCAG_BACKGROUND_FEATURE_UTHGARDT_HERITAGE" />
       <h5>SUGGESTED CHARACTERISTICS</h5>
       <p>Use the tables for the outlander background in the Player’s Handbook as the basis for your traits and motivations, modifying the entries when appropriate to suit your identity as a member of an Uthgardt tribe.</p>
       <p class="indent">Even if you have left your tribe behind (at least for now), you hold to the traditions of your people. You will never cut down a still-living tree, and you may not countenance such an act being done in your presence. The Uthgardt ancestral mounds- great hills where the totem spirits were defeated by Uthgar and where the heroes of the tribes are interred- are sacred to you.</p>
@@ -32,14 +32,14 @@
     <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SKILL_SURVIVAL" />
-      <select type="Proficiency" name="Musical Instrument or Artisan's Tools" supports="ID_PROFICIENCY_MUSICAL_INSTRUMENT|ID_PROFICIENCY_ARTISANS_TOOLS"/>
+      <select type="Proficiency" name="Musical Instrument or Artisan's Tools (Uthgardt Tribe Member)" supports="Musical Intrument||Artisans tools"/>
       <select type="Language" name="Language (Uthgardt Tribe Member)" />
-      <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_UTHGARDT_HERITAGE" />
+      <grant type="Background Feature" name="ID_SCAG_BACKGROUND_FEATURE_UTHGARDT_HERITAGE" />
       <grant type="Background Characteristics" name="ID_WOTC_BACKGROUND_CHARACTERISTICS_UTHGARDT_TRIBE_MEMBER" />
     </rules>
   </element>
 
-  <element name="Feature: Uthgardt Heritage" type="Background Feature" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_FEATURE_UTHGARDT_HERITAGE">
+  <element name="Feature: Uthgardt Heritage" type="Background Feature" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_BACKGROUND_FEATURE_UTHGARDT_HERITAGE">
     <description>
       <p>You have an excellent knowledge of not only your tribe's territory, but also the terrain and natural resources of the rest of the North. You are familiar enough with any wilderness area that you find twice as much food and water as you normally would when you forage there.</p>
       <p class="indent">Additionally, you can call upon the hospitality of your people, and those folk allied with your tribe, often including members of druid circles, tribes of nomadic elves, the Harpers, and the priesthoods devoted to the gods of the First Circle.</p>

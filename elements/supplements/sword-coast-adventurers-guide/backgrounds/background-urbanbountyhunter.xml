@@ -4,13 +4,13 @@
 		<name>Urban Bounty Hunter</name>
 		<description>Urban Bounty Hunter Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.3" revised="2017/06/07">
+		<update version="0.1" revised="2017/06/07">
 			<file name="background-urbanbountyhunter.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-urbanbountyhunter.xml" />
 		</update>
 	</info>
 
 
-  <element name="Urban Bounty Hunter" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_BACKGROUND_SCAG_URBAN BOUNTY HUNTER">
+  <element name="Urban Bounty Hunter" type="Background" source="Sword Coast Adventurer’s Guide" id="ID_SCAG_BACKGROUND_URBAN_BOUNTY_HUNTER">
     <description>
       <p>Before you became an adventurer, your life was already full of conflict and excitement, because you made a living tracking down people for pay. Unlike some people who collect bounties, though, you aren't a savage who follows quarry into or through the wilderness. You're involved in a lucrative trade, in the place where you live, that routinely tests your skills and survival instincts. What’s more, you aren't alone, as a bounty hunter in the wild would be: you routinely interact with both the criminal subculture and other bounty hunters, maintaining contacts in both areas to help you succeed.</p>
       <p class="indent">You might be a cunning thief-catcher, prowling the rooftops to catch one of the myriad burglars of the city. Perhaps you are someone who has your ear to the street, aware of the doings of thieves' gui lds and street gangs. You might be a "velvet mask" bounty hunter, one who blends in with high society and noble circles in order to catch the criminals that prey on the rich, whether pickpockets or con artists. The community where you plied your trade might have been one of Faen1n’s great metropolises, such as Waterdeep or Baldur’s Gate, or a less populous location, perhaps Luskan or Yartar-any place that’s large enough to have a steady supply of potential quarries.</p>
@@ -20,16 +20,16 @@
         <span class="feature">Tool Proficiencies:</span>Choose two from among one type of gaming set, one musical instrument, and thieves' tools<br/>
         <span class="feature">Equipment:</span>A set of clothes appropriate to your duties and a pouch containing 20 gp<br/>
       </p>
-      <div element="ID_BACKGROUND_FEATURE_EARTOTHEGROUND" />
+      <div element="ID_SCAG_BACKGROUND_FEATURE_URBAN_BOUNTY_HUNTER_EARTOTHEGROUND" />
+      <h5>SUGGESTED CHARACTERISTICS</h5>
+      <p>Use the tables for the criminal background in the Player's Handbook as the basis for your bounty hunter's traits and motivations, modifying the entries when appropriate to suit your identity as a bounty hunter. </p>
+      <p class="indent">For instance, your bond might involve other bounty hunters or the organizations or individuals that employ you. Your ideal could be associated with your determination always to catch your quarry or your desire to maintain your reputation for being dependable.</p>
     </description>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Urban Bounty Hunter)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH" number="2" />
-      <select type="Proficiency" name="Tool Proficiency (Urban Bounty Hunter)" supports="Musical Instrument" /> 
-      <grant type="Background Feature" name="ID_BACKGROUND_FEATURE_EARTOTHEGROUND" />
+      <select type="Proficiency" name="Tool Proficiency (Urban Bounty Hunter)" supports="Musical Instrument||Gaming Set||Thieves tools" number="2"/> 
+      <grant type="Background Feature" name="ID_SCAG_BACKGROUND_FEATURE_URBAN_BOUNTY_HUNTER_EARTOTHEGROUND" />
 
-      <!-- create grants for CHARACTERISTICS this is from criminal -->
-      <!-- <grant type="Grant" id="ID_GRANT_CHARACTERISTICS_CRIMINAL" /> -->
-      
       
       <select type="List" name="Personality Trait" number="2">
         <item id="1">I always have a plan for what to do when things go wrong.</item>
@@ -68,7 +68,7 @@
     </rules>
   </element>
 
-  <element name="Ear to the Ground" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_EARTOTHEGROUND">
+  <element name="Feature: Ear to the Ground" type="Background Feature" source="Player’s Handbook" id="ID_SCAG_BACKGROUND_FEATURE_URBAN_BOUNTY_HUNTER_EARTOTHEGROUND">
     <description>
       <p>You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area.</p>
     </description>
