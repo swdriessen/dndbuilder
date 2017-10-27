@@ -4,7 +4,7 @@
     <name>Monk</name>
     <description>The Monk class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.9" revised="2017/01/01">
+    <update version="0.1" revised="2017/01/01">
       <file name="class-monk.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-monk.xml" />
     </update>
   </info>
@@ -598,9 +598,9 @@
   </element>
   <element name="Eternal Mountain Defense" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ETERNAL_MOUNTAIN_DEFENSE">
   	<supports>Elemental Discipline</supports>
-  	<requirements>[level:11]</requirements>
+  	<requirements>[level:17]</requirements>
     <description>
-      <p class="flavor">11th level required.</p>
+      <p class="flavor">17th level required.</p>
       <p>You can spend 5 ki points to cast stoneskin, targeting yourself.</p>
     </description>
     <sheet>
@@ -750,10 +750,10 @@
   <element name="Water Whip" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_WATER_WHIP">
   	<supports>Elemental Discipline</supports>
     <description>
-      <p>You can spend 2 ki points as a bonus action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3 d 10 bludgeoning damage, plus an extra 1d 10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.</p>
+      <p>You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3 d 10 bludgeoning damage, plus an extra 1d 10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.</p>
     </description>
     <sheet>
-      <description>You can spend 2 ki points as a bonus action to create a whip of water that shoves and pulls a creature to unbalance it.</description>
+      <description>You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it.</description>
     </sheet>
     <rules>
     </rules>
