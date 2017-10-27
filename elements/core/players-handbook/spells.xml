@@ -4,7 +4,7 @@
     <name>Spells</name>
     <description>Spells from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.4" revised="2016/09/12">
+    <update version="0.0.5" revised="2016/09/12">
       <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/spells.xml" />
     </update>
   </info>
@@ -3150,7 +3150,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Fireball (Flames of the Phoenix)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FIREBALL_FLAMES_OF_THE_PHOENIX">
+  <!-- <element name="Fireball (Flames of the Phoenix)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FIREBALL_FLAMES_OF_THE_PHOENIX">
     <supports>3, Evocation, Monk</supports>
     <description>
       <p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
@@ -3173,7 +3173,7 @@
       <set name="isRitual">false</set>
     </setters>
     <rules />
-  </element>
+  </element> -->
   <element name="Flame Blade" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FLAME_BLADE">
     <supports>Druid</supports>
     <description>
@@ -3286,7 +3286,7 @@
     </setters>
     <rules />
   </element>
-  <element name="Fly (Ride the Wind)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FLY_RIDE_THE_WIND">
+  <!-- <element name="Fly (Ride the Wind)" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FLY_RIDE_THE_WIND">
     <supports>3, Transmutation, Monk</supports>
     <description>
       <p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>
@@ -3308,7 +3308,7 @@
       <set name="isRitual">false</set>
     </setters>
     <rules />
-  </element>
+  </element> -->
   <element name="Fog Cloud" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FOG_CLOUD">
     <supports>Druid, Ranger, Sorcerer, Wizard</supports>
     <description>
@@ -4925,7 +4925,7 @@
     </description>
     <setters>
       <set name="level">5</set>
-      <set name="school">Conjuration</set>
+      <set name="school">Evocation</set>
       <set name="time">1 action</set>
       <set name="duration">Instantaneous</set>
       <set name="range">60 feet</set>
@@ -5563,7 +5563,7 @@
   <element name="Phantasmal Killer" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PHANTASMAL_KILLER">
     <supports>Wizard</supports>
     <description>
-      <p>You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened for the duration. At the start of each of the target’s turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.</p>
+      <p>You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened for the duration. At the end of each of the target’s turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.</p>
       <p>
         <span class="feature">At Higher Levels.</span>When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.
       </p>
@@ -6248,7 +6248,7 @@
     </description>
     <setters>
       <set name="level">3</set>
-      <set name="school">Conjuration</set>
+      <set name="school">Necromancy</set>
       <set name="time">1 action</set>
       <set name="duration">Instantaneous</set>
       <set name="range">Touch</set>
@@ -7903,7 +7903,7 @@
   <element name="Weird" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WEIRD">
     <supports>Wizard</supports>
     <description>
-      <p>Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the start of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature.</p>
+      <p>Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the end of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature.</p>
     </description>
     <setters>
       <set name="level">9</set>
