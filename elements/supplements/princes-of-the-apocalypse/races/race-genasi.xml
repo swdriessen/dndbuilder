@@ -51,7 +51,7 @@
         <span class="feature">Subraces.</span>Four major subraces of genasi are found among the worlds of D&amp;D: air genasi, earth genasi, fire genasi, and water genasi. Choose one of these subraces.<br />
         </p>       
     </description>
-    <sheet display="false"/>
+    <sheet display="false" />
     <setters>
       <set name="names" type="male">Flame, Ember, Wave, Onyx</set>
       <set name="names-format">$(name)</set>      
