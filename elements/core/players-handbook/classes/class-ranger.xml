@@ -4,7 +4,7 @@
     <name>Ranger</name>
     <description>The Ranger class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.2" revised="2017/01/01">
+    <update version="0.0.3" revised="2017/01/01">
       <file name="class-ranger.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-ranger.xml" />
     </update>
   </info>
@@ -363,29 +363,29 @@
       <stat name="spell:dc" value="Proficiency" />
       <stat name="spell:dc" value="Wisdom Modifier" />
 
-      <stat name="spellcasating:spells known" value="+2" level="2" />
-      <stat name="spellcasating:spells known" value="+1" level="3" />
-      <stat name="spellcasating:spells known" value="+1" level="5" />
-      <stat name="spellcasating:spells known" value="+1" level="7" />
-      <stat name="spellcasating:spells known" value="+1" level="9" />
-      <stat name="spellcasating:spells known" value="+1" level="11" />
-      <stat name="spellcasating:spells known" value="+1" level="13" />
-      <stat name="spellcasating:spells known" value="+1" level="15" />
-      <stat name="spellcasating:spells known" value="+1" level="17" />
-      <stat name="spellcasating:spells known" value="+1" level="19" />
+      <stat name="spellcasting:spells known" value="+2" level="2" />
+      <stat name="spellcasting:spells known" value="+1" level="3" />
+      <stat name="spellcasting:spells known" value="+1" level="5" />
+      <stat name="spellcasting:spells known" value="+1" level="7" />
+      <stat name="spellcasting:spells known" value="+1" level="9" />
+      <stat name="spellcasting:spells known" value="+1" level="11" />
+      <stat name="spellcasting:spells known" value="+1" level="13" />
+      <stat name="spellcasting:spells known" value="+1" level="15" />
+      <stat name="spellcasting:spells known" value="+1" level="17" />
+      <stat name="spellcasting:spells known" value="+1" level="19" />
       
-      <stat name="spellcasating:slots:1" value="+2" level="2" />
-      <stat name="spellcasating:slots:1" value="+1" level="3" />
-      <stat name="spellcasating:slots:1" value="+1" level="5" />
-      <stat name="spellcasating:slots:2" value="+2" level="5" />
-      <stat name="spellcasating:slots:2" value="+1" level="7" />
-      <stat name="spellcasating:slots:3" value="+2" level="9" />
-      <stat name="spellcasating:slots:3" value="+1" level="11" />
-      <stat name="spellcasating:slots:4" value="+1" level="13" />
-      <stat name="spellcasating:slots:4" value="+1" level="15" />
-      <stat name="spellcasating:slots:4" value="+1" level="17" />
-      <stat name="spellcasating:slots:5" value="+1" level="17" />
-      <stat name="spellcasating:slots:5" value="+1" level="19" />
+      <stat name="spellcasting:slots:1" value="+2" level="2" />
+      <stat name="spellcasting:slots:1" value="+1" level="3" />
+      <stat name="spellcasting:slots:1" value="+1" level="5" />
+      <stat name="spellcasting:slots:2" value="+2" level="5" />
+      <stat name="spellcasting:slots:2" value="+1" level="7" />
+      <stat name="spellcasting:slots:3" value="+2" level="9" />
+      <stat name="spellcasting:slots:3" value="+1" level="11" />
+      <stat name="spellcasting:slots:4" value="+1" level="13" />
+      <stat name="spellcasting:slots:4" value="+1" level="15" />
+      <stat name="spellcasting:slots:4" value="+1" level="17" />
+      <stat name="spellcasting:slots:5" value="+1" level="17" />
+      <stat name="spellcasting:slots:5" value="+1" level="19" />
       
       <select type="Spell" name="Spell (Ranger Level 2)" supports="Ranger&amp;&amp;(1)" level="2" number="2" />
       <select type="Spell" name="Spell (Ranger Level 3)" supports="Ranger&amp;&amp;(1)" level="3" />

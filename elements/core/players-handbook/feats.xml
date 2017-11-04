@@ -1044,7 +1044,7 @@
       <description>Your hit points maximum increases by an amount equal to twice your level.</description>
     </sheet>
     <setters>
-      <set name="Allow Duplicate">true</set>
+      <set name="allow duplicate">true</set>
     </setters>
     <rules>
       <stat name="HP" value="Level" />

@@ -161,9 +161,8 @@
     </description>
     <sheet display="false"/>
     <setters>
-      <!-- names taken from online generator to have at least a few names in here -->
-      <set name="names" type="custom">n/a</set>
-      <set name="names-format">$(custom)</set>
+      <set name="names" type="male">Hobgoblin Names</set>
+      <set name="names-format">$(name)</set>
     </setters>
     <rules>
       <stat name="Constitution" value="+2" />
