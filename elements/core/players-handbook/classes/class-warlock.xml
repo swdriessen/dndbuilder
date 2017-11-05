@@ -4,7 +4,7 @@
     <name>Warlock</name>
     <description>The Warlock class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.5" revised="2017/01/01">
+    <update version="0.0.6" revised="2017/01/01">
       <file name="class-warlock.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-warlock.xml" />
     </update>
   </info>
@@ -390,7 +390,7 @@
         <!-- implement alter spell: <stat target="ID_PHB_SPELL_ELDRITCH_BLAST" field="range" value="300 feet" / >-->
     </rules>
   </element>
-  <element name="Eyes of the RuneKeeper" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNEKEEPER">
+  <element name="Eyes of the Rune Keeper" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNEKEEPER">
     <supports>Eldritch Invocation</supports>
     <description>
       <p>You can read all writing.</p>
@@ -668,8 +668,8 @@
     <requirements />
     <description>
       <p>You learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.</p>
-      <p>When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</p>
-      <p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.</p>
+      <p class="indent">When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</p>
+      <p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.</p>
     </description>
     <sheet>
       <description>You learn the find familiar spell and can cast it as a ritual. Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.</description>
@@ -682,9 +682,8 @@
     <supports>Pact Boon</supports>
     <requirements />
     <description>
-      <p></p>
       <p>Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list. While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known.</p>
-      <p>If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</p>
+      <p class="indent">If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</p>
     </description>
     <sheet>
       <description>Your patron gives you a grimoire called a Book of Shadows.</description>
