@@ -9,7 +9,7 @@
     </update>
   </info>
 
-  <element name="Barbarian" type="Class" source="Player’s Handbook" id="ID_CLASS_BARBARIAN">
+  <element name="Barbarian" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_BARBARIAN">
     <supports />
     <requirements />    
     <description>
@@ -51,12 +51,10 @@
       <h5>EQUIPMENT</h5>
       <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
       <ul>
-        <li>(a) a greataxe or (b) any martial melee weapon</li>
-        <li>(a) two handaxes or (b) any simple weapon</li>
+        <li><i>(a)</i> a greataxe or <i>(b)</i> any martial melee weapon</li>
+        <li><i>(a)</i> two handaxes or <i>(b)</i> any simple weapon</li>
         <li>An explorer’s pack and four javelins</li>
       </ul>
-
-
       <div element="ID_CLASS_FEATURE_RAGE" />
       <div element="ID_CLASS_FEATURE_UNARMORED_DEFENCE" />
       <div element="ID_CLASS_FEATURE_RECKLESS_ATTACK" />
@@ -72,20 +70,23 @@
       <div element="ID_CLASS_FEATURE_INDOMITABLE_MIGHT" />
       <div element="ID_CLASS_FEATURE_PRIMAL_CHAMPION" />
     </description>
-    <sheet display="false" />
+    <sheet display="false">
+      <description>A fierce warrior of primitive background who can enter a battle rage.</description>
+    </sheet>
     <setters>
       <set name="hd">d12</set>
     </setters>
     <rules>
-      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D12" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-      <select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill&amp;&amp;ID_CLASS_BARBARIAN" />
+      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D12"  />
+      <!-- create a single Grants element to award these barbarian mainclass proficiencies? -->
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"  requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      <select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill&amp;&amp;ID_CLASS_BARBARIAN" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
 
       <grant type="Class Feature" name="ID_CLASS_FEATURE_RAGE" level="1" />
       <grant type="Class Feature" name="ID_CLASS_FEATURE_UNARMORED_DEFENCE" level="1" />
@@ -102,6 +103,18 @@
       <grant type="Class Feature" name="ID_CLASS_FEATURE_INDOMITABLE_MIGHT" level="18" />
       <grant type="Class Feature" name="ID_CLASS_FEATURE_PRIMAL_CHAMPION" level="20" />
     </rules>
+    <multiclass id="ID_WOTC_PHB_MULTICLASS_BARBARIAN">
+      <prerequisite>Strength 13</prerequisite>
+      <requirements>[str:13]</requirements>
+      <description>
+        <p><span class="feature">Multiclassing Proficiencies.</span>Shields, simple weapons, martial weapons</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      </rules>
+    </multiclass>
   </element>
 
   <element name="Rage" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_RAGE">
@@ -150,7 +163,7 @@
       <description>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</description>
     </sheet>
     <rules>
-      <!-- dex bonus is granted in the first level element or... hardcode in combination with armor maximums -->
+    
       <stat name="Unarmored Defence" value="Constitution Modifier" equipped="[armor:none]"/>
 
       <stat name="AC" value="Unarmored Defence" bonus="Unarmored Defence" />
@@ -190,12 +203,17 @@
       <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
     </description>
     <sheet display="false" />
-    <rules>
-      <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
+    <rules>    
+      <select type="Class Feature" name="Improvement Option (Barbarian 4)" supports="Improvement Option&amp;&amp;Barbarian&amp;&amp;4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_BARBARIAN" level="4"/>
+      <select type="Class Feature" name="Improvement Option (Barbarian 8)" supports="Improvement Option&amp;&amp;Barbarian&amp;&amp;8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_BARBARIAN" level="8"/>
+      <select type="Class Feature" name="Improvement Option (Barbarian 12)" supports="Improvement Option&amp;&amp;Barbarian&amp;&amp;12" default="ID_INTERNAL_CLASS_FEATURE_ASI_14_BARBARIAN" level="12"/>
+      <select type="Class Feature" name="Improvement Option (Barbarian 16)" supports="Improvement Option&amp;&amp;Barbarian&amp;&amp;16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_BARBARIAN" level="16"/>
+      <select type="Class Feature" name="Improvement Option (Barbarian 19)" supports="Improvement Option&amp;&amp;Barbarian&amp;&amp;19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_BARBARIAN" level="19"/>
+      <!-- <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
       <select type="Class Feature" name="Improvement Option (8)" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
       <select type="Class Feature" name="Improvement Option (12)" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
       <select type="Class Feature" name="Improvement Option (16)" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
-      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/> -->
     </rules>
   </element>
   <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_EXTRA_ATTACK">
