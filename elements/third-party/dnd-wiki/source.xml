@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>D&D Wiki</name>
+        <description>The source element for the D&D Wiki 5e homebrew content.</description>
+        <author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
+        <update version="0.1" revised="2017/11/15">
+            <file name="source.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/dnd-wiki/source.xml" />
+        </update>
+    </info>
+    <element name="D&amp;D Wiki" type="Source" source="D&amp;D Wiki" id="ID_WIKI_SOURCE_DNDWIKI">
+        <setters>
+            <set name="abbreviation">WIKI</set>
+            <set name="url">http://www.dandwiki.com/wiki/5e_Homebrew</set>
+            <set name="author">D&amp;D Wiki</set>
+            <set name="authorUrl">http://www.dandwiki.com/wiki/5e_Homebrew</set>
+            <set name="isPreview">false</set>
+            <set name="isHomebrew">true</set>
+        </setters>
+    </element>
+</elements>
