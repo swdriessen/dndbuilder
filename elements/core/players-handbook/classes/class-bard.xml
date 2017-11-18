@@ -4,12 +4,11 @@
     <name>Bard</name>
     <description></description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.2.1" revised="2017/06/19">
+    <update version="0.2.2" revised="2017/06/19">
       <file name="class-bard.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-bard.xml" />
     </update>
   </info>
-
-  <element name="Bard" type="Class" source="Player’s Handbook" id="ID_CLASS_BARD">
+  <element name="Bard" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_BARD">
     <supports />
     <requirements />
     <description>
@@ -33,19 +32,35 @@
       <p>As a bard, you gain the following class features.</p>
       <h5>HIT POINTS</h5>
       <p>
-        <span class="feature">Hit Dice:</span>1d8 per bard level<br />
-        <span class="feature">Hit Points at 1st Level:</span>8 + your Constitution modefier<br />
-        <span class="feature">Hit Points at Higher Levels:</span>1d8 (or 5) + your Constitution modifier per bard level after 1st<br />
+        <span class="emphasis">Hit Dice:</span>1d8 per bard level
+        
+        <br />
+        <span class="emphasis">Hit Points at 1st Level:</span>8 + your Constitution modefier
+                        
+        <br />
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d8 (or 5) + your Constitution modifier per bard level after 1st
+                        
+        <br />
       </p>
       <h5>PROFICIENCIES</h5>
       <p>
-        <span class="feature">Armor:</span>Light armor<br />
-        <span class="feature">Weapons:</span>Simple weapons, hand crossbows, longswords, rapiers, shortswords<br />
-        <span class="feature">Tools:</span>Three musical instruments of your choice<br />
+        <span class="emphasis">Armor:</span>Light armor
+                        
+        <br />
+        <span class="emphasis">Weapons:</span>Simple weapons, hand crossbows, longswords, rapiers, shortswords
+                        
+        <br />
+        <span class="emphasis">Tools:</span>Three musical instruments of your choice
+                        
+        <br />
       </p>
       <p>
-        <span class="feature">Saving Throws:</span>Dexterity, Charisma<br />
-        <span class="feature">Skills:</span>Choose any three<br />
+        <span class="emphasis">Saving Throws:</span>Dexterity, Charisma
+                        
+        <br />
+        <span class="emphasis">Skills:</span>Choose any three
+                        
+        <br />
       </p>
       <h5>EQUIPMENT</h5>
       <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
@@ -55,51 +70,65 @@
         <li>(a) a lute or (b) any other musical intrument</li>
         <li>Leather armor and a dagger</li>
       </ul>
-      <div element="ID_CLASSFEATURE_BARDIC_INSPIRATION" />
-      <div element="ID_CLASSFEATURE_SPELLCASTING_BARD" />
-      <div element="ID_CLASSFEATURE_JACK_OF_ALL_TRADES" />
-      <div element="ID_CLASSFEATURE_SONG_OF_REST" />
-      <div element="ID_CLASSFEATURE_BARD_COLLEGE" />
-      <div element="ID_CLASSFEATURE_EXPERTISE_BARD" />
-      <div element="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_BARD" />
-      <div element="ID_CLASSFEATURE_FONT_OF_INSPIRATION" />
-      <div element="ID_CLASSFEATURE_COUNTERCHARM" />
-      <div element="ID_CLASSFEATURE_MAGICAL_SECRETS" />
-      <div element="ID_CLASSFEATURE_SUPERIOR_INSPIRATION" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARDIC_INSPIRATION" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_SONG_OF_REST" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARD_COLLEGE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_EXPERTISE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_COUNTERCHARM" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_MAGICAL_SECRETS" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION" />
     </description>
     <sheet display="false" />
     <setters>
+      <set name="short">An inspiring magician whose power echoes the music of creation.</set>
       <set name="hd">d8</set>
       <set name="spellcaster">true</set>
       <set name="spellcastingAbility">Charisma</set>
     </setters>
     <rules>
       <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D8" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
-      <select type="Proficiency" name="Musical Instrument (Bard)" supports="Musical Instrument" number="3" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-      <select type="Proficiency" name="Skill Proficiency (Bard)" supports="ID_PROFICIENCY_SKILL&amp;&amp;ID_CLASS_BARD" number="3" />
-      <grant type="Class Feature" name="ID_CLASSFEATURE_BARDIC_INSPIRATION" level="1"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_SPELLCASTING_BARD" level="1"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_JACK_OF_ALL_TRADES" level="2"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_SONG_OF_REST" level="2"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_BARD_COLLEGE" level="3"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_EXPERTISE_BARD" level="3"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_BARD" level="4"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_FONT_OF_INSPIRATION" level="5"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_COUNTERCHARM" level="6"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_MAGICAL_SECRETS" level="10"/>
-      <grant type="Class Feature" name="ID_CLASSFEATURE_SUPERIOR_INSPIRATION" level="20"/>
+      <!-- todo: create a single bard proficiencies grant -->
+      <!-- todo: create a single bard multiclass proficiencies grant -->
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <select type="Proficiency" name="Musical Instrument (Bard)" supports="Musical Instrument" number="3" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <select type="Proficiency" name="Skill Proficiency (Bard)" supports="Skill,Bard" number="3" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARDIC_INSPIRATION" level="1"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD" level="1"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" level="2"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_SONG_OF_REST" level="2"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARD_COLLEGE" level="3"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_EXPERTISE" level="3"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD" level="4"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION" level="5"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_COUNTERCHARM" level="6"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_MAGICAL_SECRETS" level="10"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION" level="20"/>
     </rules>
+    <multiclass id="ID_WOTC_PHB_MULTICLASS_BARD">
+      <prerequisite>Charisma 13</prerequisite>
+      <requirements>[cha:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor, one skill of your choice, one musical instrument of your choice</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        <select type="Proficiency" name="Skill Proficiency (Bard)" supports="Skill,Bard" number="1" />
+        <select type="Proficiency" name="Musical Instrument (Bard)" supports="Musical Instrument" number="1" />
+      </rules>
+    </multiclass>
   </element>
-
-  <element name="Bardic Inspiration" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_BARDIC_INSPIRATION">
+  <element name="Bardic Inspiration" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARDIC_INSPIRATION">
     <description>
       <p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
       <p class="indent">Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
@@ -111,15 +140,14 @@
     </sheet>
     <rules>
       <stat name="bardic-inpiration:count" value="1" bonus="bardic inspiration"/>
-      <stat name="bardic-inpiration:count" value="+Charisma Modifier" bonus="bardic inspiration"/>
-
+      <stat name="bardic-inpiration:count" value="Charisma Modifier" bonus="bardic inspiration"/>
       <stat name="bardic-inpiration:dice" value="6" bonus="bardic inspiration" />
       <stat name="bardic-inpiration:dice" value="8" bonus="bardic inspiration" level="5" />
       <stat name="bardic-inpiration:dice" value="10" bonus="bardic inspiration" level="10" />
       <stat name="bardic-inpiration:dice" value="12" bonus="bardic inspiration" level="15" />
     </rules>
   </element>
-  <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_SPELLCASTING_BARD">
+  <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
     <description>
       <p>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations.</p>
     </description>
@@ -129,32 +157,29 @@
     <rules>
       <stat name="bard:spell:attack" value="+Proficiency" />
       <stat name="bard:spell:attack" value="+Charisma Modifier" />
-      
       <stat name="bard:spell:dc" value="+8" />
       <stat name="bard:spell:dc" value="+Proficiency" />
       <stat name="bard:spell:dc" value="+Charisma Modifier" />
-
-      <select type="Spell" name="Cantrip (Bard)" supports="Bard&amp;&amp;0" level="1" number="4" />
-      <select type="Spell" name="Cantrip (Bard)" supports="Bard&amp;&amp;0" level="4" />
-      <select type="Spell" name="Cantrip (Bard)" supports="Bard&amp;&amp;0" level="10" />
-      
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1)" level="1" number="2"/>
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1)" level="2" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2)" level="3" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2)" level="4" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3)" level="5" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3)" level="6" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4)" level="7" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4)" level="8" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5)" level="9" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5)" level="10" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6)" level="11" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6||7)" level="13" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6||7||8)" level="15" />
-      <select type="Spell" name="Spell (Bard)" supports="Bard&amp;&amp;(1||2||3||4||5||6||7||8||9)" level="17" />
+      <select type="Spell" name="Cantrip (Bard)" supports="Bard,0" level="1" number="4" />
+      <select type="Spell" name="Cantrip (Bard)" supports="Bard,0" level="4" />
+      <select type="Spell" name="Cantrip (Bard)" supports="Bard,0" level="10" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,1" level="1" number="2"/>
+      <select type="Spell" name="Spell (Bard)" supports="Bard,1" level="2" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2)" level="3" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2)" level="4" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3)" level="5" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3)" level="6" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4)" level="7" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4)" level="8" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4||5)" level="9" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4||5)" level="10" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4||5||6)" level="11" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4||5||6||7)" level="13" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4||5||6||7||8)" level="15" />
+      <select type="Spell" name="Spell (Bard)" supports="Bard,(1||2||3||4||5||6||7||8||9)" level="17" />
     </rules>
   </element>
-  <element name="Jack of All Trades" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_JACK_OF_ALL_TRADES">
+  <element name="Jack of All Trades" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
     <description>
       <p>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus.</p>
     </description>
@@ -162,75 +187,80 @@
       <description>You can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus.</description>
     </sheet>
     <rules>
-      <stat name="Acrobatics Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ACROBATICS"/>
-      <stat name="Animal Handling Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
-      <stat name="Arcana Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ARCANA"/>
-      <stat name="Athletics Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ATHLETICS"/>
-      <stat name="Deception Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_DECEPTION"/>
-      <stat name="History Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_HISTORY"/>
-      <stat name="Insight Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_INSIGHT"/>
-      <stat name="Intimidation Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION"/>
-      <stat name="Investigation Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_INVESTIGATION"/>
-      <stat name="Medicine Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_MEDICINE"/>
-      <stat name="Nature Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_NATURE"/>
-      <stat name="Perception Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_PERCEPTION"/>
-      <stat name="Performance Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_PERFORMANCE"/>
-      <stat name="Persuasion Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_PERSUASION"/>
-      <stat name="Religion Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_RELIGION"/>
-      <stat name="Sleight of Hand Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
-      <stat name="Stealth Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_STEALTH"/>
-      <stat name="Survival Misc" value="+Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_SURVIVAL"/>
+      <stat name="Acrobatics Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ACROBATICS"/>
+      <stat name="Animal Handling Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
+      <stat name="Arcana Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ARCANA"/>
+      <stat name="Athletics Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_ATHLETICS"/>
+      <stat name="Deception Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_DECEPTION"/>
+      <stat name="History Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_HISTORY"/>
+      <stat name="Insight Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_INSIGHT"/>
+      <stat name="Intimidation Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+      <stat name="Investigation Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_INVESTIGATION"/>
+      <stat name="Medicine Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_MEDICINE"/>
+      <stat name="Nature Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_NATURE"/>
+      <stat name="Perception Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_PERCEPTION"/>
+      <stat name="Performance Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_PERFORMANCE"/>
+      <stat name="Persuasion Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_PERSUASION"/>
+      <stat name="Religion Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_RELIGION"/>
+      <stat name="Sleight of Hand Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
+      <stat name="Stealth Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_STEALTH"/>
+      <stat name="Survival Misc" value="Proficiency Half" requirements="!ID_PROFICIENCY_SKILL_SURVIVAL"/>
     </rules>
   </element>
-  <element name="Song of Rest" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_SONG_OF_REST">
+  <element name="Song of Rest" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SONG_OF_REST">
     <description>
       <p>Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.</p>
       <p class="indent">The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.</p>
     </description>
     <sheet>
-      <description>You or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d%song-of-rest:dice% hit points.</description>
+      <description>You or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d%song-of-rest:dice:size% hit points.</description>
     </sheet>
     <rules>
-      <stat name="song-of-rest:dice" value="6" bonus="song-of-rest" />
-      <stat name="song-of-rest:dice" value="8" bonus="song-of-rest" level="9" />
-      <stat name="song-of-rest:dice" value="10" bonus="song-of-rest" level="13" />
-      <stat name="song-of-rest:dice" value="12" bonus="song-of-rest" level="17" />
+      <stat name="song-of-rest:dice:size" value="6" bonus="song-of-rest" />
+      <stat name="song-of-rest:dice:size" value="8" bonus="song-of-rest" level="9" />
+      <stat name="song-of-rest:dice:size" value="10" bonus="song-of-rest" level="13" />
+      <stat name="song-of-rest:dice:size" value="12" bonus="song-of-rest" level="17" />
     </rules>
   </element>
-  <element name="Bard College" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_BARD_COLLEGE">
+  <element name="Bard College" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARD_COLLEGE">
     <description>
       <p>At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level.</p>
     </description>
     <sheet />
     <rules>
-      <select type="Archetype" name="Bard College" supports="Bard College" />
+      <select type="Archetype" name="Bard College" supports="Bard College" level="3"/>
     </rules>
   </element>
-  <element name="Expertise" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_EXPERTISE_BARD">
+  <element name="Expertise" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_EXPERTISE">
     <description>
       <p>At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
       <p class="indent">At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
     </description>
     <sheet />
     <rules>
-      <select type="Class Feature" name="Expertise (Bard)" level="3" number="2" supports="Expertise&amp;&amp;Skill"/>
-      <select type="Class Feature" name="Expertise (Bard)" level="10" number="2" supports="Expertise&amp;&amp;Skill"/>
+      <select type="Class Feature" name="Expertise (Bard 3)" level="3" number="2" supports="Expertise,Skill"/>
+      <select type="Class Feature" name="Expertise (Bard 10)" level="10" number="2" supports="Expertise,Skill"/>
     </rules>
   </element>
-  <element name="Ability Score Improvement (Bard)" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_ABILITYSCOREIMPROVEMENT_BARD">
+  <element name="Ability Score Improvement (Bard)" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD">
     <description>
       <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
-      <select type="Class Feature" name="Improvement Option (8)" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
-      <select type="Class Feature" name="Improvement Option (12)" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
-      <select type="Class Feature" name="Improvement Option (16)" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
-      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_BARD" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_BARD" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_BARD" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_BARD" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_BARD" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <select type="Class Feature" name="Improvement Option (Bard 4)" supports="Improvement Option,Bard,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_BARD" level="4" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Bard 8)" supports="Improvement Option,Bard,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_BARD" level="8" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Bard 12)" supports="Improvement Option,Bard,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_BARD" level="12" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Bard 16)" supports="Improvement Option,Bard,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_BARD" level="16" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Bard 19)" supports="Improvement Option,Bard,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_BARD" level="19" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
     </rules>
   </element>
-  <element name="Font of Inspiration" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_FONT_OF_INSPIRATION">
+  <element name="Font of Inspiration" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION">
     <description>
       <p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
     </description>
@@ -238,7 +268,7 @@
       <description>You regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</description>
     </sheet>
   </element>
-  <element name="Countercharm" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_COUNTERCHARM">
+  <element name="Countercharm" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_COUNTERCHARM">
     <description>
       <p>At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</p>
     </description>
@@ -246,7 +276,7 @@
       <description>As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed.</description>
     </sheet>
   </element>
-  <element name="Magical Secrets" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_MAGICAL_SECRETS">
+  <element name="Magical Secrets" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_MAGICAL_SECRETS">
     <description>
       <p>By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.</p>
       <p class="indent">The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.</p>
@@ -262,7 +292,7 @@
       <select type="Spell" name="Magical Secrets (Bard)" supports="1||2||3||4||5||6||7||8||9" number="2" level="18"/>
     </rules>
   </element>
-  <element name="Superior Inspiration" type="Class Feature" source="Player’s Handbook" id="ID_CLASSFEATURE_SUPERIOR_INSPIRATION">
+  <element name="Superior Inspiration" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION">
     <description>
       <p>At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</p>
     </description>
@@ -270,40 +300,37 @@
       <description>When you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</description>
     </sheet>
   </element>
-
-
-  <element name="College of Lore" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_COLLEGE_OF_LORE">
+  <element name="College of Lore" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_COLLEGE_OF_LORE">
     <supports>Bard College</supports>
     <description>
       <p>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king.</p>
       <p class="indent">The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic.</p>
       <p class="indent">The college’s members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.</p>
-      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL" />
     </description>
     <sheet>
       <description>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales.</description>
     </sheet>
     <rules>
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES" level="3" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" level="3" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS" level="6" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL" level="14" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES" level="3" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS" level="3" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS" level="6" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL" level="14" />
     </rules>
   </element>
-
-  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES">
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES">
     <description>
       <p>When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Proficiency" name="Bonus Proficiencies (Bard)" supports="Skill&amp;&amp;ID_CLASS_BARD" number="3" />
+      <select type="Proficiency" name="Bonus Proficiencies (Bard)" supports="Skill,Bard" number="3" level="3"/>
     </rules>
   </element>
-  <element name="Cutting Words" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS">
+  <element name="Cutting Words" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS">
     <description>
       <p>Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can’t hear you or if it’s immune to being charmed.</p>
     </description>
@@ -311,7 +338,7 @@
       <description>When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can’t hear you or if it’s immune to being charmed.</description>
     </sheet>
   </element>
-  <element name="Additional Magical Secrets" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS">
+  <element name="Additional Magical Secrets" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_ADDITIONAL_MAGICAL_SECRETS">
     <description>
       <p>At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don’t count against the number of bard spells you know.</p>
     </description>
@@ -320,7 +347,7 @@
       <select type="Spell" name="Additional Magic Secrets" number="2" />
     </rules>
   </element>
-  <element name="Peerless Skill" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL">
+  <element name="Peerless Skill" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL">
     <description>
       <p>Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the GM tells you whether you succeed or fail.</p>
     </description>
@@ -328,30 +355,26 @@
       <description>When you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the GM tells you whether you succeed or fail.</description>
     </sheet>
   </element>
-  
-
-  <element name="College of Valor" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_COLLEGE_OF_VALOR">
+  <element name="College of Valor" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_COLLEGE_OF_VALOR">
     <supports>Bard College</supports>
     <description>
       <p>Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes. These bards gather in mead halls or around great bonfires to sing the deeds of the mighty, both past and present. They travel the land to witness great events firsthand and to ensure that the memory of those events doesn’t pass from the world. With their songs, they inspire others to reach the same heights of accomplishment as the heroes of old.</p>
-
-      <div element="ID_ARCHETYPE_FEATURE_BARD_VALOR_BONUS_PROFICIENCIES" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_VALOR_COMBAT_INSPIRATION" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK" />
-      <div element="ID_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_BONUS_PROFICIENCIES" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_COMBAT_INSPIRATION" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC" />
     </description>
     <sheet>
       <description>Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes.</description>
     </sheet>
     <rules>
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_VALOR_BONUS_PROFICIENCIES" level="3" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_VALOR_COMBAT_INSPIRATION" level="3" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK" level="6" />
-      <grant type="Archetype Feature" name="ID_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC" level="14" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_BONUS_PROFICIENCIES" level="3" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_COMBAT_INSPIRATION" level="3" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK" level="6" />
+      <grant type="Archetype Feature" name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC" level="14" />
     </rules>
   </element>
-
-  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_VALOR_BONUS_PROFICIENCIES">
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_BONUS_PROFICIENCIES">
     <description>
       <p>When you join the College of Valor at 3rd level, you gain proficiency with medium armor, shields, and martial weapons.</p>
     </description>
@@ -362,7 +385,7 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
     </rules>
   </element>
-  <element name="Combat Inspiration" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_VALOR_COMBAT_INSPIRATION">
+  <element name="Combat Inspiration" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_COMBAT_INSPIRATION">
     <description>
       <p>Also at 3rd level, you learn to inspire others in battle. A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses.</p>
     </description>
@@ -370,7 +393,7 @@
       <description>A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses.</description>
     </sheet>
   </element>
-  <element name="Extra Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK">
+  <element name="Extra Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK">
     <description>
       <p>Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
     </description>
@@ -378,7 +401,7 @@
       <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
     </sheet>
   </element>
-  <element name="Battle Magic" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC">
+  <element name="Battle Magic" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC">
     <description>
       <p>At 14th level, you have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a bonus action.</p>
     </description>
@@ -386,5 +409,4 @@
       <description>When you use your action to cast a bard spell, you can make one weapon attack as a bonus action.</description>
     </sheet>
   </element>
-
 </elements>

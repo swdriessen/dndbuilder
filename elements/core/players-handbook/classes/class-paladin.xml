@@ -9,7 +9,7 @@
     </update>
   </info>
 
-  <element name="Paladin" type="Class" source="Player’s Handbook" id="ID_WOTC_CLASS_PALADIN">
+  <element name="Paladin" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_PALADIN">
     <description>
       <p>Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man’s wounds knit closed, and his eyes open wide with amazement.</p>
       <p class="indent">A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two ores are dead before they even realize he is there.</p>
@@ -52,60 +52,75 @@
         <li><i>(a)</i> a priest’s pack or <i>(b)</i> an explorer’s pack</li>
         <li>Chain mail and a holy symbol</li>
       </ul>
-      <div element="ID_WOTC_PHB_CF_PALADIN_DIVINE_SENSE" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_LAY_ON_HANDS" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_FIGHTING_STYLE" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_SPELLCASTING" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_DIVINE_SMITE" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_DIVINE_HEALTH" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_SACRED_OATH" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_ASI" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_EXTRA_ATTACK" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_AURA_OF_PROTECTION" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_AURA_OF_COURAGE" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_IMPROVED_DIVINE_SMITE" />
-      <div element="ID_WOTC_PHB_CF_PALADIN_CLEANSING_TOUCH" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SENSE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_LAY_ON_HANDS" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SMITE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_HEALTH" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SACRED_OATH" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_ASI" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_CLEANSING_TOUCH" />
     </description>
     <sheet display="false">
       <description>A holy warrior bound to a sacred oath.</description>
     </sheet>
     <setters>
+      <set name="short">A holy warrior bound to a sacred oath.</set>
       <set name="hd">d10</set>
       <set name="spellcastingAbility">Charisma</set>
     </setters>
     <rules>      
       <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" />
 
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+
+      <select type="Proficiency" name="Skill Proficiency (Paladin)" supports="Skill,Paladin" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_PALADIN" />
+
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SENSE" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_LAY_ON_HANDS" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SMITE" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_HEALTH" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SACRED_OATH" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_ASI" level="4" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION" level="6" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" level="10" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE" level="11" />
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_CLEANSING_TOUCH" level="14" />
+    </rules>
+    <multiclass id="ID_WOTC_PHB_MULTICLASS_PALADIN">
+      <prerequisite>Strength 13 and Charisma 13</prerequisite>
+      <requirements>([str:13],[cha:13])</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+      </setters>
+      <rules>
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-
-      <select type="Proficiency" name="Skill Proficiency (Paladin)" supports="ID_PROFICIENCY_SKILL&amp;&amp;ID_CLASS_PALADIN" number="2" />
-
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_DIVINE_SENSE" level="1" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_LAY_ON_HANDS" level="1" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_FIGHTING_STYLE" level="2" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_SPELLCASTING" level="2" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_DIVINE_SMITE" level="2" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_DIVINE_HEALTH" level="3" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_SACRED_OATH" level="3" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_ASI" level="4" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_EXTRA_ATTACK" level="5" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_AURA_OF_PROTECTION" level="6" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_AURA_OF_COURAGE" level="10" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_IMPROVED_DIVINE_SMITE" level="11" />
-      <grant type="Class Feature" id="ID_WOTC_PHB_CF_PALADIN_CLEANSING_TOUCH" level="14" />
-    </rules>
+      </rules>
+    </multiclass>
   </element>
 
-  <element name="Divine Sense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_DIVINE_SENSE">
+  <element name="Divine Sense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SENSE">
     <description>
       <p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>hallow</i> spell.</p>
       <p class="indent">You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
@@ -118,7 +133,7 @@
       <stat name="divine sense:count" value="Charisma Modifier" />
     </rules>
   </element>
-  <element name="Lay on Hands" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_LAY_ON_HANDS">
+  <element name="Lay on Hands" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_LAY_ON_HANDS">
     <description>
       <p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.</p>
       <p class="indent">As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
@@ -136,7 +151,7 @@
       <stat name="lay on hands:hp pool" value="Level" />
     </rules>
   </element>
-  <element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_FIGHTING_STYLE">
+  <element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">
     <description>
       <p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
     </description>
@@ -144,7 +159,7 @@
       <select type="Class Feature" name="Fighting Style" supports="Fighting Style&amp;&amp;Paladin" />
     </rules>
   </element>
-  <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_SPELLCASTING">
+  <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SPELLCASTING">
     <description>
       <p>By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See chapter 10 for the general rules of spellcasting and chapter 11 for the paladin spell list.</p>
       <h5>PREPARING AND CASTING SPELLS</h5>
@@ -181,7 +196,7 @@
       <stat name="spell:slots:5" value="1" level="19" />
     </rules>
   </element>
-  <element name="Divine Smite" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_DIVINE_SMITE">
+  <element name="Divine Smite" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SMITE">
     <description>
       <p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one paladin spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>
     </description>
@@ -189,7 +204,7 @@
       <description>When you hit a creature with a melee weapon attack, you can expend one paladin spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</description>
     </sheet>
   </element>
-  <element name="Divine Health" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_DIVINE_HEALTH">
+  <element name="Divine Health" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_HEALTH">
     <description>
       <p>By 3rd level, the divine magic flowing through you makes you immune to disease.</p>
     </description>
@@ -197,7 +212,7 @@
       <description>The divine magic flowing through you makes you immune to disease.</description>
     </sheet>
   </element>
-  <element name="Sacred Oath" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_SACRED_OATH">
+  <element name="Sacred Oath" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_SACRED_OATH">
     <description>
       <p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.</p>
       <p class="indent">Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>
@@ -213,20 +228,31 @@
       <select type="Archetype" name="Sacred Oath" supports="Sacred Oath" />
     </rules>
   </element>
-  <element name="Ability Score Improvement (Paladin)" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_ASI">
+  <element name="Ability Score Improvement (Paladin)" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_ASI">
     <description>
       <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_PALADIN" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_PALADIN" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_PALADIN" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_PALADIN" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_PALADIN" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <select type="Class Feature" name="Improvement Option (Paladin 4)" supports="Improvement Option,Paladin,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_PALADIN" level="4" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Paladin 8)" supports="Improvement Option,Paladin,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_PALADIN" level="8" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Paladin 12)" supports="Improvement Option,Paladin,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_PALADIN" level="12" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Paladin 16)" supports="Improvement Option,Paladin,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_PALADIN" level="16" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Paladin 19)" supports="Improvement Option,Paladin,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_PALADIN" level="19" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+
+      <!-- <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
       <select type="Class Feature" name="Improvement Option (8)" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
       <select type="Class Feature" name="Improvement Option (12)" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
       <select type="Class Feature" name="Improvement Option (16)" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
-      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/> -->
     </rules>
   </element>
-  <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_EXTRA_ATTACK">
+  <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK">
     <description>
       <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
     </description>
@@ -234,7 +260,7 @@
       <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
     </sheet>
   </element>
-  <element name="Aura of Protection" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_AURA_OF_PROTECTION">
+  <element name="Aura of Protection" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION">
     <description>
       <p>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</p>
       <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
@@ -249,7 +275,7 @@
       <stat name="aura of protection:save bonus" value="Charisma Modifier" bonus="base"/>
     </rules>
   </element>
-  <element name="Aura of Courage" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_AURA_OF_COURAGE">
+  <element name="Aura of Courage" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE">
     <description>
       <p>Starting at 10th level, you and friendly creatures within 10 feet of you can’t be frightened while you are conscious.</p>
       <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
@@ -262,7 +288,7 @@
       <stat name="aura of courage:range" value="30" level="18" />
     </rules>
   </element>
-  <element name="Improved Divine Smite" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_IMPROVED_DIVINE_SMITE">
+  <element name="Improved Divine Smite" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE">
     <description>
       <p>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.</p>
     </description>
@@ -270,7 +296,7 @@
       <description>Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.</description>
     </sheet>
   </element>
-  <element name="Cleansing Touch" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CF_PALADIN_CLEANSING_TOUCH">
+  <element name="Cleansing Touch" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_CLEANSING_TOUCH">
     <description>
       <p>Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.</p>
       <p class="indent">You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.</p>
@@ -290,22 +316,22 @@
     <supports>Sacred Oath</supports>
     <description>
       <p>The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or w orse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods’ tenets as the measure of their devotion. They hold angels—the perfect servants of good—as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.</p>
-      <div element="ID_WOTC_PHB_AF_PALADIN_TENETS_OF_DEVOTION" />
-      <div element="ID_WOTC_PHB_AF_PALADIN_CHANNEL_DIVINITY" />
-      <div element="ID_WOTC_PHB_AF_PALADIN_AURA_OF_DEVOTION" />
-      <div element="ID_WOTC_PHB_AF_PALADIN_PURITY_OF_SPIRIT" />
-      <div element="ID_WOTC_PHB_AF_PALADIN_HOLY_NIMBUS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_TENETS_OF_DEVOTION" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEVOTION" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS" />
     </description>
     <rules>
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_PALADIN_TENETS_OF_DEVOTION" level="3" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_PALADIN_CHANNEL_DIVINITY" level="3" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_PALADIN_AURA_OF_DEVOTION" level="7" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_PALADIN_PURITY_OF_SPIRIT" level="15" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_PALADIN_HOLY_NIMBUS" level="20" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_TENETS_OF_DEVOTION" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEVOTION" level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT" level="15" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS" level="20" />
     </rules>
   </element>
 
-  <element name="Tenets of Devotion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_PALADIN_TENETS_OF_DEVOTION">
+  <element name="Tenets of Devotion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_TENETS_OF_DEVOTION">
     <description>
       <p>Though the exact words and strictures of the Oath of Devotion vary, paladins of this oath share these tenets. Honesty. Don’t lie or cheat. Let your word be your promise.<br/>
         <span class="feature">Courage.</span>Never fear to act, though caution is wise.<br/>
@@ -358,7 +384,7 @@
       <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" />
     </rules>
   </element>
-  <element name="Channel Divinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_PALADIN_CHANNEL_DIVINITY">
+  <element name="Channel Divinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY">
     <description>
       <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
       <p class="indent"><b><i>Sacred Weapon. </i></b>As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</p>
@@ -370,7 +396,7 @@
       <description>You have the Sacred Weapon and Turn the Unholy Channel Divinity options.</description>
     </sheet>
   </element>
-  <element name="Aura of Devotion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_PALADIN_AURA_OF_DEVOTION">
+  <element name="Aura of Devotion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEVOTION">
     <description>
       <p>Starting at 7th level, you and friendly creatures within 10 feet of you can’t be charmed while you are conscious.</p>
       <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>      
@@ -383,7 +409,7 @@
       <stat name="aura of devotion:range" value="30" level="18" />
     </rules>
   </element>
-  <element name="Purity of Spirit" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_PALADIN_PURITY_OF_SPIRIT">
+  <element name="Purity of Spirit" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT">
     <description>
       <p>Beginning at 15th level, you are always under the effects of a protection from evil and good spell.</p>      
     </description>
@@ -391,7 +417,7 @@
       <description>You are always under the effects of a protection from evil and good spell.</description>
     </sheet>
   </element>
-  <element name="Holy Nimbus" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_PALADIN_HOLY_NIMBUS">
+  <element name="Holy Nimbus" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS">
     <description>
       <p>At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.</p>
       <p class="indent">Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.</p>
@@ -409,22 +435,22 @@
     <supports>Sacred Oath</supports>
     <description>
       <p>The Oath of the Ancients is as old as the race of elves and the rituals of the druids. Sometimes called fey knights, green knights, or horned knights, paladins who swear this oath cast their lot with the side of the light in the cosmic struggle against darkness because they love the beautiful and life-giving things of the world, not necessarily because they believe in principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things—leaves, antlers, or flowers—to reflect their commitment to preserving life and light in the world.</p>
-      <div element="ID_WOTC_PHB_AF_OOTA_TENETS_OF_THE_ANCIENTS" />
-      <div element="ID_WOTC_PHB_AF_OOTA_CHANNEL_DIVINITY" />
-      <div element="ID_WOTC_PHB_AF_OOTA_AURA_OF_WARDING" />
-      <div element="ID_WOTC_PHB_AF_OOTA_UNDYING_SENTINEL" />
-      <div element="ID_WOTC_PHB_AF_OOTA_ELDER_CHAMPION" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_TENETS_OF_THE_ANCIENTS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION" />
     </description>
     <rules>
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOTA_TENETS_OF_THE_ANCIENTS" level="3" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOTA_CHANNEL_DIVINITY" level="3" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOTA_AURA_OF_WARDING" level="7" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOTA_UNDYING_SENTINEL" level="15" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOTA_ELDER_CHAMPION" level="20" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_TENETS_OF_THE_ANCIENTS" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING" level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL" level="15" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION" level="20" />
     </rules>
   </element>
 
-  <element name="Tenets of the Ancients" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOTA_TENETS_OF_THE_ANCIENTS">
+  <element name="Tenets of the Ancients" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_TENETS_OF_THE_ANCIENTS">
     <description>
       <p>The tenets of the Oath of the Ancients have been preserved for uncounted centuries. This oath emphasizes the principles of good above any concerns of law or chaos. Its four central principles are simple.</p>
       <p class="indent"><b><i>Kindle the Light.</i></b> Through your acts of mercy, kindness, and forgiveness, kindle the light of hope in the world, beating back despair.</p>
@@ -476,7 +502,7 @@
       <grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="17" />
     </rules>      
   </element>
-  <element name="Channel Divinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOTA_CHANNEL_DIVINITY">
+  <element name="Channel Divinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY">
     <description>
       <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
       <p class="indent"><b><i>Nature’s Wrath.</i></b> You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.</p>
@@ -488,7 +514,7 @@
       <description>You have the Nature’s Wrath and Turn the Faithless Channel Divinity options.</description>
     </sheet>
   </element>
-  <element name="Aura of Warding" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOTA_AURA_OF_WARDING">
+  <element name="Aura of Warding" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING">
     <description>
       <p>Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells.</p>
       <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>      
@@ -501,7 +527,7 @@
       <stat name="aura of warding:range" value="30" level="18" />
     </rules>
   </element>
-  <element name="Undying Sentinel" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOTA_UNDYING_SENTINEL">
+  <element name="Undying Sentinel" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL">
     <description>
       <p>Starting at 15th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can’t use it again until you finish a long rest.</p>
       <p class="indent">Additionally, you suffer none of the drawbacks of old age, and you can’t be aged magically.</p>
@@ -510,7 +536,7 @@
       <description>When you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead.</description>
     </sheet>
   </element>
-  <element name="Elder Champion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOTA_ELDER_CHAMPION">
+  <element name="Elder Champion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION">
     <description>
       <p>At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:</p>
       <ul>
@@ -531,22 +557,22 @@
     <supports>Sacred Oath</supports>
     <description>
       <p>The Oath of Vengeance is a solemn commitment to punish those who have committed a grievous sin. When evil forces slaughter helpless villagers, when an entire people turns against the will of the gods, when a thieves’ guild grows too violent and powerful, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right that which has gone wrong. To these paladins— sometimes called avengers or dark knights—their own purity is not as important as delivering justice.</p>
-      <div element="ID_WOTC_PHB_AF_OOV_TENETS_OF_VENGEANCE" />
-      <div element="ID_WOTC_PHB_AF_OOV_CHANNEL_DIVINITY" />
-      <div element="ID_WOTC_PHB_AF_OOV_RELENTLESS_AVENGER" />
-      <div element="ID_WOTC_PHB_AF_OOV_SOUL_OF_VENGEANCE" />
-      <div element="ID_WOTC_PHB_AF_OOV_AVENGING_ANGEL" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_TENETS_OF_VENGEANCE" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_RELENTLESS_AVENGER" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_SOUL_OF_VENGEANCE" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_AVENGING_ANGEL" />
     </description>
     <rules>
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOV_TENETS_OF_VENGEANCE" level="3" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOV_CHANNEL_DIVINITY" level="3" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOV_RELENTLESS_AVENGER" level="7" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOV_SOUL_OF_VENGEANCE" level="15" />
-      <grant type="Archetype Feature" id="ID_WOTC_PHB_AF_OOV_AVENGING_ANGEL" level="20" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_TENETS_OF_VENGEANCE" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_RELENTLESS_AVENGER" level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_SOUL_OF_VENGEANCE" level="15" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_AVENGING_ANGEL" level="20" />
     </rules>
   </element>
 
-  <element name="Tenets of the Ancients" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOV_TENETS_OF_VENGEANCE">
+  <element name="Tenets of the Ancients" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_TENETS_OF_VENGEANCE">
     <description>
       <p>The tenets of the Oath of Vengeance vary by paladin, but all the tenets revolve around punishing wrongdoers by any means necessary. Paladins w ho uphold these tenets are willing to sacrifice even their own righteousness to mete out justice upon those who do evil, so the paladins are often neutral or lawful neutral in alignment. The core principles of the tenets are brutally simple.</p>
       <p class="indent"><b><i>Fight the Greater Evil.</i></b> Faced with a choice of fighting my sworn foes or combating a lesser evil. I choose the greater evil.</p>
@@ -598,7 +624,7 @@
       <grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="17" />
     </rules>      
   </element>
-  <element name="Channel Divinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOV_CHANNEL_DIVINITY">
+  <element name="Channel Divinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY">
     <description>
       <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
       <p class="indent"><b><i>Abjure Enemy.</i></b> As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.</p>
@@ -610,7 +636,7 @@
       <description>You have the Abjure Enemy and Vow of Enmity Channel Divinity options.</description>
     </sheet>
   </element>
-  <element name="Relentless Avenger" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOV_RELENTLESS_AVENGER">
+  <element name="Relentless Avenger" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_RELENTLESS_AVENGER">
     <description>
       <p>By 7th level, your supernatural focus helps you close off a foe’s retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction. This movement doesn’t provoke opportunity attacks.</p> 
     </description>
@@ -618,7 +644,7 @@
       <description>When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction. This movement doesn’t provoke opportunity attacks.</description>
     </sheet>
   </element>
-  <element name="Soul of Vengeance" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOV_SOUL_OF_VENGEANCE">
+  <element name="Soul of Vengeance" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_SOUL_OF_VENGEANCE">
     <description>
       <p>Starting at 15th level, the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range.</p>
     </description>
@@ -626,7 +652,7 @@
       <description>When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range.</description>
     </sheet>
   </element>
-  <element name="Avenging Angel" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_AF_OOV_AVENGING_ANGEL">
+  <element name="Avenging Angel" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_AVENGING_ANGEL">
     <description>
       <p>At 20th level, you can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits:</p>
       <ul>

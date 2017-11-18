@@ -8,9 +8,8 @@
       <file name="class-ranger.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-ranger.xml" />
     </update>
   </info>
-
   <!-- Ranger -->
-  <element name="Ranger" type="Class" source="Player’s Handbook" id="ID_WOTC_CLASS_RANGER">
+  <element name="Ranger" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_RANGER">
     <supports />
     <requirements />
     <description>
@@ -34,26 +33,43 @@
       <p>As a ranger, you gain the following class features.</p>
       <h5>HIT POINTS</h5>
       <p>
-        <span class="feature">Hit Dice:</span>1d10 per ranger level<br />
-        <span class="feature">Hit Points at 1st Level:</span>10 + your Constitution modefier<br />
-        <span class="feature">Hit Points at Higher Levels:</span>1d10 (or 6) + your Constitution modifier per ranger level after 1st<br />
+        <span class="emphasis">Hit Dice:</span>1d10 per ranger level
+        <br />
+        <span class="emphasis">Hit Points at 1st Level:</span>10 + your Constitution modefier
+        <br />
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d10 (or 6) + your Constitution modifier per ranger level after 1st
+        <br />
       </p>
       <h5>PROFICIENCIES</h5>
       <p>
-        <span class="feature">Armor:</span>Light armor, medium armor, shields<br />
-        <span class="feature">Weapons:</span>Simple weapons, martial weapons<br />
-        <span class="feature">Tools:</span>None<br />
+        <span class="emphasis">Armor:</span>Light armor, medium armor, shields
+        <br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons
+        <br />
+        <span class="emphasis">Tools:</span>None
+        <br />
       </p>
       <p>
-        <span class="feature">Saving Throws:</span>Strength, Dexterity<br />
-        <span class="feature">Skills:</span>Choose three skills from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival<br />
+        <span class="emphasis">Saving Throws:</span>Strength, Dexterity
+        <br />
+        <span class="emphasis">Skills:</span>Choose three skills from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival
+        <br />
       </p>
       <h5>EQUIPMENT</h5>
       <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
       <ul>
-        <li><i>(a)</i> scale mail or <i>(b)</i> leather armor</li>
-        <li><i>(a)</i> two shortswords or <i>(b)</i> two simple melee weapons</li>
-        <li><i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
+        <li>
+          <i>(a)</i> scale mail or 
+          <i>(b)</i> leather armor
+        </li>
+        <li>
+          <i>(a)</i> two shortswords or 
+          <i>(b)</i> two simple melee weapons
+        </li>
+        <li>
+          <i>(a)</i> a dungeoneer’s pack or 
+          <i>(b)</i> an explorer’s pack
+        </li>
         <li>A longbow and a quiver of 20 arrows</li>
       </ul>
       <div element="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY" />
@@ -70,8 +86,11 @@
       <div element="ID_WOTC_CLASSFEATURE_RANGER_FERAL_SENSES" />
       <div element="ID_WOTC_CLASSFEATURE_RANGER_FOE_SLAYER" />
     </description>
-    <sheet display="false" />
+    <sheet display="false">
+      <description>A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</description>
+    </sheet>
     <setters>
+      <set name="short">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</set>
       <set name="hd">d10</set>
       <set name="spellcaster">true</set>
       <set name="spellcastingAbility">Wisdom</set>
@@ -79,15 +98,14 @@
     <rules>
       <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" />
 
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
-
-      <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill&amp;&amp;ID_CLASS_RANGER" number="3"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
+      <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="3" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
 
       <grant type="Class Feature" name="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY" level="1"/>
       <grant type="Class Feature" name="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER" level="1"/>
@@ -103,8 +121,22 @@
       <grant type="Class Feature" name="ID_WOTC_CLASSFEATURE_RANGER_FERAL_SENSES" level="18"/>
       <grant type="Class Feature" name="ID_WOTC_CLASSFEATURE_RANGER_FOE_SLAYER" level="20"/>
     </rules>
+    <multiclass id="ID_WOTC_PHB_MULTICLASS_RANGER">
+      <prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+      <requirements>([dex:13],[wis:13])</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class’s skill list</set>
+      </setters>
+      <rules>
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="1"/>
+      </rules>
+    </multiclass>
   </element>
-
   <element name="Favored Enemy" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY">
     <description>
       <p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
@@ -120,8 +152,7 @@
       <select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="1" />
       <select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="6" />
       <select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="14" />
-
-	  <select type="Language" name="Language (Favored Enemy)" level="1" />
+      <select type="Language" name="Language (Favored Enemy)" level="1" />
       <select type="Language" name="Language (Favored Enemy)" level="6" />
       <select type="Language" name="Language (Favored Enemy)" level="14" />
     </rules>
@@ -130,14 +161,14 @@
     <description>
       <p>You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</p>
       <p class="indent">While traveling for an hour or more in your favored terrain, you gain the following benefits:</p>
-	  <ul>
-		<li>Difficult terrain doesn’t slow your group’s travel.</li>
-		<li>Your group can’t become lost except by magical means.</li>
-		<li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
-		<li>If you are traveling alone, you can move stealthily at a normal pace.</li>
-		<li>When you forage, you find twice as much food as you normally would.</li>
-		<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
-	  </ul>
+      <ul>
+        <li>Difficult terrain doesn’t slow your group’s travel.</li>
+        <li>Your group can’t become lost except by magical means.</li>
+        <li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
+        <li>If you are traveling alone, you can move stealthily at a normal pace.</li>
+        <li>When you forage, you find twice as much food as you normally would.</li>
+        <li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
+      </ul>
       <p class="indent">You choose additional favored terrain types at 6th and 10th level.</p>
     </description>
     <sheet>
@@ -149,7 +180,6 @@
       <select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="10" />
     </rules>
   </element>
-
   <element name="Arctic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_arctic">
     <supports>Favored Terrain</supports>
     <description>
@@ -302,16 +332,6 @@
     </sheet>
     <rules />
   </element>
-
-
-
-
-
-
-
-
-
-
   <element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FIGHTING_STYLE">
     <description>
       <p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
@@ -328,41 +348,38 @@
       <description></description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Fighting Style" supports="Fighting Style&amp;&amp;Ranger" level="2"/>
+      <select type="Class Feature" name="Fighting Style" supports="Fighting Style,Ranger" level="2"/>
     </rules>
   </element>
   <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_SPELLCASTING">
     <description>
       <p>By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.</p>
-
       <h5>SPELL SLOTS</h5>
       <p>The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
       <p class="indent">For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.</p>
-
       <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
       <p>You know two 1st-level spells of your choice from the ranger spell list.</p>
       <p class="indent">The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
       <p class="indent">Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.</p>
-
       <h5>SPELLCASTING ABILITY</h5>
       <p>Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.</p>
-      <p class="indent"><b>Spell save DC = 8</b> + your proficiency bonus + your Wisdom modifier</p>
-      <p class="indent"><b>Spell attack modifier =</b> your proficiency bonus + your Wisdom modifier</p>
-
+      <p class="indent">
+        <b>Spell save DC = 8</b> + your proficiency bonus + your Wisdom modifier
+      </p>
+      <p class="indent">
+        <b>Spell attack modifier =</b> your proficiency bonus + your Wisdom modifier
+      </p>
     </description>
     <sheet display="false">
       <description></description>
     </sheet>
     <rules>
       <stat name="spell:keyability" value="Wisdom" />
-
       <stat name="spell:attack" value="Proficiency" />
       <stat name="spell:attack" value="Wisdom Modifier" />
-
       <stat name="spell:dc" value="8" />
       <stat name="spell:dc" value="Proficiency" />
       <stat name="spell:dc" value="Wisdom Modifier" />
-
       <stat name="spellcasting:spells known" value="+2" level="2" />
       <stat name="spellcasting:spells known" value="+1" level="3" />
       <stat name="spellcasting:spells known" value="+1" level="5" />
@@ -373,7 +390,6 @@
       <stat name="spellcasting:spells known" value="+1" level="15" />
       <stat name="spellcasting:spells known" value="+1" level="17" />
       <stat name="spellcasting:spells known" value="+1" level="19" />
-      
       <stat name="spellcasting:slots:1" value="+2" level="2" />
       <stat name="spellcasting:slots:1" value="+1" level="3" />
       <stat name="spellcasting:slots:1" value="+1" level="5" />
@@ -386,17 +402,16 @@
       <stat name="spellcasting:slots:4" value="+1" level="17" />
       <stat name="spellcasting:slots:5" value="+1" level="17" />
       <stat name="spellcasting:slots:5" value="+1" level="19" />
-      
-      <select type="Spell" name="Spell (Ranger Level 2)" supports="Ranger&amp;&amp;(1)" level="2" number="2" />
-      <select type="Spell" name="Spell (Ranger Level 3)" supports="Ranger&amp;&amp;(1)" level="3" />
-      <select type="Spell" name="Spell (Ranger Level 5)" supports="Ranger&amp;&amp;(1||2)" level="5" />
-      <select type="Spell" name="Spell (Ranger Level 7)" supports="Ranger&amp;&amp;(1||2)" level="7" />
-      <select type="Spell" name="Spell (Ranger Level 9)" supports="Ranger&amp;&amp;(1||2||3)" level="9" />
-      <select type="Spell" name="Spell (Ranger Level 11)" supports="Ranger&amp;&amp;(1||2||3)" level="11" />
-      <select type="Spell" name="Spell (Ranger Level 13)" supports="Ranger&amp;&amp;(1||2||3||4)" level="13" />
-      <select type="Spell" name="Spell (Ranger Level 15)" supports="Ranger&amp;&amp;(1||2||3||4)" level="15" />
-      <select type="Spell" name="Spell (Ranger Level 17)" supports="Ranger&amp;&amp;(1||2||3||4||5)" level="17" />
-      <select type="Spell" name="Spell (Ranger Level 19)" supports="Ranger&amp;&amp;(1||2||3||4||5)" level="19" />
+      <select type="Spell" name="Spell (Ranger Level 2)" supports="Ranger,(1)" level="2" number="2" />
+      <select type="Spell" name="Spell (Ranger Level 3)" supports="Ranger,(1)" level="3" />
+      <select type="Spell" name="Spell (Ranger Level 5)" supports="Ranger,(1||2)" level="5" />
+      <select type="Spell" name="Spell (Ranger Level 7)" supports="Ranger,(1||2)" level="7" />
+      <select type="Spell" name="Spell (Ranger Level 9)" supports="Ranger,(1||2||3)" level="9" />
+      <select type="Spell" name="Spell (Ranger Level 11)" supports="Ranger,(1||2||3)" level="11" />
+      <select type="Spell" name="Spell (Ranger Level 13)" supports="Ranger,(1||2||3||4)" level="13" />
+      <select type="Spell" name="Spell (Ranger Level 15)" supports="Ranger,(1||2||3||4)" level="15" />
+      <select type="Spell" name="Spell (Ranger Level 17)" supports="Ranger,(1||2||3||4||5)" level="17" />
+      <select type="Spell" name="Spell (Ranger Level 19)" supports="Ranger,(1||2||3||4||5)" level="19" />
     </rules>
   </element>
   <element name="Ranger Archetype" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_RANGER_ARCHETYPE">
@@ -407,7 +422,7 @@
       <description></description>
     </sheet>
     <rules>
-    	<select type="Archetype" name="Ranger Archetype" supports="Ranger Archetype" />
+      <select type="Archetype" name="Ranger Archetype" supports="Ranger Archetype" />
     </rules>
   </element>
   <element name="Primeval Awareness" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
@@ -425,11 +440,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Class Feature" name="Improvement Option (4)" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
-      <select type="Class Feature" name="Improvement Option (8)" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
-      <select type="Class Feature" name="Improvement Option (12)" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
-      <select type="Class Feature" name="Improvement Option (16)" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
-      <select type="Class Feature" name="Improvement Option (19)" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_RANGER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_RANGER" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_RANGER" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_RANGER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_RANGER" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <select type="Class Feature" name="Improvement Option (Ranger 4)" supports="Improvement Option,Ranger,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_RANGER" level="4" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Ranger 8)" supports="Improvement Option,Ranger,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_RANGER" level="8" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Ranger 12)" supports="Improvement Option,Ranger,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_RANGER" level="12" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Ranger 16)" supports="Improvement Option,Ranger,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_RANGER" level="16" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_RANGER" level="19" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
     </rules>
   </element>
   <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_EXTRA_ATTACK">
@@ -459,9 +479,7 @@
     <sheet>
       <description>You can spend 1 minute creating camouflage for yourself. You gain a +10 bonus to Stealth checks as long as you remain there without moving or taking actions.</description>
     </sheet>
-    <rules>
-
-    </rules>
+    <rules></rules>
   </element>
   <element name="Vanish" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_VANISH">
     <description>
@@ -490,14 +508,13 @@
       <description>Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</description>
     </sheet>
     <rules>
-    	<stat name="foe slayer:attack" value="Wisdom Modifier" />
-    	<stat name="foe slayer:damage" value="Wisdom Modifier" />
+      <stat name="foe slayer:attack" value="Wisdom Modifier" />
+      <stat name="foe slayer:damage" value="Wisdom Modifier" />
     </rules>
   </element>
-
   <!-- Hunter -->
   <element name="Hunter" type="Archetype" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_RANGER_HUNTER">
-  	<supports>Ranger Archetype</supports>
+    <supports>Ranger Archetype</supports>
     <description>
       <p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</p>
       <div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" />
@@ -515,14 +532,16 @@
       <grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" level="15" />
     </rules>
   </element>
-
   <element name="Hunter’s Prey" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
     <description>
       <p>At 3rd level, you gain one of the following features of your choice.</p>
       <p>
-      	<span class="feature">Colossus Slayer.</span>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.<br/>
-      	<span class="feature">Giant Killer.</span>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.<br/>
-      	<span class="feature">Horde Breaker.</span>Once on each of your turns when you make a w eapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.<br/>
+        <span class="feature">Colossus Slayer.</span>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.
+        <br/>
+        <span class="feature">Giant Killer.</span>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
+        <br/>
+        <span class="feature">Horde Breaker.</span>Once on each of your turns when you make a w eapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
+        <br/>
       </p>
     </description>
     <sheet>
@@ -536,9 +555,12 @@
     <description>
       <p>At 7th level, you gain one of the following features of your choice.</p>
       <p>
-      	<span class="feature">Escape the Horde.</span>Opportunity attacks against you are made with disadvantage.<br/>
-      	<span class="feature">Multiattack Defense.</span>When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.<br/>
-      	<span class="feature">Steel Will.</span>You have advantage on saving throws against being frightened.<br/>
+        <span class="feature">Escape the Horde.</span>Opportunity attacks against you are made with disadvantage.
+        <br/>
+        <span class="feature">Multiattack Defense.</span>When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+        <br/>
+        <span class="feature">Steel Will.</span>You have advantage on saving throws against being frightened.
+        <br/>
       </p>
     </description>
     <sheet>
@@ -552,8 +574,10 @@
     <description>
       <p>At 11th level, you gain one of the following features of your choice.</p>
       <p>
-      	<span class="feature">Volley.</span>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your w eapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.<br/>
-      	<span class="feature">Whirlwind Attack.</span>You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.<br/>
+        <span class="feature">Volley.</span>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your w eapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.
+        <br/>
+        <span class="feature">Whirlwind Attack.</span>You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.
+        <br/>
       </p>
     </description>
     <sheet>
@@ -567,9 +591,12 @@
     <description>
       <p>At 15th level, you gain one of the following features of your choice.</p>
       <p>
-      	<span class="feature">Evasion.</span>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.<br/>
-      	<span class="feature">Stand Against the Tide.</span>When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.<br/>
-      	<span class="feature">Uncanny Dodge.</span>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.<br/>
+        <span class="feature">Evasion.</span>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
+        <br/>
+        <span class="feature">Stand Against the Tide.</span>When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.
+        <br/>
+        <span class="feature">Uncanny Dodge.</span>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.
+        <br/>
       </p>
     </description>
     <sheet>
@@ -579,7 +606,6 @@
       <select type="Archetype Feature" name="Superior Hunter’s Defense" supports="Superior Hunters Defense" />
     </rules>
   </element>
-
   <!-- Hunter’s Prey Options -->
   <element name="Colossus Slayer" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
     <supports>Hunters Pray</supports>
@@ -589,8 +615,7 @@
     <sheet>
       <description>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
   <element name="Giant Killer" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_GIANT_KILLER">
     <supports>Hunters Pray</supports>
@@ -600,8 +625,7 @@
     <sheet>
       <description>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
   <element name="Horde Breaker" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
     <supports>Hunters Pray</supports>
@@ -611,10 +635,8 @@
     <sheet>
       <description>Once on each of your turns when you make a w eapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
-
   <!-- Defensive Tactics -->
   <element name="Escape the Horde" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_ESCAPE_THE_HORDE">
     <supports>Defensive Tactics</supports>
@@ -624,8 +646,7 @@
     <sheet>
       <description>Opportunity attacks against you are made with disadvantage.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
   <element name="Multiattack Defense" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_MULTIATTACK_DEFENSE">
     <supports>Defensive Tactics</supports>
@@ -635,8 +656,7 @@
     <sheet>
       <description>When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
   <element name="Steel Will" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_STEEL_WILL">
     <supports>Defensive Tactics</supports>
@@ -646,10 +666,8 @@
     <sheet>
       <description>You have advantage on saving throws against being frightened.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
-  
   <!-- Multiattack -->
   <element name="Volley" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_MULTIATTACK_VOLLEY">
     <supports>Multiattack</supports>
@@ -659,8 +677,7 @@
     <sheet>
       <description>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
   <element name="Whirlwind Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_MULTIATTACK_WHIRLWIND_ATTACK">
     <supports>Multiattack</supports>
@@ -670,10 +687,8 @@
     <sheet>
       <description>You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</description>
     </sheet>
-    <rules>
-    </rules>
-  </element>  
-
+    <rules></rules>
+  </element>
   <!-- Superior Hunter’s Defense -->
   <element name="Evasion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_EVASION">
     <supports>Superior Hunters Defense</supports>
@@ -683,8 +698,7 @@
     <sheet>
       <description>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
   <element name="Stand Against the Tide" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_STAND_AGAINST_THE_TIDE">
     <supports>Superior Hunters Defense</supports>
@@ -694,8 +708,7 @@
     <sheet>
       <description>When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
   <element name="Uncanny Dodge" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_UNCANNY_DODGE">
     <supports>Superior Hunters Defense</supports>
@@ -705,27 +718,11 @@
     <sheet>
       <description>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</description>
     </sheet>
-    <rules>
-    </rules>
+    <rules></rules>
   </element>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- Beast Master -->
   <element name="Beast Master" type="Archetype" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_RANGER_BEAST_MASTER">
-  	<supports>Ranger Archetype</supports>
+    <supports>Ranger Archetype</supports>
     <description>
       <p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger w ork as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>
       <div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION" />
@@ -743,7 +740,6 @@
       <grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" level="15" />
     </rules>
   </element>
-
   <element name="Ranger’s Companion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION">
     <description>
       <p>At 3rd level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower (appendix D presents statistics for the hawk, mastiff, and panther as examples). Add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher.</p>
@@ -755,8 +751,8 @@
       <description>You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you.</description>
     </sheet>
     <rules>
-    	<!-- COMPANION -->
-      <select type="Companion" name="Ranger’s Companion" supports="(Tiny||Small||Medium)&amp;&amp;[cr:1/4]" />
+      <!-- COMPANION -->
+      <select type="Companion" name="Ranger’s Companion" supports="(Tiny||Small||Medium),[cr:1/4]" />
     </rules>
   </element>
   <element name="Exceptional Training" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
@@ -786,8 +782,6 @@
     </sheet>
     <rules />
   </element>
-
-
   <!-- Favored Enemies-->
   <element name="Aberrations" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY_ABERRATIONS">
     <supports>Monster Type, Favored Enemy</supports>
@@ -910,10 +904,9 @@
       <description></description>
     </sheet>
   </element>
-
   <!-- Unused -->
   <element name="Humanoids" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS">
-  	<supports>Monster Type</supports>
+    <supports>Monster Type</supports>
     <description>
       <p>Humanoids are the main peoples of the D&amp;D world, both civilized and savage, including humans and a tremendous variety of other species. They have language and culture, few if any innate magical abilities (though most humanoids can learn spellcasting), and a bipedal form. The most common humanoid races are the ones most suitable as player characters: humans, dwarves, elves, and halflings. Almost as numerous but far more savage and brutal, and almost uniformly evil, are the races of goblinoids (golblins, hobgoblins, and bugbears), orcs, gnolls, lizardfolk, and kobolds. A variety of humanoids appear throughout this book, but the races detailed in the Player's Handbook- with the exception of drow-are dealt with in appendix B. That appendix gives you a number of stat blocks that you·can use to make various members of those races.</p>
     </description>

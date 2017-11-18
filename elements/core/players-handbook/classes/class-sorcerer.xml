@@ -10,7 +10,7 @@
   </info>
 
   <!-- Sorcerer Class -->
-  <element name="Sorcerer" type="Class" source="Player’s Handbook" id="ID_CLASS_SORCERER">
+  <element name="Sorcerer" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_SORCERER">
     <supports />
     <requirements />
     <description>
@@ -55,45 +55,56 @@
         <li><i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
         <li>Two daggers</li>
       </ul>
-      <div element="ID_CLASS_FEATURE_SPELLCASTING_SORCERER" />
-      <div element="ID_CLASS_FEATURE_SORCEROUS_ORIGIN" />
-      <div element="ID_CLASS_FEATURE_FONT_OF_MAGIC" />
-      <div element="ID_CLASS_FEATURE_METAMAGIC" />
-      <div element="ID_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_SORCERER" />
-      <div element="ID_CLASS_FEATURE_SORCEROUS_RESTORATION" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER" />
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION" />
     </description>
     <sheet display="false">
       <description>A spellcaster who draws on inherent magic from a gift or bloodline.</description>
     </sheet>
     <setters>
+      <set name="short">A spellcaster who draws on inherent magic from a gift or bloodline.</set>
       <set name="hd">d6</set>
       <set name="spellcaster">true</set>
       <set name="spellcastingAbility">Charisma</set>
     </setters>
     <rules>
       <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D6" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-      <select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="ID_PROFICIENCY_SKILL&amp;&amp;ID_CLASS_SORCERER" number="2" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+      <select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="Skill,Sorcerer" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
 
       <!-- equipment -->
 
-      <grant type="Class Feature" name="ID_CLASS_FEATURE_SPELLCASTING_SORCERER" level="1" />
-      <grant type="Class Feature" name="ID_CLASS_FEATURE_SORCEROUS_ORIGIN" level="1"/>
-      <grant type="Class Feature" name="ID_CLASS_FEATURE_FONT_OF_MAGIC" level="2" />
-      <grant type="Class Feature" name="ID_CLASS_FEATURE_METAMAGIC" level="3" />
-      <grant type="Class Feature" name="ID_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_SORCERER" level="4" />
-      <grant type="Class Feature" name="ID_CLASS_FEATURE_SORCEROUS_RESTORATION" level="20" />
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" level="1" />
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN" level="1"/>
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC" level="2" />
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC" level="3" />
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER" level="4" />
+      <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION" level="20" />
     </rules>
+    <multiclass id="ID_WOTC_PHB_MULTICLASS_SORCERER">
+      <prerequisite>Charisma 13</prerequisite>
+      <requirements>[cha:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">—</set>
+      </setters>
+      <rules>
+      
+      </rules>
+    </multiclass>
   </element>
 
   <!-- Sorcerer Class Features -->
-  <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_SPELLCASTING_SORCERER">
+  <element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER">
     <supports>ID_INTERNAL_SUPPORT_SPELLCASTING,Sorcerer</supports>
     <requirements />
     <!--<information>
@@ -159,29 +170,29 @@
 
       
       
-      <select type="Spell" name="Cantrip (Sorcerer)" supports="0&amp;&amp;Sorcerer" level="1" number="4" />
-      <select type="Spell" name="Cantrip (Sorcerer)" supports="0&amp;&amp;Sorcerer" level="4" />
-      <select type="Spell" name="Cantrip (Sorcerer)" supports="0&amp;&amp;Sorcerer" level="10" />
+      <select type="Spell" name="Cantrip (Sorcerer)" supports="0,Sorcerer" level="1" number="4" />
+      <select type="Spell" name="Cantrip (Sorcerer)" supports="0,Sorcerer" level="4" />
+      <select type="Spell" name="Cantrip (Sorcerer)" supports="0,Sorcerer" level="10" />
       
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1)&amp;&amp;Sorcerer" level="1" number="2"/>
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1)&amp;&amp;Sorcerer" level="2" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2)&amp;&amp;Sorcerer" level="3" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2)&amp;&amp;Sorcerer" level="4" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3)&amp;&amp;Sorcerer" level="5" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3)&amp;&amp;Sorcerer" level="6" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4)&amp;&amp;Sorcerer" level="7" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4)&amp;&amp;Sorcerer" level="8" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5)&amp;&amp;Sorcerer" level="9" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5)&amp;&amp;Sorcerer" level="10" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6)&amp;&amp;Sorcerer" level="11" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7)&amp;&amp;Sorcerer" level="13" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7||8)&amp;&amp;Sorcerer" level="15" />
-      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7||8||9)&amp;&amp;Sorcerer" level="17" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1),Sorcerer" level="1" number="2"/>
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1),Sorcerer" level="2" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2),Sorcerer" level="3" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2),Sorcerer" level="4" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3),Sorcerer" level="5" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3),Sorcerer" level="6" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4),Sorcerer" level="7" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4),Sorcerer" level="8" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5),Sorcerer" level="9" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5),Sorcerer" level="10" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6),Sorcerer" level="11" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7),Sorcerer" level="13" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7||8),Sorcerer" level="15" />
+      <select type="Spell" name="Spell (Sorcerer)" supports="(1||2||3||4||5||6||7||8||9),Sorcerer" level="17" />
       
     </rules>
   </element>
 
-  <element name="Sorcerous Origin" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_SORCEROUS_ORIGIN">
+  <element name="Sorcerous Origin" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN">
     <supports>Sorcerer</supports>
     <requirements />
     <description>
@@ -193,7 +204,7 @@
       <select type="Archetype" name="Sorcerous Origin" supports="Sorcerous Origin" />
     </rules>
   </element>
-  <element name="Font of Magic" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_FONT_OF_MAGIC">
+  <element name="Font of Magic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
     <supports>Sorcerer</supports>
     <requirements />
     <description>
@@ -245,7 +256,7 @@
       <stat name="sorcery-points" value="Level" />
     </rules>
   </element>
-  <element name="Metamagic" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC">
+  <element name="Metamagic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC">
     <supports>Sorcerer</supports>
     <requirements />
     <description>
@@ -259,21 +270,26 @@
       <select type="Class Feature" name="Metamagic" supports="Metamagic" level="17"/>
     </rules>
   </element>
-  <element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_SORCERER">
+  <element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER">
     <supports />
     <description>
       <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <select name="Improvement Option (4)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_4|ID_CLASS_FEATURE_FEAT_4" default="ID_CLASS_FEATURE_ABILITY_4" level="4"/>
-      <select name="Improvement Option (8)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_8|ID_CLASS_FEATURE_FEAT_8" default="ID_CLASS_FEATURE_ABILITY_8" level="8"/>
-      <select name="Improvement Option (12)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_12|ID_CLASS_FEATURE_FEAT_12" default="ID_CLASS_FEATURE_ABILITY_12" level="12"/>
-      <select name="Improvement Option (16)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_16|ID_CLASS_FEATURE_FEAT_16" default="ID_CLASS_FEATURE_ABILITY_16" level="16"/>
-      <select name="Improvement Option (19)" type="Class Feature" supports="ID_CLASS_FEATURE_ABILITY_19|ID_CLASS_FEATURE_FEAT_19" default="ID_CLASS_FEATURE_ABILITY_19" level="19"/>
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_SORCERER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_SORCERER" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_SORCERER" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_SORCERER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_SORCERER" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <select type="Class Feature" name="Improvement Option (Sorcerer 4)" supports="Improvement Option,Sorcerer,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_SORCERER" level="4" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Sorcerer 8)" supports="Improvement Option,Sorcerer,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_SORCERER" level="8" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Sorcerer 12)" supports="Improvement Option,Sorcerer,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_SORCERER" level="12" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Sorcerer 16)" supports="Improvement Option,Sorcerer,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_SORCERER" level="16" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <select type="Class Feature" name="Improvement Option (Sorcerer 19)" supports="Improvement Option,Sorcerer,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_SORCERER" level="19" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
     </rules>
   </element>
-  <element name="Sorcerous Restoration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_SORCEROUS_RESTORATION">
+  <element name="Sorcerous Restoration" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION">
     <supports>Sorcerer</supports>
     <requirements />
     <description>
@@ -286,56 +302,56 @@
   </element>
 
   <!-- Sorcerous Origin Options -->
-  <element name="Draconic Bloodline" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_DRACONIC_BLOODLINE">
+  <element name="Draconic Bloodline" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_DRACONIC_BLOODLINE">
     <supports>Sorcerous Origin</supports>
     <requirements />
     <description>
       <p>Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times w ho made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.</p>
-      <div element="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR"/>
-      <div element="ID_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE"/>
-      <div element="ID_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY"/>
-      <div element="ID_ARCHETYPE_FEATURE_DRAGON_WINGS"/>
-      <div element="ID_ARCHETYPE_FEATURE_DRACONIC_PRESENCE"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_WINGS"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_PRESENCE"/>
     </description>
     <sheet>
       <description>Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors.</description>
     </sheet>
     <rules>
-      <grant name="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR" type="Archetype Feature" level="1" />
-      <grant name="ID_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE" type="Archetype Feature" level="1" />
-      <grant name="ID_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY" type="Archetype Feature" level="6" />
-      <grant name="ID_ARCHETYPE_FEATURE_DRAGON_WINGS" type="Archetype Feature" level="14" />
-      <grant name="ID_ARCHETYPE_FEATURE_DRACONIC_PRESENCE" type="Archetype Feature" level="18" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR" type="Archetype Feature" level="1" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE" type="Archetype Feature" level="1" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY" type="Archetype Feature" level="6" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_WINGS" type="Archetype Feature" level="14" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_PRESENCE" type="Archetype Feature" level="18" />
     </rules>
   </element>
-  <element name="Wild Magic" type="Archetype" source="Player’s Handbook" id="ID_ARCHETYPE_WILD_MAGIC">
+  <element name="Wild Magic" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_WILD_MAGIC">
     <supports>Sorcerous Origin</supports>
     <requirements />
     <description>
       <p>Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.</p>
       <p>Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.</p>
-      <div element="ID_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE" />
-      <div element="ID_ARCHETYPE_FEATURE_TIDES_OF_CHAOS" />
-      <div element="ID_ARCHETYPE_FEATURE_BEND_LUCK" />
-      <div element="ID_ARCHETYPE_FEATURE_CONTROLLED_CHAOS" />
-      <div element="ID_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_TIDES_OF_CHAOS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BEND_LUCK" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CONTROLLED_CHAOS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT" />
     </description>
     <sheet>
       <description>Your innate magic comes from the wild forces of chaos that underlie the order of creation.</description>
     </sheet>
     <rules>
-      <grant name="ID_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE" type="Archetype Feature" level="1" />
-      <grant name="ID_ARCHETYPE_FEATURE_TIDES_OF_CHAOS" type="Archetype Feature" level="1" />
-      <grant name="ID_ARCHETYPE_FEATURE_BEND_LUCK" type="Archetype Feature" level="6" />
-      <grant name="ID_ARCHETYPE_FEATURE_CONTROLLED_CHAOS" type="Archetype Feature" level="14" />
-      <grant name="ID_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT" type="Archetype Feature" level="18" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE" type="Archetype Feature" level="1" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_TIDES_OF_CHAOS" type="Archetype Feature" level="1" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_BEND_LUCK" type="Archetype Feature" level="6" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_CONTROLLED_CHAOS" type="Archetype Feature" level="14" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT" type="Archetype Feature" level="18" />
     </rules>
   </element>
 
 
 
   <!-- Draconic Bloodline Features -->
-  <element name="Dragon Ancestor" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR">
+  <element name="Dragon Ancestor" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR">
     <supports>Draconic Bloodline</supports>
     <requirements />
     <description>
@@ -399,7 +415,7 @@
       <select type="Archetype Feature" name="Dragon Ancestor (Draconic Bloodline)" supports="Dragon Ancestor" />
     </rules>
   </element>
-  <element name="Draconic Resilience" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE">
+  <element name="Draconic Resilience" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE">
     <supports>Draconic Bloodline</supports>
     <requirements />
     <description>
@@ -414,7 +430,7 @@
       <stat name="AC" value="13" bonus="base" equipped="[armor:none]"/>
     </rules>
   </element>
-  <element name="Elemental Affinity" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY">
+  <element name="Elemental Affinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY">
     <supports>Draconic Bloodline</supports>
     <requirements />
     <description>
@@ -425,7 +441,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Dragon Wings" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_WINGS">
+  <element name="Dragon Wings" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_WINGS">
     <supports>Draconic Bloodline</supports>
     <requirements />
     <description>
@@ -439,7 +455,7 @@
       <stat name="speed:fly" value="Speed" />
     </rules>
   </element>
-  <element name="Draconic Presence" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRACONIC_PRESENCE">
+  <element name="Draconic Presence" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_PRESENCE">
     <supports>Draconic Bloodline</supports>
     <requirements />
     <description>
@@ -453,7 +469,7 @@
 
 
   <!-- Wild Magic Features -->
-  <element name="Wild Magic Surge" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE">
+  <element name="Wild Magic Surge" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE">
     <supports>Wild Magic</supports>
     <requirements />
     <description>
@@ -464,7 +480,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Tides of Chaos" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_TIDES_OF_CHAOS">
+  <element name="Tides of Chaos" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TIDES_OF_CHAOS">
     <supports>Wild Magic</supports>
     <requirements />
     <description>
@@ -476,7 +492,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Bend Luck" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_BEND_LUCK">
+  <element name="Bend Luck" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BEND_LUCK">
     <supports>Wild Magic</supports>
     <requirements />
     <description>
@@ -487,7 +503,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Controlled Chaos" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_CONTROLLED_CHAOS">
+  <element name="Controlled Chaos" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CONTROLLED_CHAOS">
     <supports>Wild Magic</supports>
     <requirements />
     <description>
@@ -498,7 +514,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Spell Bombardment" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT">
+  <element name="Spell Bombardment" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT">
     <supports>Wild Magic</supports>
     <requirements />
     <description>
@@ -512,7 +528,7 @@
 
 
   <!-- Metamagic Options -->
-  <element name="Careful Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_CAREFUL_SPELL">
+  <element name="Careful Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -523,7 +539,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Distant Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_DISTANT_SPELL">
+  <element name="Distant Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_DISTANT_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -534,7 +550,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Empowered Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_EMPOWERED_SPELL">
+  <element name="Empowered Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -546,7 +562,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Extended Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_EXTENDED_SPELL">
+  <element name="Extended Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EXTENDED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -557,7 +573,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Heightened Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_HEIGHTENED_SPELL">
+  <element name="Heightened Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -568,7 +584,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Quickend Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_QUICKEND_SPELL">
+  <element name="Quickend Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_QUICKEND_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -579,7 +595,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Subtle Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_SUBTLE_SPELL">
+  <element name="Subtle Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -590,7 +606,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Twinned Spell" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_METAMAGIC_TWINNED_SPELL">
+  <element name="Twinned Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_TWINNED_SPELL">
     <supports>Metamagic</supports>
     <requirements />
     <description>
@@ -603,7 +619,7 @@
   </element>
 
   <!-- Dragon Ancestor Options -->
-  <element name="Black (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BLACK">
+  <element name="Black (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BLACK">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -613,11 +629,11 @@
       <description>You choose the black dragon as your ancestor. The acid damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Black Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Acid" />
+      <stat inline="true" name="Dragon Ancestor" value="Black Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Acid" />
     </rules>
   </element>
-  <element name="Blue (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BLUE">
+  <element name="Blue (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BLUE">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -627,11 +643,11 @@
       <description>You choose the blue dragon as your ancestor. The lightning damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Blue Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Lightning" />
+      <stat inline="true" name="Dragon Ancestor" value="Blue Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Lightning" />
     </rules>
   </element>
-  <element name="Brass (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BRASS">
+  <element name="Brass (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BRASS">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -641,11 +657,11 @@
       <description>You choose the brass dragon as your ancestor. The fire damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Brass Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Fire" />
+      <stat inline="true" name="Dragon Ancestor" value="Brass Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Fire" />
     </rules>
   </element>
-  <element name="Bronze (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BRONZE">
+  <element name="Bronze (Lightning)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_BRONZE">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -655,11 +671,11 @@
       <description>You choose the bronze dragon as your ancestor. The lightning damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Bronze Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Lightning" />
+      <stat inline="true" name="Dragon Ancestor" value="Bronze Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Lightning" />
     </rules>
   </element>
-  <element name="Copper (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_COPPER">
+  <element name="Copper (Acid)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_COPPER">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -669,11 +685,11 @@
       <description>You choose the copper dragon as your ancestor. The acid damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Copper Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Acid" />
+      <stat inline="true" name="Dragon Ancestor" value="Copper Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Acid" />
     </rules>
   </element>
-  <element name="Gold (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_GOLD">
+  <element name="Gold (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_GOLD">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -683,11 +699,11 @@
       <description>You choose the gold dragon as your ancestor. The fire damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Gold Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Fire" />
+      <stat inline="true" name="Dragon Ancestor" value="Gold Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Fire" />
     </rules>
   </element>
-  <element name="Green (Poison)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_GREEN">
+  <element name="Green (Poison)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_GREEN">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -697,11 +713,11 @@
       <description>You choose the green dragon as your ancestor. The poison damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Green Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Poison" />
+      <stat inline="true" name="Dragon Ancestor" value="Green Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Poison" />
     </rules>
   </element>
-  <element name="Red (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_RED">
+  <element name="Red (Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_RED">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -711,11 +727,11 @@
       <description>You choose the red dragon as your ancestor. The fire damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Red Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Fire" />
+      <stat inline="true" name="Dragon Ancestor" value="Red Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Fire" />
     </rules>
   </element>
-  <element name="Silver (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SILVER">
+  <element name="Silver (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_SILVER">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -725,11 +741,11 @@
       <description>You choose the silver dragon as your ancestor. The cold damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="Silver Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Cold" />
+      <stat inline="true" name="Dragon Ancestor" value="Silver Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Cold" />
     </rules>
   </element>
-  <element name="White (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_WHITE">
+  <element name="White (Cold)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_WHITE">
     <supports>Dragon Ancestor</supports>
     <requirements />
     <description>
@@ -739,8 +755,8 @@
       <description>You choose the white dragon as your ancestor. The cold damage type is used by features you gain later.</description>
     </sheet>
     <rules>
-      <stat name="Dragon Ancestor" value="White Dragon" />
-      <stat name="Dragon Ancestor Damage Type" value="Cold" />
+      <stat inline="true" name="Dragon Ancestor" value="White Dragon" />
+      <stat inline="true" name="Dragon Ancestor Damage Type" value="Cold" />
     </rules>
   </element>
 
