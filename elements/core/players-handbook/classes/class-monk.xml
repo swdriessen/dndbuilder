@@ -267,11 +267,11 @@
       <description>Use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level. (%monk:slowfall%)</description>
     </sheet>
     <rules>
-      <stat name="monk:slowfall" value="Level" />
-      <stat name="monk:slowfall" value="Level" />
-      <stat name="monk:slowfall" value="Level" />
-      <stat name="monk:slowfall" value="Level" />
-      <stat name="monk:slowfall" value="Level" />
+      <stat name="monk:slowfall" value="level:monk" />
+      <stat name="monk:slowfall" value="level:monk" />
+      <stat name="monk:slowfall" value="level:monk" />
+      <stat name="monk:slowfall" value="level:monk" />
+      <stat name="monk:slowfall" value="level:monk" />
     </rules>
   </element>
   <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EXTRA_ATTACK_MONK">

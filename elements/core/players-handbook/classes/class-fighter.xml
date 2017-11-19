@@ -150,7 +150,7 @@
       <p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
     </description>
     <sheet>
-      <description>On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
+      <description>You can use a bonus action to regain hit points equal to 1d10 + %level:fighter%. (1/SR)</description>
     </sheet>
     <rules />
   </element>
