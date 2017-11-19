@@ -151,7 +151,7 @@
     <rules>
       <grant type="Grants" name="ID_INTERNAL_RITUAL_CASTING" />
       <grant type="Proficiency" name="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
-      <stat name="spell:prepare:count:cleric" value="Level" />
+      <stat name="spell:prepare:count:cleric" value="level:cleric" />
       <stat name="spell:prepare:count:cleric" value="Wisdom Modifier" />
       <stat name="spell:attack" value="Proficiency" />
       <stat name="spell:attack" value="Wisdom Modifier" />
@@ -369,11 +369,11 @@
       <description>As an action, you present your holy symbol and evoke healing energy that can restore %preserve life:hp% hit points. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can’t use this feature on an undead or a construct.</description>
     </sheet>
     <rules>
-      <stat name="preserve life:hp" value="Level" />
-      <stat name="preserve life:hp" value="Level" />
-      <stat name="preserve life:hp" value="Level" />
-      <stat name="preserve life:hp" value="Level" />
-      <stat name="preserve life:hp" value="Level" />
+      <stat name="preserve life:hp" value="level:cleric" />
+      <stat name="preserve life:hp" value="level:cleric" />
+      <stat name="preserve life:hp" value="level:cleric" />
+      <stat name="preserve life:hp" value="level:cleric" />
+      <stat name="preserve life:hp" value="level:cleric" />
     </rules>
   </element>
   <element name="Blessed Healer" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_LIFE_BLESSEDHEALER">

@@ -101,6 +101,7 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
       <select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill,Barbarian" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      
       <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_RAGE" level="1" />
       <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" level="1" />
       <grant type="Class Feature" name="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" level="2" />

@@ -144,11 +144,11 @@
       <description>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount (%lay on hands:hp pool%) remaining in your pool. Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it.</description>
     </sheet>
     <rules>
-      <stat name="lay on hands:hp pool" value="Level" />
-      <stat name="lay on hands:hp pool" value="Level" />
-      <stat name="lay on hands:hp pool" value="Level" />
-      <stat name="lay on hands:hp pool" value="Level" />
-      <stat name="lay on hands:hp pool" value="Level" />
+      <stat name="lay on hands:hp pool" value="level:paladin" />
+      <stat name="lay on hands:hp pool" value="level:paladin" />
+      <stat name="lay on hands:hp pool" value="level:paladin" />
+      <stat name="lay on hands:hp pool" value="level:paladin" />
+      <stat name="lay on hands:hp pool" value="level:paladin" />
     </rules>
   </element>
   <element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">

@@ -169,7 +169,7 @@
       <grant type="Grants" name="ID_INTERNAL_RITUAL_CASTING" />
       <grant type="Proficiency" name="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
 
-      <stat name="spell:prepare:count:wizard" value="Level" />
+      <stat name="spell:prepare:count:wizard" value="level:wizard" />
       <stat name="spell:prepare:count:wizard" value="Intelligence Modifier" />
 
 

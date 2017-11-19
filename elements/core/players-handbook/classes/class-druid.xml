@@ -144,7 +144,7 @@
     <rules>    
       <grant type="Grants" name="ID_INTERNAL_RITUAL_CASTING" />
 
-      <stat name="spell:prepare:count:druid" value="Level" />
+      <stat name="spell:prepare:count:druid" value="level:druid" />
       <stat name="spell:prepare:count:druid" value="Wisdom Modifier" />
     
       <stat name="spell:attack" value="+Proficiency" />

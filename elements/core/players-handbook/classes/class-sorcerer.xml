@@ -253,7 +253,7 @@
       <description>You have %sorcery-points% Sorcery Points.</description>
     </sheet>
     <rules>
-      <stat name="sorcery-points" value="Level" />
+      <stat name="sorcery-points" value="level:sorcerer" />
     </rules>
   </element>
   <element name="Metamagic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC">
@@ -426,8 +426,11 @@
       <description>Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier.</description>
     </sheet>
     <rules>
-      <stat name="HP" value="Level" />
-      <stat name="AC" value="13" bonus="base" equipped="[armor:none]"/>
+      <stat name="HP" value="level:sorcerer" />
+      <!-- re-check ac stackings with natural armor -->
+      <!-- reference lizardfolk settle on 1 way, prefer not override base so i can see +3 comes from X -->
+      <stat name="ac:natural" value="3" bonus="natural" equipped="[armor:none]"/>
+      <stat name="AC" value="ac:natural" bonus="natural" equipped="[armor:none]"/>
     </rules>
   </element>
   <element name="Elemental Affinity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY">

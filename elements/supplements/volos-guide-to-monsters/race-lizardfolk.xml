@@ -182,12 +182,17 @@
       <description>You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + %Dexterity Modifier%.</description>
     </sheet>
     <rules>
-      <stat name="natural armor:ac" value="+3" bonus="natural armor" equipped="[armor:none]" />
-      <stat name="AC" value="natural armor:ac" equipped="[armor:none]" />
+    
+      <stat name="ac:natural" value="3" bonus="natural" equipped="[armor:none]"/>
+      <stat name="AC" value="ac:natural" bonus="natural" equipped="[armor:none]"/>
+
+<!-- 
+      <stat name="natural:ac" value="3" bonus="natural" equipped="[armor:none]" />
+      <stat name="AC" value="natural:ac" equipped="[armor:none]" /> -->
 
       
-      <stat name="natural armor:ac:alt" value="+3" bonus="natural armor" equipped="[armor:any]" />
-      <stat name="AC" value="natural armor:ac:alt" bonus="Armor" equipped="[armor:any]" />
+      <stat name="ac:natural:alt" value="3" bonus="natural" equipped="[armor:any]" />
+      <stat name="AC" value="ac:natural:alt" bonus="Armor" equipped="[armor:any]" />
 
     </rules>
   </element>

@@ -803,11 +803,11 @@
       <p>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</p>
     </description>
     <sheet>
-      <description>When you reduce a hostile creature to 0 hit points, you gain %dark-ones-blessing:temp hp% temporary hit points.</description>
+      <description>When you reduce a hostile creature to 0 hit points, you gain %dark ones blessing:temp hp% temporary hit points.</description>
     </sheet>
     <rules>
-      <stat name="dark-ones-blessing:temp hp" value="Charisma Modifier" />
-      <stat name="dark-ones-blessing:temp hp" value="Level" />
+      <stat name="dark ones blessing:temp hp" value="Charisma Modifier" />
+      <stat name="dark ones blessing:temp hp" value="level:warlock" />
     </rules>
   </element>
   <element name="Dark One’s Own Luck" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FIEND_DARKONESOWNLUCK">

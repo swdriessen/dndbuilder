@@ -192,8 +192,8 @@
       <description>You have %ki:points% Ki Points and your Ki DC is %ki:dc%</description>
     </sheet>
     <rules>
-      <stat name="ki:points" value="Level" />
-      <stat name="ki:dc" value="+8" />
+      <stat name="ki:points" value="level:monk" />
+      <stat name="ki:dc" value="8" />
       <stat name="ki:dc" value="Proficiency" />
       <stat name="ki:dc" value="Wisdom Modifier" />
     </rules>
@@ -238,7 +238,7 @@
     </sheet>
     <rules>
       <stat name="monk:deflect missiles bonus" value="Dexterity Modifier" />
-      <stat name="monk:deflect missiles bonus" value="Level" />
+      <stat name="monk:deflect missiles bonus" value="level:monk" />
     </rules>
   </element>
   <element name="Ability Score Improvement (Monk)" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK">
@@ -415,12 +415,12 @@
       <p>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</p>
     </description>
     <sheet>
-      <description>As an action, you can regain %monk:Wholeness of Body% hit points. (1/long rest)</description>
+      <description>As an action, you can regain %monk:wholeness of body% hit points. (1/long rest)</description>
     </sheet>
     <rules>
-      <stat name="monk:Wholeness of Body" value="Level" />
-      <stat name="monk:Wholeness of Body" value="Level" />
-      <stat name="monk:Wholeness of Body" value="Level" />
+      <stat name="monk:wholeness of body" value="level:monk" />
+      <stat name="monk:wholeness of body" value="level:monk" />
+      <stat name="monk:wholeness of body" value="level:monk" />
     </rules>
   </element>
   <element name="Tranquility" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_TRANQUILITY">
@@ -442,7 +442,7 @@
       <p class="indent">You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</p>
     </description>
     <sheet>
-      <description>When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.</description>
+      <description>When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for %level:monk% days. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.</description>
     </sheet>
   </element>
 
