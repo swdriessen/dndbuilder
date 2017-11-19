@@ -90,7 +90,7 @@
       <set name="spellcastingAbility">Charisma</set>
     </setters>
     <rules>
-      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D8" />
+      <!-- <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D8" /> -->
       <!-- todo: create a single bard proficiencies grant -->
       <!-- todo: create a single bard multiclass proficiencies grant -->
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>

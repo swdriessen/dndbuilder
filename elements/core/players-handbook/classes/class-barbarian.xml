@@ -91,7 +91,7 @@
       <set name="hd">d12</set>
     </setters>
     <rules>
-      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D12" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+      <!-- <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D12" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" /> -->
       <!-- create a single Grants element to award these barbarian mainclass proficiencies? -->
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_BARBARIAN" />

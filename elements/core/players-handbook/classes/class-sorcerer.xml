@@ -72,7 +72,7 @@
       <set name="spellcastingAbility">Charisma</set>
     </setters>
     <rules>
-      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D6" />
+      <!-- <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D6" /> -->
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_WOTC_PHB_MULTICLASS_SORCERER"/>

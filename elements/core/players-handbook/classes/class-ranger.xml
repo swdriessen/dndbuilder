@@ -96,7 +96,7 @@
       <set name="spellcastingAbility">Wisdom</set>
     </setters>
     <rules>
-      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" />
+      <!-- <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" /> -->
 
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER" />
