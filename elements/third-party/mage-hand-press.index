@@ -4,11 +4,13 @@
 		<name>Mage Hand Press</name>
 		<description>The 5e homebrew content from Mage Hand Press Website.</description>
 		<author url="http://www.magehandpress.com">Mage Hand Press</author>
-		<update version="0.0.2" revised="2017/06/07">
+		<update version="0.0.3" revised="2017/06/07">
 			<file name="mage-hand-press.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/mage-hand-press.index" />
 		</update>
 	</info>
 	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/mage-hand-press/source.xml" />
+
 		<!-- classes -->
 		<file name="archetype-immortalflame.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/mage-hand-press/classes/archetype-immortalflame.xml" />
 	</files>
