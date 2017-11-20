@@ -64,18 +64,18 @@
 
       <h3>FEATURES</h3>
       <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EXPERTISE"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_SNEAKATTACK"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_THIEVES_CANT"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_CUNNINGACTION"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUISHARCHETYPE"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_ROGUE"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_UNCANNY_DODGE"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_EVASION"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_RELIABLETALENT"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_BLINDSENSE"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_SLIPPERYMIND"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_ELUSIVE"/>
-      <div element="ID_WOTC_PHB_CLASS_FEATURE_STROKEOFLUCK"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT_ROGUE"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EVASION"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_BLINDSENSE"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ELUSIVE"/>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK"/>
     </description>
     <sheet display="false">
       <description>A scoundrel who uses stealth and trickery to overcome obstacles and enemies.</description>
