@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Unearthed Arcana: Eladrin and Gith</name>
+        <description></description>
+        <author url="http://dnd.wizards.com/articles/unearthed-arcana/race-options-eladrin-and-gith">Wizards of the Coast</author>
+        <update version="0.1" revised="2017/09/11">
+            <file name="20170911.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20170911.xml" />
+        </update>
+    </info>
+
+    <!-- Eladrin -->
+    <element name="Eladrin" type="Sub Race" source="Unearthed Arcana" id="ID_WOTC_UA_SUBRACE_ELADRIN">
+        <supports>Elf</supports>
+        <description>
+            <p>As creatures of the Feywild, eladrin can be wildly unpredictable. They tend toward an alignment of chaotic neutral, mixing a love of freedom with benign self-interest. Eladrin that embrace good or evil take their beliefs to an extreme, serving as great champions of justice or terrifying villains.</p>
+
+            <h4>THE FOUR SEASONS</h4>
+            <p>Each eladrin has four distinct personality states—one for each season—that they shift between when they experience powerful emotion.</p>
+            <p class="indent"><b>Autumn</b> is the season of peace and goodwill, when summer’s harvest is shared with all. Eladrin adopt this personality when overcome with contentment.</p>
+            <p class="indent"><b>Winter</b> is the season of dolor, when the vibrant energy of the world slumbers. It is a time of sadness and regret, entered when eladrin are overcome with sorrow.</p>
+            <p class="indent"><b>Spring</b> is the season of cheerfulness and unfettered celebration, marked by merriment as winter’s sorrow passes. Eladrin enter this state when overcome with joy.</p>
+            <p class="indent"><b>Summer</b> is the season of boldness and aggression, a time of unfettered energy. Eladrin enter this state when overcome with fury.</p>
+            <p class="indent">You may create personality traits and flaws for each of your seasons, reflecting an eladrin’s tempestuous personality. You can roll on the following tables or read them for inspiration. To add some chaos to your character, you may roll on these tables each time you change seasons.</p>
+
+
+            <h4>ELADRIN TRAITS</h4>
+            <p>The chaotic eladrin are creatures of powerful emotions, infused with a power that can align with the magic of the seasons.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Intelligence or Charisma score increases by 1 (your choice).</p>
+            <p class="indent"><b><i>Fey Step. </i></b>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can’t do so again until you finish a short or long rest.</p>
+            <p class="indent"><b><i>Shifting Seasons. </i></b>At the end of each short or long rest, you can align yourself with the magic of one season, regardless of the season that is dominating your personality. Doing so allows you to cast a certain cantrip, as shown in the Shifting Seasons Cantrips table. When you align yourself with a season’s magic, you lose the cantrip associated with the previous season and gain the cantrip associated with the new season.</p>
+            <p class="indent">Your spellcasting ability for these cantrips is Intelligence or Charisma, whichever is higher.</p>
+            <h5>Shifting Seasons Cantrips</h5>
+            <table>
+                <thead>
+                    <tr><td>Season</td><td>Cantrip</td></tr>
+                </thead>
+                <tr><td>Autumn</td><td>Friends</td></tr>
+                <tr><td>Winter</td><td>Chill touch</td></tr>
+                <tr><td>Spring</td><td>Minor illusion</td></tr>
+                <tr><td>Summer</td><td>Fire bolt</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>As creatures of the Feywild, eladrin can be wildly unpredictable.</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Ability Score Increase (Eladrin)" supports="UA Eladrin ASI" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_FEY_STEP" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_SHIFTING_SEASONS" />
+        </rules>
+    </element>
+    
+    <element name="Fey Step" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_FEY_STEP">
+        <description>
+            <p>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. (1/SR)</description>
+        </sheet>
+        <rules />
+    </element>
+
+    <element name="Shifting Seasons" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_SHIFTING_SEASONS">
+        <description>
+            <p>At the end of each short or long rest, you can align yourself with the magic of one season, regardless of the season that is dominating your personality. Doing so allows you to cast a certain cantrip, as shown in the Shifting Seasons Cantrips table. When you align yourself with a season’s magic, you lose the cantrip associated with the previous season and gain the cantrip associated with the new season.</p>
+            <p class="indent">Your spellcasting ability for these cantrips is Intelligence or Charisma, whichever is higher.</p>
+            <h5>Shifting Seasons Cantrips</h5>
+            <table>
+                <thead>
+                    <tr><td>Season</td><td>Cantrip</td></tr>
+                </thead>
+                <tr><td>Autumn</td><td>Friends</td></tr>
+                <tr><td>Winter</td><td>Chill touch</td></tr>
+                <tr><td>Spring</td><td>Minor illusion</td></tr>
+                <tr><td>Summer</td><td>Fire bolt</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>At the end of each short or long rest, you can align yourself with the magic of one season, regardless of the season that is dominating your personality.</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Shifting Seasons" supports="UA Shifting Seasons" />
+        </rules>
+    </element>
+
+    <element name="Autumn" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_SHIFTING_SEASONS_AUTUMN">
+        <supports>UA Shifting Seasons</supports>
+        <description>
+            <p>Autumn is the season of peace and goodwill, when summer’s harvest is shared with all. Eladrin adopt this personality when overcome with contentment.</p>
+            <!-- <div element="ID_PHB_SPELL_FRIENDS" /> -->
+        </description>
+        <sheet>
+            <description>Autumn is the season of peace and goodwill, when summer’s harvest is shared with all. (Contentment)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FRIENDS" />
+            <select type="List" name="Autumn Personality Trait" optional="true">
+                <item id="1">If someone is in need, you never withhold aid.</item>
+                <item id="2">You share what you have, with little regard to your own needs.</item>
+                <item id="3">There are no simple meals, only lavish feasts.</item>
+                <item id="4">You stock up on fine food and drink. You hate going without such comforts.</item>
+            </select>
+            <select type="List" name="Autumn Flaw" optional="true">
+                <item id="1">You trust others without thought.</item>
+                <item id="2">You give to the point that you leave yourself without necessary supplies.</item>
+                <item id="3">Everyone is your friend, or a potential friend.</item>
+                <item id="4">You spend excessively on creature comforts.</item>
+            </select>
+        </rules>
+    </element>
+
+    <element name="Winter" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_SHIFTING_SEASONS_WINTER">
+        <supports>UA Shifting Seasons</supports>
+        <description>
+            <p>Winter is the season of dolor, when the vibrant energy of the world slumbers. It is a time of sadness and regret, entered when eladrin are overcome with sorrow.</p>
+            <!-- <div element="ID_PHB_SPELL_CHILL_TOUCH" /> -->
+        </description>
+        <sheet>
+            <description>Winter is the season of dolor, when the vibrant energy of the world slumbers. (Sorrow)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" />
+            <select type="List" name="Winter Personality Trait" optional="true">
+                <item id="1">The worst case is the most likely case.</item>
+                <item id="2">You preserve what you have. Better to hunger today and have food for tomorrow.</item>
+                <item id="3">The world is full of dangers. You never let your guard drop.</item>
+                <item id="4">A penny spent is a penny lost forever.</item>
+            </select>
+            <select type="List" name="Winter Flaw" optional="true">
+                <item id="1">Everything dies eventually. Why bother building anything that is meant to last?</item>
+                <item id="2">Nothing matters to you, and you allow others to guide your actions.</item>
+                <item id="3">Your needs come first. In winter, all must watch out for themselves.</item>
+                <item id="4">You speak only to point out the flaws in others’ plans.</item>
+            </select>
+        </rules>
+    </element>
+
+    <element name="Spring" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_SHIFTING_SEASONS_SPRING">
+        <supports>UA Shifting Seasons</supports>
+        <description>
+            <p>Spring is the season of cheerfulness and unfettered celebration, marked by merriment as winter’s sorrow passes. Eladrin enter this state when overcome with joy.</p>
+            <!-- <div element="ID_PHB_SPELL_MINOR_ILLUSION" /> -->
+        </description>
+        <sheet>
+            <description>Spring is the season of cheerfulness and unfettered celebration, marked by merriment as winter’s sorrow passes. (Joy)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+            <select type="List" name="Spring Personality Trait" optional="true">
+                <item id="1">Every day is the greatest day of your life.</item>
+                <item id="2">You do everything with enthusiasm, even the most mundane chores.</item>
+                <item id="3">You love music and song. You supply a tune yourself if no one else can.</item>
+                <item id="4">You can’t stay still.</item>
+            </select>
+            <select type="List" name="Spring Flaw" optional="true">
+                <item id="1">You overdrink.</item>
+                <item id="2">Toil is for drudges. Yours should be a life of leisure.</item>
+                <item id="3">A pretty face infatuates you in an instant, but your fancy passes with equal speed.</item>
+                <item id="4">Anything worth doing is worth overdoing.</item>
+            </select>
+        </rules>
+    </element>
+
+    <element name="Summer" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_SHIFTING_SEASONS_SUMMER">
+        <supports>UA Shifting Seasons</supports>
+        <description>
+            <p>Summer is the season of boldness and aggression, a time of unfettered energy. Eladrin enter this state when overcome with fury.</p>
+            <!-- <div element="ID_PHB_SPELL_FIRE_BOLT" /> -->
+        </description>
+        <sheet>
+            <description>Summer is the season of boldness and aggression, a time of unfettered energy. (Fury)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+            <select type="List" name="Summer Personality Trait" optional="true">
+                <item id="1">You believe that direct confrontation is the best way to solve problems.</item>
+                <item id="2">Overwhelming force can solve almost anything. The tougher the problem, the more force you apply.</item>
+                <item id="3">You stand tall and strong so that others can lean on you.</item>
+                <item id="4">You maintain an intimidating front. Better to prevent fights with a show of force than be led to harm others.</item>
+            </select>
+            <select type="List" name="Summer Flaw" optional="true">
+                <item id="1">You are stubborn. Let others change.</item>
+                <item id="2">The best option is one that is swift, unexpected, and overwhelming.</item>
+                <item id="3">Punch first. Talk later.</item>
+                <item id="4">Your fury can carry you through anything.</item>
+            </select>
+        </rules>
+    </element>
+
+
+          
+
+
+
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_INTELLIGENCE">
+    <supports>UA Eladrin ASI</supports>
+    <requirements />
+    <description>
+      <p>Your Intelligence increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="Intelligence" value="+1"/>
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_ELADRIN_CHARISMA">
+    <supports>UA Eladrin ASI</supports>
+    <requirements />
+    <description>
+      <p>Your Charisma increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="Charisma" value="+1"/>
+    </rules>
+  </element>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Gith -->
+    <element name="Gith" type="Race" source="Unearthed Arcana" id="ID_WOTC_UA_RACE_GITH">
+        <description>
+            <!-- short racial description from the monster manual -->
+            <p>The warlike githyanki and the contemplative githzerai are a sundered people- two cultures that utterly despise one another. Before there were githyanki or githzerai, these creatures were a single race enslaved by the mind flayers. Although they attempted to overthrow their masters many times, their rebellions were repeatedly crushed until a great leader named Gith arose.</p>
+            <p class="indent">After much bloodshed, Gith and her followers threw off the yoke of their illithid masters, but another leader named Zerthimon emerged in the aftermath of battle. Zerthimon challenged Gith's motives, claiming that her strict martial leadership and desire for vengeance amounted to little more than another form of slavery for her people. A rift erupted between followers of each leader, and they eventually became the two races whose enmity endures to this day.</p>
+            <p class="indent">Whether these tall, gaunt creatures were peaceful or savage, cultured or primitive before the mind flayers enslaved and changed them, none can say. Not even the original name of their race remains from that distant time.</p>
+
+            <p>Gith feature a number of common traits.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Intelligence score increases by 1.</p>
+            <p class="indent"><b><i>Age. </i></b>Gith reach adulthood in their late teens and live for about a century.</p>
+            <p class="indent"><b><i>Size. </i></b>Gith are taller and leaner than humans, with most a slender 6 feet in height.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Gith.</p>
+            <p class="indent"><b><i>Subrace. </i></b>There are two kinds of gith, githyanki and githzerai. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false">
+            <description>The avariel are winged elves.</description>
+        </sheet>
+        <rules>
+            <stat name="Intelligence" value="1" />
+            <stat name="Speed" value="30" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_WOTC_UA_LANGUAGE_GITH" />
+            <select type="Sub Race" name="Gith Subrace" supports="Gith" />
+        </rules>
+    </element>
+
+  <element name="Gith" type="Language" source="Unearthed Arcana" id="ID_WOTC_UA_LANGUAGE_GITH">
+    <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Monster, Exotic</supports>
+    <requirements />
+    <description>
+      <p>Typically spoken by elementals.</p>
+    </description>
+    <setters>
+      <set name="Speakers">Githyanki and githzerai</set>
+      <set name="Script"></set>
+      <set name="Exotic">true</set>
+    </setters>
+    <rules />
+  </element>
+
+
+    <!-- Githyanki -->
+
+
+    <element name="Githyanki" type="Sub Race" source="Unearthed Arcana" id="ID_WOTC_UA_SUBRACE_GITHYANKI">
+        <supports>Gith</supports>
+        <description>
+            <p>The brutal githyanki are trained from birth as warriors.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength score increases by 2.</p>
+            <p class="indent"><b><i>Alignment. </i></b>Githyanki tend toward lawful evil. They are self-centered, violent, and arrogant, yet they remain the faithful servants of their lichqueen, Vlaakith. Renegade githyanki tend toward chaos as they have forsaken her will.</p>
+            <p class="indent"><b><i>Decadent Mastery. </i></b>You learn one language of your choice, and you are proficient with one skill or tool of your choice. In the timeless city of Tu’narath, githyanki have bountiful time to master odd bits of knowledge.</p>
+            <p class="indent"><b><i>Martial Prodigy. </i></b>You are proficient with light and medium armor. Your people are ever ready for war.</p>
+            <p class="indent"><b><i>Githyanki Psionics. </i></b>You know the mage hand cantrip. When you reach 3rd level, you can cast jump once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the misty step spell once with this trait, and you regain the ability to do so when you finish a long rest.</p>
+            <p class="indent">Intelligence is your spellcasting ability for these spells. You can cast all of them without components.</p>
+        </description>
+        <sheet display="false">
+            <description>The brutal githyanki are trained from birth as warriors.</description>
+        </sheet>
+        <rules>
+            <stat name="Strength" value="2" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_GITHYANKI_DECADENT_MASTERY" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_GITHYANKI_MARTIAL_PRODIGY" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_GITHYANKI_GITHYANKI_PSIONICS" />
+        </rules>
+    </element>
+
+    <element name="Decadent Mastery" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_GITHYANKI_DECADENT_MASTERY">
+        <description>
+            <p>You learn one language of your choice, and you are proficient with one skill or tool of your choice. In the timeless city of Tu’narath, githyanki have bountiful time to master odd bits of knowledge.</p>
+        </description>
+        <sheet display="false">
+            <description>You learn one language of your choice, and you are proficient with one skill or tool of your choice.</description>
+        </sheet>
+        <rules>
+            <select type="Language" name="Decadent Mastery" />
+            <select type="Proficiency" name="Decadent Mastery" supports="Skill||Tool"/>
+        </rules>
+    </element>
+
+    <element name="Martial Prodigy" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_GITHYANKI_MARTIAL_PRODIGY">
+        <description>
+            <p>You are proficient with light and medium armor. Your people are ever ready for war.</p>
+        </description>
+        <sheet display="false">
+            <description>You are proficient with light and medium armor. Your people are ever ready for war.</description>
+        </sheet>
+        <rules>
+              <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+              <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        </rules>
+    </element>
+
+    <element name="Githyanki Psionics" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_GITHYANKI_GITHYANKI_PSIONICS">
+        <description>
+            <p>You know the mage hand cantrip. When you reach 3rd level, you can cast jump once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the misty step spell once with this trait, and you regain the ability to do so when you finish a long rest.</p>
+            <p class="indent">Intelligence is your spellcasting ability for these spells. You can cast all of them without components.</p>
+        </description>
+        <sheet>
+            <description>You know the mage hand cantrip.</description>
+            <description level="3">You know the mage hand cantrip. When you reach 3rd level, you can cast jump once with this trait, and you regain the ability to do so when you finish a long rest.</description>
+            <description level="5">You know the mage hand cantrip. When you reach 3rd level, you can cast jump once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the misty step spell once with this trait, and you regain the ability to do so when you finish a long rest.</description>
+        </sheet>
+        <rules>
+              <grant type="Spell" name="ID_PHB_SPELL_MAGE_HAND" />
+              <grant type="Spell" name="ID_PHB_SPELL_JUMP" level="3"/>
+              <grant type="Spell" name="ID_PHB_SPELL_MISTY_STEP" level="5"/>
+        </rules>
+    </element>
+
+
+
+
+    <!-- Githzerai -->
+
+    <element name="Githzerai" type="Sub Race" source="Unearthed Arcana" id="ID_WOTC_UA_SUBRACE_Githzerai">
+        <supports>Gith</supports>
+        <description>
+            <p>In their fortresses within Limbo, the githzerai hone their minds to a razor’s edge.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Wisdom score increases by 2.</p>
+            <p class="indent"><b><i>Alignment. </i></b>Githzerai tend toward lawful neutral. Their rigorous training in psychic abilities requires an implacable mental discipline.</p>
+            <p class="indent"><b><i>Monastic Training. </i></b>You gain a +1 bonus to AC while you aren’t wearing medium or heavy armor and aren’t using a shield. All githzerai receive basic training from monks, and the monks among them are unmatched in their defensive abilities.</p>
+            <p class="indent"><b><i>Githzerai Psionics. </i></b>You know the mage hand cantrip. When you reach 3rd level, you can cast shield once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the detect thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.</p>
+            <p class="indent">Wisdom is your spellcasting ability for these spells. You can cast all of them without components.</p>
+        </description>
+        <sheet display="false">
+            <description>In their fortresses within Limbo, the githzerai hone their minds to a razor’s edge.</description>
+        </sheet>
+        <rules>
+            <stat name="Wisdom" value="2" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_GITHZERAI_MONASTIC_TRAINING" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_GITHZERAI_GITHZERAI_PSIONICS" />
+        </rules>
+    </element>
+
+    <element name="Monastic Training" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_GITHZERAI_MONASTIC_TRAINING">
+        <description>
+            <p>You gain a +1 bonus to AC while you aren’t wearing medium or heavy armor and aren’t using a shield. All githzerai receive basic training from monks, and the monks among them are unmatched in their defensive abilities.</p>
+        </description>
+        <sheet>
+            <description>You gain a +1 bonus to AC while you aren’t wearing medium or heavy armor and aren’t using a shield.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:monastic training" value="1" equipped="(![armor:medium]||![armor:heavy]),[shield:none]" />
+            <stat name="AC" value="ac:monastic training" equipped="(![armor:medium]||![armor:heavy]),[shield:none]" />
+        </rules>
+    </element>
+
+    <element name="Githzerai Psionics" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_GITHZERAI_GITHZERAI_PSIONICS">
+        <description>
+            <p>You know the mage hand cantrip. When you reach 3rd level, you can cast shield once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the detect thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.</p>
+            <p class="indent">Wisdom is your spellcasting ability for these spells. You can cast all of them without components.</p>
+        </description>
+        <sheet>
+            <description>You know the mage hand cantrip.</description>
+            <description level="3">You know the mage hand cantrip. When you reach 3rd level, you can cast shield once with this trait, and you regain the ability to do so when you finish a long rest.</description>
+            <description level="5">You know the mage hand cantrip. When you reach 3rd level, you can cast shield once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the detect thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.</description>
+        </sheet>
+        <rules>
+              <grant type="Spell" name="ID_PHB_SPELL_MAGE_HAND" />
+              <grant type="Spell" name="ID_PHB_SPELL_SHIELD" level="3"/>
+              <grant type="Spell" name="ID_PHB_SPELL_DETECT_THOUGHTS" level="5"/>
+        </rules>
+    </element>
+
+</elements>
