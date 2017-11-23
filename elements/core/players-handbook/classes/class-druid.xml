@@ -214,16 +214,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_DRUID" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_DRUID" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_DRUID" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_DRUID" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_DRUID" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_DRUID" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <select type="Class Feature" name="Improvement Option (Druid 4)" supports="Improvement Option,Druid,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_DRUID" level="4" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Druid 8)" supports="Improvement Option,Druid,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_DRUID" level="8" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Druid 12)" supports="Improvement Option,Druid,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_DRUID" level="12" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Druid 16)" supports="Improvement Option,Druid,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_DRUID" level="16" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Druid 19)" supports="Improvement Option,Druid,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_DRUID" level="19" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_DRUID" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
+      <select type="Class Feature" name="Improvement Option (Druid 4)" supports="Improvement Option,Druid,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_DRUID" level="4" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Druid 8)" supports="Improvement Option,Druid,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_DRUID" level="8" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Druid 12)" supports="Improvement Option,Druid,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_DRUID" level="12" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Druid 16)" supports="Improvement Option,Druid,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_DRUID" level="16" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Druid 19)" supports="Improvement Option,Druid,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_DRUID" level="19" requirements=""/>
     </rules>
   </element>
   <element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_TIMELESS_BODY">

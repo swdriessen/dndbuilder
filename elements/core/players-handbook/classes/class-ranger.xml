@@ -440,16 +440,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_RANGER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_RANGER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_RANGER" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_RANGER" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_RANGER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_RANGER" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <select type="Class Feature" name="Improvement Option (Ranger 4)" supports="Improvement Option,Ranger,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_RANGER" level="4" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Ranger 8)" supports="Improvement Option,Ranger,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_RANGER" level="8" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Ranger 12)" supports="Improvement Option,Ranger,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_RANGER" level="12" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Ranger 16)" supports="Improvement Option,Ranger,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_RANGER" level="16" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
-      <select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_RANGER" level="19" requirements="ID_INTERNAL_OPTION_ALLOW_FEATS"/>
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_RANGER" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
+      <select type="Class Feature" name="Improvement Option (Ranger 4)" supports="Improvement Option,Ranger,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_RANGER" level="4" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Ranger 8)" supports="Improvement Option,Ranger,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_RANGER" level="8" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Ranger 12)" supports="Improvement Option,Ranger,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_RANGER" level="12" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Ranger 16)" supports="Improvement Option,Ranger,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_RANGER" level="16" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_RANGER" level="19" requirements=""/>
     </rules>
   </element>
   <element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_EXTRA_ATTACK">
