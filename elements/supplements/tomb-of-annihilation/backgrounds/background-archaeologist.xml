@@ -4,7 +4,7 @@
 		<name>Archaeologist</name>
 		<description>Archaeologist Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/tomb-annihilation">Wizards of the Coast</author>
-		<update version="0.0.1" revised="2017/06/07">
+		<update version="0.0.2" revised="2017/06/07">
 			<file name="background-archaeologist.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/tomb-of-annihilation/backgrounds/background-archaeologist.xml" />
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 				<span class="emphasis">Skill Proficiencies:</span>History, Survival<br/>
 				<span class="emphasis">Tool Proficiencies:</span>Cartographer's tools or navigator's tools<br/>
 				<span class="emphasis">Languages:</span>One of your choice<br/>
-				<span class="emphasis">Equipment</span>A wooden case containing a map to a ruin or dungeon, a bullseye lantern, a miner's pick, a set of traveler's clothes, a shovel, a two-person tent, a trinket recovered from a dig site, and a pouch containing 25 gp<br/>
+				<span class="emphasis">Equipment:</span>A wooden case containing a map to a ruin or dungeon, a bullseye lantern, a miner's pick, a set of traveler's clothes, a shovel, a two-person tent, a trinket recovered from a dig site, and a pouch containing 25 gp<br/>
 			</p>
 			<h5>DUST DIGGER</h5>
 			<p>Prior to becoming an adventurer, you spent most of your young life crawling around in the dust, pilfering relics of questionable value from crypts and ruins. Though you managed to sell a few of your discoveries and earn enough coin to buy proper adventuring gear, you have held onto an item that has great emotional value to you. Roll on the Signature Item table to see what you have, or choose an item from the table.</p>

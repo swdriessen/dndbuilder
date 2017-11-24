@@ -4,7 +4,7 @@
 		<name>Anthropologist</name>
 		<description>Anthropologist Background</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/tomb-annihilation">Wizards of the Coast</author>
-		<update version="0.0.1" revised="2017/06/07">
+		<update version="0.0.2" revised="2017/06/07">
 			<file name="background-anthropologist.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/tomb-of-annihilation/backgrounds/background-anthropologist.xml" />
 		</update>
 	</info>
@@ -13,9 +13,9 @@
 		<description>
 			<p>You have always been fascinated by other cultures, from the most ancient and primeval lost lands to the most modern civilizations. By studying other cultures' customs, philosophies, laws, rituals, religious beliefs, languages, and art, you have learned how tribes, empires, and all forms of society in between craft their own destinies and doom. This knowledge came to you not only through books and scrolls, but also through firsthand observation- by visiting far-flung settlements and exploring local histories and customs.</p>
 			<p>
-				<b>Skill Proficiencies: </b>Insight, Religion<br/>
-				<b>Languages: </b>Two of your choice<br/>
-				<b>Equipment:</b>A leather-bound diary, a bottle of ink, an ink pen, a set of traveler's clothes, one trinket of special significance, and a pouch containing 10 gp
+				<span class="emphasis">Skill Proficiencies:</span>Insight, Religion<br/>
+				<span class="emphasis">Languages:</span>Two of your choice<br/>
+				<span class="emphasis">Equipment:</span>A leather-bound diary, a bottle of ink, an ink pen, a set of traveler's clothes, one trinket of special significance, and a pouch containing 10 gp
 			</p>
 			<h5>CULTURAL CHAMELEON</h5>
 			<p>Before becoming an adventurer, you spent much of your adult life away from your homeland, living among people different from your kin. You came to understand these foreign cultures and the ways of their people, who eventually treated you as one of their own. One culture had more of an influence on you than any other, shaping your beliefs and customs. Choose a race whose culture you've adopted, or roll on the Adopted Culture table.</p>
