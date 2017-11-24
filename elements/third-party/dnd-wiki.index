@@ -4,11 +4,13 @@
 		<name>D&amp;D Wiki</name>
 		<description>The 5e homebrew content from D&amp;D Wiki Website.</description>
 		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
-		<update version="0.0.2" revised="2017/06/07">
+		<update version="0.0.3" revised="2017/06/07">
 			<file name="dnd-wiki.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/dnd-wiki.index" />
 		</update>
 	</info>
 	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/dnd-wiki/source.xml" />
+
 		<!-- races -->
 		<file name="race-homunculus.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/dnd-wiki/races/race-homunculus.xml" />
 

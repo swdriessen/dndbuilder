@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mage Hand Press</name>
+        <description>The source element for the Mage Hand Press content.</description>
+        <author url="http://mfov.magehandpress.com">Mage Hand Press</author>
+        <update version="0.1" revised="2017/11/15">
+            <file name="source.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/third-party/mage-hand-press/source.xml" />
+        </update>
+    </info>
+    <element name="Mage Hand Press" type="Source" source="Mage Hand Press" id="ID_MHP_SOURCE_MAGEHANDPRESS">
+        <setters>
+            <set name="abbreviation">MHP</set>
+            <set name="url">http://mfov.magehandpress.com</set>
+            <set name="author">Mage Hand Press</set>
+            <set name="authorUrl">http://mfov.magehandpress.com</set>
+            <set name="isPreview">false</set>
+            <set name="isHomebrew">true</set>
+        </setters>
+    </element>
+</elements>
