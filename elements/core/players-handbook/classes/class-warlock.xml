@@ -4,7 +4,7 @@
     <name>Warlock</name>
     <description>The Warlock class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.0.7" revised="2017/01/01">
+    <update version="0.0.8" revised="2017/01/01">
       <file name="class-warlock.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-warlock.xml" />
     </update>
   </info>
@@ -328,7 +328,7 @@
     </rules>
   </element>
   <element name="Book of Ancient Secrets" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BOOK_OF_ANCIENT_SECRETS">
-    <supports>Eldritch Invocation</supports>
+    <supports>Eldritch Invocation, Pact of the Tome</supports>
     <prerequisite>Pact of the Tome feature</prerequisite>
     <requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
     <description>
@@ -344,7 +344,7 @@
     </rules>
   </element>
   <element name="Chains of Carceri" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_CHAINS_OF_CARCERI">
-    <supports>Eldritch Invocation</supports>
+    <supports>Eldritch Invocation, Pact of the Chain</supports>
     <prerequisite>15th level, Pact of the Chain feature</prerequisite>
     <requirements>[level:15],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN</requirements>
     <description>
@@ -398,7 +398,7 @@
   </element>
   <element name="Eldritch Spear" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_Eldritch_Spear">
     <supports>Eldritch Invocation</supports>
-    <prerequisite></prerequisite>
+    <prerequisite>eldritch blast cantrip</prerequisite>
     <requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
     <description>
       <p class="flavor">Prerequisite: eldritch blast cantrip</p>
@@ -444,7 +444,7 @@
     <rules />
   </element>
   <element name="Lifedrinker" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_LIFEDRINKER">
-    <supports>Eldritch Invocation</supports>
+    <supports>Eldritch Invocation, Pact of the Blade</supports>
     <prerequisite>12th level, Pact of the Blade feature</prerequisite>
     <requirements>[level:12],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
     <description>
@@ -612,7 +612,7 @@
     </rules>
   </element>
   <element name="Thirsting Blade" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE">
-    <supports>Eldritch Invocation</supports>
+    <supports>Eldritch Invocation, Pact of the Blade</supports>
     <prerequisite>5th level, Pact of the Blade feature</prerequisite>
     <requirements>[level:5],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
     <description>
@@ -640,7 +640,7 @@
     </rules>
   </element>
   <element name="Voice of the Chain Master" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_VOICE_OF_THE_CHAIN_MASTER">
-    <supports>Eldritch Invocation</supports>
+    <supports>Eldritch Invocation, Pact of the Chain</supports>
     <prerequisite>Pact of the Chain feature</prerequisite>
     <requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN</requirements>
     <description>

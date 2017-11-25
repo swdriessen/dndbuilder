@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Unearthed Arcana: Elf Subraces</name>
+        <description></description>
+        <author url="http://dnd.wizards.com/articles/unearthed-arcana/elf-subraces">Wizards of the Coast</author>
+        <update version="0.1" revised="2017/11/13">
+            <file name="20171113.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20171113.xml" />
+        </update>
+    </info>
+    <!-- Avariel -->
+    <element name="Avariel" type="Sub Race" source="Unearthed Arcana" id="ID_WOTC_UA_SUBRACE_AVARIEL">
+        <supports>Elf</supports>
+        <description>
+            <p>The avariel are winged elves. These rare creatures were more common when the worlds of the multiverse were young, but frequent conflicts with dragons much reduced the winged elves’ number. Still, a few colonies persist here and there in the Material Plane and on the Plane of Air.</p>
+            <p class="indent"><b><i>Flight. </i></b>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor. </p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Auran. </p>
+        </description>
+        <sheet display="false">
+            <description>The avariel are winged elves.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_AVARIEL_FLIGHT" />
+            <grant type="Language" id="ID_MM_LANGUAGE_AURAN" />
+        </rules>
+    </element>
+    <element name="Flight" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_AVARIEL_FLIGHT">
+        <description>
+            <p>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</p>
+        </description>
+        <sheet>
+            <description>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:fly" value="30" bonus="base" equipped="![armor:medium]||![armor:heavy]" />
+        </rules>
+    </element>
+    <!-- Grugach -->
+    <element name="Grugach" type="Sub Race" source="Unearthed Arcana" id="ID_WOTC_UA_SUBRACE_GRUGACH">
+        <supports>Elf</supports>
+        <description>
+            <p>The grugach of the world of Greyhawk shun contact with other folk, preferring the solace of the deepest forests and the companionship of wild animals. Even other elves draw their suspicion.</p>
+            <p class="indent">The grugach tend toward chaos and neutrality. They feel no special duty to anyone beyond their own folk and the forest that is their home. Troubles beyond their borders are best kept there. At the same time, they harbor little ambition beyond a peaceful coexistence with nature.</p>
+            <p class="indent">If anyone is fool enough to disturb a grugach realm, these elves take to arms and fight in earnest. Grugach master the basic weapons needed to hunt and forage in the wood. Every copse of trees becomes a sniper’s nest, and each forest meadow is an ambush point. The grugach set pits filled with stakes, snares that leave an intruder helpless to grugach arrows, and other snares designed to kill rather than capture. The grugach fight to the death to preserve their realms.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength score increases by 1. </p>
+            <p class="indent"><b><i>Grugach Weapon Training. </i></b>You have proficiency with the spear, shortbow, longbow, and net. </p>
+            <p class="indent"><b><i>Cantrip. </i></b>You know one cantrip of your choice from the druid spell list. Wisdom is your spellcasting ability for it. </p>
+            <p class="indent"><b><i>Languages. </i></b>Unlike other elves, you don’t speak, read, or write Common. You instead speak, read, and write Sylvan. </p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="Strength" value="1" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_GRUGACH_GRUGACH_WEAPON_TRAINING" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_GRUGACH_CANTRIP" />
+            <!-- implement rules to ungrant/replace rule from another element not using the requirements attribute -->
+            <!-- <disable type="Language" id="ID_LANGUAGE_COMMON" target="ID_RACE_ELF" /> -->
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+        </rules>
+    </element>
+    <element name="Grugach Weapon Training" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_GRUGACH_GRUGACH_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with the spear, shortbow, longbow, and net.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with the spear, shortbow, longbow, and net.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+        </rules>
+    </element>
+    <element name="Cantrip" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_GRUGACH_CANTRIP">
+        <description>
+            <p>You know one cantrip of your choice from the druid spell list. Wisdom is your spellcasting ability for it.</p>
+        </description>
+        <sheet>
+            <description>You know one cantrip of your choice from the druid spell list. Wisdom is your spellcasting ability for it.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Druid Cantrip (Grugach)" supports="Druid,0" />
+        </rules>
+    </element>
+    <!-- Sea Elf -->
+    <element name="Sea Elf" type="Sub Race" source="Unearthed Arcana" id="ID_WOTC_UA_SUBRACE_SEA_ELF">
+        <supports>Elf</supports>
+        <description>
+            <p>The sea elves fell in love with the wild beauty of the ocean in the earliest days of the multiverse. While other elves traveled from realm to realm, the sea elves navigated the deepest currents and explored the waters across a hundred worlds. Today, they form small, hidden communities in the ocean shallows and the Plane of Water.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 1. </p>
+            <p class="indent"><b><i>Sea Elf Weapon Training. </i></b>You have proficiency with the spear, trident, light crossbow, and net. </p>
+            <p class="indent"><b><i>Child of the Sea. </i></b>You have a swimming speed of 30 feet, and you can breathe air and water. </p>
+            <p class="indent"><b><i>Friend of the Sea. </i></b>Using gestures and sounds, you can communicate simple ideas with Small or smaller beasts that have an inborn swimming speed. </p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Aquan. </p>
+        </description>
+        <sheet display="false">
+            <description>The sea elves fell in love with the wild beauty of the ocean in the earliest days of the multiverse.</description>
+        </sheet>
+        <rules>
+            <stat name="Constitution" value="1" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_SEA_ELF_SEA_ELF_WEAPON_TRAINING" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_SEA_ELF_CHILD_OF_THE_SEA" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_SEA_ELF_FRIEND_OF_THE_SEA" />
+            <grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+        </rules>
+    </element>
+    <element name="Sea Elf Weapon Training" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_SEA_ELF_SEA_ELF_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with the spear, trident, light crossbow, and net.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with the spear, trident, light crossbow, and net.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+        </rules>
+    </element>
+    <element name="Child of the Sea" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_SEA_ELF_CHILD_OF_THE_SEA">
+        <description>
+            <p>You have a swimming speed of 30 feet, and you can breathe air and water.</p>
+        </description>
+        <sheet>
+            <description>You have a swimming speed of 30 feet, and you can breathe air and water.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Friend of the Sea" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_SEA_ELF_FRIEND_OF_THE_SEA">
+        <description>
+            <p>Using gestures and sounds, you can communicate simple ideas with Small or smaller beasts that have an inborn swimming speed.</p>
+        </description>
+        <sheet>
+            <description>Using gestures and sounds, you can communicate simple ideas with Small or smaller beasts that have an inborn swimming speed.</description>
+        </sheet>
+        <rules />
+    </element>
+    <!-- Shadar-Kai -->
+    <element name="Shadar-Kai" type="Sub Race" source="Unearthed Arcana" id="ID_WOTC_UA_SUBRACE_SHADAR_KAI">
+        <supports>Elf</supports>
+        <description>
+            <p>Sworn to the Raven Queen’s service, the mysterious shadar-kai venture into the Material Plane from the Shadowfell to advance her will. Once they were elves like the rest of their kin, but now they exist in a strange state between life and death, their skin pale and their bodies marked by piercings and eerie tattoos.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Charisma score increases by 1. </p>
+            <p class="indent"><b><i>Cantrip. </i></b>You know one of the following cantrips of your choice: chill touch, spare the dying, or thaumaturgy. Charisma is your spellcasting ability for it. </p>
+            <p class="indent"><b><i>Blessing of the Raven Queen. </i></b>As a bonus action, you can magically teleport up to 15 feet to an unoccupied space you can see, and you gain resistance to all damage until the start of your next turn. During that time, you appear ghostly and translucent. Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="Charisma" value="1" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_SHADAR_KAI_CANTRIP" />
+            <grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_SHADAR_KAI_BLESSING_OF_THE_RAVEN_QUEEN" />
+        </rules>
+    </element>
+    <element name="Cantrip" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_SHADAR_KAI_CANTRIP">
+        <description>
+            <p>You know one of the following cantrips of your choice: chill touch, spare the dying, or thaumaturgy. Charisma is your spellcasting ability for it.</p>
+        </description>
+        <sheet>
+            <description>You know one of the following cantrips of your choice: chill touch, spare the dying, or thaumaturgy. Charisma is your spellcasting ability for it.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Shadar-Kai)" supports="ID_PHB_SPELL_CHILL_TOUCH|ID_PHB_SPELL_SPARE_THE_DYING|ID_PHB_SPELL_THAUMATURGY" />
+        </rules>
+    </element>
+    <element name="Blessing of the Raven Queen" type="Racial Trait" source="Unearthed Arcana" id="ID_WOTC_UA_RACIAL_TRAIT_SHADAR_KAI_BLESSING_OF_THE_RAVEN_QUEEN">
+        <description>
+            <p>As a bonus action, you can magically teleport up to 15 feet to an unoccupied space you can see, and you gain resistance to all damage until the start of your next turn. During that time, you appear ghostly and translucent. Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can magically teleport up to 15 feet to an unoccupied space you can see, and you gain resistance to all damage until the start of your next turn. During that time, you appear ghostly and translucent. (1/SR).</description>
+        </sheet>
+        <rules />
+    </element>
+</elements>
