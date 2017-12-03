@@ -8,13 +8,12 @@
       <file name="barbarian-zealot.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/barbarian-zealot.xml" />
     </update>
   </info>
-
   <!-- Path of the Zealot -->
   <element name="Path of the Zealot" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_PATH_OF_THE_ZEALOT">
     <supports>Primal Path</supports>
     <description>
       <p>Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots— warriors who channel their rage into powerful displays of divine power.</p>
-        <p class="indent">A variety of gods across the worlds of D&amp;D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.</p>
+      <p class="indent">A variety of gods across the worlds of D&amp;D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.</p>
       <div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DIVINE_FURY" />
       <div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_WARRIOR_OF_THE_GODS"/>
       <div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_FANATICAL_FOCUS" />
@@ -38,21 +37,20 @@
       <description>While raging, the first creature you hit on a turn wit ha weapon attack takes an extra 1d6+%hacky half level% necrotic or radiant damage(choose when taking this feature.)</description>
     </sheet>
     <rules>
-        <stat name="hacky half level" value="0" />
- 
-        <stat name="hacky half level" value="1" level="2" />
-        <stat name="hacky half level" value="1" level="4" />
-        <stat name="hacky half level" value="1" level="6" />
-        <stat name="hacky half level" value="1" level="8" />
-        <stat name="hacky half level" value="1" level="10" />
-        <stat name="hacky half level" value="1" level="12" />
-        <stat name="hacky half level" value="1" level="14" />
-        <stat name="hacky half level" value="1" level="16" />
-        <stat name="hacky half level" value="1" level="18" />
-        <stat name="hacky half level" value="1" level="20" />
-      </rules>
+      <stat name="hacky half level" value="0" />
+      <stat name="hacky half level" value="1" level="2" />
+      <stat name="hacky half level" value="1" level="4" />
+      <stat name="hacky half level" value="1" level="6" />
+      <stat name="hacky half level" value="1" level="8" />
+      <stat name="hacky half level" value="1" level="10" />
+      <stat name="hacky half level" value="1" level="12" />
+      <stat name="hacky half level" value="1" level="14" />
+      <stat name="hacky half level" value="1" level="16" />
+      <stat name="hacky half level" value="1" level="18" />
+      <stat name="hacky half level" value="1" level="20" />
+    </rules>
   </element>
-    <element name="Warrior of the Gods" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_WARRIOR_OF_THE_GODS">
+  <element name="Warrior of the Gods" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_WARRIOR_OF_THE_GODS">
     <description>
       <p>At 3rd level, your soul is marked for endless battle. If a spell, such as raise dead, has the sole effect of restoring you to life (but not uncleath), the caster doesn’t need material components to cast the spell on you.</p>
     </description>
@@ -77,8 +75,7 @@
     <sheet>
       <description>Bonus action: Unleash a battle cry, up to 10 other creatures of your choice within 60ft gain advantage on attack rolls and saving throws until the start of your next turn.(1/long rest)</description>
     </sheet>
-    <rules>
-      </rules>
+    <rules></rules>
   </element>
   <element name="Rage Beyond Death" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_RAGE_BEYOND_DEATH">
     <description>
@@ -90,5 +87,4 @@
     </sheet>
     <rules />
   </element>
-    
 </elements>

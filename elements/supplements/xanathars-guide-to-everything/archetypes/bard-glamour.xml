@@ -8,7 +8,7 @@
       <file name="bard-glamour.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/bard-glamour.xml" />
     </update>
   </info>
-<element name="College of Glamour" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_COLLEGE_OF_GLAMOUR">
+  <element name="College of Glamour" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_COLLEGE_OF_GLAMOUR">
     <supports>Bard College</supports>
     <description>
       <p>The College of Glamour is the home of bards who mastered their craft in the vibrant realm of the Feywild or under the tutelage Of someone who dwelled there. Tutored by satyrs, eladrin, and other fey, these bards learn to use their magic to delight and captivate others.</p>
@@ -26,7 +26,6 @@
       <grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_GLAMOUR_UNBREAKABLE_MAJESTY" level="14" />
     </rules>
   </element>
-
   <element name="Mantle of Inspiration" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_INSPIRATION">
     <description>
       <p>When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.</p>
@@ -34,10 +33,10 @@
       <p class="indent">The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level.</p>
     </description>
     <sheet>
-        <description level="3">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 5 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description> 
-        <description level="5">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 8 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description> 
-        <description level="10">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 11 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description> 
-        <description level="15">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 14 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description> 
+      <description level="3">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 5 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description>
+      <description level="5">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 8 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description>
+      <description level="10">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 11 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description>
+      <description level="15">Bonus action: Expend one use of Bardic Inspiration, and choose up to %Charisma Modifier% creatures within 60ft of you. Each of them gains 14 temporary HP, and can use its reaction to move up to its speed, without provoking oppertunity attacks.</description>
     </sheet>
     <rules />
   </element>
@@ -59,7 +58,7 @@
       <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
     </description>
     <sheet>
-        <description>Bonus action: cast command, without expending a spell slot, as a bonus action for 1 minute, or until your concentration ends. Creatures charmed by you fail their save.(1/long rest)</description>  
+      <description>Bonus action: cast command, without expending a spell slot, as a bonus action for 1 minute, or until your concentration ends. Creatures charmed by you fail their save.(1/long rest)</description>
     </sheet>
     <rules />
   </element>
@@ -74,5 +73,4 @@
     </sheet>
     <rules />
   </element>
-     
 </elements>

@@ -8,7 +8,7 @@
       <file name="fighter-cavalier.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/fighter-cavalier.xml" />
     </update>
   </info>
-<element name="Cavalier" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FIGHTER_CAVALIER">
+  <element name="Cavalier" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FIGHTER_CAVALIER">
     <supports>Martial Archetype</supports>
     <description>
       <p>The archetypal Cavalier excels at mounted combat. Usually born among the nobility and raised at court, a Cavalier is equally at home leading a cavalry charge or exchanging repartee at a state dinner. Cavaliers also learn how to guard those in their charge from harm, often serving as the protectors of their superiors and of the weak. Compelled to right wrongs or earn prestige, many of these fighters leave their lives of comfort to embark on glorious adventure.</p>
@@ -31,62 +31,59 @@
       <grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_CAVALIER_VIGILANT_DEFENDER" level="18"/>
     </rules>
   </element>
-
   <element name="Bonus Proficiency" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_CAVALIER_BONUS_PROFICIENCY">
     <description>
       <p>When you choose this archetype at 3rd level, you gain proficiency in one of the following skills of your choice: Animal Handling, History, Insight, Performance, or Persuasion. Alternatively, you learn one language of your choice.</p>
     </description>
     <sheet display="false" />
-    <rules>    
+    <rules>
       <select type="Archetype Feature" name="Bonus Proficiency(fighter)" supports="ID_WOTC_XGTE_FIGHTER_CAVALIER_PROFICIENCY|ID_WOTC_XGTE_FIGHTER_CAVALIER_LANGUAGE" number="1"/>
     </rules>
   </element>
   <element name="Bonus Proficiency(Proficiency)" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_FIGHTER_CAVALIER_PROFICIENCY">
-        <description>Archetype Proficiency choices</description>
-        <sheet display="false" />
-        <rules>
-            <select type="Proficiency" name="Bonus Proficiency(fighter)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" number="1"/>
-        </rules>
-    </element>
+    <description>Archetype Proficiency choices</description>
+    <sheet display="false" />
+    <rules>
+      <select type="Proficiency" name="Bonus Proficiency(fighter)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" number="1"/>
+    </rules>
+  </element>
   <element name="Bonus Proficiency(Language)" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_FIGHTER_CAVALIER_LANGUAGE">
-        <description>Archetype Language choices</description>
-        <sheet display="false" />
-        <rules>
-            <select type="Language" name="Bonus Language(fighter)" supports="Starting" number="1"/>
-        </rules>
-    </element> 
-    
-    
+    <description>Archetype Language choices</description>
+    <sheet display="false" />
+    <rules>
+      <select type="Language" name="Bonus Language(fighter)" supports="Starting" number="1"/>
+    </rules>
+  </element>
   <element name="Born to the Saddle" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_CAVALIER_BORN_TO_THE_SADDLE">
     <description>
-    	<p>Starting at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated.</p>
-		<p class="indent">Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</p>
+      <p>Starting at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated.</p>
+      <p class="indent">Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</p>
     </description>
     <sheet>
       <description>You have advantage on saving throws made to avoid falling off your mount. If you fall no more than 10ft, you land on your feet. Mounting and dismounting a creature costs you only 5ft of movement.</description>
     </sheet>
-      <rules />
+    <rules />
   </element>
   <element name="Unwavering Mark" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_CAVALIER_UNWAVERING_MARK">
     <description>
       <p>Starting at 3rd level, you can menace your foes, foiling their attacks and punishing them for harming others. When you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are incapacitated or you die, or if someone else marks the creature.</p>
-        <p class="indent">While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn’t target you.</p>
-        <p class="indent">In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attacks weapon deals extra damage to the target equal to half your fighter level. Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
+      <p class="indent">While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn’t target you.</p>
+      <p class="indent">In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attacks weapon deals extra damage to the target equal to half your fighter level. Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
     </description>
     <sheet>
       <description>When you hit a creature with a melee weapon attack, mark it until the end of your next turn. While it is within 5ft of you it has disadvantage on attack rolls that don't target you. If it does deal damage to anyone other than you, make a special melee weapon attack as a bonus action on your next turn. You have advantage on this attack, and if it hits, it deals an extra %hacky half level% damage.(%Strength Modifier%/long rest</description>
     </sheet>
     <rules>
-         <stat name="hacky half level up" value="1" /> 
-        <stat name="hacky half level up" value="1" level="3" />
-        <stat name="hacky half level up" value="1" level="5" />
-        <stat name="hacky half level up" value="1" level="7" />
-        <stat name="hacky half level up" value="1" level="9" />
-        <stat name="hacky half level up" value="1" level="11" />
-        <stat name="hacky half level up" value="1" level="13" />
-        <stat name="hacky half level up" value="1" level="15" />
-        <stat name="hacky half level up" value="1" level="17" />
-        <stat name="hacky half level up" value="1" level="19" />  
+      <stat name="hacky half level up" value="1" />
+      <stat name="hacky half level up" value="1" level="3" />
+      <stat name="hacky half level up" value="1" level="5" />
+      <stat name="hacky half level up" value="1" level="7" />
+      <stat name="hacky half level up" value="1" level="9" />
+      <stat name="hacky half level up" value="1" level="11" />
+      <stat name="hacky half level up" value="1" level="13" />
+      <stat name="hacky half level up" value="1" level="15" />
+      <stat name="hacky half level up" value="1" level="17" />
+      <stat name="hacky half level up" value="1" level="19" />
     </rules>
   </element>
   <element name="Warding Maneuver" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_CAVALIER_WARDING_MANEUVER">
@@ -118,7 +115,7 @@
     <rules>
       <stat name="spell:dc" value="+8" />
       <stat name="spell:dc" value="+Proficiency" />
-      <stat name="spell:dc" value="+Strength Modifier" />  
+      <stat name="spell:dc" value="+Strength Modifier" />
     </rules>
   </element>
   <element name="Vigilant Defender" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_CAVALIER_VIGILANT_DEFENDER">
@@ -130,6 +127,4 @@
     </sheet>
     <rules />
   </element>
-    
-   
 </elements>
