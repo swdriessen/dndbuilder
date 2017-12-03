@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Feats</name>
+        <description>The Feats from Xanathar’s Guide to Everything</description>
+        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
+        <update version="0.0.1" revised="2017/11/19">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/feats.xml" />
+        </update>
+    </info>
+
+    <element name="Bountiful Luck" type="Feat" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_FEAT_BOUNTIFUL_LUCK">
+        <prerequisite>Halfling</prerequisite>
+        <requirements>ID_RACE_HALFLING</requirements>
+        <description>
+            <p><i>Prerequisite: Halfling</i></p>
+            <p>Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You’re not sure how you do it; you just wish it, and it happens. Surely a sign of fortune’s favor!</p>
+            <p class="indent">When an ally you can see within 30 feet of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.</p>
+            <p class="indent">When you use this ability, you can’t use your Lucky racial trait before the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When an ally you can see within 30 feet of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll. When you use this ability, you can’t use your Lucky racial trait before the end of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Dragon Fear" type="Feat" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_FEAT_DRAGON_FEAR">
+        <prerequisite>Dragonborn</prerequisite>
+        <requirements>ID_RACE_DRAGONBORN</requirements>
+        <description>
+            <p><i>Prerequisite: Dragonborn</i></p>
+            <p>When angered, you can radiate menace. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.</li>
+                <li>Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). A target automatically succeeds on the save if it can’t hear or see you. On a failed save, a target becomes frightened of you for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>    
+            <select type="Ability Score Improvement" name="Ability Score Improvement (Dragon Fear)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA" />
+        </rules>
+    </element>
+
+
+    <!-- <element name="xxxxxxxxxxxxxxxxxxxxxx" type="Feat" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_FEAT_xxxxxxxxxxxxxxxxxxxxxx">
+        <prerequisite>xxxxxracexxxxx</prerequisite>
+        <requirements>ID_RACE_xxRACExx</requirements>
+        <description>
+            <p><i>Prerequisite: xxxxxracexxxxx</i></p>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element> -->
+
+</elements>
