@@ -4,7 +4,7 @@
         <name>Dragon Casualty</name>
         <description>The Dragon Casualty background from Curse of Stradh</description>
         <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Curse of Stradh</author>
-        <update version="0.0.2" revised="2017/11/09">
+        <update version="0.0.3" revised="2017/11/09">
             <file name="background-dragoncasualty.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/curse-of-stradh/backgrounds/background-dragoncasualty.xml" />
         </update>
     </info>
@@ -22,86 +22,32 @@
             <p>Prior to the coordinated attack by the Maimed Virulence and her rebel Black Fist supporters, you were once a citizen or visitor to Phlan. While the trauma of your recent ordeal has greatly altered your motivations and perception of the world, your former life still clings to you and colors your mannerisms, behaviors, and outlook on life. Choose one entry on the following table (or roll randomly) to determine your former occupation prior to your incarceration and torture. Your choice determines your tool proficiency from this background.</p>
             <table>
                 <thead>
-                    <tr>
-                        <td>d8</td>
-                        <td>Origin (Occupation)</td>
-                    </tr>
+                    <tr><td>d8</td><td>Origin (Occupation)</td></tr>
                 </thead>
-                <tr>
-                    <td>1</td>
-                    <td>Dockworker / Fisherman (Water Vehicles)</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Tradesperson / Merchant (Artisan Tools)</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Black Fist Soldier (Gaming set or Land Vehicles)</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Adventurer / Visitor (Land Vehicles)</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Entertainer (Musical Instrument)</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Scholar / Healer (Alchemists Supplies or Herbalism Kit)</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Criminal (Thieves' Tools, Forgery Kit, or Disguise Kit)</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Unskilled Laborer (Gaming Set)</td>
-                </tr>
+                <tr><td>1</td><td>Dockworker / Fisherman (Water Vehicles)</td></tr>
+                <tr><td>2</td><td>Tradesperson / Merchant (Artisan Tools)</td></tr>
+                <tr><td>3</td><td>Black Fist Soldier (Gaming set or Land Vehicles)</td></tr>
+                <tr><td>4</td><td>Adventurer / Visitor (Land Vehicles)</td></tr>
+                <tr><td>5</td><td>Entertainer (Musical Instrument)</td></tr>
+                <tr><td>6</td><td>Scholar / Healer (Alchemists Supplies or Herbalism Kit)</td></tr>
+                <tr><td>1</td><td>Criminal (Thieves' Tools, Forgery Kit, or Disguise Kit)</td></tr>
+                <tr><td>8</td><td>Unskilled Laborer (Gaming Set)</td></tr>
             </table>
             <div element="ID_WOTC_COS_BACKGROUND_DRAGON_CASUALTY_FEATURE_DRAGONSCARRED" />
             <h5>DISFIGUREMENT (OPTIONAL)</h5>
             <p>In addition to extensive scarring, you may choose one of the following options to represent your disfigurement. This disfigurement is purely cosmetic, misshapen, and horrific to look upon.</p>
             <table>
                 <thead>
-                    <tr>
-                        <td>d8</td>
-                        <td>Disfigurement</td>
-                    </tr>
+                    <tr><td>d8</td><td>Disfigurement</td></tr>
                 </thead>
-                <tr>
-                    <td>1</td>
-                    <td>Small non-functional wing(s)</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Misshapen, wing-like membranes along one or both arms</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Elongated, claw-like hand(s)</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Elongated, claw-like feet</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Painful green scales randomly embedded in skin</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Bulbous, reptilian eye(s)</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Enlarged dorsal spines</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Hair replaced with small irregular spines</td>
-                </tr>
+                <tr><td>1</td><td>Small non-functional wing(s)</td></tr>
+                <tr><td>2</td><td>Misshapen, wing-like membranes along one or both arms</td></tr>
+                <tr><td>3</td><td>Elongated, claw-like hand(s)</td></tr>
+                <tr><td>4</td><td>Elongated, claw-like feet</td></tr>
+                <tr><td>5</td><td>Painful green scales randomly embedded in skin</td></tr>
+                <tr><td>6</td><td>Bulbous, reptilian eye(s)</td></tr>
+                <tr><td>1</td><td>Enlarged dorsal spines</td></tr>
+                <tr><td>8</td><td>Hair replaced with small irregular spines</td></tr>
             </table>
             <h5>SUGGESTED CHARACTERISTICS</h5>
         </description>
