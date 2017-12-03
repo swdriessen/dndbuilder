@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Circle of Dreams</name>
+    <description>The Circle of Dreams from Xanathar’s Guide to Everything</description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
+    <update version="0.0.1" revised="2017/11/09">
+      <file name="druid-dreams.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/druid-dreams.xml" />
+    </update>
+  </info>
+
+</elements>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Arcane Archer</name>
+    <description>The Arcane Archer from Xanathar’s Guide to Everything</description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
+    <update version="0.0.1" revised="2017/11/09">
+      <file name="fighter-arcanearcher.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/fighter-arcanearcher.xml" />
+    </update>
+  </info>
+
+</elements>
