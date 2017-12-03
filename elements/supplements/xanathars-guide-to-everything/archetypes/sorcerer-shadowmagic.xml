@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Shadow Sorcerous Origin</name>
-		<description>The Shadow Sorcerous Origin from Xanathar’s Guide to Everything</description>
+		<name>Shadow Magic Sorcerous Origin</name>
+		<description>The Shadow Magic Sorcerous Origin from Xanathar’s Guide to Everything</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-		<update version="0.0.2" revised="2017/11/09">
-			<file name="sorcerer-shadow.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/sorcerer-shadow.xml" />
+		<update version="0.0.3" revised="2017/11/09">
+			<file name="sorcerer-shadowmagic.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/sorcerer-shadowmagic.xml" />
 		</update>
 	</info>
 	<element name="Shadow Magic" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_SORCERER_ARCHETYPE_SHADOW_MAGIC">
@@ -16,54 +16,33 @@
 			<h5>Shadow Sorcerer Quirks</h5>
 			<table>
 				<thead>
-					<tr>
-						<td>d6</td>
-						<td>Quirk</td>
-					</tr>
+					<tr><td>d6</td><td>Quirk</td></tr>
 				</thead>
-				<tr>
-					<td>1</td>
-					<td>You are always icy cold to the touch.</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>When you are asleep, you don’t appear to breathe (though you must still breathe to survive).</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>You barely bleed, even when badly injured.</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>Your heart beats once per minute. This event sometimes surprises you.</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>You have trouble remembering that living creatures and corpses should be treated differently.</td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>You blinked. Once. Last week.</td>
-				</tr>
+				<tr><td>1</td><td>You are always icy cold to the touch.</td></tr>
+				<tr><td>2</td><td>When you are asleep, you don’t appear to breathe (though you must still breathe to survive).</td></tr>
+				<tr><td>3</td><td>You barely bleed, even when badly injured.</td></tr>
+				<tr><td>4</td><td>Your heart beats once per minute. This event sometimes surprises you.</td></tr>
+				<tr><td>5</td><td>You have trouble remembering that living creatures and corpses should be treated differently.</td></tr>
+				<tr><td>6</td><td>You blinked. Once. Last week.</td></tr>
 			</table>
-			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_EYES_OF_THE_DARK" />
-			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STRENGTH_OF_THE_GRAVE" />
-			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_HOUND_OF_ILL_OMEN" />
-			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_WALK" />
-			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_UMBRAL_FORM" />
+			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_EYES_OF_THE_DARK" />
+			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_STRENGTH_OF_THE_GRAVE" />
+			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_HOUND_OF_ILL_OMEN" />
+			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_SHADOW_WALK" />
+			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_UMBRAL_FORM" />
 		</description>
 		<sheet>
 			<description>Your power draws from the Shadowfell itself.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_EYES_OF_THE_DARK" level="1" />
-			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STRENGTH_OF_THE_GRAVE" level="1" />
-			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_HOUND_OF_ILL_OMEN" level="6" />
-			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_WALK" level="14" />
-			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_UMBRAL_FORM" level="18" />
+			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_EYES_OF_THE_DARK" level="1" />
+			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_STRENGTH_OF_THE_GRAVE" level="1" />
+			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_HOUND_OF_ILL_OMEN" level="6" />
+			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_SHADOW_WALK" level="14" />
+			<grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_UMBRAL_FORM" level="18" />
 		</rules>
 	</element>
-	<element name="Eyes of the Dark" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_EYES_OF_THE_DARK">
+	<element name="Eyes of the Dark" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_EYES_OF_THE_DARK">
 		<description>
 			<p>Starting at lst level, you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the darkness spell, which doesn’t count against your number of sorcerer spells known. In addition, you can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.</p>
 		</description>
@@ -76,7 +55,7 @@
 			<grant name="ID_VISION_SUPERIORDARKVISION" type="Vision" />
 		</rules>
 	</element>
-	<element name="Strength of the Grave" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STRENGTH_OF_THE_GRAVE">
+	<element name="Strength of the Grave" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_STRENGTH_OF_THE_GRAVE">
 		<description>
 			<p>Starting at lst level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can’t use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.</p>
 			<p class="indent">After the saving throw succeeds, you can’t use this feature again until you finish a long rest.</p>
@@ -85,7 +64,7 @@
 			<description>When damage reduces you to 0 hit points, make a Charisma saving throw (DC 5+damage taken). On a success, you drop to 1 hit point and cannot use this feature again until you finish a long rest.</description>
 		</sheet>
 	</element>
-	<element name="Hound of Ill Omen" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_HOUND_OF_ILL_OMEN">
+	<element name="Hound of Ill Omen" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_HOUND_OF_ILL_OMEN">
 		<description>
 			<p>At 6th level, you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to magically summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics (see the Monster Manual or appendix C in the Player’s Handbook), with the following changes: The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.</p>
 			<ul>
@@ -99,7 +78,7 @@
 			<description>Bonus Action: Spend 3 sorcery points to summon a Hound of Ill Omen to target one creature you can see within 120ft of you.</description>
 		</sheet>
 	</element>
-	<element name="Shadow Walk" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_WALK">
+	<element name="Shadow Walk" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_SHADOW_WALK">
 		<description>
 			<p>At 14th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness.</p>
 		</description>
@@ -107,7 +86,7 @@
 			<description>Bonus Action: When you are in dim light or darkness you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness.</description>
 		</sheet>
 	</element>
-	<element name="Form of the Phoenix" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_UMBRAL_FORM">
+	<element name="Umbral Form" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHADOW_MAGIC_UMBRAL_FORM">
 		<description>
 			<p>Starting at 18th level, you can spend 6 sorcery points as a bonus action to magically transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object.</p>
 			<p class="indent">You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action.</p>

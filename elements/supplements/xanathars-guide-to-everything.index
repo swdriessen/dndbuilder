@@ -4,7 +4,7 @@
 		<name>Xanathar’s Guide to Everything</name>
 		<description>The beholder Xanathar—Waterdeep’s most infamous crime lord—is known to hoard information on friend and foe alike. The beholder catalogs lore about adventurers and ponders methods to thwart them. Its twisted mind imagines that it can eventually record everything!</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Wizards of the Coast</author>
-		<update version="0.1.5" revised="2017/06/07">
+		<update version="0.1.6" revised="2017/06/07">
 			<file name="xanathars-guide-to-everything.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything.index" />
 		</update>
 	</info>
@@ -32,7 +32,7 @@
 
 		<file name="ranger-horizonwalker.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/ranger-horizonwalker.xml" />
 
-		<file name="sorcerer-shadow.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/sorcerer-shadow.xml" />
+		<file name="sorcerer-shadowmagic.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/sorcerer-shadowmagic.xml" />
 
 
 
