@@ -8,7 +8,7 @@
       <file name="druid-dreams.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/druid-dreams.xml" />
     </update>
   </info>
-  <element name="Circle of the Dreams" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_CIRCLE_OF_DREAMS">
+  <element name="Circle of the Dreams" type="Archetype" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_CIRCLE_OF_DREAMS">
     <supports>Druid Circle</supports>
     <description>
       <p>Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids’ guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.</p>
@@ -25,7 +25,7 @@
       <grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_WALKER_IN_DREAMS" level="14" />
     </rules>
   </element>
-  <element name="Balm of the Summer Court" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_BALM_OF_THE_SUMMER_COURT">
+  <element name="Balm of the Summer Court" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_BALM_OF_THE_SUMMER_COURT">
     <description>
       <p>At 2nd level, you become imbued with the blessings of the Summer Court. You are a font of energy that offers respite from injuries. You have a pool of fey energy represented by a number of d6s equal to your druid level.</p>
       <p class="indent">As a bonus action, you can choose one creature you can see within 120 feet of you and spend a number of those dice equal to half your druid level or less. Roll the spent dice and add them together. The target regains a number of hit points equal to the total. The target also gains 1 temporary hit point per die spent.</p>
@@ -49,7 +49,7 @@
       <stat name="fey-energy:pool" value="Level" />
     </rules>
   </element>
-  <element name="Hearth of Moonlight and Shadow" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_HEARTH_OF_MOONLIGHT_AND_SHADOW">
+  <element name="Hearth of Moonlight and Shadow" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_HEARTH_OF_MOONLIGHT_AND_SHADOW">
     <description>
       <p>At 6th level, home can be wherever you are. During a short or long rest, you can invoke the shadowy power of the Gleaming Court to help guard your respite. At the start of the rest, you touch a point in space, and an invisible, 30-foot—radius sphere of magic appears, centered on that point. Total cover blocks the sphere.</p>
       <p class="indent">While within the sphere, you and your allies gain a +5 bonus to Dexterity (Stealth) and Wisdom (Perception) checks, and any light from open flames in the sphere (a campfire, torches, or the like) isn’t visible outside it.</p>
@@ -60,7 +60,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Hidden Paths" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_HIDDEN_PATHS">
+  <element name="Hidden Paths" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_HIDDEN_PATHS">
     <description>
       <p>Starting at 10th level, you can use the hidden, magical pathways that some fey use to traverse space in the blink of an eye. As a bonus action on your turn, you can teleport up to 60 feet to an unoccupied space you can see. Alternatively, you can use your action to teleport one willing creature you touch up to 30 feet to an unoccupied space you can see.</p>
       <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
@@ -70,7 +70,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Walker in Dreams" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_WALKER_IN_DREAMS">
+  <element name="Walker in Dreams" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DREAMS_WALKER_IN_DREAMS">
     <description>
       <p>At 14th level, the magic of the Feywild grants you the ability to travel mentally or physically through dreamlands.</p>
       <p class="indent">When you finish a short rest, you can cast one of the following spells, without expending a spell slot or requiring material components: dream (with you as the messenger), scrying, or teleportation circle.</p>

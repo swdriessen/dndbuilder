@@ -9,7 +9,7 @@
         </update>
     </info>
     <!-- Path of the Ancestral Guardian -->
-    <element name="Path of the Storm Herald" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_PATH_OF_THE_STORM_HERALD">
+    <element name="Path of the Storm Herald" type="Archetype" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_PATH_OF_THE_STORM_HERALD">
         <supports>Primal Path</supports>
         <description>
             <p>All barbarians harbor a fury within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn to transform that rage into a mantle of primal magic, which swirls around them. When in a fury, a barbarian ofthis path taps into the forces of nature to create powerful magical effects.</p>

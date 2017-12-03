@@ -8,7 +8,7 @@
       <file name="druid-shepherd.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/druid-shepherd.xml" />
     </update>
   </info>
-  <element name="Circle of the Shepherd" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_CIRCLE_OF_THE_SHEPHERD">
+  <element name="Circle of the Shepherd" type="Archetype" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_CIRCLE_OF_THE_SHEPHERD">
     <supports>Druid Circle</supports>
     <description>
       <p>Druids of the Circle of the Shepherd commune with the spirits of nature, especially the spirits of beasts and the fey, and call to those spirits for aid. These druids recognize that all living things play a role in the natural world, yet they focus on protecting animals and fey creatures that have difficulty defending themselves. Shepherds, as they are known, see such creatures as their charges. They ward off monsters that threaten them, rebuke hunters who kill more prey than necessary, and prevent civilization from encroaching on rare animal habitats and on sites sacred to the fey. Many of these druids are happiest far from cities and towns, content to spend their days in the company of animals and the fey creatures of the wilds.</p>
@@ -28,7 +28,7 @@
       <grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_FAITHFUL_SUMMONS" level="14" />
     </rules>
   </element>
-  <element name="Speech of the Woods" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_SPEECH_OF_THE_WOODS">
+  <element name="Speech of the Woods" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_SPEECH_OF_THE_WOODS">
     <description>
       <p>At 2nd level, you gain the ability to converse with beasts and many fey.</p>
       <p class="indent">You learn to speak, read, and write Sylvan. In addition, beasts can understand your speech, and you gain the ability to decipher their noises and motions. Most beasts lack the intelligence to convey or understand sophisticated concepts, but a friendly beast could relay what it has seen or heard in the recent past. This ability doesn’t grant you friendship with beasts, though you can combine this ability with gifts to curry favor with them as you would with any nonplayer character.</p>
@@ -40,7 +40,7 @@
       <grant type="Language" name="ID_LANGUAGE_SYLVAN" />
     </rules>
   </element>
-  <element name="Spirit Totem" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_SPIRIT_TOTEM">
+  <element name="Spirit Totem" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_SPIRIT_TOTEM">
     <description>
       <p>Starting at 2nd level, you can call forth nature spirits to influence the world around you. As a bonus action, you can magically summon an incorporeal spirit to a point you can see within 60 feet of you. The spirit creates an aura in a 30-foot radius around that point. It counts as neither a creature nor an object, though it has the spectral appearance of the creature it represents.</p>
       <p class="indent">As a bonus action, you can move the spirit up to 60 feet to a point you can see.</p>
@@ -64,7 +64,7 @@
       <stat name="bear-spirit:temphp" value="+Level" />
     </rules>
   </element>
-  <element name="Mighty Summoner" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_MIGHTY_SUMMONER">
+  <element name="Mighty Summoner" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_MIGHTY_SUMMONER">
     <description>
       <p>Starting at 6th level, beasts and fey that you conjure are more resilient than normal. Any beast or fey summoned or created by a spell that you cast gains the following benefits:</p>
       <li>- The creature appears with more hit points than normal: 2 extra hit points per Hit Die it has.</li>
@@ -75,7 +75,7 @@
     </sheet>
     <rules />
   </element>
-  <element name="Guardian Spirit" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_GUARIDAN_SPIRIT">
+  <element name="Guardian Spirit" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_GUARIDAN_SPIRIT">
     <description>
       <p>Beginning at 10th level, your Spirit Totem safeguards the beasts and fey that you call forth with your magic. When a beast or fey that you summoned or created with a spell ends its turn in your Spirit Totem aura, that creature regains a number of hit points equal to half your druid level.</p>
     </description>
@@ -96,7 +96,7 @@
       <stat name="hacky half level" value="1" level="20" />
     </rules>
   </element>
-  <element name="Faithful Summons" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_FAITHFUL_SUMMONS">
+  <element name="Faithful Summons" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_SHEPHERD_FAITHFUL_SUMMONS">
     <description>
       <p>Starting at 14th level, the nature spirits you commune with protect you when you are the most defenseless. If you are reduced to 0 hit points or are incapacitated against your will, you can immediately gain the benefits of conjure animals as if it were cast using a 9th-level spell slot. It summons four beasts of your choice that are challenge rating 2 or lower. The conjured beasts appear within 20 feet of you. If they receive no commands from you, they protect you from harm and attack your foes. The spell lasts for 1 hour, requiring no concentration, or until you dismiss it (no action required).</p>
       <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>

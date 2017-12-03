@@ -8,7 +8,7 @@
       <file name="bard-swords.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/bard-swords.xml" />
     </update>
   </info>
-  <element name="College of Swords" type="Archetype" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_COLLEGE_OF_SWORDS">
+  <element name="College of Swords" type="Archetype" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_COLLEGE_OF_SWORDS">
     <supports>Bard College</supports>
     <description>
       <p>Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess. Blades perform stunts such as sword swallowing, knife throwing and juggling, and mock combats. Though they use their weapons to entertain, they are also highly trained and skilled warriors in their own right.</p>
@@ -29,7 +29,7 @@
       <grant type="Archetype Feature" name="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_MASTERS_FLOURISH" level="14" />
     </rules>
   </element>
-  <element name="Bonus Proficiencies" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_BONUS_PROFICIENCIES">
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_BONUS_PROFICIENCIES">
     <description>
       <p>When you join the College of Swords at 3rd level, you gain proficiency with medium armor and the scimitar.</p>
       <p class="indent">If you‘re proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells.</p>
@@ -42,7 +42,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
     </rules>
   </element>
-  <element name="Fighting Style" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_FIGHTING_STYLE">
+  <element name="Fighting Style" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_FIGHTING_STYLE">
     <description>
       <p>At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if something in the game lets you choose again.</p>
       <h5>DUELING</h5>
@@ -55,7 +55,7 @@
       <select type="Class Feature" name="Fighting Style (College of Swords)" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" level="3"/>
     </rules>
   </element>
-  <element name="Blade Flourish" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_BLADE_FLOURISH">
+  <element name="Blade Flourish" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_BLADE_FLOURISH">
     <description>
       <p>At 3rd level, you learn to perform impressive displays of martial prowess and speed.</p>
       <p class="indent">Whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.</p>
@@ -72,7 +72,7 @@
       </description>
     </sheet>
   </element>
-  <element name="Extra Attack" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_EXTRA_ATTACK">
+  <element name="Extra Attack" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_EXTRA_ATTACK">
     <description>
       <p>Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
     </description>
@@ -81,7 +81,7 @@
     </sheet>
     <rules></rules>
   </element>
-  <element name="Master's Flourish" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_MASTERS_FLOURISH">
+  <element name="Master's Flourish" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_BARD_SWORDS_MASTERS_FLOURISH">
     <description>
       <p>Starting at 14th level, whenever you use a Blade Flourish option, you can roll a d6 and use it instead of expending a Bardic Inspiration die.</p>
     </description>

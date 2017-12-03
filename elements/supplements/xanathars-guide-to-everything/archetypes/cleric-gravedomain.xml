@@ -4,11 +4,11 @@
     <name>Grave Domain</name>
     <description>The Grave Domain from Xanathar’s Guide to Everything</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-    <update version="0.1.2" revised="2017/10/20">
+    <update version="0.1.3" revised="2017/10/20">
       <file name="cleric-gravedomain.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/cleric-gravedomain.xml" />
     </update>
   </info>
-  <element name="Grave Domain" type="Archetype" source="Xanathar’s Guide to Everything" id="ID_XGTE_ARCHETYPE_CLERIC_GRAVE_DOMAIN">
+  <element name="Grave Domain" type="Archetype" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_CLERIC_GRAVE_DOMAIN">
     <supports>Divine Domain</supports>
     <description>
       <p>Gods of the grave watch over the line between life and death. To these deities, death and the afterlife are a foundational part of the multiverse. To desecrate the peace of the dead is an abomination. Deities of the grave include Kelemvor, Wee jas, the ancestral spirits of the Undying Court, Hades, Anubis, and Osiris. Followers of these deities seek to put wandering spirits to rest, destroy the undead, and ease the suffering of the dying. Their magic also allows them to stave off death for a time. particularly for a person who still has some great work to accomplish in the world. This is a delay of death, not a denial of it, for death will eventually get its due.</p>
@@ -39,41 +39,13 @@
       <h5>Grave Domain Spells</h5>
       <table>
         <thead>
-          <tr>
-            <td>Cleric Level</td>
-            <td>Spells</td>
-          </tr>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
         </thead>
-        <tr>
-          <td>1st</td>
-          <td>
-            <em>bane, false life</em>
-          </td>
-        </tr>
-        <tr>
-          <td>3rd</td>
-          <td>
-            <em>gentle repose, ray of enfeeblement</em>
-          </td>
-        </tr>
-        <tr>
-          <td>5th</td>
-          <td>
-            <em>revivify, vampiric touch</em>
-          </td>
-        </tr>
-        <tr>
-          <td>7th</td>
-          <td>
-            <em>blight, death ward</em>
-          </td>
-        </tr>
-        <tr>
-          <td>9th</td>
-          <td>
-            <em>antilife shell, raise dead</em>
-          </td>
-        </tr>
+        <tr><td>1st</td><td><em>bane, false life</em></td></tr>
+        <tr><td>3rd</td><td><em>gentle repose, ray of enfeeblement</em></td></tr>
+        <tr><td>5th</td><td><em>revivify, vampiric touch</em></td></tr>
+        <tr><td>7th</td><td><em>blight, death ward</em></td></tr>
+        <tr><td>9th</td><td><em>antilife shell, raise dead</em></td></tr>
       </table>
     </description>
     <sheet>
