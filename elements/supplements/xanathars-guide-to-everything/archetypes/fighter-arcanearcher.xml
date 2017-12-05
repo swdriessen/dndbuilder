@@ -4,7 +4,7 @@
     <name>Arcane Archer</name>
     <description>The Arcane Archer from Xanathar’s Guide to Everything</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-    <update version="0.0.3" revised="2017/11/09">
+    <update version="0.0.4" revised="2017/11/09">
       <file name="fighter-arcanearcher.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/archetypes/fighter-arcanearcher.xml" />
     </update>
   </info>
@@ -204,8 +204,8 @@
       <p class="indent">The psychic damage increases to 4d6 when you reach 18th level in this class.</p>
     </description>
     <sheet>
-      <description level="3">A creature hit by this arrow takes an extra 2d6 psychic damage, and must make a DC%arcane"spell:dc% Wisdom saving throw or is unable to see anything farther than 5ft away until the start of your next turn.</description>
-      <description level="18">A creature hit by this arrow takes an extra 4d6 psychic damage, and must make a DC%arcane"spell:dc% Wisdom saving throw or is unable to see anything farther than 5ft away until the start of your next turn.</description>
+      <description level="3">A creature hit by this arrow takes an extra 2d6 psychic damage, and must make a DC%arcane shot:dc:wis% Wisdom saving throw or is unable to see anything farther than 5ft away until the start of your next turn.</description>
+      <description level="18">A creature hit by this arrow takes an extra 4d6 psychic damage, and must make a DC%arcane shot:dc:wis% Wisdom saving throw or is unable to see anything farther than 5ft away until the start of your next turn.</description>
     </sheet>
     <rules />
   </element>
