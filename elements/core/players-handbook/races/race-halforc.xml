@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-  <element name="Half-Orc" type="Race" source="Player’s Handbook" id="ID_RACE_HALF-ORC">
+  <element name="Half-Orc" type="Race" source="Player’s Handbook" id="ID_RACE_HALFORC">
     <supports />
     <requirements />
     <description>
