@@ -20,6 +20,7 @@
             </p>
             <div element="ID_WOTC_COS_BACKGROUND_BLACK_FIST_DOUBLE_AGENT_FEATURE_DOUBLE_AGENT" />
             <h5>SUGGESTED CHARACTERISTICS</h5>
+            <!-- ? -->
         </description>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
