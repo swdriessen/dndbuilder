@@ -3,8 +3,8 @@
     <info>
         <name>Haunted One</name>
         <description>The Haunted One background from Curse of Stradh</description>
-        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Curse of Stradh</author>
-        <update version="0.0.1" revised="2017/11/09">
+        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/curse-strahd">Curse of Stradh</author>
+        <update version="0.0.2" revised="2017/11/09">
             <file name="background-hauntedone.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/curse-of-stradh/backgrounds/background-hauntedone.xml" />
         </update>
     </info>
