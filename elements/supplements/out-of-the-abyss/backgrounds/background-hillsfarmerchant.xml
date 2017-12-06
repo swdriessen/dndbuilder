@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Hillsfar Merchant</name>
+        <description>The Hillsfar Merchant background from Out of the Abyss</description>
+        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/outoftheabyss">Wizards of the Coast</author>
+        <update version="0.0.1" revised="2017/01/01">
+            <file name="background-hillsfarmerchant.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/out-of-the-abyss/backgrounds/background-hillsfarmerchant.xml" />
+        </update>
+    </info>
+
+    
+
+</elements>
