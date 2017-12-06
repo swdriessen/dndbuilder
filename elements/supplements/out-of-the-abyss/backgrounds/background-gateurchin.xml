@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Gate Urchin</name>
-        <description>The Gate Urchin background from Out of the Abyss</description>
-        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/outoftheabyss">Wizards of the Coast</author>
-        <update version="0.0.1" revised="2017/01/01">
-            <file name="background-gateurchin.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/out-of-the-abyss/backgrounds/background-gateurchin.xml" />
-        </update>
-    </info>
-
-    	<element name="Gate Urchin" type="Background" source="Rage of Demons" id="ID_WOTC_ROD_BACKGROUND_GATE_URCHIN">
+	<info>
+		<name>Gate Urchin</name>
+		<description>The Gate Urchin background from Out of the Abyss</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/outoftheabyss">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/01/01">
+			<file name="background-gateurchin.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/out-of-the-abyss/backgrounds/background-gateurchin.xml" />
+		</update>
+	</info>
+	<element name="Gate Urchin" type="Background" source="Rage of Demons" id="ID_WOTC_ROD_BACKGROUND_GATE_URCHIN">
 		<description>
 			<p>All traffic into and out of the City of Trade passes through the Hillsfar Gate, making it the ideal place for the destitute to gather to panhandle, busk, gossip, and pick pockets. You grew up on the streets in the shadow of that great steel edifice, which houses both Red Plumes and Guild Mages. Though you may have moved on, you still have friends among them, and that life has had a lasting impact on you.</p>
 			<p>
 				<b>Skill Proficiencies: </b>Deception, Sleight of Hand<br/>
 				<b>Tool Proficiencies: </b>Thieves' tools, one type of musical instrument<br/>
-				<b>Equipment:</b>A battered alms box, a musical instrument, a cast-off military jacket, cap, or scarf, a set of common clothes, a belt pouch, and 10 gp</p>
+				<b>Equipment: </b>A battered alms box, a musical instrument, a cast-off military jacket, cap, or scarf, a set of common clothes, a belt pouch, and 10 gp
+			</p>
 			<div element="ID_WOTC_ROD_BACKGROUND_GATE_URCHIN_FEATURE_RED_PLUME_AND_MAGE_GUILD_CONTACTS" />
-			<h5>SUGGESTED CHARACTERISTICS</h5>
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
 			<select type="Proficiency" name="Musical Instrument (Gate Urchin)" supports="Musical Instrument"/>
-            <grant name="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" type="Proficiency"  />
+			<grant name="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" type="Proficiency" />
 			<grant type="Background Feature" id="ID_WOTC_ROD_BACKGROUND_GATE_URCHIN_FEATURE_RED_PLUME_AND_MAGE_GUILD_CONTACTS" />
 			<select name="Personality Trait" type="List" number="2">
 				<item id="1">I appreciate the simple things in life: a song, a warm meal, a sunny day. I don't need any more.</item>
@@ -59,12 +58,11 @@
 				<item id="5">I am still very uncomfortable wearing nice clothes, sleeping in a warm bed, and eating fine food.</item>
 				<item id="6">I do not trust anyone who has not had a hard life.</item>
 			</select>
-		</rules>       
+		</rules>
 	</element>
 	<element name="Feature: Red Plume and Mage Guild Contacts" type="Background Feature" source="Rage of Demons" id="ID_WOTC_ROD_BACKGROUND_GATE_URCHIN_FEATURE_RED_PLUME_AND_MAGE_GUILD_CONTACTS">
 		<description>
 			<p>You made a number of friends among the Red Plumes and the Mage's Guild when you lived at the Hillsfar Gate. They remember you fondly and help you in little ways when they can. You can invoke their assistance in and around Hillsfar to obtain food, as well as simple equipment for temporary use. You can also invoke it to gain access to the low-security areas of their garrisons, halls, and encampments.</p>
 		</description>
 	</element>
-
 </elements>

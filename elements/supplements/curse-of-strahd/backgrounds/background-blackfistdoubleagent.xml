@@ -19,8 +19,6 @@
                 <b>Equipment: </b>Disguise kit, common clothes, a Tears of Virulence emblem, a writ of free agency signed by the Lord Regent, a set of artisan’s tools or gaming set you are proficient with, and a pouch with 15 gp (payment for services rendered).
             </p>
             <div element="ID_WOTC_COS_BACKGROUND_BLACK_FIST_DOUBLE_AGENT_FEATURE_DOUBLE_AGENT" />
-            <h5>SUGGESTED CHARACTERISTICS</h5>
-            <!-- ? -->
         </description>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />

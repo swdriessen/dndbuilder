@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Hillsfar Smuggler</name>
-        <description>The Hillsfar Smuggler background from Out of the Abyss</description>
-        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/outoftheabyss">Wizards of the Coast</author>
-        <update version="0.0.1" revised="2017/01/01">
-            <file name="background-hillsfarsmuggler.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/out-of-the-abyss/backgrounds/background-hillsfarsmuggler.xml" />
-        </update>
-    </info>
-
-    	<element name="Hillsfar Smuggler" type="Background" source="Rage of Demons" id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_SMUGGLER">
+	<info>
+		<name>Hillsfar Smuggler</name>
+		<description>The Hillsfar Smuggler background from Out of the Abyss</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/outoftheabyss">Wizards of the Coast</author>
+		<update version="0.0.1" revised="2017/01/01">
+			<file name="background-hillsfarsmuggler.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/out-of-the-abyss/backgrounds/background-hillsfarsmuggler.xml" />
+		</update>
+	</info>
+	<element name="Hillsfar Smuggler" type="Background" source="Rage of Demons" id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_SMUGGLER">
 		<description>
 			<p>Hillsfar is the City of Trade. However, the Great Law of Trade only protects "legitimate" trade, trade that passes through the city's sole gate, which the Red Plumes monitor and tax. And the Great Law of Humanity banishes non- humans from the city altogether. The two Great Laws create great demand and great risk for smugglers, who shepherd illicit goods and non-humans into and out of the city by secret routes. The Rogues Guild tightly controls all of this activity, taking its cut from sanctioned jobs and exacting punishment for independent jobs.</p>
-
-<p class="indent">Perhaps you trafficked Dragon's Breath (a brandy-like liquor) to avoid tariffs or contraband to avoid seizure, or maybe you are a human who sympathizes with the non- humans and worked as part of the network of secret routes and safe houses that helps them pass through Hillsfar. Either way, you have contacts in the smuggling community who can help you slip into and out of the city unnoticed, for a price.</p>
+			<p class="indent">Perhaps you trafficked Dragon's Breath (a brandy-like liquor) to avoid tariffs or contraband to avoid seizure, or maybe you are a human who sympathizes with the non- humans and worked as part of the network of secret routes and safe houses that helps them pass through Hillsfar. Either way, you have contacts in the smuggling community who can help you slip into and out of the city unnoticed, for a price.</p>
 			<p>
 				<b>Skill Proficiencies: </b>Perception, Stealth<br/>
 				<b>Tool Proficiencies: </b>Forgery kit<br/>
-                <b>Languages: </b>One racial language<br/>
-				<b>Equipment:</b> A forgery kit, a set of common clothes, a belt pouch, and 5 gp</p>
+				<b>Languages: </b>One racial language<br/>
+				<b>Equipment: </b> A forgery kit, a set of common clothes, a belt pouch, and 5 gp
+			</p>
 			<div element="ID_WOTC_ROD_BACKGROUND_HILLSFAR_SMUGGLER_FEATURE_SECRET_PASSAGE" />
-			<h5>SUGGESTED CHARACTERISTICS</h5>
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
-            <grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
-           <select type="Language" name="Language (Hillsfar Smuggler)" supports="ID_LANGUAGE_DRACONIC|ID_LANGUAGE_DWARVISH|ID_LANGUAGE_ELVEN|ID_LANGUAGE_HALFLING|ID_LANGUAGE_GNOMISH|ID_LANGUAGE_INFERNAL" number="1" />
-            <grant type="Background Feature" id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_SMUGGLER_FEATURE_SECRET_PASSAGE" />
+			<grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+			<select type="Language" name="Language (Hillsfar Smuggler)" supports="ID_LANGUAGE_DRACONIC|ID_LANGUAGE_DWARVISH|ID_LANGUAGE_ELVEN|ID_LANGUAGE_HALFLING|ID_LANGUAGE_GNOMISH|ID_LANGUAGE_INFERNAL" />
+			<grant type="Background Feature" id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_SMUGGLER_FEATURE_SECRET_PASSAGE" />
 			<select name="Personality Trait" type="List" number="2">
 				<item id="1">When I'm not smuggling, I gamble.</item>
 				<item id="2">I just love Halfling cooking and baking!</item>
@@ -62,12 +60,11 @@
 				<item id="5">I am greedy. There isn't much I won't do for money.</item>
 				<item id="6">I'm an informant for the Red Plumes. They let me continue my activities, so long as I pass them information about illegal activity in Hillsfar.</item>
 			</select>
-		</rules>       
+		</rules>
 	</element>
 	<element name="Feature: Secret Passage" type="Background Feature" source="Rage of Demons" id="ID_WOTC_ROD_BACKGROUND_HILLSFAR_SMUGGLER_FEATURE_SECRET_PASSAGE">
-        <description>
+		<description>
 			<p>You can call on your contacts within the smuggling community to secure secret passage into or out of Hillsfar for yourself and your adventuring companions, no questions asked, and no Red Plume entanglements. Because you’re calling in a favor, you can’t be certain they will be able to help on your timetable or at all. Your Dungeon Master will determine whether you can be smuggled into or out of the city. In return for your passage, you and your companions may owe the Rouges Guild a favor and/or may have to pay bribes.</p>
 		</description>
 	</element>
-
 </elements>
