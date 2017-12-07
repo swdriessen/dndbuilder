@@ -115,6 +115,7 @@
         <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
       </setters>
       <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
         <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
         <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />

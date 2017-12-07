@@ -109,7 +109,7 @@
         <set name="multiclass proficiencies">—</set>
       </setters>
       <rules>
-      
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
       </rules>
     </multiclass>
   </element>

@@ -124,6 +124,7 @@
         <set name="multiclass proficiencies">Shields, simple weapons, martial weapons</set>
       </setters>
       <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />

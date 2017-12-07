@@ -117,6 +117,7 @@
         <set name="multiclass proficiencies">Simple weapons, shortswords</set>
       </setters>
       <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
       </rules>
