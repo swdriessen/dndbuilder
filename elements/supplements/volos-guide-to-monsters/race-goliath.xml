@@ -4,7 +4,7 @@
 		<name>Goliath</name>
 		<description></description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.1" revised="2017/06/07">
+		<update version="0.1.1" revised="2017/06/07">
 			<file name="race-goliath.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-goliath.xml" />
 		</update>
 	</info>
@@ -55,7 +55,9 @@
       <set name="names" type="birth">Aukan, Eglath, Gae-Al, Gauthak, Ilikan, Keothi, Kuori, Lo-Kag, Manneo, Maveith, Nalla, Orilo, Paavu, Pethani, Thalai, Thotham, Uthal, Vaunea, Vimak</set>
       <set name="names" type="nickname">Bearkiller, Dawncaller, Fearless, Flintfinder, Horncarver, Keeneye, Lonehunter, Longleaper, Rootsmasher, Skywatcher, Steadyhand, Threadtwister, Twice-Orphaned, Twistedlimb, Wordpainter</set>
       <set name="names" type="clan">Anakalathai, Elanithino, Gathakanathi, Kalagiano, Katho-Olavi, Kolae-Gileana, Ogolakanu, Thuliaga, Thunukalathi, Vaimei-Laga</set>
-      <set name="names-format">$(birth) '$(nickname)' of clan $(clan)</set>       
+      <set name="names-format">$(birth) '$(nickname)' of clan $(clan)</set>   
+      <set name="height" modifier="2d6">7'0"</set>
+      <set name="weight" modifier="2d10">280 lb.</set>    
     </setters>
     <rules>
       <stat name="Strength" value="+2" />

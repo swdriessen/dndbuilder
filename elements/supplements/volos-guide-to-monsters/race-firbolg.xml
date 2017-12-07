@@ -4,7 +4,7 @@
 		<name>Firbolg</name>
 		<description></description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.1.1" revised="2017/06/07">
+		<update version="0.1.2" revised="2017/06/07">
 			<file name="race-firbolg.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-firbolg.xml" />
 		</update>
 	</info>
@@ -55,6 +55,8 @@
       <set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
       <set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
       <set name="names-format">$(name) $(family)</set>
+      <set name="height" modifier="2d6">7'0"</set>
+      <set name="weight" modifier="2d10">240 lb.</set>
     </setters>
     <rules>
       <stat name="Wisdom" value="+2" />

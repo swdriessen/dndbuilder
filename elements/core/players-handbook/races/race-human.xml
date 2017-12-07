@@ -4,7 +4,7 @@
 		<name>Human</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1" revised="2017/09/25">
+		<update version="0.1.1" revised="2017/09/25">
 			<file name="race-human.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-human.xml" />
 		</update>
 	</info>
@@ -86,6 +86,8 @@
       <set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
       <set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
       <set name="names-format">$(name) $(surname)</set>
+      <set name="height" modifier="2d10">4'8"</set>
+      <set name="weight" modifier="2d4">110 lb.</set>
     </setters>
     <rules>
       <stat name="Speed" value="+30"/>
