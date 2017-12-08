@@ -4,7 +4,7 @@
     <name>Bard</name>
     <description></description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.2.2" revised="2017/06/19">
+    <update version="0.3" revised="2017/06/19">
       <file name="class-bard.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-bard.xml" />
     </update>
   </info>
@@ -89,10 +89,7 @@
       <set name="spellcaster">true</set>
       <set name="spellcastingAbility">Charisma</set>
     </setters>
-    <rules>
-      <!-- <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D8" /> -->
-      <!-- todo: create a single bard proficiencies grant -->
-      <!-- todo: create a single bard multiclass proficiencies grant -->
+    <rules>    
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_PHB_MULTICLASS_BARD"/>
@@ -123,6 +120,7 @@
       </setters>
       <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        
         <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
         <select type="Proficiency" name="Skill Proficiency (Bard)" supports="Skill,Bard" number="1" />
         <select type="Proficiency" name="Musical Instrument (Bard)" supports="Musical Instrument" number="1" />
@@ -156,6 +154,8 @@
       <description>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music.</description>
     </sheet>
     <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+      
       <stat name="bard:spell:attack" value="+Proficiency" />
       <stat name="bard:spell:attack" value="+Charisma Modifier" />
       <stat name="bard:spell:dc" value="+8" />
