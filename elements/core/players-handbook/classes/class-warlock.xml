@@ -4,7 +4,7 @@
     <name>Warlock</name>
     <description>The Warlock class from the Player’s Handbook.</description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.1" revised="2017/01/01">
+    <update version="0.1.2" revised="2017/01/01">
       <file name="class-warlock.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-warlock.xml" />
     </update>
   </info>
@@ -17,7 +17,7 @@
       <p class="indent">As flames spring to life in her hands, a wizened human whispers the secret name of her demonic patron, infusing her spell with fiendish magic. Shifting his gaze between a battered tome and the odd alignment of the stars overhead, a wild-eyed tiefling chants the mystic ritual that will open a doorway to a distant world.</p>
       <p class="indent">Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular. Drawing on the ancient knowledge of beings such as fey nobles, demons, devils, hags, and alien entities of the Far Realm, warlocks piece together arcane secrets to bolster their own power.</p>
       <h4>SWORN AND BEHOLDEN</h4>
-      <p>A warlock is defined by a pact with an otherworldly being. Sometimes the relationship between warlock and patron is like that of a cleric and a deity, though the beings that serve as patrons for w arlocks are not gods. A warlock might lead a cult dedicated to a demon prince, an archdevil, or an utterly alien entity—beings not typically served by clerics. More often, though, the arrangement is similar to that between a master and an apprentice. The warlock learns and grows in power, at the cost of occasional services performed on the patron’s behalf.</p>
+      <p>A warlock is defined by a pact with an otherworldly being. Sometimes the relationship between warlock and patron is like that of a cleric and a deity, though the beings that serve as patrons for warlocks are not gods. A warlock might lead a cult dedicated to a demon prince, an archdevil, or an utterly alien entity—beings not typically served by clerics. More often, though, the arrangement is similar to that between a master and an apprentice. The warlock learns and grows in power, at the cost of occasional services performed on the patron’s behalf.</p>
       <p class="indent">The magic bestowed on a warlock ranges from minor but lasting alterations to the warlock's being (such as the ability to see in darkness or to read any language) to access to powerful spells. Unlike bookish wizards, warlocks supplement their magic with some facility at hand-to-hand combat. They are comfortable in light armor and know how to use simple weapons.</p>
       <h4>DELVERS INTO SECRETS</h4>
       <p>Warlocks are driven by an insatiable need for knowledge and power, which compels them into their pacts and shapes their lives. This thirst drives warlocks into their pacts and shapes their later careers as well.</p>
@@ -809,57 +809,86 @@
     <requirements />
     <description>
       <p>Your patron is a lord or lady of the fey, a creature of legend who holds secrets that w ere forgotten before the mortal races w ere born. This being’s motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges. Beings of this sort include the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; her consort Oberon, the Green Lord; Hyrsam, the Prince of Fools; and ancient hags.</p>
-
-      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_EXPANDED_SPELL_LIST"/>
-      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_DARKONESBLESSING"/>
-      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_DARKONESOWNLUCK"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Expanded_Spell_List"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Fey_Presence"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Misty_Escape"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Beguiling_Defenses"/>
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Dark_Delirium"/>
     </description>
     <sheet>
       <description>You have made a pact with a fiend from the lower planes of existence.</description>
     </sheet>
     <rules>
-      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_EXPANDED_SPELL_LIST" type="Archetype Feature" level="1" />
-      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_DARKONESBLESSING" type="Archetype Feature" level="1" />
-      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_DARKONESOWNLUCK" type="Archetype Feature" level="6" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Expanded_Spell_List" type="Archetype Feature" level="1" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Fey_Presence" type="Archetype Feature" level="1" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Misty_Escape" type="Archetype Feature" level="6" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Beguiling_Defenses" type="Archetype Feature" level="10" />
+      <grant name="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Dark_Delirium" type="Archetype Feature" level="14" />
     </rules>
   </element>
 
-  <element name="Fey Presence" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Fey_Presence">
+  <element name="Expanded Spell List" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Expanded_Spell_List">
     <description>
-      <p></p>
+      <p>The Archfey lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>Archfey Expanded Spells</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>faerie fire, sleep</em></td></tr>
+        <tr><td>2nd</td><td><em>calm emotions, phantasmal force</em></td></tr>
+        <tr><td>3rd</td><td><em>blink, plant growth</em></td></tr>
+        <tr><td>4th</td><td><em>dominate beast, greater invisibility</em></td></tr>
+        <tr><td>5th</td><td><em>dominate person, seeming</em></td></tr>
+      </table>
     </description>
     <sheet>
-      <description></description>
+      <description>The Archfey lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <rules>
+      <!-- todo -->
+    </rules>
+  </element>
+  <element name="Fey Presence" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Fey_Presence">
+    <description>
+      <p>Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn.</p>
+      <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>As an action, you can cause each creature in a 10-foot cube originating from you to make a DC$(spellcasting:dc:wis) Wisdom saving throw. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn. (1/SR)</description>
     </sheet>
     <rules />
   </element>
 
   <element name="Misty Escape" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Misty_Escape">
     <description>
-      <p></p>
+      <p>Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell.</p>
+      <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
     </description>
     <sheet>
-      <description></description>
+      <description>When you take damage, you can use your reaction to turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell. (1/SR)</description>
     </sheet>
     <rules />
   </element>
 
   <element name="Beguiling Defenses" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Beguiling_Defenses">
     <description>
-      <p></p>
+      <p>Beginning at 10th level, your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being charmed, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw against your warlock spell save DC or be charmed by you for 1 minute or until the creature takes any damage.</p>
     </description>
     <sheet>
-      <description></description>
+      <description>You are immune to being charmed, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a DC$(spellcasting:dc:wis) Wisdom saving throw or be charmed by you for 1 minute or until the creature takes any damage.</description>
     </sheet>
     <rules />
   </element>
 
   <element name="Dark Delirium" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_Dark_Delirium">
     <description>
-      <p></p>
+      <p>Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is charmed or frightened by you (your choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.</p>
+      <p class="indent">Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.</p>
+      <p class="indent">You must finish a short or long rest before you can use this feature again.</p>
     </description>
     <sheet>
-      <description></description>
+      <description>As an action, choose a creature that you can see within 60 feet of you. It must make a DC$(spellcasting:dc:wis) Wisdom saving throw. On a failed save, it is charmed or frightened by you (your choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage. (1/SR)</description>
     </sheet>
     <rules />
   </element>
@@ -870,8 +899,7 @@
 
 
 
-
-
+  <!--
   <element name="xxxxxxxxxxxxxxx" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCHFEY_xxxxxxxxxxxxxxx">
     <description>
       <p></p>
@@ -881,5 +909,6 @@
     </sheet>
     <rules />
   </element>
+  -->
 
 </elements>

@@ -42,30 +42,19 @@
       </p>
       <h5>PROFICIENCIES</h5>
       <p>
-        <span class="emphasis">Armor:</span>Light armor, medium armor, shields
-        <br />
-        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons
-        <br />
+        <span class="emphasis">Armor:</span>Light armor, medium armor, shields<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
         <span class="emphasis">Tools:</span>None
-        <br />
       </p>
       <p>
-        <span class="emphasis">Saving Throws:</span>Strength, Constitution
-        <br />
+        <span class="emphasis">Saving Throws:</span>Strength, Constitution<br />
         <span class="emphasis">Skills:</span>Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival
-        <br />
       </p>
       <h5>EQUIPMENT</h5>
       <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
       <ul>
-        <li>
-          <i>(a)</i> a greataxe or 
-          <i>(b)</i> any martial melee weapon
-        </li>
-        <li>
-          <i>(a)</i> two handaxes or 
-          <i>(b)</i> any simple weapon
-        </li>
+        <li><i>(a)</i> a greataxe or <i>(b)</i> any martial melee weapon</li>
+        <li><i>(a)</i> two handaxes or <i>(b)</i> any simple weapon</li>
         <li>An explorer’s pack and four javelins</li>
       </ul>
       <div element="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_RAGE" />
