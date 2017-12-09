@@ -4,14 +4,14 @@
         <name>Eldrich Invocations</name>
         <description>The Eldrich Invocations from Xanathar’s Guide to Everything</description>
         <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-        <update version="0.0.2" revised="2017/11/19">
+        <update version="0.0.3" revised="2017/11/19">
             <file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/eldritch-invocations.xml" />
         </update>
     </info>
     
     <element name="Aspect of the Moon" type="Class Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_ASPECT_OF_THE_MOON">
-        <supports>Eldritch Invocation, Pact of the Blade</supports>
-        <prerequisite>Pact of the Blade feature</prerequisite>
+        <supports>Eldritch Invocation, Pact of the Tome</supports>
+        <prerequisite>Pact of the Tome feature</prerequisite>
         <requirements>ID_WOTC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
         <description>
             <p class="flavor">Prerequisite: Pact of the Tome feature</p>

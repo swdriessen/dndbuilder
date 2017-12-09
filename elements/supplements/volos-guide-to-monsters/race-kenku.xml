@@ -4,7 +4,7 @@
 		<name>Kenku</name>
 		<description></description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.0.4" revised="2017/06/07">
+		<update version="0.0.5" revised="2017/06/07">
 			<file name="race-kenku.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-kenku.xml" />
 		</update>
 	</info>
@@ -63,6 +63,8 @@
     <setters>
       <set name="names" type="sound">Smasher, Clanger, Slicer, Basher, Rat Scratch, Whistler, Mouser, Growler, Sail Snap, Hammerer, Cutter</set>
       <set name="names-format">$(sound)</set>
+      <set name="height" modifier="1d4">5'0"</set>
+      <set name="weight" modifier="2d10">90 lb.</set>
     </setters>
     <rules>
       <stat name="Dexterity" value="+2" />

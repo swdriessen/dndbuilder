@@ -4,7 +4,7 @@
 		<name>Genasi</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/princes-apocalypse">Wizards of the Coast</author>
-		<update version="0.1.1" revised="2017/06/07">
+		<update version="0.1.2" revised="2017/06/07">
 			<file name="race-genasi.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/princes-of-the-apocalypse/races/race-genasi.xml" />
 		</update>
 	</info>
@@ -54,7 +54,9 @@
     <sheet display="false" />
     <setters>
       <set name="names" type="male">Flame, Ember, Wave, Onyx</set>
-      <set name="names-format">$(name)</set>      
+      <set name="names-format">$(name)</set>
+      <set name="height" modifier="2d10">4'8"</set>
+      <set name="weight" modifier="2d4">110 lb.</set> 
     </setters>
     <rules>
       <stat name="Constitution" value="+2" />

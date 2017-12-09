@@ -4,7 +4,7 @@
 		<name>Tabaxi</name>
 		<description></description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.0.3" revised="2017/06/07">
+		<update version="0.0.4" revised="2017/06/07">
 			<file name="race-tabaxi.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/volos-guide-to-monsters/race-tabaxi.xml" />
 		</update>
 	</info>
@@ -89,6 +89,8 @@
       <set name="names" type="male">Cloud on the Mountaintop, Five Timber, Jade Shoe, Left-Handed Hummingbird, Seven Thundercloud, Skirt of Snakes, Smoking Mirror</set>
       <set name="names" type="clan">Bright Cliffs, Distant Rain, Mountain Tree, Rumbling River, Snoring Mountain</set>
       <set name="names-format">$(name)</set>   
+      <set name="height" modifier="2d12">4'8"</set>
+      <set name="weight" modifier="2d4">100 lb.</set>
     </setters>
     <rules>
       <stat name="Dexterity" value="+2"/>

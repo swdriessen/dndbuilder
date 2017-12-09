@@ -4,7 +4,7 @@
 		<name>Dwarf</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.2" revised="2017/09/25">
+		<update version="0.2.1" revised="2017/09/25">
 			<file name="race-dwarf.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-dwarf.xml" />
 		</update>
 	</info>
@@ -145,6 +145,10 @@
       </p>
     </description>
     <sheet display="false"/>
+    <setters>
+      <set name="height" modifier="2d4">3'8"</set>
+      <set name="weight" modifier="2d6">115 lb.</set>
+    </setters>
     <rules>
       <stat name="Wisdom" value="+1" />
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_DWARVEN_TOUGHNESS" />
@@ -175,6 +179,10 @@
       </p>
     </description>
     <sheet display="false"/>
+    <setters>
+      <set name="height" modifier="2d4">4'</set>
+      <set name="weight" modifier="2d6">130 lb.</set>
+    </setters>
     <rules>
       <stat name="Strength" value="+2" />
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_DWARVEN_ARMOR_TRAINING" />

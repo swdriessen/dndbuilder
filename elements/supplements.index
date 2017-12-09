@@ -4,7 +4,7 @@
 		<name>Supplements</name>
 		<description>Supplements from Wizards of the Coast to expand your core gaming elements.</description>
 		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.1.4" revised="2017/06/07">
+		<update version="0.1.5" revised="2017/06/07">
 			<file name="supplements.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements.index" />
 		</update>
 	</info>
@@ -17,7 +17,7 @@
 		<!--<file name="hoard-of-the-dragon-queen.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/hoard-of-the-dragon-queen.index" />-->
 		<!--<file name="the-rise-of-tiamat.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/the-rise-of-tiamat.index" />-->
 		<file name="princes-of-the-apocalypse.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/princes-of-the-apocalypse.index" />
-		<!--<file name="out-of-the-abyss.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/out-of-the-abyss.index" />-->
+		<file name="out-of-the-abyss.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/out-of-the-abyss.index" />
 		<file name="curse-of-strahd.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/curse-of-strahd.index" />
 		<!--<file name="storm-kings-thunder.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/storm-kings-thunder.index" />-->
 		<!--<file name="tales-from-the-yawning-portal.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/tales-from-the-yawning-portal.index" />-->

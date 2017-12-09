@@ -4,7 +4,7 @@
     <name>Dragonborn</name>
     <description></description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.1.0" revised="2017/09/25">
+    <update version="0.1.1" revised="2017/09/25">
       <file name="race-dragonborn.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-dragonborn.xml" />
     </update>
   </info>
@@ -62,6 +62,8 @@
       <set name="names" type="childhood">Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous</set>
       <set name="names" type="clan">Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit</set>
       <set name="names-format">$(name) $(clan)</set>
+      <set name="height" modifier="2d8">5'6"</set>
+      <set name="weight" modifier="2d6">175 lb.</set>
     </setters>
     <rules>
       <stat name="Strength" value="+2"/>

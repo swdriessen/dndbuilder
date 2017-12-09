@@ -4,7 +4,7 @@
 		<name>Elf</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1.2" revised="2017/09/25">
+		<update version="0.1.3" revised="2017/09/25">
 			<file name="race-elf.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/races/race-elf.xml" />
 		</update>
 	</info>
@@ -60,6 +60,8 @@
       <set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
       <set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
       <set name="names-format">$(name) $(family)</set>
+      <set name="height" modifier="2d10">4'6"</set>
+      <set name="weight" modifier="1d4">90 lb.</set>
     </setters>
     <rules>
       <stat name="Dexterity" value="+2" />
@@ -135,6 +137,10 @@
       </p>
     </description>
     <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d10">4'6"</set>
+      <set name="weight" modifier="1d4">90 lb.</set>
+    </setters>
     <rules>
       <stat name="Intelligence" value="+1" />
       <grant type="Racial Trait" name="ID_RACIAL_TRAIT_ELF_WEAPON_TRAINING" />
@@ -155,6 +161,10 @@
       </p>
     </description>
     <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d10">4'6"</set>
+      <set name="weight" modifier="1d4">100 lb.</set>
+    </setters>
     <rules>
       <stat name="Wisdom" value="+1" />
       <grant name="ID_RACIAL_TRAIT_ELF_WEAPON_TRAINING" type="Racial Trait" />
@@ -177,6 +187,10 @@
       </p>
     </description>
     <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d6">4'5"</set>
+      <set name="weight" modifier="1d6">75 lb.</set>
+    </setters>
     <rules>
       <stat name="Charisma" value="+1" />
       <grant name="ID_VISION_SUPERIORDARKVISION" type="Vision" />
