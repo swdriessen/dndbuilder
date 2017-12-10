@@ -4,7 +4,7 @@
     <name>Bard</name>
     <description></description>
     <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-    <update version="0.3" revised="2017/06/19">
+    <update version="0.3.1" revised="2017/06/19">
       <file name="class-bard.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core/players-handbook/classes/class-bard.xml" />
     </update>
   </info>
@@ -156,6 +156,36 @@
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
       
+      
+      <stat name="spell:slots:1" value="2" level="1" />
+      <stat name="spell:slots:1" value="1" level="2" />
+      <stat name="spell:slots:1" value="1" level="3" />
+
+      <stat name="spell:slots:2" value="2" level="3" />
+      <stat name="spell:slots:2" value="1" level="4" />
+
+      <stat name="spell:slots:3" value="2" level="5" />
+      <stat name="spell:slots:3" value="1" level="6" />
+
+      <stat name="spell:slots:4" value="1" level="7" />
+      <stat name="spell:slots:4" value="1" level="8" />
+      <stat name="spell:slots:4" value="1" level="9" />
+
+      <stat name="spell:slots:5" value="1" level="9" />
+      <stat name="spell:slots:5" value="1" level="10" />
+      <stat name="spell:slots:5" value="1" level="18" />
+
+      <stat name="spell:slots:6" value="1" level="11" />
+      <stat name="spell:slots:6" value="1" level="19" />
+
+      <stat name="spell:slots:7" value="1" level="13" />
+      <stat name="spell:slots:7" value="1" level="20" />
+
+      <stat name="spell:slots:8" value="1" level="15" />
+
+      <stat name="spell:slots:9" value="1" level="17" />
+
+
       <stat name="bard:spell:attack" value="+Proficiency" />
       <stat name="bard:spell:attack" value="+Charisma Modifier" />
       <stat name="bard:spell:dc" value="+8" />
