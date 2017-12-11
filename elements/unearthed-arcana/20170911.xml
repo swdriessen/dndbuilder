@@ -4,7 +4,7 @@
         <name>Unearthed Arcana: Eladrin and Gith</name>
         <description></description>
         <author url="http://dnd.wizards.com/articles/unearthed-arcana/race-options-eladrin-and-gith">Wizards of the Coast</author>
-        <update version="0.1" revised="2017/09/11">
+        <update version="0.1.1" revised="2017/09/11">
             <file name="20170911.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/unearthed-arcana/20170911.xml" />
         </update>
     </info>
@@ -263,7 +263,7 @@
     <supports>ID_INTERNAL_SUPPORT_LANGUAGE_EXOTIC, Monster, Exotic</supports>
     <requirements />
     <description>
-      <p>Typically spoken by elementals.</p>
+      <p>Typically spoken by githyanki and githzerai.</p>
     </description>
     <setters>
       <set name="Speakers">Githyanki and githzerai</set>
