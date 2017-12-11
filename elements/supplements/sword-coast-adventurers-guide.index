@@ -4,7 +4,7 @@
 		<name>Sword Coast Adventurer’s Guide</name>
 		<description>Welcome to the sword coast—a region of Faerûn that comprises shining paragons of civilization and culture, perilous locales fraught with dread and evil, and encompassing them all, a wilderness that offers every explorer vast opportunity and simultaneously promises great danger. While the Sword Coast Adventurer’s Guide is a valuable resource for Dungeon Masters, it was crafted with players and their characters foremost in mind. There is a plethora of new character options to intrigue and inspire every member of the adventuring party.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/sc-adventurers-guide">Wizards of the Coast</author>
-		<update version="0.1.3" revised="2017/06/07">
+		<update version="0.1.4" revised="2017/06/07">
 			<file name="sword-coast-adventurers-guide.index" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide.index" />
 		</update>
 	</info>
@@ -27,7 +27,7 @@
 		<file name="archetype-swashbuckler.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/classes/archetype-swashbuckler.xml" />
 		<!-- <file name="sorcerer-stormsorcery.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/classes/sorcerer-stormsorcery.xml" /> -->
 		<file name="warlock-theundying.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/classes/warlock-theundying.xml" />
-		<!-- <file name="wizard-bladesinging.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/classes/wizard-bladesinging.xml" /> -->
+		<file name="wizard-bladesinging.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/classes/wizard-bladesinging.xml" />
 
 		<!-- backgrounds -->
 		<file name="background-citywatch.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-citywatch.xml" />
