@@ -9,4 +9,81 @@
         </update>
     </info>
 
+    <!-- new spells first, then clone+errata duplicated POTA spells -->
+
+    <element name="Catnap" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_CATNAP">
+        <supports>Bard, Sorcerer, Wizard</supports>
+        <description>
+            <p>You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall unconscious for the spell’s duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains unconscious for the full duration, that target gains the benefit of a short rest, and it can’t be affected by this spell again until it finishes a long rest.</p>
+            <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="duration">10 minutes</set>
+            <set name="range">30 feet</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of sand</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+        <rules />
+    </element>
+
+    <!-- CAUSEFEAR -->
+    <!-- CEREMONY -->
+    <!-- CHAOSBOUT -->
+    <!-- CHARM MONSTER -->
+    <!-- CREATE HOMUNCULUS -->
+    <!-- CROWN of STARS -->
+    <!-- DANSE MACABRE -->
+    <!-- DAWN -->
+    <!-- DRAGON’S BREATH -->
+    <!-- DRUID GROVE -->
+    <!-- ENEMIES ABOUND -->
+    <!-- ENERVATION -->
+    <!-- FAR STEP -->
+    <!-- FIND GREATER STEED -->
+    <!-- GUARDIAN OF NATURE -->
+    <!-- HEALING SPIRIT -->
+    <!-- HOLY WEAPON -->
+    <!-- ILLUSORY DRAGON -->
+    <!-- INFERNAL CALLING -->
+    <!-- INFESTATION -->
+    <!-- INVULNERABILITY -->
+    <!-- LIFE TRANSFERENCE -->
+    <!-- MADDENING DARKNESS -->
+    <!-- MASS POLYMORPH -->
+    <!-- MENTAL PRISON -->
+    <!-- MIGHTY FORTRESS -->
+    <!-- MIND SPIKE -->
+    <!-- NEGATIVE ENERGY FLOOD -->
+    <!-- POWER WORD PAIN -->
+    <!-- PRIMAL SAVAGERY -->
+    <!-- PSYCHIC SCREAM -->
+    <!-- SCATTER -->
+    <!-- SHADOW BLADE -->
+    <!-- SHADOW OF MOIL -->
+    <!-- SICKENING RADIANCE -->
+    <!-- SKILL EMPOWERMENT -->
+    <!-- SNARE -->
+    <!-- SOUL CAGE -->
+    <!-- STEEL WIND STRIKE -->
+    <!-- SUMMON GREATER DEMON -->
+    <!-- SUMMON LESSER DEMONS -->
+    <!-- SYNAPTIC STATIC -->
+    <!-- TEMPLE OF THE GODS -->
+    <!-- TENSER’S TRANSFORMATION -->
+    <!-- THUNDER STEP -->
+    <!-- TINY SERVANT -->
+    <!-- TOLL THE DEAD -->
+    <!-- WALL OF LIGHT -->
+    <!-- WORD OF RADIANCE -->
+    <!-- WRATH OF NATURE -->
+    <!-- ZEPHYR STRIKE -->
+
+
 </elements>
