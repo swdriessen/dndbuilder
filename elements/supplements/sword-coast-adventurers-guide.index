@@ -9,7 +9,6 @@
 		</update>
 	</info>
 	<files>
-
 		<!-- races -->
 		<file name="race-duergar.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/races/race-duergar.xml" />
 		<file name="race-svirfneblin.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/races/race-svirfneblin.xml" />
@@ -41,7 +40,7 @@
 		<file name="background-urbanbountyhunter.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-urbanbountyhunter.xml" />
 		<file name="background-uthgardttribemember.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-uthgardttribemember.xml" />
 		<file name="background-waterdhaviannoble.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/backgrounds/background-waterdhaviannoble.xml" />
-		
+
 		<file name="musical-instruments.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/musical-instruments.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/sword-coast-adventurers-guide/spells.xml" />
 
