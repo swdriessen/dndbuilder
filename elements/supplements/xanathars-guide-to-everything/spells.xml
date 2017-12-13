@@ -4,7 +4,7 @@
         <name>Spells</name>
         <description>The Spells from Xanathar’s Guide to Everything</description>
         <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-        <update version="0.0.2" revised="2017/11/19">
+        <update version="0.0.3" revised="2017/11/19">
             <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/spells.xml" />
         </update>
     </info>
@@ -280,10 +280,12 @@
         <supports>Druid, Sorcerer, Wizard, Rogue (Arcane Trickster), Fighter (Eldritch Knight)</supports>
         <description>
             <p>You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:</p>
-            <p class="indent">* You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.</p>
-            <p class="indent">* You instantaneously extinguish the flames within the cube.</p>
-            <p class="indent">* You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.</p>
-            <p class="indent">* You cause simple shapes-such as the vague form of a creature, an inanimate object, or a location-to appear within the flames and animate as you like. The shapes last for 1 hour.</p>
+            <ul>
+                <li>You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.</li>
+                <li>You instantaneously extinguish the flames within the cube.</li>
+                <li>You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.</li>
+                <li>You cause simple shapes-such as the vague form of a creature, an inanimate object, or a location-to appear within the flames and animate as you like. The shapes last for 1 hour.</li>
+            </ul>
             <p class="indent">If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action.</p>
         </description>
         <setters>
@@ -470,9 +472,11 @@
             <p class="indent">Grasping Undergrowth. You can fill any number of 5-foot squares on the ground that aren't filled with fog with grasping weeds and vines, as if they were affected by an entangle spell. To a creature immune to this effect, the weeks and vines feel soft and reshape themselves to serve as temporary seats or beds.</p>
             <p class="indent">Grove Guardians. You can animate up to four trees in the area, causing them to uproot themselves from the ground. These trees have the same statistics as an awakened tree, which appears in the Monster Manual, except they can't speak, and their bark is covered with druidic symbols. If any creature not immune to this effect enters the warded area, the grove guardians fight until they have driven off or slain the intruders. The grove guardians also obey your spoken commands (no action required by you) that you issue while in the area. If you don't give them commands and no intruders are present, the grove guardians do nothing. The grove guardians can't leave the warded area. When the spell ends, the magic animating them disappears, and the trees take root again if possible.</p>
             <p class="indent">Additional Spell Effect. You can place your choice of one of the following magical effects within the warded area:</p>
-            <p class="indent">* A constant gust of wind in two locations of your choice</p>
-            <p class="indent">* Spike growth in one location of your choice</p>
-            <p class="indent">* Wind wall in two locations of your choice</p>
+            <ul>
+                <li>A constant gust of wind in two locations of your choice</li>
+                <li>Spike growth in one location of your choice</li>
+                <li>Wind wall in two locations of your choice</li>
+            </ul>
             <p class="indent">To a creature immune to this effect, the winds are a fragrant, gentle breeze, and the area of spike growth is harmless.</p>
         </description>
         <setters>
@@ -742,15 +746,19 @@
         <description>
             <p>A nature spirit answers your call and transforms you into a powerful guardian. The transformation lasts until the spell ends. You choose one of the following forms to assume: Primal Beast or Great Tree.</p>
             <p class="indent">Primal Beast. Bestial fur covers your body, your facial features become feral, and you gain the following benefits:</p>
-            <p class="indent">* Your walking speed increases by 10 feet.</p>
-            <p class="indent">* You gain darkvision with a range of 120 feet.</p>
-            <p class="indent">* You make Strengthâ€”based attack rolls with advantage.</p>
-            <p class="indent">* Your melee weapon attacks deal an extra 1d6 force damage on a hit.</p>
+            <ul>
+                <li>Your walking speed increases by 10 feet.</li>
+                <li>You gain darkvision with a range of 120 feet.</li>
+                <li>You make Strengthâ€”based attack rolls with advantage.</li>
+                <li>Your melee weapon attacks deal an extra 1d6 force damage on a hit.</li>
+            </ul>
             <p class="indent">Great Tree. Your skin appears barky, leaves sprout from your hair, and you gain the following benefits:</p>
-            <p class="indent">* You gain 10 temporary hit points.</p>
-            <p class="indent">* You make Constitution saving throws with advantage.</p>
-            <p class="indent">* You make Dexterity- and Wisdom-based attack rolls with advantage.</p>
-            <p class="indent">* While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies.</p>
+            <ul>
+                <li>You gain 10 temporary hit points.</li>
+                <li>You make Constitution saving throws with advantage.</li>
+                <li>You make Dexterity- and Wisdom-based attack rolls with advantage.</li>
+                <li>While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies.</li>
+            </ul>
         </description>
         <setters>
             <set name="level">4</set>
@@ -770,9 +778,11 @@
         <supports>Druid, Sorcerer, Wizard, Rogue (Arcane Trickster), Fighter (Eldritch Knight)</supports>
         <description>
             <p>You seize the air and compel it to create one of the following effects at a point you can see within range.</p>
-            <p class="indent">* One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.</p>
-            <p class="indent">* You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.</p>
-            <p class="indent">* You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.</p>
+            <ul>
+                <li>One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.</li>
+                <li>You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.</li>
+                <li>You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.</li>
+            </ul>
         </description>
         <setters>
             <set name="level">0</set>
@@ -792,7 +802,7 @@
         <supports>Druid, Ranger</supports>
         <description>
             <p>You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice).</p>
-            <p class="indent">Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore ld6 hit points to that creature (no action required). The spirit can't heal constructs or undead.</p>
+            <p class="indent">Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore 1d6 hit points to that creature (no action required). The spirit can't heal constructs or undead.</p>
             <p class="indent">As a bonus action on your turn, you can move the Spirit up to 30 feet to a space you can see.</p>
             <p class="indent">
                 <b>
@@ -952,9 +962,11 @@
         <supports>Druid, Sorcerer, Warlock, Wizard</supports>
         <description>
             <p>Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for the spell's duration. The flames don't harm you. Until the spell ends, you gain the following benefits:</p>
-            <p class="indent">* You are immune to fire damage and have resistance to cold damage.</p>
-            <p class="indent">* Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage.</p>
-            <p class="indent">* You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one.</p>
+            <ul>
+                <li>You are immune to fire damage and have resistance to cold damage.</li>
+                <li>Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage.</li>
+                <li>You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one.</li>
+            </ul>
         </description>
         <setters>
             <set name="level">6</set>
@@ -974,10 +986,12 @@
         <supports>Druid, Sorcerer, Warlock, Wizard</supports>
         <description>
             <p>Until the spell ends, ice rimes your body, and you gain the following benefits:</p>
-            <p class="indent">* You are immune to cold damage and have resistance to fire damage.</p>
-            <p class="indent">* You can move across difficult terrain created by ice or snow without spending extra movement.</p>
-            <p class="indent">* The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.</p>
-            <p class="indent">* You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.</p>
+            <ul>
+                <li>You are immune to cold damage and have resistance to fire damage.</li>
+                <li>You can move across difficult terrain created by ice or snow without spending extra movement.</li>
+                <li>The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.</li>
+                <li>You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.</li>
+            </ul>
         </description>
         <setters>
             <set name="level">6</set>
@@ -997,9 +1011,11 @@
         <supports>Druid, Sorcerer, Warlock, Wizard</supports>
         <description>
             <p>Until the spell ends, bits of rock spread across your body, and you gain the following benefits:</p>
-            <p class="indent">* You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
-            <p class="indent">* You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone.</p>
-            <p class="indent">* You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn.</p>
+            <ul>
+                <li>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+                <li>You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone.</li>
+                <li>You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn.</li>
+            </ul>
         </description>
         <setters>
             <set name="level">6</set>
@@ -1019,9 +1035,11 @@
         <supports>Druid, Sorcerer, Warlock, Wizard</supports>
         <description>
             <p>Until the spell ends, wind whirls around you, and you gain the following benefits.</p>
-            <p class="indent">* Ranged weapon attacks made against you have disadvantage on the attack roll.</p>
-            <p class="indent">* You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.</p>
-            <p class="indent">* You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.</p>
+            <ul>
+                <li>Ranged weapon attacks made against you have disadvantage on the attack roll.</li>
+                <li>You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.</li>
+                <li>You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.</li>
+            </ul>
         </description>
         <setters>
             <set name="level">6</set>
@@ -1280,9 +1298,11 @@
         <supports>Druid, Sorcerer, Wizard, Rogue (Arcane Trickster), Fighter (Eldritch Knight)</supports>
         <description>
             <p>You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways.</p>
-            <p class="indent">* If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't have enough force to cause damage.</p>
-            <p class="indent">* You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.</p>
-            <p class="indent">* If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.</p>
+            <ul>
+                <li>If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't have enough force to cause damage.</li>
+                <li>You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.</li>
+                <li>If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.</li>
+            </ul>
             <p class="indent">If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
         </description>
         <setters>
@@ -1343,7 +1363,7 @@
     <element name="Primal Savagery" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY">
         <supports>Druid</supports>
         <description>
-            <p>You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes ld10 acid damage. After you make the attack, your teeth or fingernails return to normal.</p>
+            <p>You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage. After you make the attack, your teeth or fingernails return to normal.</p>
             <p class="indent">The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
         </description>
         <setters>
@@ -1490,10 +1510,12 @@
         <supports>Druid, Sorcerer, Wizard, Rogue (Arcane Trickster), Fighter (Eldritch Knight)</supports>
         <description>
             <p>You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways.</p>
-            <p class="indent">* You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.</p>
-            <p class="indent">* You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.</p>
-            <p class="indent">* You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.</p>
-            <p class="indent">* You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.</p>
+            <ul>
+                <li>You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.</li>
+                <li>You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.</li>
+                <li>You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.</li>
+                <li>You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.</li>
+            </ul>
             <p class="indent">If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
         </description>
         <setters>
@@ -1793,12 +1815,14 @@
         <supports>Wizard</supports>
         <description>
             <p>You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can't cast spells, and you gain the following benefits:</p>
-            <p class="indent">* You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.</p>
-            <p class="indent">* You have advantage on attack rolls that you make with simple and martial weapons.</p>
-            <p class="indent">* When you hit a target with a weapon attack, that target takes an extra 2d12 force damage.</p>
-            <p class="indent">* You have proficiency with all armor, shields, simple weapons, and martial weapons.</p>
-            <p class="indent">* You have proficiency in Strength and Constitution saving throws.</p>
-            <p class="indent">* You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.</p>
+            <ul>
+                <li>You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.</li>
+                <li>You have advantage on attack rolls that you make with simple and martial weapons.</li>
+                <li>When you hit a target with a weapon attack, that target takes an extra 2d12 force damage.</li>
+                <li>You have proficiency with all armor, shields, simple weapons, and martial weapons.</li>
+                <li>You have proficiency in Strength and Constitution saving throws.</li>
+                <li>You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.</li>
+            </ul>
             <p class="indent">Immediately after the spell ends, you must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion.</p>
         </description>
         <setters>
@@ -1838,7 +1862,7 @@
     <element name="Thunder Step" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_THUNDER_STEP">
         <supports>Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p>You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds. and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3dl0 thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 300 feet away.</p>
+            <p>You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds. and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 300 feet away.</p>
             <p class="indent">You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.</p>
             <p class="indent">
                 <b>
@@ -1909,7 +1933,7 @@
         <supports>Cleric, Warlock, Wizard</supports>
         <description>
             <p>You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.</p>
-            <p class="indent">The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4dl2).</p>
+            <p class="indent">The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
         </description>
         <setters>
             <set name="level">0</set>
@@ -2043,11 +2067,13 @@
         <description>
             <p>A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell's duration.</p>
             <p class="indent">The wind has the following effects.</p>
-            <p class="indent">* It deafens you and other creatures in its area.</p>
-            <p class="indent">* It extinguishes unprotected flames in its area that are torch-sized or smaller.</p>
-            <p class="indent">* It hedges out vapor, gas, and fog that can be dispersed by strong wind.</p>
-            <p class="indent">* The area is difficult terrain for creatures other than you.</p>
-            <p class="indent">* The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind.</p>
+            <ul>
+                <li>It deafens you and other creatures in its area.</li>
+                <li>It extinguishes unprotected flames in its area that are torch-sized or smaller.</li>
+                <li>It hedges out vapor, gas, and fog that can be dispersed by strong wind.</li>
+                <li>The area is difficult terrain for creatures other than you.</li>
+                <li>The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind.</li>
+            </ul>
         </description>
         <setters>
             <set name="level">2</set>
@@ -2110,7 +2136,7 @@
     <element name="Word of Radiance" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_WORD_OF_RADIANCE">
         <supports>Cleric</supports>
         <description>
-            <p>You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take ld6 radiant damage.</p>
+            <p>You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.</p>
             <p class="indent">The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
         </description>
         <setters>
