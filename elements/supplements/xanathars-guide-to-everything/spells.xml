@@ -4,7 +4,7 @@
         <name>Spells</name>
         <description>The Spells from Xanathar’s Guide to Everything</description>
         <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
-        <update version="0.0.3" revised="2017/11/19">
+        <update version="0.0.4" revised="2017/11/19">
             <file name="spells.xml" url="https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/supplements/xanathars-guide-to-everything/spells.xml" />
         </update>
     </info>
@@ -199,16 +199,19 @@
         <supports>Sorcerer</supports>
         <description>
             <p>You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack's damage type, as shown below.</p>
-            <ul>
-                <li>1: Acid</li>
-                <li>2: Cold</li>
-                <li>3: Fire</li>
-                <li>4: Force</li>
-                <li>5: Lightning</li>
-                <li>6: Poison</li>
-                <li>7: Psychic</li>
-                <li>8: Thunder</li>
-            </ul>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Damage Type</td></tr>
+                </thead>
+                <tr><td>1</td><td>Acid</td></tr>
+                <tr><td>2</td><td>Cold</td></tr>
+                <tr><td>3</td><td>Fire</td></tr>
+                <tr><td>4</td><td>Force</td></tr>
+                <tr><td>5</td><td>Lightning</td></tr>
+                <tr><td>6</td><td>Poison</td></tr>
+                <tr><td>7</td><td>Psychic</td></tr>
+                <tr><td>8</td><td>Thunder</td></tr>
+            </table>
             <p class="indent">If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again. A creature can be targeted only once by each casting of this spell.</p>
             <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st.</p>
         </description>
@@ -276,9 +279,9 @@
         <supports>Druid, Sorcerer, Wizard</supports>
         <description>
             <p>You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell's duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you've halted.</p>
-            <p class="indent"><b><i>Gusts: </i></b>A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that enter or leave the cube or pass through it have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved.</p>
-            <p class="indent"><b><i>Downdraft: </i></b>You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.</p>
-            <p class="indent"><b><i>Updraft: </i></b>You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal.</p>
+            <p class="indent"><b><i>Gusts. </i></b>A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that enter or leave the cube or pass through it have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved.</p>
+            <p class="indent"><b><i>Downdraft. </i></b>You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.</p>
+            <p class="indent"><b><i>Updraft. </i></b>You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal.</p>
         </description>
         <setters>
             <set name="level">5</set>
@@ -429,7 +432,7 @@
             <p class="indent"><b><i>Solid Fog. </i></b>You can fill any number of 5-foot squares on the ground with thick fog, making them heavily obscured. The fog reaches 10 feet high. In addition, every foot of movement through the fog costs 2 extra feet. To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of green light floating in the air.</p>
             <p class="indent"><b><i>Grasping Undergrowth. </i></b>You can fill any number of 5-foot squares on the ground that aren't filled with fog with grasping weeds and vines, as if they were affected by an entangle spell. To a creature immune to this effect, the weeks and vines feel soft and reshape themselves to serve as temporary seats or beds.</p>
             <p class="indent"><b><i>Grove Guardians. </i></b>You can animate up to four trees in the area, causing them to uproot themselves from the ground. These trees have the same statistics as an awakened tree, which appears in the Monster Manual, except they can't speak, and their bark is covered with druidic symbols. If any creature not immune to this effect enters the warded area, the grove guardians fight until they have driven off or slain the intruders. The grove guardians also obey your spoken commands (no action required by you) that you issue while in the area. If you don't give them commands and no intruders are present, the grove guardians do nothing. The grove guardians can't leave the warded area. When the spell ends, the magic animating them disappears, and the trees take root again if possible.</p>
-            <p class="indent">Additional Spell Effect. You can place your choice of one of the following magical effects within the warded area:</p>
+            <p class="indent"><b><i>Additional Spell Effect. </i></b>You can place your choice of one of the following magical effects within the warded area:</p>
             <ul>
                 <li>A constant gust of wind in two locations of your choice</li>
                 <li>Spike growth in one location of your choice</li>
@@ -615,9 +618,9 @@
     <element name="Find Greater Steed" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_FIND_GREATER_STEED">
         <supports>Paladin</supports>
         <description>
-            <p>You summon a spirit that assumes the form of a loyal, majestic mount. Appearing in an unoccupied space within range, the spirit takes on a form you choose: a griffon, a pegasus, a peryton, a dire wolf, a rhinoceros, or a saberâ€”toothed tiger. The creature has the statistics provided in the Monster Manual for the chosen form, though it is a celestial, a fey, or a fiend (your choice) instead of its normal creature type. Additionally, if it has an Intelligence score of 5 or lower, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p>
+            <p>You summon a spirit that assumes the form of a loyal, majestic mount. Appearing in an unoccupied space within range, the spirit takes on a form you choose: a griffon, a pegasus, a peryton, a dire wolf, a rhinoceros, or a sabertoothed tiger. The creature has the statistics provided in the Monster Manual for the chosen form, though it is a celestial, a fey, or a fiend (your choice) instead of its normal creature type. Additionally, if it has an Intelligence score of 5 or lower, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p>
             <p class="indent">You control the mount in combat. While the mount is within 1 mile of you, you can communicate with it telepathically. While mounted on it, you can make any spell you cast that targets only you also target the mount.</p>
-            <p class="indent">The mount disappears temporarily when it drops to 0 hit points or when you dismiss it as an action. Casting this spell again reâ€”summons the bonded mount, with all its hit points restored and any conditions removed.</p>
+            <p class="indent">The mount disappears temporarily when it drops to 0 hit points or when you dismiss it as an action. Casting this spell again resummons the bonded mount, with all its hit points restored and any conditions removed.</p>
             <p class="indent">You can't have more than one mount bonded by this spell or find steed at the same time. As an action, you can release a mount from its bond, causing it to disappear permanently.</p>
             <p class="indent">Whenever the mount disappears, it leaves behind any objects it was wearing or carrying.</p>
         </description>
@@ -841,7 +844,7 @@
         <description>
             <p>Uttering a dark incantation, you summon a devil from the Nine Hells. You choose the devil's type, which must be one of challenge rating 6 or lower, such as a barbed devil or a bearded devil. The devil appears in an unoccupied space that you can see within range. The devil disappears when it drops to 0 hit points or when the spell ends.</p>
             <p class="indent">The devil is unfriendly toward you and your companions. Roll initiative for the devil, which has its own turns. It is under the Dungeon Master's control and acts according to its nature on each of its turns, which might result in its attacking you if it thinks it can prevail, or trying to tempt you to undertake an evil act in exchange for limited service. The DM has the creature's statistics.</p>
-            <p class="indent">On each of your turns, you can try to issue a verbal command to the devil (no action required by you). It obeys the command if the likely outcome is in accordance with its desires, especially if the result would draw you toward evil. Otherwise, you must make a Charisma (Deception, Intimidation, or Persuasion) check contested by its Wisdom (Insight) check. You make the check with advantage if you say the devil's true name. If your check fails, the devil becomes immune to your verbal commands for the duration of the spell, though it can still carry out your commands if it chooses. If your check succeeds, the devil carries out your commandâ€”such as "attack my enemies," "explore the room ahead," or "bear this message to the queen"â€”until it completes the activity, at which point it returns to you to report having done so.</p>
+            <p class="indent">On each of your turns, you can try to issue a verbal command to the devil (no action required by you). It obeys the command if the likely outcome is in accordance with its desires, especially if the result would draw you toward evil. Otherwise, you must make a Charisma (Deception, Intimidation, or Persuasion) check contested by its Wisdom (Insight) check. You make the check with advantage if you say the devil's true name. If your check fails, the devil becomes immune to your verbal commands for the duration of the spell, though it can still carry out your commands if it chooses. If your check succeeds, the devil carries out your command such as "attack my enemies," "explore the room ahead," or "bear this message to the queen" until it completes the activity, at which point it returns to you to report having done so.</p>
             <p class="indent">If your concentration ends before the spell reaches its full duration, the devil doesn't disappear if it has become immune to your verbal commands. Instead, it acts in whatever manner it chooses for 3d6 minutes, and then it disappears.</p>
             <p class="indent">If you possess an individual devil's talisman, you can summon that devil if it is of the appropriate challenge rating plus 1, and it obeys all your commands, with no Charisma checks required.</p>
             <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.</p>
@@ -1019,7 +1022,7 @@
     <element name="Maddening Darkness" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_MADDENING_DARKNESS">
         <supports>Warlock, Wizard</supports>
         <description>
-            <p>Magical darkness spreads from a point you choose within range to fill a 60â€”footâ€”radius sphere until the spell ends. The darkness spreads around corners. A creature with darkvision can't see through this darkness. Nonâ€”magical light, as well as light created by spells of 8th level or lower, can't illuminate the area.</p>
+            <p>Magical darkness spreads from a point you choose within range to fill a 60 foot radius sphere until the spell ends. The darkness spreads around corners. A creature with darkvision can't see through this darkness. Non magical light, as well as light created by spells of 8th level or lower, can't illuminate the area.</p>
             <p class="indent">Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a creature starts its turn in the sphere, it must make a Wisdom saving throw, taking 8d8 psychic damage on a failed save, or half as much damage on a successful one.</p>
         </description>
         <setters>
@@ -1166,7 +1169,7 @@
             <p class="indent">The fortress has four turrets with square bases, each one 20 feet on a side and 30 feet tall, with one turret on each corner. The turrets are connected to each other by stone walls that are each 80 feet long, creating an enclosed area. Each wall is 1 foot thick and is composed of panels that are 10 feet wide and 20 feet tall. Each panel is contiguous with two other panels or one other panel and a turret. You can place up to four stone doors in the fortress's outer wall.</p>
             <p class="indent">A small keep stands inside the enclosed area. The keep has a square base that is 50 feet on each side, and it has three floors with 10-foot-high ceilings. Each of the floors can be divided into as many rooms as you like, provided each room is at least 5 feet on each side. The floors of the keep are connected by stone staircases, its walls are 6 inches thick, and interior rooms can have stone doors or open archways as you choose. The keep is furnished and decorated however you like, and it contains sufficient food to serve a nine-course banquet for up to 100 people each day. Furnishings, food, and other objects created by this spell crumble to dust if removed from the fortress.</p>
             <p class="indent">A staff of one hundred invisible servants obeys any command given to them by creatures you designate when you cast the spell. Each servant functions as if created by the unseen servant spell.</p>
-            <p class="indent">The walls, turrets, and keep are all made of stone that can be damaged. Each 10â€”footâ€”by-10-foot section of stone has AC 15 and 30 hit points per inch of thickness. It is immune to poison and psychic damage. Reducing a section of stone to 0 hit points destroys it and might cause connected sections to buckle and collapse at the DM's discretion.</p>
+            <p class="indent">The walls, turrets, and keep are all made of stone that can be damaged. Each 10 foot by-10-foot section of stone has AC 15 and 30 hit points per inch of thickness. It is immune to poison and psychic damage. Reducing a section of stone to 0 hit points destroys it and might cause connected sections to buckle and collapse at the DM's discretion.</p>
             <p class="indent">After 7 days or when you cast this spell somewhere else, the fortress harmlessly crumbles and sinks back into the ground, leaving any creatures that were inside it safely on the ground.</p>
             <p class="indent">Casting this spell on the same spot once every 7 days for a year makes the fortress permanent.</p>
         </description>
@@ -1611,7 +1614,7 @@
         <description>
             <p>You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be one of challenge rating 5 or lower, such as a shadow demon or a barlgura. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.</p>
             <p class="indent">Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.</p>
-            <p class="indent">At the end of each of the demons turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest nonâ€”demons to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for 1d6 rounds if it still has hit points.</p>
+            <p class="indent">At the end of each of the demons turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non demons to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for 1d6 rounds if it still has hit points.</p>
             <p class="indent">As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends.</p>
             <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th.</p>
         </description>
@@ -1658,7 +1661,7 @@
     <element name="Synaptic Static" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_SYNAPTIC_STATIC">
         <supports>Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p>You choose a point within range and cause psychic energy to explode there. Each creature in a 20â€”footâ€”radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes 8d6 psychic damage on a failed save, or half as much damage on a successful one.</p>
+            <p>You choose a point within range and cause psychic energy to explode there. Each creature in a 20 foot radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes 8d6 psychic damage on a failed save, or half as much damage on a successful one.</p>
             <p class="indent">After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a d6 and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
         </description>
         <setters>
