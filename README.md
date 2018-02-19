@@ -1,8 +1,3 @@
-# dndbuilder content files
-my custom content for a character builder for dungeons and dragons 5th edition
-
+# use the new repository over at https://github.com/aurorabuilder/elements which has replaced this repository
 
 http://www.dndbuilder.net
-(currently in preview)
-
-use the fetch url option in the builder to import for example the core.index (using the url of the raw file e.g. https://raw.githubusercontent.com/swdriessen/dndbuilder/master/elements/core.index) 
